@@ -10,7 +10,7 @@
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
       <script>
       	if (typeof jQuery == 'undefined') {
-          document.write('<script src="{{ js | relative_url }} async"></scr' + 'ipt>');
+          document.write('<script src="{{ js | relative_url }}"></scr' + 'ipt>');
       	}
       </script>
     {% else %}

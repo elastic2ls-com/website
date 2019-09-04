@@ -1,0 +1,4 @@
+# Cache controll
+<FilesMatch "\.(png|webp|css|js|woff2)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
