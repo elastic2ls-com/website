@@ -6,24 +6,24 @@
 // }
 
 
-$(document).ready(function(){
-    $('.dropdown-toggle').mouseover(function(){
-        $('.dropdown-menu').show();
-    })
-
-    $('.dropdown-toggle').mouseout(function(){
-        t = setTimeout(function() {
-            $('.dropdown-menu').hide();
-        }, 30);
-
-        $('.dropdown-menu').on('mouseenter', function(){
-            $('.dropdown-menu').show();
-            clearTimeout(t);
-        }).on('mouseleave', function(){
-            $('.dropdown-menu').hide();
-        })
-    })
-})
+// $(document).ready(function(){
+//     $('.dropdown-toggle').mouseover(function(){
+//         $('.dropdown-menu').show();
+//     })
+//
+//     $('.dropdown-toggle').mouseout(function(){
+//         t = setTimeout(function() {
+//             $('.dropdown-menu').hide();
+//         }, 30);
+//
+//         $('.dropdown-menu').on('mouseenter', function(){
+//             $('.dropdown-menu').show();
+//             clearTimeout(t);
+//         }).on('mouseleave', function(){
+//             $('.dropdown-menu').hide();
+//         })
+//     })
+// })
 var host = "https://"+window.location.hostname;
 
 var jenkins = "/jenkins-training";
