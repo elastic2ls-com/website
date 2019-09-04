@@ -8,11 +8,7 @@
   {% for js in layout.common-js %}
     {% if js contains 'jquery' %}
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-      <script>
-      	if (typeof jQuery == 'undefined') {
-          document.write('<script src="{{ js | relative_url }}"></scr' + 'ipt>');
-      	}
-      </script>
+      <script src="{{ js | relative_url }}"></scr' + 'ipt>')</script>
     {% else %}
       <script src="{{ js | relative_url }}" async></script>
     {% endif %}
