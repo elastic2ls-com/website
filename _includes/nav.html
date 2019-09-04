@@ -1,0 +1,98 @@
+<!-- <div class="header"> -->
+  <script>
+    var host = "https://"+window.location.hostname;
+
+    var jenkins = "/jenkins-training";
+    var docker = "/docker-training";
+    var devops = "/devops-training";
+    var cloudmigration = "/cloud-migration";
+    var devopstransformation = "/devops-transformation";
+    var about = "/about";
+    var events = "/events";
+    var blog = "/blog/";
+    window.onload = function() {
+      document.getElementById('hostname1').href = host;
+      document.getElementById('hostname2').href = host;
+      document.getElementById('jenkins').href = (host,jenkins);
+      document.getElementById('docker').href = (host,docker);
+      document.getElementById('devops').href = (host,devops);
+      document.getElementById('cloudmigration').href = (host,cloudmigration);
+      document.getElementById('devopstransformation').href = (host,devopstransformation);
+      document.getElementById('about').href = (host,about);
+      document.getElementById('events').href = (host,events);
+      document.getElementById('blog').href = (host,blog);
+    }
+    console.log(host,jenkins)
+
+  </script>
+  <nav class="navbar">
+    <div class="navbar-header">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="logo pull-left">
+              <a id="hostname1" href="#" aria-label="back to home" ><img src="/img/Logo_box-1-150x150.png" alt=""></a>
+          </div>
+          <div class="brand pull-left">
+              <h1>
+                <a id="hostname2" href="#" aria-label="back to home" ><span>elastic[too]ls.com</span></a>
+              </h1>
+          </div>
+          <div class="contact">
+            <a class="btn btn-primary mail hidden-xs hidden-sm" href="mailto:info@elastic2ls.com?subject=feedback">Kontaktieren Sie uns</a>
+            <a class="btn btn-primary telephone " href="tel:02283361761"><span class="glyphicon glyphicon-earphone"></span> (+49) 228 - 3361761</a>
+          </div>
+
+          <div class="navbar-header">
+            <div class="navbar-header-sm-device">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" title="myNavbar"  >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+          </div>
+          <div class="collapse navbar-collapse pull-right myNavbar" id="myNavbar">
+            <ul class="menu nav navbar-nav pull-left">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Training <b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a id="jenkins" href="#">CI/CD mit Jenkins</a></li>
+                  <li><a id="docker" href="#">Docker</a></li>
+                  <li><a id="devops" href="#">DevOps Foundations</a></li>
+                  <li class="feature_toogle"><a href="https://demo.fachadmin.de/#">Architecting on AWS</a></li>
+                  <li class="feature_toogle"><a href="https://demo.fachadmin.de/#">Lpic 1/2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Consulting <b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a id="cloudmigration" href="#">Cloud migration</a></li>
+                  <li><a id="devopstransformation" href="#">DevOps Workshops</a></li>
+                  <li class="feature_toogle"><a href="https://demo.fachadmin.de/cloudops-transformation">CloudOps Workshops</a></li>
+                  <li class="feature_toogle"><a href="https://demo.fachadmin.de/#">Cloud native and Open source</a></li>
+                  <li class="feature_toogle"><a href="https://demo.fachadmin.de/#">Build CI/CD pipelines</a></li>
+                  <li class="feature_toogle"><a href="https://demo.fachadmin.de/#">Infrastructure as code</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Company <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a id="about" href="#">About</a></li>
+                  <li><a id="events" href="#">Events</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <li><a id="blog" href="#" target="_blank">Blog <span class="glyphicon glyphicon-globe"></span></a></li>
+
+              </li>
+            </ul>
+            <ul class="menu nav navbar-nav pull-right">
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </nav>
+<!-- </div> -->

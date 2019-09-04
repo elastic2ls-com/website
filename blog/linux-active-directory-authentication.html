@@ -1,0 +1,26 @@
+  <div class="content">
+    <div class="container">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script>
+      $(document).ready(function () {
+      $.getJSON('https://www.elastic2ls.com/wp-json/wp/v2/posts/1493', function(alldata){
+      var contentElm = alldata.content.rendered
+      $(contentElm).appendTo("#userdata");
+      });
+      });
+
+      </script>
+
+      </head>
+
+      <body>
+
+      <h4 id="usertitle"></h4>
+      <div id="userdata">
+      </div>
+
+    </div>
+  </div>
+
