@@ -79,226 +79,124 @@ type=CWD msg=audit(1434371271.277:135496):  cwd="/home/alex"
 type=PATH msg=audit(1434371271.277:135496): item=0 name="/etc/ssh/sshd_config" inode=392210 dev=fd:01 mode=0100600 ouid=0 ogid=0 rdev=00:00 objtype=NORMAL
 ```
 
-WEITERHIER
+Das obige Event besteht aus drei Einträgen jeder startet mit dem ```type=``` Schlüsselwort), welche alle den gleichen Timestamp ```1434371271.277``` sowie die gleiche ID haben ```135496```. Jeder Eintrag beinhaltet einige ```_name=value_ Paare```, welche mit einem Leerzeichen oder Komma getrennt werden. Schauen wir uns an wofür die einzelnen Felder stehen.
 
-Das obige Event besteht aus drei Einträgen (jeder startet mit dem
-```type=</pre>
+Der erste Eintrag:
+# ```type=SYSCALL```
 
-Schlüsselwort), welche alle den gleichen Timestamp (
-```1434371271.277</pre>
+Das ```type``` Feld enthält den Typ der Audit Nachricht. In userem Fall den Wert ```SYSCALL```, welcher anzeigt das die Nachricht durch einen Systemcall an den Kernel erzeugt wurde.
 
-) sowie die gleiche ID haben (
-```135496</pre>
+# ```msg=audit(1434371271.277:135496):```
 
-). Jeder Eintrag beinhaltet einige _name=value_ Paare, welche mit einem Leerzeichen oder Komma getrennt werden. Schauen wir uns an wofür die einzelnen Felder stehen. Der erste Eintrag:
+Das ist der Timestamp im Format ```audit(time_stamp:ID)```. Multiple Audit Nachrichten/Einträge können sich den selben Timestamp sowie die selbe ID teilen, wenn sie als Teil des selben Audit Events erzeugt wurden. In unserem Bespiel ist der Timestamp sowie die ID in allen drei Erreignissen, welches das Audit Sytem erzeugt hat, gleich.
 
-*   <pre>type=SYSCALL</pre>
+# ```arch=c000003e```
 
-Das
-```type</pre>
+Das ```arch``` Feld enhält Informationen über die CPU Architektur. Der Wert, c000003e, ist die hexadezimale Notation für ein x64_64 System.
 
-Feld enthält den Typ der Audit Nachricht. In userem Fall den Wert
-```SYSCALL</pre>
+# ```syscall=2```
 
-, welcher anzeigt das die Nachricht durch einen Systemcall an den Kernel erzeugt wurde.
+Das ```syscall``` Feld beschreibt den Typen des System Calls der zum Kernel gesendet wurde. In diesen Fall, 2 ist es der ```open``` System Call. Das ```ausyscall``` Werkzeug konvertiert System Call Werte in ein lesbares Format. Als Beispiel für einfacheres Verständniss, erzeugt das folgende Kommando den Wert 2 in ein lesbares Format.
 
-*   <pre>msg=audit(1434371271.277:135496):</pre>
+# ```sudo ausyscall 2```
 
-Das ist der Timestamp im Format
-```audit(time_stamp:ID)</pre>
 
-. Multiple Audit Nachrichten/Einträge können sich den selben Timestamp sowie die selbe ID teilen, wenn sie als Teil des selben Audit Events erzeugt wurden. In unserem Bespiel ist der Timestamp sowie die ID in allen drei Erreignissen, welches das Audit Sytem erzeugt hat, gleich.
+### Das Ergebniss
 
-*   <pre>arch=c000003e</pre>
-
-Das
-```arch</pre>
-
-Feld enhält Informationen über die CPU Architektur. Der Wert, c000003e, ist die hexadezimale Notation für ein x64_64 System.
-
-*   <pre>syscall=2</pre>
-
-Das
-```syscall</pre>
-
-Feld beschreibt den Typen des System Calls der zum Kernel gesendet wurde. In diesen Fall, 2 ist es der
-```open</pre>
-
-System Call. Das
-```ausyscall</pre>
-
-Werkzeug konvertiert System Call Werte in ein lesbares Format. Als Beispiel für einfacheres Verständniss, erzeugt das folgende Kommando den Wert 2 in ein lesbares Format.
-
-*   sudo ausyscall 2
-
-Das Ergebniss
-
-<pre class="code-pre ">
-```open```
+```
+open
 ```
 
-**Note:** Du kannst das Kommando
-```sudo ausyscall --dump</pre>
 
-verwenden um eine Liste mit allen System Calls mit ihren dazu gehörigen Nummern anzeigen lassen.
+**Note:** Du kannst das Kommando ```sudo ausyscall --dump``` verwenden um eine Liste mit allen System Calls mit ihren dazu gehörigen Nummern anzeigen lassen.
 
-*   <pre>success=yes</pre>
+# ```success=yes```
 
-Das
-```success</pre>
+Das ```success``` Feld zeigt an ob der Aufrauf entweder erfolgreich=succeeded oder fehlgeschlagen=failed ist. In unserem Fall war der Aufruf erfolgreich. Der Benutzer Alex konnte die Datei ```sshd_config``` erfolgreich öffnen und lesen mit dem Kommando ```sudo cat /etc/ssh/sshd_config```.
 
-Feld zeigt an ob der Aufrauf entweder erfolgreich=succeeded oder fehlgeschlagen=failed ist. In unserem Fall war der Aufruf erfolgreich. Der Benutzer Alex konnte die Datei
-```sshd_config</pre>
+# ```ppid=6265```
 
-erfolgreich öffnen und lesen mit dem Kommando
-```sudo cat /etc/ssh/sshd_config</pre>
+Das ```ppid``` Feld enthält die sogenannte Parent Process ID (PPID) hier die ```6265``` welches der PID des
+```bash``` Prozesses entspricht.
 
-.
+# ```pid=6266```
 
-*   <pre>ppid=6265</pre>
+Das ```pid``` Feld enthält die Process ID (PID). In unserem Fall die ID das ```cat``` Prozesses.
 
-Das
-```ppid</pre>
+# ```auid=1000```
 
-Feld enthält die sogenannte Parent Process ID (PPID) hier die
-```6265</pre>
+```auid``` ist die Audit UID oder die originale UID des Benutzers, welcher die Audit Nachricht erzeugt hat. Das Audit System speichert die original UID auch wenn du deine Rechte mittels su oder sudo erweitert hast nach dem Login in das System.
 
-welches der PID des
-```bash</pre>
+# ```uid=0```
 
-Prozesses entspricht.
+Das ```uid``` Feld enthält die Benutzer ID des jenigen, der den Analyse Prozess gestartet hatte (Den Aufruf der Logdatei). In userem wurde es von root mit der uid 0 gestartet.
 
-*   <pre>pid=6266</pre>
+# ```comm="cat"```
 
-Das
-```pid</pre>
+```comm``` enthält das Kommando welches die Audit Nachricht erzeugt hat.
 
-Feld enthält die Process ID (PID). In unserem Fall die ID das
-```cat</pre>
+# ```exe="/usr/bin/cat"```
 
-Prozesses.
+Das ```exe``` Feld enthält den Pfad des Kommandos das benutzt wurde um die Nachricht zu erzeugen.
 
-*   <pre>auid=1000</pre>
-```auid</pre>
+# ```key="sshconfigchange"```
 
-ist die Audit UID oder die originale UID des Benutzers, welcher die Audit Nachricht erzeugt hat. Das Audit System speichert die original UID auch wenn du deine Rechte mittels su oder sudo erweitert hast nach dem Login in das System.
+Dieses ```key``` Feld beinhaltet den vordefinierten Key mit dem wir die Audit Regel beim Anlegen benannt hatte. Keys erleichtern das durchsuchen der Logdateien für bestimmte Typen von Events.
 
-*   <pre>uid=0</pre>
+### Der zweite Eintrag
 
-Das
-```uid</pre>
+# ```type=CWD```
 
-Feld enthält die Benutzer ID des jenigen, der den Analyse Prozess gestartet hatte (Den Aufruf der Logdatei). In userem wurde es von root mit der uid 0 gestartet.
+Im zweiten Eintrag entspricht der Typ ```CWD``` — Current Working Directory. Diese Teil wird dazu benutzt um das Verzeichniss aufzunehmen aus welchem der Prozessauftruf kam, der den Audit Eintrag erzeugt hat.
 
-*   <pre>comm="cat"</pre>
-```comm</pre>
+# ```cwd="/home/alex"```
 
-enthält das Kommando welches die Audit Nachricht erzeugt hat.
+Das ```cwd``` Feld beinhaltet den Pfad zu dem Verzeichniss aus dem das Kommando aufgerufen wurde. In userem Fall wurde ```cat``` aufgerufen aus dem Home Verzeichniss des Benutzers Alex.
 
-*   <pre>exe="/usr/bin/cat"</pre>
+### Der dritte Teil
 
-Das
-```exe</pre>
+# ```type=PATH```
 
-Feld enthält den Pfad des Kommandos das benutzt wurde um die Nachricht zu erzeugen.
+Im dritten Eintrag ist der Typ ```PATH```. Ein Audit Event enthält den ```PATH``` Eintrag um den Pfad aufzuzeichnen der an den Systemaufruf übergeben wurde. In unserem Fall wurde der Pfad  ```/etc/ssh/sshd_config``` als Argument an cat übergeben.
 
-*   <pre>key="sshconfigchange"</pre>
+# ```msg=audit(1434371271.277:135496):```
 
-Dieses
-```key</pre>
+Das ```msg``` Feld enthält den oben näher beschriebene Timestamp und ID, welche für alle drei Einträge verwendet wir, da sie ja Teil des selben Events sind.
 
-Feld beinhaltet den vordefinierten Key mit dem wir die Audit Regel beim Anlegen benannt hatte. Keys erleichtern das durchsuchen der Logdateien für bestimmte Typen von Events. Der zweite Eintrag
+# ```name="/etc/ssh/sshd_config"```
 
-*   <pre>type=CWD</pre>
+Das ```name``` Feld enthält den vollen Pfad der Datei oder des Verzeichnisses welcher dem System Call als Argument übergeben wurde.
 
-Im zweiten Eintrag entspricht der Typ
-```CWD</pre>
+# ```ouid=0```
 
-— Current Working Directory. Diese Teil wird dazu benutzt um das Verzeichniss aufzunehmen aus welchem der Prozessauftruf kam, der den Audit Eintrag erzeugt hat.
+Das ```ouid``` Feld enthält die UID des Besitzer des Objektes, welches wir aufrufen. In unserem Fall das der Datei ```/etc/ssh/sshd_config```.
 
-*   <pre>cwd="/home/alex"</pre>
 
-Das
-```cwd</pre>
-
-Feld beinhaltet den Pfad zu dem Verzeichniss aus dem das Kommando aufgerufen wurde. In userem Fall wurde
-```cat</pre>
-
-aufgerufen aus dem Home Verzeichniss des Benutzers Alex. Der dritte Teil
-
-*   <pre>type=PATH</pre>
-
-Im dritten Eintrag ist der Typ
-```PATH</pre>
-
-. Ein Audit Event enthält den
-```PATH</pre>
-
-Eintrag um den Pfad aufzuzeichnen der an den Systemaufruf übergeben wurde. In unserem Fall wurde der Pfad (
-```/etc/ssh/sshd_config</pre>
-
-) als Argument an cat übergeben.
-
-*   <pre>msg=audit(1434371271.277:135496):</pre>
-
-Das
-```msg</pre>
-
-Feld enthält den oben näher beschriebene Timestamp und ID, welche für alle drei Einträge verwendet wir, da sie ja Teil des selben Events sind.
-
-*   <pre>name="/etc/ssh/sshd_config"</pre>
-
-Das
-```name</pre>
-
-Feld enthält den vollen Pfad der Datei oder des Verzeichnisses welcher dem System Call als Argument übergeben wurde.
-
-*   <pre>ouid=0</pre>
-
-Das
-```ouid</pre>
-
-Feld enthält die UID des Besitzer des Objektes, welches wir aufrufen. In unserem FAll das der Datei
-```/etc/ssh/sshd_config</pre>
-
-.
 ## Durchsuchen des Audit Logs nach Erreignissen
 
-Das Audit System bring ein sehr nützliches Werkzeug, genannt
-```ausearch</pre>
+Das Audit System bring ein sehr nützliches Werkzeug, genannt ```ausearch```, mit zum durchsuchen der Audit Logs. Mittels ```ausearch```, kannst einfach die Ergenisse filtern und nach Ergeigniss Typen suchen. Es kann ausserdem Events interpretieren und die nummerischen Werte umsetzen in Werte für die Arten der System Calls sowie der Benutzernamen. Ein paar Beispiel: Das folgende Kommando durchsucht die Audit Logs nach allen audit Events des Typen LOGIN vom heutigen Tag und interpretiert die Benutzernamen ```-i```.
 
-, mit zum durchsuchen der Audit Logs. Mittels
-```ausearch</pre>
-
-, kannst einfach die Ergenisse filtern und nach Ergeigniss Typen suchen. Es kann ausserdem Events interpretieren und die nummerischen Werte umsetzen in Werte für die Arten der System Calls sowie der Benutzernamen. Ein paar Beispiel: Das folgende Kommando durchsucht die Audit Logs nach allen audit Events des Typen LOGIN vom heutigen Tag und interpretiert die Benutzernamen
-```-i</pre>
-
-.
-
-*   sudo ausearch -m LOGIN --start today -i
+```sudo ausearch -m LOGIN --start today -i```
 
 Das u.g. Kommando sucht nach allen Erreignissen mit der ID 27020.
 
-*   sudo ausearch -a 27020
+```sudo ausearch -a 27020```
 
-Das nächste Kommando sucht nach Erreignissen (wenn vorhanden) in dem die Datei
-```/etc/ssh/sshd_config</pre>
+Das nächste Kommando sucht nach Erreignissen (wenn vorhanden) in dem die Datei ```/etc/ssh/sshd_config``` geöffnet/angezeigt wurde und interpretiert diese ```-i```.
 
-geöffnet/angezeigt wurde und interpretiert diese
-```-i</pre>
+```sudo ausearch -f /etc/ssh/sshd_config -i```
 
-*   sudo ausearch -f /etc/ssh/sshd_config -i
+
 ## Generieren von Audit Reports
 
-Statt die Log Dateien zu lesen, gibt es ein Werkzeug, welches eine Zusammenfassung/Übersicht der Audit Nachrichten erzeugen kann, welches dir weiterhelfen kann detailiertere Analysen vorzunehmen. Wenn
-```aureport</pre>
+Statt die Log Dateien zu lesen, gibt es ein Werkzeug, welches eine Zusammenfassung/Übersicht der Audit Nachrichten erzeugen kann, welches dir weiterhelfen kann detailiertere Analysen vorzunehmen. Wenn ```aureport``` ohne weitere Optionen aufgerufen wird, zeigt es eine Zusammenfassung der verschiedenen Typen von Events aus der Audit Log Datei. Beispiele: Für eine Übersicht über alle ausgeführten Kommandos auf einem Server:
 
-ohne weitere Optionen aufgerufen wird, zeigt es eine Zusammenfassung der verschiedenen Typen von Events aus der Audit Log Datei. Beispiele: Für eine Übersicht über alle ausgeführten Kommandos auf einem Server:
-
-*   sudo aureport -x --summary
+```sudo aureport -x --summary```
 
 Das ergibt eine Report der ähnlich aussehen wird:
-```Executable Summary Report
+
+```
+Executable Summary Report
 =================================
 total file
 =================================
@@ -307,12 +205,16 @@ total file
 210 /usr/bin/sudo
 141 /usr/bin/date
 24 /usr/sbin/autrace
-18 /usr/bin/su```
+18 /usr/bin/su
+```
 
 Die erste Spalte zeigt wie oft ein Komando aufgerufen wurde, die zweite das Kommando selbst. Es werden allerdings nicht alle Kommandos angezeigt, sondern nur die Sicherheits-relevanten werden gelogt. Das folgende Kommando zeigt alle fehlerhaften Events an:
 
-*   sudo aureport --failed
-```Failed Summary Report
+```sudo aureport --failed```
+
+
+```
+Failed Summary Report
 ======================
 Number of failed logins: 11783
 Number of failed authentications: 41679
@@ -323,12 +225,15 @@ Number of executables: 3
 Number of files: 4
 Number of AVC's: 0
 Number of MAC events: 0
-Number of failed syscalls: 9```
+Number of failed syscalls: 9
+```
 
 Für eine Report von Systemcalls und den dazugehörigen Benutzernamen:
 
-*   sudo aureport -f -i
-```File Report
+```sudo aureport -f -i```
+
+```
+File Report
 ===============================================
 # date time file syscall success exe auid event
 ===============================================
@@ -337,70 +242,46 @@ Für eine Report von Systemcalls und den dazugehörigen Benutzernamen:
 3\. Tuesday 16 June 2015 00:40:15 /etc/ssh/sshd_config lgetxattr yes /usr/bin/ls root 147482
 4\. Tuesday 16 June 2015 00:40:15 /etc/ssh/sshd_config getxattr no /usr/bin/ls root 147483
 5\. Tuesday 16 June 2015 00:40:15 /etc/ssh/sshd_config getxattr no /usr/bin/ls root 147484
-6\. Tuesday 16 June 2015 05:40:08 /bin/date execve yes /usr/bin/date root 148617```
+6\. Tuesday 16 June 2015 05:40:08 /bin/date execve yes /usr/bin/date root 148617
+```
 
-**Achtung:** Das
-```aureport</pre>
+**Achtung:** Das ```aureport``` Tool can auch mit dem Imput von stdin anstatt statt log files arbeiten, solange dieser dem _raw log data format_ entspricht.
 
-tool can auch mit dem Imput von stdin anstatt statt log files arbeiten, solange dieser dem _raw log data format_ entspricht.
+
 ## Analysieren eines Prozesses mit autrace
 
-Um einen individuellen Przess zu auditieren können wir
-```autrace</pre>
+Um einen individuellen Przess zu auditieren können wir ```autrace``` benutzen. Diese Werkzeug ermitteld die system calls die von dem Prozess aufgerufen werden. Das kann z.B. nützlich sein wenn man einen möglichen Trojaner oder einen problematischen Prozess untersuchen möchte. Der Output von ```autrace``` wird nach ```/var/log/audit/audit.log``` geschrieben. Nach dem Ausführen von ```autrace``` wird ein Beispiel des ```ausearch``` Kommandos angezeigt wie man die Log Dateien untersuchen kann. Es sollte immer der volle Pfad zu der ausführbaren Datei angegeben werden wenn man diesen mit autrace aufzeichnen will.
 
-benutzen. Diese Werkzeug ermitteld die system calls die von dem Prozess aufgerufen werden. Das kann z.B. nützlich sein wenn man einen möglichen Trojaner oder einen problematischen Prozess untersuchen möchte. Der Output von
-```autrace</pre>
+### Beispiel:
+```sudo autrace /bin/ls /tmp```
 
-wird nach
-```/var/log/audit/audit.log</pre>
+**Achtung:** Wenn ```autrace``` ausgeführt wird entfernt es alle benutzerdefinierten auditing Regeln. Es ersetzt diese mit spezifischen Regeln, die benötigt werden um den Prozess zu tracen den man festgelegt hat. Aus dem selben Grund wird ```autrace``` nicht funktionieren, wenn die auditing Regeln unveränderlich gesetzt sind.
 
-geschrieben. Nach dem Ausführen von
-```autrace</pre>
+### Beispiel:
 
-wird ein Beispiel des
-```ausearch</pre>
+Nehmen wir an wir wollen den Prozess ```date``` untersuchen und uns die Dateien und System Calls ansehen, die es nutzt.
 
-Kommandos angezeigt wie man die Log Dateien untersuchen kann. Es sollte immer der volle Pfad zu der ausführbaren Datei angegeben werden wenn man diesen mit autrace aufzeichnen will. **Beispiel:**
-```sudo autrace /bin/ls /tmp</pre>
-
-**Achtung:** Wenn
-```autrace</pre>
-
-ausgeführt wird entfernt es alle benutzerdefinierten auditing Regeln. Es ersetzt diese mit spezifischen Regeln, die benötigt werden um den Prozess zu tracen den man festgelegt hat. Aus dem selben Grund wird
-```autrace</pre>
-
-nicht funktionieren, wenn die auditing Regeln unveränderlich gesetzt sind. **Beispiel:** Nehmen wir an wir wollen den Prozess
-```date</pre>
-
-untersuchen und uns die Dateien und System Calls ansehen, die es nutzt.
-```sudo autrace /bin/date</pre>
+```sudo autrace /bin/date```
 
 Der Output sollte ähnlich aussehen:
-```Waiting to execute: /bin/date
+
+```
+Waiting to execute: /bin/date
 Wed Jun 17 07:22:03 EDT 2015
 Cleaning up...
-Trace complete. You can locate the records with 'ausearch -i -p 27020'```
+Trace complete. You can locate the records with 'ausearch -i -p 27020'
+```
 
-Wir können jetzt das
-```ausearch</pre>
+Wir können jetzt das ```ausearch``` Kommando vom obigen Output nutzen um uns die zugehören Logs anzeigen zu lassen oder den Output nach ```aureport``` zu übergeben um einen vernünftig lesbaren Report zu erstellen.
 
-Kommando vom obigen Output nutzen um uns die zugehören Logs anzeigen zu lassen oder den Output nach
-```aureport</pre>
+```sudo ausearch -p 27020 --raw | aureport -f -i```
 
-zu übergeben um einen vernünftig lesbaren Report zu erstellen.
-```sudo ausearch -p 27020 --raw | aureport -f -i</pre>
+Das obige Kommando sucht nach dem Erreigniss mit der Event ID ```27020``` aus dem audit Log, extrahiert diese ins ```raw log format``` und übergibt es an ```aureport``` , welches wiederum das Resultat in einem besser lesbarerem Format ausgibt.
 
-Das obige Kommando sucht nach dem Erreigniss mit der Event ID
-```27020</pre>
+Der Output sollte ähnlich aussehen:
 
-aus dem audit Log, extrahiert diese ins
-```raw log format</pre>
-
-und übergibt es an
-```aureport</pre>
-
-, welches wiederum das Resultat in einem besser lesbarerem Format ausgibt. Der Output sollte ähnlich aussehen:
-```File Report
+```
+File Report
 ===============================================
 # date time file syscall success exe auid event
 ===============================================
@@ -409,16 +290,15 @@ und übergibt es an
 3\. Wednesday 17 June 2015 07:22:03 /etc/ld.so.cache open yes /usr/bin/date alex 169664
 4\. Wednesday 17 June 2015 07:22:03 /lib64/libc.so.6 open yes /usr/bin/date alex 169668
 5\. Wednesday 17 June 2015 07:22:03 /usr/lib/locale/locale-archive open yes /usr/bin/date alex 169683
-6\. Wednesday 17 June 2015 07:22:03 /etc/localtime open yes /usr/bin/date alex 169691```
+6\. Wednesday 17 June 2015 07:22:03 /etc/localtime open yes /usr/bin/date alex 169691
+```
+
 ## Zusammenfassung
 
 Du solltest jetzt ein gutes Verständniss haben wie der Auditd daemon funktioniert, wie man die Audit Logs liest und wie man die verschiedenen Werkzeuge benutzt um eure Server zu einfacher zu untersuchen. Per Default werden nur einige wenige Systemeintrage auditiert wie z.B. das protokollieren der Benutzer Aktivitäten oder die Nutzung von
-```sudo</pre>
+```sudo```. SELinux Nachrichten werden auch geloggt. Der Auditd daemon nutzt ein Regelwerk um spezifische Erreignisse zu monitoren und Logeinträge zu generieren. Es ist möglich benutzerdefinerte Regeln zu erstellen um Aktivitäten zu monitoren und aufzuzeichnen. Das ist der Punkt an dem der Auditd daemon ein sehr mächtiges Werkzeug wird für den System Administrator. Wir können Regeln hinzufügen, entweder mittels des command line tools ```auditctl``` oder wir fügen diese permanent in die Datei ```/etc/audit/rules.d/audit.rules``` hinzu.
 
-. SELinux Nachrichten werden auch geloggt. Der Auditd daemon nutzt ein Regelwerk um spezifische Erreignisse zu monitoren und Logeinträge zu generieren. Es ist möglich benutzerdefinerte Regeln zu erstellen um Aktivitäten zu monitoren und aufzuzeichnen. Das ist der Punkt an dem der Auditd daemon ein sehr mächtiges Werkzeug wird für den System Administrator. Wir können Regeln hinzufügen, entweder mittels des command line tools
-```auditctl</pre>
 
-oder wir fügen diese permanent in die Datei
-```/etc/audit/rules.d/audit.rules</pre>
-
-hinzu. Quellen: [https://linux-audit.com/configuring-and-auditing-linux-systems-with-audit-daemon/](https://linux-audit.com/configuring-and-auditing-linux-systems-with-audit-daemon/) [httpss://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/sec-Audit_Record_Types.html](httpss://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/sec-Audit_Record_Types.html)
+Quellen:
+* [https://linux-audit.com/configuring-and-auditing-linux-systems-with-audit-daemon/](https://linux-audit.com/configuring-and-auditing-linux-systems-with-audit-daemon/)
+* [httpss://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/sec-Audit_Record_Types.html](httpss://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/sec-Audit_Record_Types.html)
