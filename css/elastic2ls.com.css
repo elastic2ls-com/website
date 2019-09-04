@@ -157,7 +157,7 @@
         }
       .dropdown-menu > li > a {
         font-size: large;
-      }  
+      }
       .myNavbar {
         margin-top: -30px;
       }
@@ -562,7 +562,7 @@
 }
 .boxes{
   padding-bottom: 35px;
-  font-size: 18px;
+  font-size: 20px;
   max-width: 380px;
   /* height: 280px; */
 
@@ -777,7 +777,7 @@ body {
   body {
     font-family: 'Noticia Text';
     letter-spacing: -0.02em;
-    font-size: 18px;
+    font-size: 20px;
   }
   .h1, h1 {
     font-size: 24px;
