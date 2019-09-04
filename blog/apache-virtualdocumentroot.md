@@ -4,7 +4,7 @@ title: Apache entfernen X-Powered-By Header
 subtitle: Es folgt eine bespielhafte Erklärung wie man im Apache-VirtualDocumentRoot nutzt. Ziel ist es die Verwendung dynamischer zu gestallten. Ebenso werden wir Active Directory als Backend
 tags: [Apache VirtualDocumentRoot dynamischer Konfiguration Subdomainnamen Htpasswd Zugriffsschutz AuthLDAPBindDN AuthLDAPBindPassword AuthLDAPURL AuthBasicProvider Apache/2.4.29]
 ---
-# Apache-VirtualDocumentRoot
+# {{ page.title }}
 
 Es folgt eine bespielhafte Erklärung wie man im Apache-VirtualDocumentRoot nutzt. Ziel ist es die Verwendung dynamischer zu gestallten. Ebenso werden wir Active Directory als Backend für die Benutzerauthentifizierung verweden. ![apache-logo](https://www.elastic2ls.com/wp-content/uploads/2017/01/apache-logo-300x300.png)
 

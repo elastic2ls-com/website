@@ -4,7 +4,7 @@ title: Apache entfernen X-Powered-By Header
 subtitle: Wenn man z.B. im Zuge einer Webseitenrestrukturierung die alten Url's weiterleiten muss und man nicht alle einzeln per ProxyPass und ProxyPassReverse eintragen will geht das am einfachsten und schnellsten geht es wenn man alle Url's per Wildcard durch den Proxy weiterleitet.
 tags: [Apache ProxyPass ProxyPassReverse RewriteRule Webseitenrestrukturierung Wildcard Proxy Serverversionsnummer Apache/2.4.29]
 ---
-# Apache reverse proxy wildcard
+# {{ page.title }}
 
 ![apache-logo](https://www.elastic2ls.com/wp-content/uploads/2017/01/apache-logo-300x300.png)
 

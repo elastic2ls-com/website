@@ -4,8 +4,7 @@ title: Auditd daemon Linux
 subtitle: Der Auditd daemon hilft dem System Administrator einen sogenannten Audit trail zu erstellen, eine Art Logbuch für jegliche Aktion auf einem spezifischen Server.
 tags: [Auditd daemon Linux Administrator /etc/audit/auditd.conf num_logs max_log_file rsyslog auditctl msg=audit syscall ausearch ausearch autrace /etc/audit/rules.d/audit.rules]
 ---
-
-# Auditd daemon Linux
+# {{ page.title }}
 
 Der Auditd daemon hilft dem System Administrator einen sogenannten Audit trail zu erstellen, eine Art Logbuch für jegliche Aktion auf einem spezifischen Server. Wir können Sicherheits relavante Erreignisse nach verfolgen, können die Erreignisse in Logfiles aufzeichnen und können Missbrauch oder unauthorisierte Aktivitäten finden anhand der eigenen Logfiles. Wir können festlegen welche Aktionen bzw. Erreignisse auf dem Server wir monitoren wollen. Audit stellt keine zusätzliche Sicherheit für dein System dar, eher hilft es dir Verletzungen der Systemrichtlinien nach zu verfolgen und gibt dir die Möglichkeit an die Hand zusätzliche Sicherheitsmassnahmen zu errgreifen um diese zu verhindern. Diese Tutorial erklärt das Audit System, wie es konfiguriert wird, wie man Reports erstellt und wie man diese liest bzw. interpretiert. Ausserdem zeigen wir auf wie man die Audit Logs nach spezifischen Erreignissen durchsucht.
 

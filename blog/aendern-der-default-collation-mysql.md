@@ -4,7 +4,7 @@ title: Auflisten und ändern der default collation in Mysql
 subtitle: Auflisten und ändern der default collation in Mysql über die CLI
 tags: [default collation Mysql ändern Auflisten]
 ---
-# ändern der default collation mysql
+# {{ page.title }}
 
 ## Abfragen der aktuellen collation der Datenbank:
 
