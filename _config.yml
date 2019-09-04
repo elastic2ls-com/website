@@ -57,7 +57,7 @@ footer-link-col: "#404040"
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
+# Important: you must keep the "name" parameter, everything else can be removed
 author:
   name: Alexander Wiechert
 
