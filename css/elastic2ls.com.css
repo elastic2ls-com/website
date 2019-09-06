@@ -101,6 +101,7 @@
     .grid-content {
       min-height: 430px
       !important;
+      padding-left: 85px;
     }
     .grid-content2 {
       min-height: 180px
@@ -563,7 +564,7 @@
 .boxes{
   padding-bottom: 35px;
   font-size: 20px;
-  max-width: 380px;
+  max-width: 450px;
   /* height: 280px; */
 
 }
