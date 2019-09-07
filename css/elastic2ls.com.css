@@ -98,13 +98,20 @@
     .flexible{
         min-height: 150px;
       }
-    .grid-content {
-      min-height: 430px
-      !important;
-      padding-left: 85px;
+    .grid-content-docker {
+      min-height: 570px !important
+      /* padding-left: 85px; */
+    }
+    .grid-content-jenkins {
+      min-height: 350px !important
+      /* padding-left: 85px; */
+    }
+    .grid-content-devops {
+      min-height: 280px !important
+      /* padding-left: 85px; */
     }
     .grid-content2 {
-      min-height: 180px
+      min-height: 650px !important
       !important;
       padding-bottom: 15px;
     }
@@ -218,7 +225,7 @@
           /* min-height: 580px
           !important; */
           padding-bottom: 15px;
-          padding-top: 380px;
+          /* padding-top: 380px; */
         }
         .grid-content-cloud-migration {
           /* min-height: 880px */
@@ -231,7 +238,7 @@
           /* min-height: 880px */
           !important;
           padding-bottom: 15px;
-          padding-top: 1150px;
+          /* padding-top: 1150px; */
         }
         .grid-content-devops-workshop {
           /* min-height: 880px */
@@ -566,6 +573,7 @@
   font-size: 20px;
   /* max-width: 450px; */
   /* height: 280px; */
+  padding-top: 35px;
 
 }
 .boxes h4, .boxes2 h4{
@@ -781,8 +789,12 @@ body {
     font-size: 20px;
   }
   .h1, h1 {
-    font-size: 24px;
+    font-size: 44px;
     color: #5D67B9;
+    font-family: monospace;
+    }
+  .h2, h2 {
+    font-size: 34px;
     font-family: monospace;
     }
   .h3, h3 {
