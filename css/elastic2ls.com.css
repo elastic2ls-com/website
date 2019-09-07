@@ -569,11 +569,11 @@
   padding-bottom: 15px;
 }
 .boxes{
-  padding-bottom: 35px;
+  /* padding-bottom: 35px; */
   font-size: 20px;
   /* max-width: 450px; */
   /* height: 280px; */
-  padding-top: 35px;
+  padding-top: 15px;
 
 }
 .boxes h4, .boxes2 h4{
