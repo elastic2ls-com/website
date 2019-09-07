@@ -34,6 +34,8 @@ var devopstransformation = "/devops-transformation";
 var about = "/about";
 var events = "/events";
 var blog = "/blog/";
+var impressum = "/impressum/";
+
 window.onload = function() {
   document.getElementById('hostname1').href = host;
   document.getElementById('hostname2').href = host;
@@ -45,4 +47,6 @@ window.onload = function() {
   document.getElementById('about').href = (host,about);
   document.getElementById('events').href = (host,events);
   document.getElementById('blog').href = (host,blog);
+  document.getElementById('impressum').href = (host,impressum);
+
 }
