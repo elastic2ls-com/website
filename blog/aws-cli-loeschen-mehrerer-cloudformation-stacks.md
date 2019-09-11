@@ -2,7 +2,7 @@
 layout: post
 title: AWS cli löschen mehrerer Cloudformation stacks
 subtitle: Wenn man zu Testzwecken mal viele Stacks erstellt hat und diese nicht mehr benötigt ist es sehr lästig diese über die Webconsole zu löschen.
-tags: [AWS Cloudformation cli Stacks Webconsole Bash --stack-status-filter CREATE_COMPLETE UPDATE_COMPLETE StackName StackStatus list-stacks]
+keywords: [AWS Cloudformation cli Stacks Webconsole Bash --stack-status-filter CREATE_COMPLETE UPDATE_COMPLETE StackName StackStatus list-stacks]
 ---
 # {{ page.title }}
 

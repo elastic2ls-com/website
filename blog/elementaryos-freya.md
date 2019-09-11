@@ -2,7 +2,7 @@
 layout: post
 title: Elementary OS Freya
 subtitle:  Ein schickes Linux Mit ElementaryOS Freya haben die ElementaryOS-Entwickler eine neue Version ihrer eleganten Linux-Distribution veröffentlicht.
-tags: [Elementary Linux Freya Linux-Distribution Ubuntu 14.04 Pantheon-Desktop Slingshot Wingpanel UEFI Installationserfahrungen software-properties-gtk elementary-tweaks]
+keywords: [Elementary Linux Freya Linux-Distribution Ubuntu 14.04 Pantheon-Desktop Slingshot Wingpanel UEFI Installationserfahrungen software-properties-gtk elementary-tweaks]
 ---
 # {{ page.title }}
 

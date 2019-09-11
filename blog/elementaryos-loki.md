@@ -2,7 +2,7 @@
 layout: post
 title: ElementaryOS Loki
 subtitle:  ElementaryOS  0.4 Loki ist jetzt als Download verfügbar. Das schicke Linux enthält mehr als 800 Bugfixes und einige neue Features.
-tags: [Elementary Linux Loki Linux-Distribution Ubuntu 16.04 Pantheon-Desktop Overlay-Scrollbalken LauncherEntry UEFI Installationserfahrungen AppCenter Epiphany elementary-tweaks]
+keywords: [Elementary Linux Loki Linux-Distribution Ubuntu 16.04 Pantheon-Desktop Overlay-Scrollbalken LauncherEntry UEFI Installationserfahrungen AppCenter Epiphany elementary-tweaks]
 ---
 # {{ page.title }}
 

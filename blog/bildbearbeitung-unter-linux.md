@@ -2,7 +2,7 @@
 layout: post
 title: Bildbearbeitung unter Linux
 subtitle: Einfache Bildbearbeitung unter Linux ist eine recht einfache Sache und mittels simpler Tools zu bewerkstelligen.
-tags: [Bildbearbeitung Linux Screenshot Shutter Pinta einfach]
+keywords: [Bildbearbeitung Linux Screenshot Shutter Pinta einfach]
 ---
 # {{ page.title }}
 

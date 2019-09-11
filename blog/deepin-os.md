@@ -2,7 +2,7 @@
 layout: post
 title: Deepin OS Linux
 subtitle: Deepin hat den Anspruch, eine elegante, nutzerfreundliche und zuverlässige Linux-Distribution zu sein. Deepin basiert auf Debian. Ein wirklich schicker Desktop lädt ein.
-tags: [Deepin Linux Desktop elegante nutzerfreundliche Linux-Distribution Debian Desktopumgebung Installation Anfänger]
+keywords: [Deepin Linux Desktop elegante nutzerfreundliche Linux-Distribution Debian Desktopumgebung Installation Anfänger]
 ---
 # {{ page.title }}
 

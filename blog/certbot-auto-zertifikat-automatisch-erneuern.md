@@ -2,7 +2,7 @@
 layout: post
 title: Certbot-auto zertifikat automatisch erneuern
 subtitle: Autoupdate Letsencrypt Script Die Zertifikatserneuerung gestalltet sich als recht einfach, wenn die Webserverconfiguration angepasst wurde um das Zertifikatssetup zu integrieren.
-tags: [Autoupdate certbot-auto Letsencrypt SSL Zertifikat bitnami reload Apache SSLCertificateFile SSLCertificateKeyFile SSLCACertificateFile]
+keywords: [Autoupdate certbot-auto Letsencrypt SSL Zertifikat bitnami reload Apache SSLCertificateFile SSLCertificateKeyFile SSLCACertificateFile]
 ---
 # {{ page.title }}
 

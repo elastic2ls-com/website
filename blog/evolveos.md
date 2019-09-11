@@ -2,7 +2,7 @@
 layout: post
 title: EvolveOS
 subtitle:  Evolve OS ist eine Linux-Distribution von die von Grund auf neu aufgebaut wurde. Es verwendet einen Fork des PiSi Paketmanager, geannt "opkg" und eine eigene Desktop-Umgebung namens "Budgie". EvolveOS ist nur für 64-Bit-Computern verfügbar.
-tags: [EvolveOS Linux-Distribution opkg Budgie PiSi Paketmanager Chrome OS Installationserfahrungen]
+keywords: [EvolveOS Linux-Distribution opkg Budgie PiSi Paketmanager Chrome OS Installationserfahrungen]
 ---
 # {{ page.title }}
 

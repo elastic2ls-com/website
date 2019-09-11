@@ -2,7 +2,7 @@
 layout: post
 title: grep erklärt
 subtitle:  Global search for a regular expression and print out matched lines" - kurz grep ist das gebräuchlichste Kommando, um in Dateien nach bestimmten Mustern zu suchen. Die Grep-Familie umfasst die drei Kommandos egrep, grep und fgrep. Das erste "Extended Grep" (erweitertes grep) versteht "ein paar mehr
-tags: [grep Dateienmuster egrep fgrep Rückgabewert Suche Kommando Reguläre Ausdrücke Beispiele]
+keywords: [grep Dateienmuster egrep fgrep Rückgabewert Suche Kommando Reguläre Ausdrücke Beispiele]
 ---
 # {{ page.title }}
 

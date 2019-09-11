@@ -2,7 +2,7 @@
 layout: post
 title: Auditd daemon Linux
 subtitle: Der Auditd daemon hilft dem System Administrator einen sogenannten Audit trail zu erstellen, eine Art Logbuch für jegliche Aktion auf einem spezifischen Server.
-tags: [Auditd daemon Linux Administrator /etc/audit/auditd.conf num_logs max_log_file rsyslog auditctl msg=audit syscall ausearch ausearch autrace /etc/audit/rules.d/audit.rules]
+keywords: [Auditd daemon Linux Administrator /etc/audit/auditd.conf num_logs max_log_file rsyslog auditctl msg=audit syscall ausearch ausearch autrace /etc/audit/rules.d/audit.rules]
 ---
 # {{ page.title }}
 

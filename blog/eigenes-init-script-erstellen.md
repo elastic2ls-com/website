@@ -2,7 +2,7 @@
 layout: post
 title: eigenes Initscript erstellen
 subtitle:  Hier eine kurze Anleitung wie ihr ein eigenes Init-Script erstellen könnt.
-tags: [Init-Script Linux bash chkconfig /etc/init.d/ processname]
+keywords: [Init-Script Linux bash chkconfig /etc/init.d/ processname]
 ---
 # {{ page.title }}
 

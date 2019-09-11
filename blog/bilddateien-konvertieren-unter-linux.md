@@ -2,7 +2,7 @@
 layout: post
 title: Bilddateien konvertieren unter Linux
 subtitle: Bilddateien konvertieren unter Linux von einem Format ins andere ist eine recht bequeme Sache mittels Imagemagic unter etwas Kenntisse der Bash.
-tags: [Bilddateien Linux konvertieren Imagemagic Bash PNG EPS Script convert]
+keywords: [Bilddateien Linux konvertieren Imagemagic Bash PNG EPS Script convert]
 ---
 # {{ page.title }}
 

@@ -2,7 +2,8 @@
 layout: post
 title: Lighthouse Audit automatisieren mit Jenkins
 subtitle: Das Lighthouse Auditing in Chrome ist ein sehr hillfreiches Tool bei der Webentwicklung. Wenn man es allerdings im CI/CD Buildprozess einbauen möchte kann man dies per lighthouse CLI in einem Dockercontainer in eine bestehende Build-Pipeline einhängen oder in eine eigene Pipeline einbauen.
-tags: [Lighthouse Auditing Chrome Webentwicklung CI/CD Buildprozess Container Docker Build-Pipeline]
+keywords: [Lighthouse Auditing Chrome Webentwicklung CI/CD Buildprozess Container Docker Build-Pipeline]
+categories: [Lighthouse, Auditing, Chrome, Webentwicklung, CI/CD, Buildprozess, Container, Docker, Build-Pipeline]
 ---
 # Was wir im Jenkinsfile konkret machen
 
