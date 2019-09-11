@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Lets see
-subtitle: what we are able to do
-tags: [test]
+title: Jenkins Training Übersicht 2019
+subtitle: Übersicht Training 2019 Jenkins
+keywords: [Übersicht Training 2019 Jenkins]
 ---
 {::options parse_block_html="true" /}
 <div id="content">

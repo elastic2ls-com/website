@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Lets see
-subtitle: what we are able to do
-tags: [test]
+title: DevOps Docker Camp Termin 2019
+subtitle: Übersicht Termin 2019 Docker Jenkins Camp
+keywords: [Übersicht Termin 2019 DevOps Docker Camp]
 ---
 {::options parse_block_html="true" /}
 <div id="content">

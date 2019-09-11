@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Lets see
-subtitle: what we are able to do
-tags: [test]
+title: DevOps Transformation Workshops
+subtitle: DevOps Transformation Workshops Übersicht
+keywords: [DevOps Transformation Workshops Übersicht]
 ---
 {::options parse_block_html="true" /}
 <div class="content">

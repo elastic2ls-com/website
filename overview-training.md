@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Lets see
-subtitle: what we are able to do
-tags: [test]
+title: Training
+subtitle: Übersicht Trainings
+keywords: [Übersicht Trainings DevOps Jenkins Docker]
 ---
 {::options parse_block_html="true" /}
 <div class="content">

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Lets see
-subtitle: what we are able to do
-tags: [test]
+title: Impressum
+subtitle: Impressum und Haftungshinweis
+keywords: [Impressum und Haftungshinweis elastic2ls.com]
 ---
 {::options parse_block_html="true" /}
 <div class="content">

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Lets see
-subtitle: what we are able to do
-tags: [test]
+title: Cloud-Migration Workshops
+subtitle: Cloud-Migration Workshops Übersicht
+keywords: [Cloud-Migration Workshops Übersicht Migration]
 ---
 {::options parse_block_html="true" /}
 <div class="content">

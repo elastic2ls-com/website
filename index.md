@@ -2,7 +2,7 @@
 layout: page
 title: www.elastic2ls.com
 subtitle:  Wir helfen Ihnen bei der Einführung von DevOps und Ihren Cloud Migration. Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment. Wir bieten Trainings zu den Themen DevOps, Cloud, Linux und vieles mehr.
-tags: [Training Consulting DevOps CloudEnvironment Buildpipelines]
+keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 ---
 {::options parse_block_html="true" /}
 <!--- SLIDER -->

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Lets see
-subtitle: what we are able to do
-tags: [test]
+title: Docker Training Übersicht 2019
+subtitle: Übersicht Training 2019 Docker
+keywords: [Übersicht Training 2019 Docker]
 ---
 {::options parse_block_html="true" /}
 <div id="content">
@@ -17,7 +17,7 @@ ___
 
 <div class="carousel-inner">
 
-![Docker & Kubernetes Hands-on Workshops](/img/Docker_Logo-500x250.jpg)
+![Docker Hands-on Workshops](/img/Docker_Logo-500x250.jpg)
 
 # Programm
 
