@@ -4,7 +4,7 @@ title: Java-Keystore erklärt
 subtitle: Ein schnelle Übersicht über den Java Keystore und die gängigsten Optionen um eure Schlüssel- und Zertifikate zu verwalten. z.B. (auflisten, hinzufügen, löschen, prüfen) Es ermöglicht euch, eigenenSchlüsselpaare und Zertifikate zu verwalten.
 tags: [Java Keystore Schlüsselverwaltung Zertifikatsverwaltung Befehle Erstellen Importieren Prüfen Default Passwort]
 ---
-# Java-Keystore erklärt
+# {{ page.title }}
 
 Java Keystore ist ein Schlüssel- und Zertifikatsverwaltungsprogramm. Es ermöglicht Benutzern, ihre eigenen öffentlichen / privaten Schlüsselpaare und Zertifikate zu verwalten. Außerdem können Benutzer Zertifikate zwischenspeichern. Java Keystore speichert die Schlüssel und Zertifikate in einem sogenannten Keystore. Der Java-Schlüsselspeicher ist standardmäßig als Datei implementiert. Es schützt private Schlüssel mit einem Passwort. Ein Keytool-Schlüsselspeicher enthält den privaten Schlüssel und alle Zertifikate, die erforderlich sind, um eine Kette von Vertrauen abzuschließen und die Vertrauenswürdigkeit des primären Zertifikats festzulegen.
 
