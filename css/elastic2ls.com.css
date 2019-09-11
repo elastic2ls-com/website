@@ -126,20 +126,6 @@
       margin-top: 25px;
       border-radius: 10%;
       }
-    .h1, h1 {
-      font-size: 24px;
-      color: #5D67B9;
-      font-family: monospace;
-      }
-    .h3, h3 {
-      font-size: 22px;
-      font-family: monospace;
-      }
-    .h4, h4 {
-      font-size: 18px;
-      font-family: monospace;
-      }
-
       /*header menu setting*/
       .dropdown-menu .sub-menu{
         left: 100%;
@@ -257,19 +243,6 @@
           margin-top: 15px;
           border-radius: 10%;
         }
-        .h1, h1 {
-          font-size: 24px;
-          color: #5D67B9;
-          font-family: monospace;
-          }
-        .h3, h3 {
-          font-size: 22px;
-          font-family: monospace;
-          }
-        .h4, h4 {
-          font-size: 18px;
-          font-family: monospace;
-          }
         .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
           color: #fff;
           background-color: #5a5a5a;
@@ -454,19 +427,6 @@
         margin-top: 15px;
         border-radius: 10%;
       }
-      .h1, h1 {
-        font-size: 22px;
-        color: #5D67B9;
-        font-family: monospace;
-        }
-      .h3, h3 {
-        font-size: 20px;
-        font-family: monospace;
-        }
-      .h4, h4 {
-        font-size: 18px;
-        font-family: monospace;
-        }
       .brand{
         font-size: 14px;
         font-family: monospace;
@@ -575,10 +535,6 @@
   /* height: 280px; */
   padding-top: 15px;
 
-}
-.boxes h4, .boxes2 h4{
-  color: #5D67B9;
-  font-family: monospace;
 }
 .boxes span
 {
@@ -802,6 +758,7 @@ body {
     font-family: monospace;
     }
   .h4, h4 {
-    font-size: 18px;
+    font-size: 20px;
     font-family: monospace;
+    color: #5D67B9;
     }

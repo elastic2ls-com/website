@@ -56,7 +56,7 @@ ___
 <div class="col-sm-10 col-md-5">
 <div class="boxes flexible">
 [![Training](/img/icons8-ausbildung-50.png)](overview-training){: .start_page_links }
-#### Training
+#### [Training](overview-training)
 [Wir bieten Trainings zu aktuellen Themen wie Docker, Continuous Integration/ Deployment und Nutzung von Cloudservices. Ausserdem bieten wir Training für Linux Professional Institut Zertifizierungen an.](overview-training){: .start_page_links }
 </div>
 </div>
@@ -64,7 +64,7 @@ ___
 <div class="col-sm-10 col-md-5">
 <div class="boxes flexible">
 [![Engineering Consulting Services](/img/icons8-dienstleistungen-50.png)](cloud-migration){: .start_page_links }
-#### Consulting
+#### [Consulting](cloud-migration)
 [Wir helfen beim Entwerfen und Erstellen von DevOps Toolchains oder Ihren Anwendungsplattformen, Umsetzug von Containerstrategien mit Docker und Kubernetes und vielem mehr..](cloud-migration){: .start_page_links }
 </div>
 </div>
@@ -72,7 +72,7 @@ ___
 <div class="col-sm-10 col-md-5">
 <div class="boxes flexible">
 [![DevOps Workshops](/img/icons8-trophae-50.png)](devops-transformation){: .start_page_links }
-#### DevOps Workshops
+#### [DevOps Workshops](devops-transformation)
 [Finden Sie den Weg zu einer gesunden und effektiven DevOps-Implementierung für Prozesse und Mitarbeiter. Wir untersützen Sie auf Ihrem Weg.](devops-transformation){: .start_page_links }
 </div>
 </div>
@@ -80,7 +80,7 @@ ___
 <div class="col-sm-10 col-md-5">
 <div class="boxes flexible">
 [![Cloud-Migration](/img/icons8-inspektion-50.png)](cloud-migration){: .start_page_links }
-#### Cloud-Migration
+#### [Cloud-Migration](cloud-migration)
 [Wir unterstützen Sie auf Ihrem Weg in die Cloud. Wir können mit Ihrem Entwicklungsteams Ihre Software Cloud-native umsetzen um die Resourcen efizient zu nutzen.](cloud-migration){: .start_page_links }
 </div>
 </div>

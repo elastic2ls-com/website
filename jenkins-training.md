@@ -13,11 +13,11 @@ tags: [test]
 
 ___
 
-<div id="carousel" class="carousel" data-interval="5000" data-ride="carousel">
+<div id="carousel" class="carousel">
 
 <div class="carousel-inner">
 
-<div class="item active">![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.png)
+![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.png)
 
 # Programm
 
@@ -100,8 +100,6 @@ Der Schwerpunkt liegt in der Installation und Verwendungvon Jenkins auf Linux. D
 #### Bitte mitbringen:
 
 Laptop mit installiertem ssh oder Putty. Ein installiertes Git wird empfohlen.
-
-</div>
 
 </div>
 
