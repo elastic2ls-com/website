@@ -1,0 +1,18 @@
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <h2>DevOps</h2>
+    {% for cat in site.blog %}
+    {% if cat.categories contains "DevOps" %}
+    <li><a href="{{ cat.url }}">{{ cat.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+
+    <h2>Automation</h2>
+    {% for cat in site.blog %}
+    {% if cat.categories contains "automation" %}
+    <li><a href="{{ cat.url }}">{{ cat.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+</div>
+</div>
