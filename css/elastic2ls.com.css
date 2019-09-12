@@ -500,6 +500,9 @@
         max-width: 63px;
         max-height: 34px;
       }
+      .container {
+        padding-left: 35px;
+      }  
     }
 /*header setting*/
 
