@@ -196,3 +196,13 @@ jekyll-minifier:
   uglifier_args:                    # Default: (empty)
   uglifier_args:
     harmony: true
+
+collections:
+  blog:
+    output: true
+
+# defaults:
+#   - scope:
+#       path: "blog"
+#     values:
+#       blog: "true"

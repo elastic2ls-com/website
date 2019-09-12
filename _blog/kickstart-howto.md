@@ -3,6 +3,8 @@ layout: post
 title: Kickstart – wie man Server automatisch provisioniert
 subtitle:  Kickstart wird dazu benutzt um Server automatisiert zu provisionieren. Man kann z.B. Benutzer anlegen, die Festplatten zu partitionieren und formatieren, Software installieren,die Netztwerkschnittstellen einrichten und einiges mehr
 keywords: [Kickstart provisionieren automatisieren ks.cfg Optionen]
+categories: [automation]
+
 ---
 # {{ page.title }}
 
