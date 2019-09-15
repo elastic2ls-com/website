@@ -85,5 +85,24 @@ ___
 </div>
 </div>
 
+<div class="col-sm-24 col-md-12">
+<div class="boxes flexible">
+___
+## Partner && Unterstützer
+</div>
+</div>
+
+<div class="col-sm-10 col-md-5">
+<div class="boxes flexible">
+![Froscon](/img/partners/froscon_logo.png)
+</div>
+</div>
+<div class="col-sm-10 col-md-5">
+<div class="boxes flexible">
+![Froscon](/img/partners/fsfe_logo.png)
+</div>
+</div>
+
+
 </div>
 <!--- BOXES  -->

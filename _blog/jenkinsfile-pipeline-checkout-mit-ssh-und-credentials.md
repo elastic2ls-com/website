@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jenkinsfile Pipeline checkout mit SSH und Credentials<
+title: Jenkinsfile Pipeline checkout mit SSH und Credentials
 subtitle:  Wenn man innnerhalb der Jenkinspipeline ein anderes Repository auschecken muss, abseits von dem in welchem die Configuration (Jenkinsfile u.a.), geht das mit folgendem Snippet.
 keywords: [Jenkins Builds Pipline checkout Jenkinsfile SSH Credentials ]
 ---

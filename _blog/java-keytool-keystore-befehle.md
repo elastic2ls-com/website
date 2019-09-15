@@ -3,6 +3,8 @@ layout: post
 title: Java-Keystore erklärt
 subtitle: Ein schnelle Übersicht über den Java Keystore und die gängigsten Optionen um eure Schlüssel- und Zertifikate zu verwalten. z.B. (auflisten, hinzufügen, löschen, prüfen) Es ermöglicht euch, eigenenSchlüsselpaare und Zertifikate zu verwalten.
 tags: [Java Keystore Schlüsselverwaltung Zertifikatsverwaltung Befehle Erstellen Importieren Prüfen Default Passwort]
+categories: [automation]
+<!-- image: https://s.elastic2ls.com/wp-content/uploads/2018/02/27202543/java.png -->
 ---
 # {{ page.title }}
 

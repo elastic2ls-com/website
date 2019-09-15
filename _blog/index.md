@@ -3,6 +3,7 @@ layout: page
 title: Blog
 subtitle: Der Blog on www.elastic2ls.com
 keywords: [blog]
+permalink: /blog/:title.html
 ---
 {::options parse_block_html="true" /}
 <div class="content">
@@ -92,7 +93,6 @@ ___
 #### [Lighthouse Audit automatisieren mit Jenkins](lighthouse-in-docker)
 
 [Das Lighthouse Auditing in Chrome ist ein sehr hillfreiches Tool bei der Webentwicklung. Wenn man es allerdings im CI/CD Buildprozess einbauen möchte kann man dies per lighthouse CLI in einem Dockercontainer in eine bestehende Build-Pipeline einhängen oder in eine eigene Pipeline einbauen.](lighthouse-in-docker)
-/div>
 
 </div>
 

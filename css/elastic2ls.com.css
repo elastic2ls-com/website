@@ -98,6 +98,23 @@
     .flexible{
         min-height: 150px;
       }
+    .related::before {
+        display: block;
+        width: 100%;
+        height: .25rem;
+        background-color: #838485;
+        margin-bottom: 1rem;
+        content: "";
+      }
+    .related::after {
+        display: block;
+        width: 100%;
+        height: .25rem;
+        background-color: #838485;
+        margin-bottom: 1rem;
+        content: "";
+      }
+    }
     .grid-content-docker {
       min-height: 570px !important
       /* padding-left: 85px; */
@@ -502,7 +519,23 @@
       }
       .container {
         padding-left: 35px;
-      }  
+      }
+      .related::before {
+          display: block;
+          width: 100%;
+          height: .25rem;
+          background-color: #838485;
+          margin-bottom: 1rem;
+          content: "";
+        }
+      .related::after {
+          display: block;
+          width: 100%;
+          height: .25rem;
+          background-color: #838485;
+          margin-bottom: 1rem;
+          content: "";
+        }
     }
 /*header setting*/
 
@@ -703,9 +736,9 @@ body {
   .cloudops-transformation-liste{
     margin-right: 20px;
   }
-  ul{
+  /* ul{
     list-style-type: none;
-  }
+  } */
 
   /* a:link {
     text-decoration: none;
