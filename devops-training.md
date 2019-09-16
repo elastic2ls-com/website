@@ -28,8 +28,6 @@ ___
 
 </div>
 
-</div>
-
 # DevOps Foundation Workshop
 
 <div class="grid-content-devops">

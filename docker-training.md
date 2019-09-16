@@ -26,8 +26,6 @@ ___
 
 </div>
 
-</div>
-
 # Docker Hands-On Workshop
 
 <div class="grid-content-docker">
