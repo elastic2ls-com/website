@@ -512,13 +512,9 @@
         font-weight: bold;
         -webkit-font-smoothing: antialiased;
       }
-      }
       .other-content img{
         max-width: 63px;
         max-height: 34px;
-      }
-      .container {
-        padding-left: 35px;
       }
       .related::before {
           display: block;
@@ -536,6 +532,9 @@
           margin-bottom: 1rem;
           content: "";
         }
+      .container {
+        padding-left: 25px;
+      }
     }
 /*header setting*/
 
