@@ -84,7 +84,7 @@ Anstatt auf einer unflexiblen Infrastruktur zu bleiben, erleichtert das Migriere
 
 <div class="col-sm-8 col-md-4">
 
-<div class="boxes flexible">[![cloud-migration](/img/cloud-migration-aws-420x420.png)](/img/ELASTIC2LS_FallStudie_CloudMigration_AWS.pdf)
+<div class="boxes flexible">[![cloud-migration](/img/cloud-migration-aws-220.png)](/img/ELASTIC2LS_FallStudie_CloudMigration_AWS.pdf)
 </div>
 
 </div>
