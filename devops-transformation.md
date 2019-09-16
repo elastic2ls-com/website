@@ -5,10 +5,6 @@ subtitle: DevOps Transformation Workshops Übersicht
 keywords: [DevOps Transformation Workshops Übersicht]
 ---
 {::options parse_block_html="true" /}
-<div class="content">
-
-<div class="container">
-
 <div class="slider">
 ___
 
@@ -177,10 +173,6 @@ Reduzieren Sie Angriffsflächen mit containerabhängigen Werkzeugen. Erstellen S
 #### Führung
 
 Übertragen Sie die Sicherheitskontrollen von Betreibern auf Entwickler: Finden Sie Schwachstellen, bevor sie ausgenutzt werden können.
-
-</div>
-
-</div>
 
 </div>
 

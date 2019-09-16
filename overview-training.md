@@ -5,10 +5,6 @@ subtitle: Übersicht Trainings
 keywords: [Übersicht Trainings DevOps Jenkins Docker]
 ---
 {::options parse_block_html="true" /}
-<div class="content">
-
-<div class="container">
-
 <div class="grid-content">
 
 <div class="offer_head">
@@ -87,10 +83,6 @@ Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten un
 #### [LPI Certification 2](#){: .feature_toogle}
 
 [![Get your technical team to become superheros in DevOps practises.](/img/icons8-linux-server-50.png)](#){: .feature_toogle}
-</div>
-
-</div>
-
 </div>
 
 </div>

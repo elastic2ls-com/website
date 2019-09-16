@@ -5,10 +5,6 @@ subtitle: Übersicht Training 2019 DevOps
 keywords: [Übersicht Training 2019 DevOps]
 ---
 {::options parse_block_html="true" /}
-<div id="content">
-
-<div class="container">
-
 <div class="slider">
 
 ___
@@ -94,7 +90,3 @@ In unserer Schulung DevOps Foundation lernen die Teilnehmenden, wie mit DevOps d
 #### Bitte mitbringen:
 
 keine gesonderten Anforderungen. Evtl. ein Laptop.
-
-</div>
-
-</div>

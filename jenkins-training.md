@@ -5,12 +5,7 @@ subtitle: Übersicht Training 2019 Jenkins
 keywords: [Übersicht Training 2019 Jenkins]
 ---
 {::options parse_block_html="true" /}
-<div id="content">
-
-<div class="container">
-
 <div class="slider">
-
 ___
 
 <div id="carousel" class="carousel">
@@ -100,9 +95,5 @@ Der Schwerpunkt liegt in der Installation und Verwendungvon Jenkins auf Linux. D
 #### Bitte mitbringen:
 
 Laptop mit installiertem ssh oder Putty. Ein installiertes Git wird empfohlen.
-
-</div>
-
-</div>
 
 </div>

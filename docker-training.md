@@ -5,12 +5,7 @@ subtitle: Übersicht Training 2019 Docker
 keywords: [Übersicht Training 2019 Docker]
 ---
 {::options parse_block_html="true" /}
-<div id="content">
-
-<div class="container">
-
 <div class="slider">
-
 ___
 
 <div id="carousel" class="carousel">
@@ -125,7 +120,3 @@ Der Schwerpunkt liegt im klassischen Aufbau von Docker auf Linux. Die Verwendung
 #### Bitte mitbringen:
 
 Laptop mit installiertem ssh oder Putty. Ein installiertes Git wird empfohlen.
-
-</div>
-
-</div>

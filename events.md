@@ -5,10 +5,6 @@ subtitle: Übersicht Events
 keywords: [Events, Trainings, Meetups, Vortrag, DevOps, Jenkins, Docker]
 ---
 {::options parse_block_html="true" /}
-<div class="content">
-
-<div class="container">
-
 <div class="grid-content">
 
 <div class="offer_head">
@@ -68,10 +64,6 @@ keywords: [Events, Trainings, Meetups, Vortrag, DevOps, Jenkins, Docker]
 #### [10\. August - Vortrag - Ci/CD auf der Froscon](#)
 
 [![Docker Hands-on Workshops](/img/partners/froscon-50x50.jpg)](#)
-</div>
-
-</div>
-
 </div>
 
 </div>

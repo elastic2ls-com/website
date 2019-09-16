@@ -5,12 +5,7 @@ subtitle: Übersicht Termin 2019 DevOps Camp
 keywords: [Übersicht Termin 2019 DevOps Camp]
 ---
 {::options parse_block_html="true" /}
-<div id="content">
-
-<div class="container">
-
 <div class="slider">
-
 ___
 
 <div id="carousel" class="carousel">
@@ -60,8 +55,4 @@ info.bonn@maritim.de
 <div class="col-md-24">
 <iframe scrolling="no" marginheight="0" marginwidth="0" src="../info/osm_hotel_maritim.html?lat=50.70476,lon=7.13490,info=,zoom=15" width="100%" height="350" frameborder="0">
 </iframe>
-</div>
-
-</div>
-
 </div>

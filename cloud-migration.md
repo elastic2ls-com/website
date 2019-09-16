@@ -5,10 +5,6 @@ subtitle: Cloud-Migration Workshops Übersicht
 keywords: [Cloud-Migration Workshops Übersicht Migration]
 ---
 {::options parse_block_html="true" /}
-<div class="content">
-
-<div class="container">
-
 <div class="slider">
 ___
 
@@ -103,10 +99,6 @@ Anstatt auf einer unflexiblen Infrastruktur zu bleiben, erleichtert das Migriere
 <div class="col-sm-8 col-md-4">
 
 <div class="boxes flexible feature_toogle">[![cloud-migration](/img/cloud-migration-google-420x420.png)](/img/CaseStudy_CloudOps_CloudMigration_GCP.pdf)
-</div>
-
-</div>
-
 </div>
 
 </div>
