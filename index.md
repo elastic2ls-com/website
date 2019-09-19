@@ -3,8 +3,10 @@ layout: page
 title: www.elastic2ls.com
 subtitle:  Wir helfen Ihnen bei der Einführung von DevOps und Ihren Cloud Migration. Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment. Wir bieten Trainings zu den Themen DevOps, Cloud, Linux und vieles mehr.
 keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
+bigimg: /img/header_1.jpg
 ---
 {::options parse_block_html="true" /}
+
 <!--- SLIDER -->
 <div class="slider">
 <div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
@@ -56,7 +58,7 @@ ___
 <div class="col-sm-10 col-md-5">
 <div class="boxes flexible">
 [![Training](/img/icons8-ausbildung-50.png)](overview-training){: .start_page_links }
-#### [Training](overview-training)
+#### [Training]
 [Wir bieten Trainings zu aktuellen Themen wie Docker, Continuous Integration/ Deployment und Nutzung von Cloudservices. Ausserdem bieten wir Training für Linux Professional Institut Zertifizierungen an.](overview-training){: .start_page_links }
 </div>
 </div>
@@ -64,7 +66,7 @@ ___
 <div class="col-sm-10 col-md-5">
 <div class="boxes flexible">
 [![Engineering Consulting Services](/img/icons8-dienstleistungen-50.png)](cloud-migration){: .start_page_links }
-#### [Consulting](cloud-migration)
+#### [Consulting]
 [Wir helfen beim Entwerfen und Erstellen von DevOps Toolchains oder Ihren Anwendungsplattformen, Umsetzug von Containerstrategien mit Docker und Kubernetes und vielem mehr..](cloud-migration){: .start_page_links }
 </div>
 </div>
@@ -72,7 +74,7 @@ ___
 <div class="col-sm-10 col-md-5">
 <div class="boxes flexible">
 [![DevOps Workshops](/img/icons8-trophae-50.png)](devops-transformation){: .start_page_links }
-#### [DevOps Workshops](devops-transformation)
+#### [DevOps Workshops]
 [Finden Sie den Weg zu einer gesunden und effektiven DevOps-Implementierung für Prozesse und Mitarbeiter. Wir untersützen Sie auf Ihrem Weg.](devops-transformation){: .start_page_links }
 </div>
 </div>
@@ -80,28 +82,11 @@ ___
 <div class="col-sm-10 col-md-5">
 <div class="boxes flexible">
 [![Cloud-Migration](/img/icons8-inspektion-50.png)](cloud-migration){: .start_page_links }
-#### [Cloud-Migration](cloud-migration)
+#### [Cloud-Migration]
 [Wir unterstützen Sie auf Ihrem Weg in die Cloud. Wir können mit Ihrem Entwicklungsteams Ihre Software Cloud-native umsetzen um die Resourcen efizient zu nutzen.](cloud-migration){: .start_page_links }
 </div>
 </div>
 
-<div class="col-sm-24 col-md-12">
-<div class="boxes flexible">
-___
-## Partner && Unterstützer
-</div>
-</div>
-
-<div class="col-sm-10 col-md-5">
-<div class="boxes flexible">
-![Froscon](/img/partners/froscon_logo.png)
-</div>
-</div>
-<div class="col-sm-10 col-md-5">
-<div class="boxes flexible">
-![Froscon](/img/partners/fsfe_logo.png)
-</div>
-</div>
 
 
 </div>

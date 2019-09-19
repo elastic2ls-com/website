@@ -1,3 +1,9 @@
+.articles
+  margin-top: 35px;
+  border: black;
+  border-style: solid;
+}
+
 /*slider setting*/
 .carousel {
  /*margin: 30px auto 60px;
@@ -54,6 +60,7 @@
 .carousel h4{
   margin-left: 50px;
   font-family: monospace;
+  color: #000
 }
 /*slider setting*/
 
@@ -152,12 +159,14 @@
         margin-top: -1px;
         font-size: large;
       }
-      .dropdown-menu li:hover .sub-menu{
+      /* .dropdown-menu li:hover .sub-menu{
         visibility: visible;
-      }
-      .dropdown:hover .dropdown-menu{
+      } */
+      /* .dropdown:hover .dropdown-menu{
         display: block;
-      }
+      } */
+      /*PROBLEMKIND*/
+
       .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
         color: #fff;
         background-color: #5a5a5a;
@@ -168,6 +177,10 @@
         }
       .dropdown-menu > li > a {
         font-size: large;
+      }
+      .navbar-inverse .navbar-nav .open > a {
+        color: white;
+        font-weight: 800;
       }
       .myNavbar {
         margin-top: -30px;
@@ -444,6 +457,10 @@
         margin-top: 15px;
         border-radius: 10%;
       }
+      .bigimg {
+        height: 150px;
+        width: auto;
+      }
       .brand{
         font-size: 14px;
         font-family: monospace;
@@ -461,7 +478,7 @@
       .navbar-header-sm-device {
         padding-top: 28px;
       }
-      .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+      .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open {
         color: #fff;
         background-color: #5a5a5a;
         border-style: none;
@@ -574,6 +591,11 @@
 .boxes span
 {
     display: block;
+}
+
+.boxes a
+{
+    color: #000;
 }
 
 .boxes2{
@@ -796,4 +818,9 @@ body {
     font-size: 20px;
     font-family: monospace;
     color: #5D67B9;
+    }
+
+  .th, th, .td, td {
+    padding: 10px;
+    border: 1px solid black;
     }

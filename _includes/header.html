@@ -12,10 +12,12 @@
 		  data-img-desc-{{ imgnum }}="{{ imginfo[1] }}"
 		{% else %}
 		  data-img-src-{{ imgnum }}="{{ imginfo | relative_url }}"
-		{% endif %}
-	  {% endfor %}
-    {% endfor %}
-  ></div>
+
+  ><img class="bigimg" src="{{ imginfo | relative_url }}" style="width: 100%"></div>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+
 {% endif %}
 
 {% else %}

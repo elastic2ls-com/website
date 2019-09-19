@@ -3,8 +3,10 @@ layout: post
 title: Puppet Hiera example
 subtitle:  Puppet-Hiera erlaubt es uns eine einfache Klassifizierung von Server vorzunehmen und diese in Gruppen oder Environments automatisiert provisionieren zu lassen.
 keywords: [Puppet Hiera Klassifizierung Vagrant hiera.yaml webinterface]
+datatable: true
 ---
 # {{ page.title }}
+{::options parse_block_html="true" /}
 
 ![puppet-hiera](https://s.elastic2ls.com/wp-content/uploads/2018/02/27212001/puppetlogo-300x105.png)
 
@@ -60,114 +62,62 @@ end
 
 ### Matrix Hierarchie und Gruppen
 
-
+<div class="table-wrap">
 <table>
-
 <tbody>
-
 <tr>
-
-<td>node</td>
-
-<td>ssh-keys</td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
+<td >node</td>
+<td >ssh-keys</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
 </tr>
-
 <tr>
-
-<td>osfamily</td>
-
-<td>servicenames</td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
+<td >osfamily</td>
+<td >servicenames</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
 </tr>
-
 <tr>
-
-<td>environment</td>
-
-<td>motd</td>
-
-<td>ssh-keys</td>
-
-<td>nfs</td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
+<td >environment</td>
+<td >motd</td>
+<td >ssh-keys</td>
+<td >nfs</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
 </tr>
-
 <tr>
-
-<td>functional groups</td>
-
-<td>https</td>
-
-<td>proxy</td>
-
-<td>application</td>
-
-<td>solr</td>
-
-<td>database</td>
-
-<td>build</td>
-
-<td>repositories</td>
-
+<td >functional groups</td>
+<td >https</td>
+<td >proxy</td>
+<td >application</td>
+<td >solr</td>
+<td >database</td>
+<td >build</td>
+<td >repositories</td>
 </tr>
-
 <tr>
-
-<td>global/ common</td>
-
-<td>ntp</td>
-
-<td>yum repositories</td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
-<td></td>
-
+<td >global/ common</td>
+<td >ntp</td>
+<td >yum repositories</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
 </tr>
-
 </tbody>
-
 </table>
+</div>
 
 
 Oben gezeigte Matrix zeigt mögliche Gruppierungen auf wie man Puppet mit Hiera verwenden kann um seine Servertypen zu klassifizieren. Die Klassifizierung erleichter es uns später gezielt einzelne Server, Gruppen von Servern, bestimmte Umgebungen oder gar alle entsprechend einzurichten und zu definieren. Dies ist die erste Massnahme um **continuous integration** bzw. **continuous delivery** einzusetzen.

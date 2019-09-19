@@ -1,11 +1,11 @@
-/*carousel functions*/
+// /*carousel functions*/
 // $(document).hover(function(){
-//   $("#carousel").carousel('pause');
+//    $("#carousel").carousel('pause');
 // },function(){
-//   $("#carousel").carousel('cycle');
+//    $("#carousel").carousel('cycle');
 // }
-
-
+//
+//
 // $(document).ready(function(){
 //     $('.dropdown-toggle').mouseover(function(){
 //         $('.dropdown-menu').show();

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Apache entfernen X-Powered-By Header
+title: Apache ErrorDocument
 subtitle: Wichtig um Apache ErrorDocument zu verwenden ist, dass die Angabe relativ zur DocumentRoot ist. D.h in unserem Fall wollen wir für die deutsche Sprachversion unserer Seite.
 keywords: [Apache ErrorDocument DocumentRoot Fehlerdokument Serverversionsnummer Apache/2.4.29]
+image: /img/apache_404_default.png
 ---
 # {{ page.title }}
 
