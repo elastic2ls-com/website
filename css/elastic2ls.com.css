@@ -100,7 +100,7 @@
 
 @media screen and (min-width: 1200px){
     .blog{
-        min-height: 350px;
+        min-height: 250px;
       }
     .flexible{
         min-height: 150px;
@@ -446,6 +446,9 @@
 
 
 @media (max-width: 767px) {
+      .blog{
+        min-height: 150px;
+      }
       .menu {
         padding-right: 35px;
         margin-top: -20px;

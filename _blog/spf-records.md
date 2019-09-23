@@ -3,6 +3,7 @@ layout: post
 title: SPF Records
 subtitle: SPF steht für Sender Policy Framework und wird verwendet zur Vermeidung von Spam- oder Virenmails mit gefälschtem Absender.
 keywords: [SPF Sender Policy Framework Antispam DNS named bind]
+categories: [dns]
 ---
 # {{ page.title }}
 

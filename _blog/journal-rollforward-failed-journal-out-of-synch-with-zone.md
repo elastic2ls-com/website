@@ -3,7 +3,7 @@ layout: post
 title: Journal rollforward failed journal out of synch with zone
 subtitle:  Wenn der named Server den Start verweigert mit der folgenden Meldung in den Logs journal rollforward failed journal out of sync with zone
 keywords: [named  bind  DNS journal nameserver]
-categories: [automation]
+categories: [dns]
 ---
 # {{ page.title }}
 
