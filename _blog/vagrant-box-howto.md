@@ -3,6 +3,7 @@ layout: post
 title: Vagrant Box
 subtitle:  Vagrant ist ein hervoragendes Tool für Entwickler aber auch generell für IT Test- Entwicklungssysteme. Es gibt einige Möglichkeiten vorkonfigurierte Vagrant Box aus dem Internet zu laden. Da ich aber lieber Kontrolle über die Maschinen habe ...
 keywords: [Jenkins Deklarative Pipline checkoutscm Jenkinsfile webinterface]
+categories: [DevOps]
 ---
 # {{ page.title }}
 ## [![vagrant box](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214630/vagrant-300x92.png)](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214630/vagrant.png)

@@ -3,6 +3,7 @@ layout: post
 title: mehrere Kommandos innerhalb eines Docker Containers ausführen
 subtitle:  Dazu übergibt man an den Docker Container mit dem Parameter -it einen Befehl. Hier wird nun eine Shell sh aufgerufen mit dem Parameter -c Die Aneinanderreihung der Befehle erfolgt mittels ; siehe Beispiel unten.
 keywords: [Docker Container Parameter Kommandos ausführen]
+categories: [DevOps]
 ---
 # {{ page.title }}
 

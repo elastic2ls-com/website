@@ -3,7 +3,7 @@ layout: post
 title: Puppet Hiera example
 subtitle:  Puppet-Hiera erlaubt es uns eine einfache Klassifizierung von Server vorzunehmen und diese in Gruppen oder Environments automatisiert provisionieren zu lassen.
 keywords: [Puppet Hiera Klassifizierung Vagrant hiera.yaml webinterface]
-datatable: true
+categories: [DevOps]
 ---
 # {{ page.title }}
 {::options parse_block_html="true" /}

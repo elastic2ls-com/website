@@ -3,6 +3,7 @@ layout: post
 title: /sbin/mount.vboxsf - mounting failed with the error - No such device
 subtitle:  Beim startet der Vagrant Box wurde der Shared Folder nicht gemountet mit der Fehlermeldung /sbin/mount.vboxsf mounting failed with the error -  Nach einigem suchen fand ich heraus, dass nach dem Update von VirtualBox die ... erneut in der VM installiert werden müssen.
 keywords: [Vagrant VirtualBox /sbin/mount.vboxsf checkoutscm Jenkinsfile webinterface]
+categories: [DevOps]
 ---
 # {{ page.title }}
 

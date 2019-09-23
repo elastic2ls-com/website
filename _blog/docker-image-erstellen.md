@@ -3,6 +3,7 @@ layout: post
 title: Docker-Base-Image erstellen
 subtitle:  Bevor wir mit Docker loslegen können müssen oder sollten wir uns ein passendes Docker-Base-Image erzeugen. Dazu müssen wir das Paket debootstrap auf Ubuntu zuerst installieren.
 keywords: [docker Dockerfile debootstrap Basis-Images Container Image minbase MAINTAINER exec persistent]
+categories: [DevOps]
 ---
 # {{ page.title }}
 

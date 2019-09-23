@@ -1,11 +1,18 @@
 ---
-layout: default
+layout: base
 ---
 
-<div class="blog list">
-    <h1>Filed Under <small>#{{ page.tag }}</small></h1>
+{% include header.html type="page" %}
 
-    {% for post in site.categories[page.tag] %}
-        {% include post_preview.html %}
-    {% endfor %}
+<div class="container" role="main">
+
+  <div class="row">
+
+
+      <article role="main" class="blog-post">
+        {{ content }}
+      </article>
+    {% include category-posts.html %}
+    </div>
+  </div>
 </div>

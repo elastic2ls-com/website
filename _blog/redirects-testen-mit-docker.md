@@ -3,6 +3,7 @@ layout: post
 title: Redirects testen mit Docker
 subtitle:  Aus Seosicht ist es wichtig, dass Redirects die man eingebaut hat, auch auf die gewünschte Seite leiten und nicht in einem 404 Statuscode enden. Dazu können wir die Redirects vorab testen mit docker.
 keywords: [Seo Redirects Apache Testing Docker Dockerfile]
+categories: [DevOps]
 ---
 # {{ page.title }}
 
