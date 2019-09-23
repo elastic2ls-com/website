@@ -73,7 +73,7 @@ ___
 <div class="col-sm-8 col-md-3">
 <div class="boxes blog">
 
-![devops](../img/devops-300x152.png)
+[![devops](../img/devops-300x152.png)](../../devops)
 </div>
 </div>
 
