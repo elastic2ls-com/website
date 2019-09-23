@@ -7,6 +7,8 @@ keywords: [Test Webseitenlinks mit WGET]
 # {{ page.title }}
 ## Einleitung
 
+![wget](../../img/wget.jpg)
+
 Defekte Webseitenlinks entstehen, wenn eine Seite verschoben oder gar gelöscht wird. Es ist der Job des Webmasters diese defekten Webseitenlinks zu finden bevor ein Besucher oder eine Suchmaschinen es tun. Verzögerungen bei der Korrektur resultieren in einer schlechten User Erfahrung sowie möglichen Schaden für ihr Page ranking. Wenn deine Website aus mehr als ein "paar" Seiten besteht wird das manuelle prüfen unverhälniss massig aufwendig, aber es gibt einige Tools mit denen man diese Aufgabe automatisieren kann. Man kann webbasierende Tool wie die Google Webmaster Tools verwenden, aber es fehlt in der Regel zusätzliche Funktionen. Wenn deine Webseite Wordpress benutzt könntest du ein Plugin benutzen, aber manche Anbieter von gehosteten Webanwendungen verbieten das, da das Plugin ja auf dem selben Server läuft wie die Wordpress Installation und das testen der Links ist recht Ressourcen intensiv. Eine andere Option ist es ein Linux basierendes Programm auf einer seperaten Maschine zu benutzen. Die beinhalten neben rudimentären Webcrawlern wie `wget` oder spezialisierte Tool wie z.B. `linkchecker` oder `klinkstatus`. Diese sind hochgradig anpassbar und minimieren den negativen Einfluss auf die Antwortzeiten der Zielwebseite. Dieses Tutorial zeigt auf wie man `wget` dazu benutzen kann alle defekten Links auf einer Webseite zu finden, damit man diese reparieren kann.
 
 ## Voraussetzungen
