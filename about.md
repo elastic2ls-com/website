@@ -12,11 +12,11 @@ ___
 
 # Wir sind auf Continuous Integration/ - Delivery spezialisiert.
 
-[Kontaktieren Sie uns](mailto:info@elastic2ls.com?subject=feedback){: .btn .btn-primary}
-
 <div class="boxes flexible about">
 Wir sind ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir Cloud-Plattformen und DevOps Pipelines erfolgreich einführen.
 </div>
+
+[Kontaktieren Sie uns](mailto:info@elastic2ls.com?subject=feedback){: .btn .btn-primary}
 
 </div>
 </div>

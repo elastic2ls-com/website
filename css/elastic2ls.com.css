@@ -98,7 +98,7 @@
     .workdescription {
       padding-bottom: 15px;
       line-height: 0.9;
-      }      
+      }
     .carousel-inner {
         min-height: 350px;
       }
@@ -622,6 +622,7 @@
 {
     min-height: 150px;
     max-width: unset;
+    padding-top: 55px;
 }
 .about img
 {
