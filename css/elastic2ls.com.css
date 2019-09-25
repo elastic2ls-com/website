@@ -93,8 +93,12 @@
 
 @media screen and (min-width: 1200px){
     .container {
-        width: 1370px;
-      }
+      width: 1370px;
+    }
+    .forofor {
+      min-width: 400px;
+    }
+
     .workdescription {
       padding-bottom: 15px;
       line-height: 0.9;

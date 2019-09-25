@@ -16,19 +16,19 @@ ___
 <div class="item active">
 ![Docker Hands-on Workshops](/img/icons8-docker-50.png)
 #### Docker Hands-on Workshops. Build, Ship and Run any App, Anywhere
-[Los gehts.](docker-training){: .btn .btn-primary}
+[Los gehts.](training/#devops-docker-camp){: .btn .btn-primary}
 </div>
 
 <div class="item">
 ![Get your technical team to become superheros in DevOps practises](/img/icons8-batman-alt-50.png)
 #### Lassen Sie Ihr technisches Team zu DevOps Superhelden werden.
-[Los gehts.](devops-training){: .btn .btn-primary}
+[Los gehts.](training/#devops-foundation-camp){: .btn .btn-primary}
 </div>
 
 <div class="item">
 ![We are the CI/CD experts, help you building your pipelines and tooling infrastructure](/img/icons8-jenkins-50.png)
 #### Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.
-[Los gehts.](jenkins-training){: .btn .btn-primary}
+[Los gehts.](consulting/#continuous-integration----delivery){: .btn .btn-primary}
 </div>
 
 <div class="item">
