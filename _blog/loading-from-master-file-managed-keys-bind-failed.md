@@ -3,6 +3,7 @@ layout: post
 title: Loading from master file managed-keys.bind failed
 subtitle: Loading from master file managed-keys.bind failed
 keywords: [bind named DNS master managed-keys.bind DNSSEC-Validierung]
+categories: [dns]
 ---
 # {{ page.title }}
 

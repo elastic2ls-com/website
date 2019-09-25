@@ -3,6 +3,7 @@ layout: post
 title: LuninuX OS 16.04
 subtitle:  Heute stelle ich euch ein weiteres schickes Linux für den Desktop vor LunixuX OS (früher Sn0wl1nuX). Ein richtig schickes, durchdachtes Betriebssystem.
 keywords: [LuninuX 16.04 Sn0wl1nuX]
+categories: [LinuxDesktop]
 ---
 # {{ page.title }}
 

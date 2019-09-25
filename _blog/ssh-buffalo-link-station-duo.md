@@ -3,6 +3,7 @@ layout: post
 title: SSH Buffalo-Link-Station-Duo
 subtitle:  Um SSH auf der Buffalo-Link-Station-Duo zu installieren sind folgende Schritte notwendig. Zuerst müsst ihr euch den ACP commander herunter laden.
 keywords: [Buffalo-Link-Station-Duo ssh Pipline acp commander NAS]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

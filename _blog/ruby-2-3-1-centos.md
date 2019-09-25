@@ -3,6 +3,7 @@ layout: post
 title: Ruby 2.3.1 CentOS
 subtitle: Kurze Anleitung wie man Ruby 2.3.1 auf CentOS installiert Step 1 Upgrade Packages yum update yum groupinstall
 keywords: [Ruby CentOS]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

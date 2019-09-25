@@ -3,8 +3,11 @@ layout: post
 title: Mysqldump exclude database
 subtitle:  Mysqldump exclude database -  Ein direktes excludieren geht mit Mysqldump nicht. Dafür hilft ein kleiner Umweg mittels eines Bash Shell scriptes
 keywords: [Mysqldump Mysql exclude database]
+categories: [Howtos]
 ---
 # {{ page.title }}
+
+![MySQL](../../img/MySQL_logo_small.png)
 
 Ein direktes excludieren geht mit Mysqldump nicht. Dafür hilft ein kleiner Umweg:
 

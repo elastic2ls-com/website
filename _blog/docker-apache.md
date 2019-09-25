@@ -7,9 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-[![Docker](https://s.elastic2ls.com/wp-content/uploads/2018/02/27203811/DockerLogo1-300x150.png)](https://s.elastic2ls.com/wp-content/uploads/2018/02/27203811/DockerLogo1.png)
-
-
+![docker](../../img/DockerLogo-300x150.png)
 
 Apache mit Docker zu nutzten ist relativ einfach. Unten sind die nötigen Schritte skiziert wie wir uns ein Basis Image herunterladen können, dann den Apachen installieren und daraus ein neues Image für die weitere Verwendung speicher können.
 

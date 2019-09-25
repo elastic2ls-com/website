@@ -3,6 +3,7 @@ layout: post
 title: Installation von Graylog2 mit Elasticsearch
 subtitle:  Graylog2 ist ein zentralisiertes Log-Management und Log-Analyse-Framework basierend auf Elasticsearch und MongoDB. Elasticsearch ist ein verteilter Suchserver auf Basis von Lucene, der als OpenSource-Software verfügbar ist. In diesem Howto führen wir durch die Installation von Gralog2 mit Elasticsearch und MongoDB.
 keywords: [Graylog2 Elasticsearch MongoDB JSON NoSQL Java Installation password_secret Web-Interface]
+categories: [DevOps]
 ---
 # {{ page.title }}
 

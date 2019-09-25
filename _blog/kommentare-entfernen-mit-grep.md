@@ -3,6 +3,7 @@ layout: post
 title: Kommentare entfernen mit GREP
 subtitle:  Kommentare entfernen mit GREP ist eine sehr einfache aber effektive Sache. Bei vielen Linux-Programmen dient die Konfigurationsdatei gleichzeitig auch zur Dokumentation. Zum Einarbeiten in eine neue Konfigurations-Syntax kann das durchaus praktisch sein.
 keywords: [grep Kommentare automatisieren entfernen Dokumentation Konfigurationsdatei]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 

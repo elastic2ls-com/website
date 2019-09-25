@@ -3,6 +3,7 @@ layout: post
 title: grep logfiles via SSH on multiple server
 subtitle:  Mittels des unten angeführten Shellscripts ist es möglich mit grep logfiles via SSH on multiplen server einzusammeln. Diese werden in eine Logfile geschrieben. Jetzt hat man alle Möglichkeiten die, die Bash bietet um alles mögliche mit den Logs anzustellen.
 keywords: [grep Shellscripts SSH Logfile Rückgabewert Suche Kommando Reguläre Ausdrücke Beispiele]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 

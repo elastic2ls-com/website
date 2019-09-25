@@ -3,7 +3,7 @@ layout: post
 title: Testen von DNS records
 subtitle:  Zum Thema Testen von DNS records habe ich unten stehends kurzes Bash Script welches die gängigsten DNS Recordtypen abfragt gebaut.
 keywords: [DNS named bind testen records Recordtypen]
-categories: [DevOps]
+categories: [dns]
 ---
 # {{ page.title }}
 

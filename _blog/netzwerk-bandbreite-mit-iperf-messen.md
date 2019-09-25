@@ -3,6 +3,7 @@ layout: post
 title: Netzwerk Bandbreite mit iperf messen
 subtitle:  Das OpenSource Tool iperf erlaubt das Messen der maximalen TCP und UDP Netzwerk Bandbreite. Bei Debian und Ubuntu ist es im Repository bereits enthalten.
 keywords: [Netzwerk Bandbreite iperf messen Ubuntu Debian]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 

@@ -6,11 +6,8 @@ keywords: [Übersicht Termin 2019 DevOps Jenkins Camp]
 ---
 {::options parse_block_html="true" /}
 <div class="slider">
-
 ___
-
 <div id="carousel" class="carousel">
-
 <div class="carousel-inner">
 ![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.png)
 
@@ -25,13 +22,8 @@ ___
 [Tickets jetzt sichern!](mailto://buchung@elastic2ls.com?subject=Buchung DevOps Jenkins Camp Mai 2019){: .btn .btn-primary}
 
 </div>
-
 ___
-
 </div>
-
-</div>
-
 </div>
 
 <div class="offer_payment">![](/img/visa.png)![](/img/mastercard.png)![](/img/amex.png)

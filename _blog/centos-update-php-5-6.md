@@ -3,12 +3,13 @@ layout: post
 title: Centos update PHP-5.6
 subtitle: Ein kurze detailierte Übersicht wie man PHP auf die Version PHP-5.6 updated in CentOS.
 keywords: [PHP-5.6 Linux CentOS update rpms.famillecollet.com enablerepo EPS Apache]
+categories: [Howtos]
 ---
 # {{ page.title }}
 
 Ein kurze Übersicht wie man PHP auf die Version PHP-5.6 updated auf CentOS.
 
-![PHP-5.6](https://www.elastic2ls.com/wp-content/uploads/2016/12/php.png)
+![PHP-5.6](../../img/php.png)
 
 
 Zuerst schauen wir welche PHP Pakete aktuell installiert sind.
@@ -48,4 +49,4 @@ Copyright (c) 1997-2016 The PHP Group
 Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 ```
 
-[![PHP-5.6](https://www.elastic2ls.com/wp-content/uploads/2016/12/PHP-5.6-update-1024x741.png)](https://www.elastic2ls.com/wp-content/uploads/2016/12/PHP-5.6-update.png)
+![PHP-5.6](../../img/PHP-5.6-update-1024x741.png)]

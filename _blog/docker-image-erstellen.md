@@ -7,8 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-[![Docker](https://s.elastic2ls.com/wp-content/uploads/2018/02/27203623/DockerLogo-300x150.png)](https://s.elastic2ls.com/wp-content/uploads/2018/02/27203623/DockerLogo.png)
-
+![docker](../../img/DockerLogo-300x150.png)
 
 Bevor wir mit Docker auf Ubuntu loslegen können oder sollten wir uns ein passendes Docker-Base-Image erzeugen. Dazu müssen wir das Paket ```debootstrap``` auf Ubuntu zuerst installieren. Natürlich gibt es bereits sehr viele fertige Images auf dockerhub aber, wenn man alles unter Kontrolle behalten will, bietet es sich an sein eigenes Basis Image zu erstellen.
 

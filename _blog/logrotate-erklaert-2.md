@@ -3,6 +3,7 @@ layout: post
 title: Logrotate erklärt
 subtitle:  Logrotate erklärt Die config Dateien von Logrotate finden sich unter folgenden Pfaden #/etc/logrotate.d/
 keywords: [logrotate Linux logrotate.d rsyslog]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 

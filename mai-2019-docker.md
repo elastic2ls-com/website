@@ -7,9 +7,7 @@ keywords: [Übersicht Termin 2019 DevOps Docker Camp]
 {::options parse_block_html="true" /}
 <div class="slider">
 ___
-
 <div id="carousel" class="carousel">
-
 <div class="carousel-inner">
 ![Docker & Kubernetes Hands-on Workshops](/img/Docker_Logo-500x250.jpg)
 
@@ -24,16 +22,9 @@ ___
 [Tickets jetzt sichern!](mailto://buchung@elastic2ls.com?subject=Buchung DevOps Docker Camp Mai 2019){: .btn .btn-primary}
 
 </div>
-
 ___
-
 </div>
-
 </div>
-
-</div>
-
-
 
 <div class="offer_payment">![](/img/visa.png)![](/img/mastercard.png)![](/img/amex.png)
 </div>

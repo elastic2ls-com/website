@@ -3,6 +3,7 @@ layout: post
 title: OzonOS
 subtitle:  Auf dem Desktop von OzonOS kommt die Atom-Shell zum Einsatz samt dem Atom Extension Set. Zielgruppe sind Anwender, die ihren Rechner zum Spielen, Videoschauen, Musik hören verwenden.
 keywords: [OzonOS Linux Atom-Shell Desktop]
+categories: [LinuxDesktop]
 ---
 # {{ page.title }}
 

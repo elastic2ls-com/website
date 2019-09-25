@@ -3,6 +3,7 @@ layout: post
 title: Systemd linux
 subtitle:  Da Systemd SysVinit ablösst, wird es Zeit das neue Systemd kennen zu lernen. Systemd ist schneller, da es Aufgaben parallel ausführt und weniger Scripte benutzt.
 keywords: [Systemd Linux]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 

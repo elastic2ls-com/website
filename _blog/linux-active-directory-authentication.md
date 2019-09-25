@@ -3,6 +3,7 @@ layout: post
 title: Linux mit Active Directory Authentication Teil1
 subtitle:  In dieser Anleitung erlären wir euch wie man den Benutzerlogin für Linux mit Active Directory Authentication einrichtet. Da jede Firma ein Active Directory besitzt bietet es sich an dieses als SSO Backend zu nutzen. Die Anleitung basiert auf Ubuntu 14.04 und Windows Server 2012.
 keywords: [Active Directory Linux Authentication ldap samba]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 

@@ -7,9 +7,7 @@ keywords: [Übersicht Termin 2019 DevOps Camp]
 {::options parse_block_html="true" /}
 <div class="slider">
 ___
-
 <div id="carousel" class="carousel">
-
 <div class="carousel-inner">
 
 [DevOps Foundation Workshop](/img/DevOps_logo.jpg)
@@ -24,18 +22,12 @@ ___
 [Tickets jetzt sichern!](mailto://buchung@elastic2ls.com?subject=Buchung DevOps Camp Mai 2019){: .btn .btn-primary}
 
 </div>
-
 ___
-
 </div>
-
-</div>
-
 </div>
 
 <div class="offer_payment">![](/img/visa.png)![](/img/mastercard.png)![](/img/amex.png)
 </div>
-
 
 <div class="offer_location">
 Maritim Hotel Bonn Godesberger Allee  

@@ -3,6 +3,7 @@ layout: post
 title: OpenSSL-Zertifikat
 subtitle:  OpenSSL-Zertifikate CSR erzeugen/anzeigen (Certificate Signing Request) Wenn Ihr ein offizielles OpenSSL-Zertifikat beantragen wollt, dann ist normalerweise
 keywords: [OpenSSL OpenSSL CSR Keyfile Passphrase konvertieren]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

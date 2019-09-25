@@ -6,13 +6,9 @@ keywords: [blog]
 permalink: /blog/:title.html
 ---
 {::options parse_block_html="true" /}
-<div class="content">
-
-<div class="container">
-
 <div class="slider">
 
-## Top Themen
+# Top Themen
 
 
 <div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
@@ -51,48 +47,66 @@ permalink: /blog/:title.html
 
 </div>
 ___
-## Kategorien
+
+</div>
+
+<div class="grid-content">
+# Kategorien
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes blog">
+
+[![howtos](../img/howto_small.png)](howtos)
+</div>
+</div>
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes blog">
+
+[![Sicherheit](../img/security_linux4.png)](sicherheit)
+</div>
+</div>
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes blog">
+
+[![devops](../img/devops-300x152.png)](devops)
+</div>
+</div>
+
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes blog">
+[![linuxinside](../img/linuxinside.png)](linuxinside)
+
+</div>
+</div>
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes blog">
+[![linuxdesktop](../img/linuxdesktop.png)](linuxdesktop)
+
+</div>
+</div>
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes blog">
+[![dns](../img/bind9.png)](dns)
+
+</div>
+</div>
+
+___
+
 </div>
 
 <div class="grid-content">
 
-<div class="col-sm-8 col-md-3">
-<div class="boxes blog">
-
-![howtos](../img/howto_small.png)
-</div>
-</div>
-
-<div class="col-sm-8 col-md-3">
-<div class="boxes blog">
-
-![open source software](../img/open-source-software_small.jpg)
-</div>
-</div>
-
-<div class="col-sm-8 col-md-3">
-<div class="boxes blog">
-
-[![devops](../img/devops-300x152.png)](../../devops)
-</div>
-</div>
-
-
-<div class="col-sm-8 col-md-3">
-
-<div class="boxes blog">
-![linuxinside](../img/linuxinside.png)
-
-</div>
-</div>
-
-</div>
-___
-## Posts
+# Posts
 
 <div class="posts-list">
 
-{% assign maxRelated = site.blog | sample:3 %}
+{% assign maxRelated = site.blog | sample:5 %}
 {% for post in maxRelated %}
 <div class="articles" style="padding: 15px;">
 <h2 class="post-title">{{ post.title }}</h2>
@@ -121,8 +135,6 @@ ___
 </div>
 </div>
 {% endfor %}
-</div>
-
 </div>
 
 </div>

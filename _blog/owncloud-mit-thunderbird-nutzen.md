@@ -3,6 +3,7 @@ layout: post
 title: Owncloud mit thunderbird nutzen
 subtitle: Dies ist ein Tutorial wie man mittels Owncloud die Kalender und Kontakte zwischen Rechnern und Mobiltelefonen syncronisieren kann.
 keywords: [Owncloud thunderbird syncronisieren Mobiltelefonen Laptop Kalender Kontakte]
+categories: [Howtos]
 ---
 # {{ page.title }}
 
@@ -162,4 +163,4 @@ Wenn wir auf Eigenschaften des Kalenders gehen können wir noch z.B. einstellen 
 
 ## Einrichten im Mobil Telefon Kontakte und Kalender
 
-Hier findet ihr recht aktuell wie das bewerkstelligt wird. [Konfiguration für Mobiletelefone](https://www.connect.de/ratgeber/konfiguration-caldav-und-carddav-1540275.html) 
+Hier findet ihr recht aktuell wie das bewerkstelligt wird. [Konfiguration für Mobiletelefone](https://www.connect.de/ratgeber/konfiguration-caldav-und-carddav-1540275.html)

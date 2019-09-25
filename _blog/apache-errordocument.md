@@ -4,10 +4,13 @@ title: Apache ErrorDocument
 subtitle: Wichtig um Apache ErrorDocument zu verwenden ist, dass die Angabe relativ zur DocumentRoot ist. D.h in unserem Fall wollen wir für die deutsche Sprachversion unserer Seite.
 keywords: [Apache ErrorDocument DocumentRoot Fehlerdokument Serverversionsnummer Apache/2.4.29]
 image: /img/apache_404_default.png
+categories: [Howtos]
 ---
 # {{ page.title }}
 
-![apache-logo](https://www.elastic2ls.com/wp-content/uploads/2017/01/apache-logo-300x300.png)         Wichtig um Apache ErrorDocument zu verwenden ist, dass die Angabe relativ zur DocumentRoot ist. D.h in unserem Fall wollen wir für die deutsche Sprachversion unserer Seite ein eigenes Fehlerdokument ausgeben. Konkret:
+![apache-logo](../../img/apache-logo-300x300.png)         
+
+Wichtig um Apache ErrorDocument zu verwenden ist, dass die Angabe relativ zur DocumentRoot ist. D.h in unserem Fall wollen wir für die deutsche Sprachversion unserer Seite ein eigenes Fehlerdokument ausgeben. Konkret:
 
 ```
 DocumentRoot /var/www/html/site/

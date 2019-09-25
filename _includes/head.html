@@ -80,10 +80,11 @@
 
 
   <meta property="og:type" content="website" />
-
   {% if page.id %}
-  <meta property="og:url" content="{{ page.url | absolute_url }}" />
-  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    {% if jekyll.environment == "production" %}
+      <meta property="og:url" content="{{ page.url | absolute_url }}" />
+      <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    {% endif %}
   {% else %}
   <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}" />
   <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}" />

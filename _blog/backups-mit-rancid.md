@@ -3,6 +3,7 @@ layout: post
 title: Backups Cisco Rancid
 subtitle: Zum Sicher der Konfiguration von Netzwerkgeräten gibt es eine Software genannt Rancid, welche voll automatisert Backups Job ausführen kann.
 keywords: [Rancid Backups Netzwerkgeräte Cicso Webconsole Bash Opensoure Konfiguration /etc/aliases rancid-cvs rancid-run var/networking/router.db clogin.rc Passwörter]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

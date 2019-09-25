@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-[![docker](https://s.elastic2ls.com/wp-content/uploads/2018/02/27203623/DockerLogo-300x150.png)](https://s.elastic2ls.com/wp-content/uploads/2018/02/27203623/DockerLogo.png)
+![docker](../../img/DockerLogo-300x150.png)
 
 
 Wir wollen hier mit **docker** einen Apache Webserver erstellen und konfigurieren. Dazu erstellen wir uns im Home Verzeichniss folgenden Struktur und anschliessend erstellen wir uns das Dockerfile.

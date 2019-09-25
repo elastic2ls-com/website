@@ -3,6 +3,7 @@ layout: post
 title: root-Passwort in Ubuntu zurücksetzen
 subtitle:  Wie setzt man das Root Passwort in einem Ubuntu System zurücksetzt wenn man es vergessen hat. Es ist zwar ärgerlich aber auch kein grossen Aufwand.
 keywords: [Ubuntu root Passwort Recovery grub2]
+categories: [Sicherheit]
 ---
 # {{ page.title }}
 

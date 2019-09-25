@@ -3,10 +3,11 @@ layout: post
 title: Archivieren Linux (tar, gz, bz2, zip)
 subtitle: Eine kurze Übersicht zum Thema Archivieren und Archivformate (.tar .gz .bz2 .zip) und wie man diese unter Linux benutzt.
 keywords: [Archivieren Archivformate Linux tar gz bz2 gzip zip Entpacken packen komprimieren dekomprimieren gunzip bunzip2]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 
-Unten findet ihr eine kurze Übersicht zum Thema Archivieren und Archivformate (.tar .gz .bz2 .zip) und wie man diese unter Linux benutzt. ![tar](https://www.elastic2ls.com/wp-content/uploads/2016/09/tar.png)
+Unten findet ihr eine kurze Übersicht zum Thema Archivieren und Archivformate (.tar .gz .bz2 .zip) und wie man diese unter Linux benutzt. ![tar](../../img/tar.png)
 
 ## tar
 

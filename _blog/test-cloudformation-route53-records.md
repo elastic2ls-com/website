@@ -3,6 +3,7 @@ layout: post
 title: Test cloudformation Route53 records
 subtitle:  Wie schon im Beitrag Testen von DNS Records beschrieben habe ich das Script erweitert um einen automatisierten Test zu schreiben, welcher die zu testenden Subdomains aus einen Cloudformation Template nimmt.
 keywords: [Test cloudformation Route53 records]
+categories: [DevOps]
 ---
 # {{ page.title }}
 Wie schon im Beitrag [Testen von DNS Records](https://www.elastic2ls.com/testen-von-dns-records/) beschrieben habe ich das Script erweitert um einen automatisierten Test zu schreiben, welcher die zu testenden Subdomains aus einen Cloudformation Template nimmt.

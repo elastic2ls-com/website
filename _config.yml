@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: www.elastic2ls.com
+title: demo.elastic2ls.com
 
 # Short description of your site
 description: Wir helfen Ihnen bei der Einführung von DevOps und Ihren Cloud Migration. Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment. Wir bieten Trainings zu den Themen DevOps, Cloud, Linux und vieles mehr.
@@ -11,7 +11,7 @@ description: Wir helfen Ihnen bei der Einführung von DevOps und Ihren Cloud Mig
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-url: "http://localhost:4000"
+url: "https://demo.elastic2ls.com"
 
 # baseurl should be an empty string
 baseurl: ""

@@ -3,6 +3,7 @@ layout: post
 title: SSH - Einmalpasswörter
 subtitle: SSH Authentifizierung richtig erweitert absichern. Ich zeige euch, wie Sie mit einer zwei Faktoren erweitert absichern können.
 keywords: [SSH Authentifizierung Einmalpasswörter OTPW one time password]
+categories: [Sicherheit]
 ---
 # {{ page.title }}
 

@@ -5,72 +5,126 @@ subtitle: About us elastic2ls.com
 keywords: [About elastic2ls.com Vorstellung Team]
 ---
 {::options parse_block_html="true" /}
-
-<div class="content">
-
-<div class="container">
-
 <div class="slider">
 ___
-
 <div id="carousel" class="carousel">
-
 <div class="carousel-inner">
 
-<div class="item active">![logo](/img/Logo_box-1-150x150.png){:  .hidden-xs}
-
-# Eine andere Art von IT-Beratung
-
-## Wir sind auf Continuous Integration / Delivery spezialisiert und möchten die Welt der Softwareentwicklung verändern, indem wir unser Wissen teilen.
+# Wir sind auf Continuous Integration/ - Delivery spezialisiert.
 
 [Kontaktieren Sie uns](mailto:info@elastic2ls.com?subject=feedback){: .btn .btn-primary}
+
+<div class="boxes flexible about">
+Wir sind ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir Cloud-Plattformen und DevOps Pipelines erfolgreich einführen.
 </div>
+
+</div>
+</div>
+</div>
+___
+
+<div class="grid-content-about">
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes flexible about">
+![Alexander Wiechert, CEO](../img/ceo.jpg){: .circle4}
+</div>
+</div>
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes flexible about">
+#### Alexander Wiechert
+
+Founder
+
+<p class="circle3"><a href="https://www.xing.com/profile/Alexander_Wiechert/cv" target="_blank" class="fa fa-xing"></a></p>
+<p class="circle3"><a href="https://www.linkedin.com/in/alexander-wiechert/" target="_blank" class="fa fa-linkedin"></a></p>
+</div>
+</div>
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes flexible about">
+#### Work experience
+
+<div class="workdescription">
+_03/2016 - 02/2019_
+
+**Senior Operations Manager**
+
+[DFL Digital Sports GmbH](https:/www.bundesliga.com/)
+</div>
+
+<div class="workdescription">
+_05/2015 - 12/2015_
+
+**IT Consultant**
+
+[ORBIT Gesellschaft für Applikations- und Informationssysteme mbH](https://www.orbit.de)
+</div>
+
+<div class="workdescription">
+_11/2013 - 04/2015_
+
+**Manager Global IT Infrastructure**
+
+[Talend](https://www.talend.com)
+</div>
+
+<div class="workdescription">
+_07/2009 - 11/2013_
+
+**Head IT Infrastructure**
+
+[Talend](https://www.talend.com)
+</div>
+
+
+<div class="workdescription">
+_09/2008 - 06/2009_
+
+**Senior Network Specialist / Security Specialist**
+
+[eLGe SYSTEME GmbH & Co. KG](https://www.elge.de)
+</div>
+
+
+</div>
+</div>
+
+
+
+<div class="col-sm-24 col-md-12">
 
 ___
 
 <div class="grid-content">
 
-<div class="col-sm-24 col-md-12">
+<div class="offer_head">
 
-<div class="boxes flexible about">
-
-Wir sind ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen, Networking und DevOps konzentriert. Wir unterstützen Unternehmen dabei, in einer datengetriebenen Softwareökonomie voranzukommen, indem wir Cloud-Plattformen und DevOps Pipelines erfolgreich einführen
+# Die nächsten Events
 
 </div>
 
-</div>
 
-<div class="col-sm-8 col-md-4">
 
-<div class="boxes flexible about">
+* #### [7\. - 29\. Mai - Training - DevOps Docker](../docker-training)
 
-<div class="titles-form">![Alexander Wiechert, CEO](/img/ceo.jpg)
+* #### [7\. - 29\. Juni - Training - CI/CD mit Jenkins](../jenkins-training)
 
-#### Alexander Wiechert
 
-Founder
+* #### [12\. Juni - Vortrag - AWS Usergroup Cologne](#)
 
-[](https://www.xing.com/profile/Alexander_Wiechert/cv)
 
-[](https://www.linkedin.com/in/alexander-wiechert/)
+* #### [7\. – 29\. Juni - Training - DevOps Foundation](../devops-training)
 
-[](https://github.com/elastic2ls-com)
+* #### [10\. August - Vortrag - Ci/CD auf der Froscon](#)
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="grid-content2">
-
-<div class="col-sm-24 col-md-12">
 
 ___
 
-### Kunden
+</div>
+
+# Kunden
 
 <div id="carousel-partner" class="carousel slide" data-interval="5000" data-ride="carousel">
 
@@ -87,12 +141,10 @@ ___
 
 </div>
 
-</div>
 
 </div>
 
 </div>
 
-</div>
 
 </div>

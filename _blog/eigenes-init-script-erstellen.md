@@ -3,10 +3,11 @@ layout: post
 title: eigenes Initscript erstellen
 subtitle:  Hier eine kurze Anleitung wie ihr ein eigenes Init-Script erstellen könnt.
 keywords: [Init-Script Linux bash chkconfig /etc/init.d/ processname]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 
-![init_d](https://www.elastic2ls.com/wp-content/uploads/2016/10/init_d.png)
+![init_d](../../img/init_d.png)
 
 
 Hier eine kurze Anleitung wie ihr ein eigenes Init-Script erstellen könnt.          

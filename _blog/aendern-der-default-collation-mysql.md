@@ -3,6 +3,7 @@ layout: post
 title: Auflisten und ändern der default collation in Mysql
 subtitle: Auflisten und ändern der default collation in Mysql über die CLI
 keywords: [default collation Mysql ändern Auflisten]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

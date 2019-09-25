@@ -6,20 +6,13 @@
 
 /*slider setting*/
 .carousel {
- /*margin: 30px auto 60px;
- margin-top: 20px;
- padding: 0 30px;*/
  width:100%;
  min-height: 150px !important;
- /*background: #F8FBEF;*/
- /* background-image: url("../img/sw_tattooin.jpg");
- background-size: 1200px 250px;
- opacity: 0.5; */
 }
 .carousel .item{
  /*padding-left: 220px;*/
  overflow: hidden;
- margin-top: 20px;
+ margin-top: 60px;
 }
 /* .carousel a:link{
     color:#FFFFFF;
@@ -99,8 +92,18 @@
 } */
 
 @media screen and (min-width: 1200px){
+    .container {
+        width: 1370px;
+      }
+    .workdescription {
+      padding-bottom: 15px;
+      line-height: 0.9;
+      }      
+    .carousel-inner {
+        min-height: 350px;
+      }
     .blog{
-        min-height: 250px;
+        min-height: 180px;
       }
     .flexible{
         min-height: 150px;
@@ -139,9 +142,15 @@
       !important;
       padding-bottom: 15px;
     }
+    .grid-content-about {
+      min-height: 750px;
+      !important;
+      padding-bottom: 15px;
+    }
     .menu{
         padding-right: 15px;
         padding-top: 20px;
+        padding-bottom: 20px;
       }
     .logo img{
       max-width: 54px;
@@ -171,11 +180,12 @@
         color: #fff;
         background-color: #5a5a5a;
       }
-      .navbar-inverse .navbar-nav > li > a {
+      .navbar-inverse .navbar-nav > a {
         color: #fff;
         font-size: x-large;
+        padding-right: 15px;
         }
-      .dropdown-menu > li > a {
+      .dropdown-menu > a {
         font-size: large;
       }
       .navbar-inverse .navbar-nav .open > a {
@@ -602,8 +612,8 @@
 }
 
 .boxes2{
-  padding-top: 35px;
-  font-size: 18px;
+  /* padding-top: 35px;
+  font-size: 18px; */
 
 }
 /*about page*/
@@ -667,9 +677,20 @@
   color: #fff;
   display: inline-block;
   position: relative;
-  /* padding: 5px;
-  top: -45px;
+  padding: 5px;
+  /* top: -45px;
   left: 72px; */
+}
+
+.circle4 {
+    background-color: #D8D8D8;
+    border-radius: 10%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 150%;
+    color: #fff;
+    display: inline-block;
+    position: relative;
 }
 /*about page*/
 

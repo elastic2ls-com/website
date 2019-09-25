@@ -3,6 +3,7 @@ layout: post
 title: Crontab erklärt
 subtitle: Crontab wird dazu benutzt um auf Unix basierenden zeitgesteuerte Jobs laufen zu lassen. Ein tpyischer Eintrag sieht folgendermassen aus
 keywords: [Crontab Konfiguration erklärt Task Notation Systemweit]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 

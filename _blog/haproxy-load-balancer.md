@@ -3,6 +3,7 @@ layout: post
 title: grep logfiles via SSH on multiple server
 subtitle:  HAProxy ist eine beliebte Open Source Software für TCP/HTTP Load Balancing sowie Proxy Lösung, welche unter Linux, Solaris und FreeBSD laufen kann.
 keywords: [HAProxy loadbalancer OpenSource Software TCP/HTTP Load Balancing Proxy ACL Terminologie Layer4 Layer7 Algorithmen]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

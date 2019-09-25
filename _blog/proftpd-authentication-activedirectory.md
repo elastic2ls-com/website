@@ -3,6 +3,7 @@ layout: post
 title: proftp - Authentifikation per ActiveDirectory
 subtitle:  Snippets from proftpd.conf erweitert um proftp - Authentifikation per ActiveDirectory, ergänzt sind Beispielwerte für den Connector ans Active Directory.
 keywords: [proftp Authentifikation ActiveDirectory]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 

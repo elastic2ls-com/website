@@ -1,10 +1,13 @@
 ---
 layout: post
-title: ERROR 1054 (42S22) Unknown column 'plugin' in 'mysql.user'
+title: Github Backups erstellen
 subtitle:  Um schnell Github Backups für alle Repositories einer Organisation anzulegen kann das folgende Script sehr nützlich sein. Es liest per curl über die Github Api die Namen aller Repos aus. Am Ende des Scripts prüft es noch auf Backups die älter als 7 Tage sind und löscht diese.
 keywords: [Github Backups Repositories Organisation]
+categories: [DevOps]
 ---
 # {{ page.title }}
+
+![Github](../../img/github-logo.png)
 
 Um schnell Github Backups für alle Repositories einer Organisation anzulegen kann das folgende Script sehr nützlich sein. Es liest per curl über die Github Api die Namen aller Repos aus. Am Ende des Scripts prüft es noch auf Backups die älter als 7 Tage sind und löscht diese.
 

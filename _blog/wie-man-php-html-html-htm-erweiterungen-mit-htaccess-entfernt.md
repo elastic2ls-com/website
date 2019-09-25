@@ -3,6 +3,7 @@ layout: post
 title: Wie man.php,.html,.html,.htm Erweiterungen mit.htaccess entfernt
 subtitle: Ich wollte kürzlich die Erweiterungen von meiner Website entfernen, um die URLs benutzer- und suchmaschinenfreundlicher zu gestalten. Ich wollte auch diese entfernen! In diesem Tutorial zeige ich Ihnen, wie Sie das ganz einfach machen können.
 tags: [.htaccess mod_rewrite Datei Endung entfernen ]
+categories: [Howtos]
 ---
 # Wie man.php,.html,.html,.htm Erweiterungen mit.htaccess entfernt
 

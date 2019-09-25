@@ -3,6 +3,7 @@ layout: post
 title: Laufzeit von SSL Zertifikaten + Bash
 subtitle:  Unten findet ihr ein Scrip um die Laufzeit von SSL Zertifikaten zu überprüfen. Erweitert habe ich es um eine Prüfung, wenn die Laufzeit weniger als 30 bzw. 7 Tage beträgt.
 keywords: [SSL Zertifikaten Laufzeit Bash automatisieren Shellscript]
+categories: [LinuxInside]
 ---
 # {{ page.title }}
 

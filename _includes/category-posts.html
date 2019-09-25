@@ -1,11 +1,11 @@
 <div class="relatedPosts">
 <div class=" related">
 
-{% assign maxRelated = 99 %}
+{% assign maxRelated = site.blog | sample:99 %}
 {% assign minCommonTags = 1 %}
 {% assign maxRelatedCounter = 0 %}
 
-{% for cat in site.blog %}
+{% for cat in maxRelated %}
 
     {% assign sameTagCount = 0 %}
     {% assign commonTags = '' %}
@@ -23,9 +23,10 @@
     {% if sameTagCount >= minCommonTags %}
 
       <h4 style="font-size: 16px"><a href="{{ site.baseurl }}{{ cat.url }}">{{ cat.title }}</a></h4>
-      <!-- <p>{{ cat.excerpt }}</p> -->
-      <!-- <img src="{{ cat.image }}"> -->
-      <p>{{ cat.image }}</p>
+      <!-- {{ cat.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+      {% assign excerpt_word_count = cat.excerpt | number_of_words %}
+      {% if cat.content != cat.excerpt or excerpt_word_count > site.excerpt_length %} -->
+      {% endif %}
 
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter >= maxRelated %}
@@ -35,5 +36,6 @@
 
 
   {% endfor %}
+
   </div>
 </div>
