@@ -152,6 +152,11 @@
         padding-top: 20px;
         padding-bottom: 20px;
       }
+
+    .navbar-inverse .navbar-nav > a:hover{
+      color: #A4A4A4;
+      }
+
     .logo img{
       max-width: 54px;
       max-height: 54px;
@@ -185,6 +190,12 @@
         font-size: x-large;
         padding-right: 15px;
         }
+
+      .navbar-inverse .navbar-nav > a:hover{
+        color: #A4A4A4;
+        }
+
+
       .dropdown-menu > a {
         font-size: large;
       }
@@ -461,7 +472,8 @@
       }
       .menu {
         padding-right: 35px;
-        /* margin-top: -20px; */
+        padding-top: 10px;
+        padding-bottom: unset;
         display: block;
       }
       .logo img{
