@@ -1,4 +1,15 @@
 # Cache controll
-<FilesMatch "\.(png|webp|css|js|woff2)$">
-Header set Cache-Control "max-age=604800, public"
+<FilesMatch "\.(png|webp|css|js|woff2|woff|jpg|jpeg)$">
+  Header set Cache-Control "max-age=604800, public"
 </FilesMatch>
+  Header set Cache-Control "max-age=604800, public"
+
+# strip file suffix
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  #RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^([^\.]+)$ $1.html [NC,L]
+</IfModule>
+
+ErrorDocument 404 /404.html
