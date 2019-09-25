@@ -184,7 +184,6 @@
         color: #fff;
         font-size: x-large;
         padding-right: 15px;
-        display: block;
         }
       .dropdown-menu > a {
         font-size: large;
@@ -463,6 +462,7 @@
       .menu {
         padding-right: 35px;
         /* margin-top: -20px; */
+        display: block;
       }
       .logo img{
         max-width: 44px;
