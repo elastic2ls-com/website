@@ -107,17 +107,17 @@ ___
 
 
 
-* #### [7\. - 29\. Mai - Training - DevOps Docker](../docker-training)
+* [7\. - 29\. Mai - Training - DevOps Docker](../docker-training)
 
-* #### [7\. - 29\. Juni - Training - CI/CD mit Jenkins](../jenkins-training)
-
-
-* #### [12\. Juni - Vortrag - AWS Usergroup Cologne](#)
+* [7\. - 29\. Juni - Training - CI/CD mit Jenkins](../jenkins-training)
 
 
-* #### [7\. – 29\. Juni - Training - DevOps Foundation](../devops-training)
+* [12\. Juni - Vortrag - AWS Usergroup Cologne](#)
 
-* #### [10\. August - Vortrag - Ci/CD auf der Froscon](#)
+
+* [7\. – 29\. Juni - Training - DevOps Foundation](../devops-training)
+
+* [10\. August - Vortrag - Ci/CD auf der Froscon](#)
 
 
 ___
