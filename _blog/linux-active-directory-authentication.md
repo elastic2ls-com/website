@@ -193,7 +193,3 @@ session required      pam_mkhomedir.so  skel=/etc/skel umask=0022
 session optional      pam_sss.so
 session optional      pam_systemd.so
 ```
-
-Quelle:
-
-[httpss://help.ubuntu.com/lts/serverguide/sssd-ad.html](httpss://help.ubuntu.com/lts/serverguide/sssd-ad.html)

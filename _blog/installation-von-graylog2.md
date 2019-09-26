@@ -103,7 +103,7 @@ curl -XGET 'https://localhost:9200/'
 curl -XGET 'https://localhost:9200/_cluster/health?pretty=true'
 ```
 
-![Graylog2](https://s.elastic2ls.com/wp-content/uploads/2018/02/27204501/Test_Elasticsearch.png)
+![Graylog2](../../img/Test_Elasticsearch.png)
 
 ## 4\. Installation des Graylog2 Server
 
@@ -204,8 +204,8 @@ sudo service graylog2 restart
 
 Dazu geben wir im Browser der Wahl ein: https://Server-Adresse:9000. Der Login erfolgt mittels "admin" und dem konfigurietem **root_password_sha2** Passwort in der server.conf.
 
-![Graylog2](https://s.elastic2ls.com/wp-content/uploads/2018/02/27204602/Install-Graylog2_login_screen-768x410.png)
+![Graylog2](../../img/Install-Graylog2_login_screen-768x410.png)
 
-![Graylog2](https://s.elastic2ls.com/wp-content/uploads/2018/02/27204718/Install-Graylog2-Search-Page-768x410.png)
+![Graylog2](../../img/Install-Graylog2-Search-Page-768x410.png)
 
-Das wars! In der zweiten Runde gehts ans Konfigurieren von Graylog um diverse Dienste nach Graylog schreiben zu lassen. Sowie die benötigten Extraktoren um die Nachrichten in Felder zu zerlegen. Im dritten Teil zeigen wir euch wir man Dashboards baut und Streams nutzt um Alerts festzulegen. Quellen: [https://www.howtoforge.com/](httpss://www.howtoforge.com/tutorial/how-to-Install-graylog2-and-elasticsearch-on-ubuntu-15-10/) [httpss://www.itzgeek.com/](https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/how-to-install-graylog2-on-ubuntu-14-04.html)
+Das wars! In der zweiten Runde gehts ans Konfigurieren von Graylog um diverse Dienste nach Graylog schreiben zu lassen. Sowie die benötigten Extraktoren um die Nachrichten in Felder zu zerlegen. Im dritten Teil zeigen wir euch wir man Dashboards baut und Streams nutzt um Alerts festzulegen.

@@ -134,15 +134,15 @@ Leider lies sich das Problem nicht umgehen, daher kann Debian7 nicht genutzt wer
 
 Wir installieren den X2Go Client auf der Windows Maschine. Danach können wir die Verbindung testen.
 
-![x2go](https://s.elastic2ls.com/wp-content/uploads/2018/02/27213751/x2go_001-550x666-248x300.png)
+![x2go](../../img/x2go_001-550x666-248x300.png)
 
 Hierzu geben wir lediglich die IP-Adresse sowie den Benutzernamen ein sowie die zu verwendete Desktopumgebung.
 
-![x2go](https://s.elastic2ls.com/wp-content/uploads/2018/02/27213812/x2go_003-550x231-300x126.png)
+![x2go](../../img/x2go_003-550x231-300x126.png)
 
 So sehen die Verbindungsdetails bei erfolgreicher Verbindung aus.
 
-![x2go](https://s.elastic2ls.com/wp-content/uploads/2018/02/27213836/x2go_RS_003-550x470-300x235.png)
+![x2go](../../img//x2go_RS_003-550x470-300x235.png)
 
 Und hier sehen wir den Ubuntu14.04 Mate Desktop. Der Zugriff ist über einen SSH Tunnel gesichert.
 
@@ -150,23 +150,23 @@ Und hier sehen wir den Ubuntu14.04 Mate Desktop. Der Zugriff ist über einen SSH
 
 Für den Remote Support muss zusätzlich noch das Paket `apt-get install x2godesktopsharing` installiert werden. Zu finden ist das installierte Paket in Ubuntu unter "Applications" => "Internet" => "X2GoDesktopSharing".
 
-![x2go](https://s.elastic2ls.com/wp-content/uploads/2018/02/27213901/x2go_RS_002-550x470-300x256.png)
+![x2go](../../img/x2go_RS_002-550x470-300x256.png)
 
 Aktiviert wird das ganze auf dem Symbol in der Anwendungsleiste.
 
-![x2go](https://s.elastic2ls.com/wp-content/uploads/2018/02/27213933/x2go_RS_002-550x4701-300x256.png)
+![x2go](../../img/x2go_RS_002-550x4701-300x256.png)
 
 In X2Go müssen wir nun die Verbindungseinstellungen anpassen.
 
-![x2go](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214000/x2go_RS_003-550x666-248x300.png)
+![x2go](../../img/x2go_RS_003-550x666-248x300.png)
 
 Wir erlauben den Vollzuggriff.
 
-![x2go](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214019/x2go_RS_004-550x300-300x164.png)
+![x2go](../../img/x2go_RS_004-550x300-300x164.png)
 
 Und jetzt haben wir vollen Zugriff auf den Desktop.
 
-![x2go](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214039/x2go_RS_005-550x300-300x164.png)
+![x2go](../../img/x2go_RS_005-550x300-300x164.png)
 
 ## Zusammenfassung
 

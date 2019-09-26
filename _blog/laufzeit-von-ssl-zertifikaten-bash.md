@@ -47,4 +47,6 @@ SSL certificate for www.elastic2ls.com is valid until Sep 22 2018.
 OK: Certificate for www.elastic2ls.com valid for 74 days.
 ```
 
-Source: [https://github.com/elastic2ls-com/ssl-check.git](https://github.com/elastic2ls-com/ssl-check.git)
+Git Repository: 
+
+[https://github.com/elastic2ls-com/ssl-check.git](https://github.com/elastic2ls-com/ssl-check.git)

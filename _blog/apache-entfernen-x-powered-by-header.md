@@ -3,7 +3,6 @@ layout: post
 title: Apache entfernen X-Powered-By Header
 subtitle: In u.g. Response Header des Apache sieht man neben der Versionsnummer des Apache zusätzlich die der installierten OpenSSL Version und die PHP Version. Dies bietet Angreifern zusätzlich Informaitonen über möglicherweise auszunutzende Lücken.
 keywords: [Apache X-Powered-By Header Versionsnummer OpenSSL Version PHP Version Serverversionsnummer Apache/2.4.29]
-image: /img/Apache-http-server.png
 categories: [Sicherheit]
 ---
 # {{ page.title }}

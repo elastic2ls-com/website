@@ -48,10 +48,6 @@ RewriteEngine On
 RewriteRule (.*)$ /$1/ [R=301,L]
 ```
 
-## Fazit
-
-Für diejenigen, die nicht so erfahren mit .htaccess-Dateien sind, gibt es ein Online-Tool, mit dem man sie erstellen kann. Es ist nützlich für Anfänger, um loszulegen, und einfach zu bedienen.
-
 ## Achtung GoDaddy-Benutzer
 
 Um die Erweiterungen zu entfernen, müssen Sie zuvor MultiViews aktivieren. Der Code sollte so aussehen:

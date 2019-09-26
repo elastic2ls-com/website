@@ -140,7 +140,7 @@ Examples:
 
 
 ## lighthouse Reports
-![lighthouse report](https://www.elastic2ls.com/wp-content/uploads/2018/02/lighthouse_report-1024x881.png)
+![lighthouse report](../../img/lighthouse_report-1024x881.png)
 
 
 ## Docs

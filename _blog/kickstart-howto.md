@@ -9,7 +9,7 @@ categories: [Howtos]
 
 Kickstart wird dazu benutzt um Server automatisiert zu provisionieren. Man kann z.B. Benutzer anlegen, die Festplatten zu partitionieren und formatieren, Software installieren,die Netztwerkschnittstellen einrichten und einiges mehr.
 
-![kickstart-overview1](https://www.elastic2ls.com/wp-content/uploads/2015/11/kickstart-overview1.png)
+![kickstart-overview1](../../img/kickstart-overview1.png)
 
 ## Serverseitige Konfiguration
 
@@ -27,7 +27,7 @@ Das war es schon. Wir werden die Kickstart Datei in den DocumentRoot Ordner des 
 
 Hier gibt es unter anderem für erste Tests eine Gui Werkzeug welches uns helfen kann eine Kickstart Datei zu erstellen. Es heisst system-config-kickstart
 
-![ksconfig-basic](https://www.elastic2ls.com/wp-content/uploads/2015/11/ksconfig-basic.png)
+![ksconfig-basic](../../img/ksconfig-basic.png)
 
 ## Optionen in der Kickstart Cfg Datei
 
@@ -187,7 +187,3 @@ echo "* *" >>/etc/issue
 echo "******************************************" >>/etc/issue
 #%end
 ```
-
-Quellen:
-
-[https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/s1-kickstart2-options.html](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Installation_Guide/s1-kickstart2-options.html)

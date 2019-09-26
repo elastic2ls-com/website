@@ -8,7 +8,7 @@ categories: [DevOps]
 # {{ page.title }}
 
 
-![](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214630/vagrant.png)
+![Vagrant-](../../img/Vagrant-logo.png)
 
 Beim startet der Vagrant Box wurde der Shared Folder nicht gemountet mit der Fehlermeldung
 

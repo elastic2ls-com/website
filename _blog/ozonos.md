@@ -13,19 +13,21 @@ Herunterladen könnt ihr euch das ISO auf der [Sourceforge Seite des Projektes](
 
 ## Hier ein paar Bilder vom Livemodus
 
-![OzonOS_8](https://www.elastic2ls.com/wp-content/uploads/2015/04/OzonOS_8.png)
+![OzonOS_8](../../img/OzonOS_8.png)
 
-![OzonOS_9](https://www.elastic2ls.com/wp-content/uploads/2015/04/OzonOS_9.png)
+![OzonOS_9](../../img/OzonOS_9.png)
 
-![OzonOS_5](https://www.elastic2ls.com/wp-content/uploads/2015/04/OzonOS_5.png)  
+![OzonOS_5](../../img/OzonOS_5.png)  
 
 ## Hier vom Installationsdialog  
 
-![OzonOS_1](https://www.elastic2ls.com/wp-content/uploads/2015/04/OzonOS_1.png)
+![OzonOS_1](../../img/OzonOS_1.png)
 
-![OzonOS_4](https://www.elastic2ls.com/wp-content/uploads/2015/04/OzonOS_4.png) ![OzonOS_3](https://www.elastic2ls.com/wp-content/uploads/2015/04/OzonOS_3.png)
+![OzonOS_4](../../img/OzonOS_4.png)
 
-![OzonOS_2](https://www.elastic2ls.com/wp-content/uploads/2015/04/OzonOS_2.png)   
+![OzonOS_3](../../img/OzonOS_3.png)
+
+![OzonOS_2](../../img/OzonOS_2.png)   
 
 ## Fazit
 

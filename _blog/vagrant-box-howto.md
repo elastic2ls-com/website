@@ -6,7 +6,7 @@ keywords: [Jenkins Deklarative Pipline checkoutscm Jenkinsfile webinterface]
 categories: [DevOps]
 ---
 # {{ page.title }}
-## [![vagrant box](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214630/vagrant-300x92.png)](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214630/vagrant.png)
+## [![vagrant box](../../img/Vagrant-logo.png)
 
 ## Vagrant Box Howto
 
@@ -16,13 +16,13 @@ Vagrant ist ein hervoragendes Tool für Entwickler aber auch generell für IT Te
 
 [VirtualBox Download](httpss://www.virtualbox.org/wiki/Downloads)
 
-![vagrant box](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214651/virtualbox.jpg)
+![vagrant box](../../img/virtualbox.jpg)
 
 ### 2\. Downloade ein CentOS iso image
 
 [CentOS iso image Download](https://wiki.centos.org/Download)
 
-![vagrant box](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214709/centos-300x158.png)
+![vagrant box](../../img/centos-300x158.png)
 
 ### 3\. neue VM in VirtualBox
 
@@ -59,7 +59,7 @@ you@host$ VBoxManage modifyvm "vagrant-centos7" --natpf1 "guestssh,tcp,,2222,,22
 
 b. Stoppe die VM und setze das Portforwarding in der Gui von VirtualBox.
 
-![vagrant box](https://s.elastic2ls.com/wp-content/uploads/2018/02/27214915/VBOx-Portforwaring-550x293-300x160.png)
+![vagrant box](../../img/VBOx-Portforwaring-550x293-300x160.png)
 
 ###  7\. Test SSH:
 
@@ -139,7 +139,7 @@ alex@host$ vagrant box add centos7 centos7.box
 
 **!!! ACHTUNG** Der Name der hinter **--base**; sollte identisch sein mit dem Namen der VM in Virtual Box.
 
-![centos_base_box_export](https://www.elastic2ls.com/wp-content/uploads/2015/06/centos_base_box_export.jpg)
+![centos_base_box_export](../../img/centos_base_box_export.jpg)
 
 Du solltest jetzt die neu erstellte Vagrant Base-Box in der Liste der Boxen in vagrant finden.
 
@@ -167,9 +167,3 @@ alex@otherhost$ /home/user/my_vm $ vagrant ssh
 ```
 
 E Voilà. Das wars. Jetzt hast du eie Base Box die du als Grundlage für deine Tests benutzen kannst.
-
-Quelle:
-
-[https://github.com/ckan/ckan/wiki/How-to-Create-a-CentOS-Vagrant-Base-Box](httpss://github.com/ckan/ckan/wiki/How-to-Create-a-CentOS-Vagrant-Base-Box)
-
-[https://docs.vagrantup.com/v2/getting-started/](https://docs.vagrantup.com/v2/getting-started/)

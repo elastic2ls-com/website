@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-[![docker](https://s.elastic2ls.com/wp-content/uploads/2018/02/27203623/DockerLogo-300x150.png)](https://s.elastic2ls.com/wp-content/uploads/2018/02/27203623/DockerLogo.png)
+![docker](../../img/DockerLogo-300x150.png)
 
 Aus Seosicht ist es wichtig, dass Redirects die man eingebaut hat, auch auf die gewünschte Seite leiten und nicht in einem 404 Statuscode enden. Dazu können wir die Redirects testen mit docker.
 
@@ -99,4 +99,4 @@ bash-4.2$docker restart elastic2ls-apache-centos6
 
 ## 5\. Resourcen
 
-Die Dockerfiles für Centos bzw. Ubuntu habe ich in Github bereitgestellt. [httpss://github.com/elastic2ls-com/dockerfiles/tree/master/apache](httpss://github.com/elastic2ls-com/dockerfiles/tree/master/apache)
+Die Dockerfiles für Centos bzw. Ubuntu habe ich in Github bereitgestellt. [https://github.com/elastic2ls-com/dockerfiles/tree/master/apache](https://github.com/elastic2ls-com/dockerfiles/tree/master/apache)

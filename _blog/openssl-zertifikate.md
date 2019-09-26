@@ -8,7 +8,7 @@ categories: [Howtos]
 # {{ page.title }}
 
 
-![](https://s.elastic2ls.com/wp-content/uploads/2018/02/27205819/openssl-300x81.jpg)
+![OpenSSL](../../img/openssl-300x81.jpg)
 
 
 ## OpenSSL-Zertifikat CSR erzeugen/anzeigen (Certificate Signing Request)

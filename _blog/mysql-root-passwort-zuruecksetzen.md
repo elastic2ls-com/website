@@ -24,6 +24,3 @@ Nun können wir in der ersten Session in welcher wir den Server im Safe-Mode ges
 ```
 /etc/init.d/mysql start
 ```
-
-Quellen:
-[https://dev.mysql.com/doc/refman/5.0/en/resetting-permissions.html](httpss://dev.mysql.com/doc/refman/5.0/en/resetting-permissions.html)

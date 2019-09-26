@@ -7,7 +7,7 @@ categories: [Sicherheit]
 ---
 # {{ page.title }}
 
-![Openssh](../img/openssh-logo-150x150.png)
+![Openssh](../../img/openssh-logo-150x150.png)
 
 ## Einleitung
 

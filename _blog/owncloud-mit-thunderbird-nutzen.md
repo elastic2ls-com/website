@@ -9,14 +9,18 @@ categories: [Howtos]
 
 Mit Owncloud kann man primar seine eigene Cloud Infrastruktur aufbauen und das kombiniert mit der Sicherheit seine Daten nicht einem Anbieter wie Dropbox o.ä anzuvertrauen, da man die Installation auf jedem eigenen beliebigen Server aufbauen kann. Mein primäres Ziel in diesem Tutorial ist es die Kalender und Kontakte auf meinen Rechnern sowie meinem Mobiltelefon syncron zu halten, was ohne Owncloud doch eine ziemliche Nerverei ist/war. Ich zeige euch wie man die Installation durchführt, wie man die Verbindungen absicher kann und zum Schluss wie man die Kontakte und Kalender in Thunderbird. Auf die Einrichtung des Mobiletelefones gehe ich nicht weiter ein da das doch durchaus sehr unterschiedlich sein.
 
-## Installation
-
-Unten sind die einzelnen Schritte dokumentiert.
-
-### 1\. Download
+## 1\. Installation am Beispiel Debian
+Füge das Download-Repository hinzu. Dies erfordert die Registrierung eines vertrauenswürdigen Schlüssels.
+```
+wget -nv https://download.owncloud.org/download/repositories/production/Debian_9.0/Release.key -O Release.key
+apt-key add - < Release.key
+```
+Danach die sourcelist für apt-get speichern und das Paket òwncloud-files` installieren.
 
 ```
-wget [https://download.owncloud.org/community/owncloud-8.1.3.tar.bz2](httpss://download.owncloud.org/community/owncloud-8.1.3.tar.bz2)
+echo 'deb http://download.owncloud.org/download/repositories/production/Debian_9.0/ /' > /etc/apt/sources.list.d/owncloud.list
+apt-get update
+apt-get install owncloud-files
 ```
 
 ### 2\. Datenbankserver installieren
@@ -41,15 +45,7 @@ MariaDB [(none)]> flush privileges;
 # apt-get install apache2 php5 libapache2-mod-php5 php5-gd php5-json php5-json php5 php5-mysql php5-curl php5-intl php5-mcrypt php5-imagick
 ```
 
-### 5\. Owncloud für Webserver konfigieren
-
-```
-# tar xfv owncloud-8.1.0.tar.bz2
-mv owncloud /var/www/html/owncloud_web
-chown -R www-data:www-data /var/www/html/owncloud_web/
-```
-
-### 6\. mit SSL Zertifikat absichern
+### 5\. mit SSL Zertifikat absichern
 
 Für diesen Test verwenden wir erst einmal das Standart Zertifikt von Ubuntu. Dazu aktivieren wir das SSL Modul:
 
@@ -99,12 +95,12 @@ Es gibt verschieden Wege das rewrite Modul zu nutzen um alle https Anfragen auf 
 ```
 RewriteEngine on
 RewriteCond %{HTTPS} !=on
-RewriteRule ^/?(.*) httpss://%{SERVER_NAME}/owncloud_web [R,L]
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/owncloud_web [R,L]
 ```
 
 Ab nun sollten all Anfragen an die Url **http://127.28.128.9/owncloud_web** umgeleitet werden nach **https://172.28.128.9/owncloud_web**.
 
-### 7\. Owncloud über Webinterface einrichten
+### 6\. Owncloud über Webinterface einrichten
 
 Nehmen wir an wir haben die Owncloud Installation auf einer virtuellen Maschine installiert mit der Adresse 172.28.128.9. (Dies ist nicht bestandteil dieses Tutorials) Dazu öffnen wir die Seite **https://172.28.128.9/owncloud_web** in dem Browser der Wahl. Als erstes müssen wir ein Administratoren Konto anlegen z.B. admin mit dem Passwort owncloud. Dann müssen wir auf der selben Seite die Datenbank Parameter eingeben und zwar genau so wie oben beschrieben mit folgenden Werten:
 
@@ -115,7 +111,7 @@ Nehmen wir an wir haben die Owncloud Installation auf einer virtuellen Maschine 
  Datenbankpasswort: `passwort`
 ```
 
-![owncloud_web_einrichtung](https://www.elastic2ls.com/wp-content/uploads/2015/07/owncloud_web_einrichtung-300x222.png)
+![owncloud_web_einrichtung](../../img/owncloud_web_einrichtung-300x222.png)
 
 ## Einrichten in Thunderbird Kontakte und Kalender
 
@@ -123,43 +119,43 @@ Nehmen wir an wir haben die Owncloud Installation auf einer virtuellen Maschine 
 
 Als erstes laden wir den SOGo Connector für Mozilla Thunderbird herunter. wir laden die Datei über den Browser herunter. Zusaätzlich müssen wir noch das Plugin Lightning installieren.
 
-![sogo_conect_tb2](https://www.elastic2ls.com/wp-content/uploads/2015/07/sogo_conect_tb2-300x218.png)
+![sogo_conect_tb2](../../img/sogo_conect_tb2-300x218.png)
 
 Dann öffnen wir über das Menü Extras -> Add-ons den Add-ons Manager von Thunderbird und wählen dort Add-on aus Datei installieren…
 
-![sogo_connect_tb3](https://www.elastic2ls.com/wp-content/uploads/2015/07/sogo_connect_tb3-300x49.png)
+![sogo_connect_tb3](../../img/sogo_connect_tb3-300x49.png)
 
 Jetzt das Adressbuch öffnen und über _Datei -> Neu_ ein neues Remote-Adressbuch anlegen
 
-![sogo_connect_tb4](https://www.elastic2ls.com/wp-content/uploads/2015/07/sogo_connect_tb4-300x147.png)
+![sogo_connect_tb4](../../img/sogo_connect_tb4-300x147.png)
 
 Dort muss ein Name für das Adressbuch vergeben werden und wir benötigen die CardDAV-Adresse der ownCloud Instanz. Um diese herauszufinden, gehen wir im ownCloud Fenster im Browser auf die App Kontakte. Die benötigte CardDAV-Adresse findest Du dort unten links unter dem Zahnrädchen und der Weltkugel.
 
-![sogo_connect_tb5](https://www.elastic2ls.com/wp-content/uploads/2015/07/sogo_connect_tb5.png)
+![sogo_connect_tb5](../../img/sogo_connect_tb5.png)
 
 Nun können wir mit einem Rechtsklick auf das ownCloud Adressbuch die Synchronisation starten.
 
-![sogo_connect_tb6](https://www.elastic2ls.com/wp-content/uploads/2015/07/sogo_connect_tb6-300x164.png)
+![sogo_connect_tb6](../../img/sogo_connect_tb6-300x164.png)
 
 Es erscheint ein Popup Fenster in dem die Anmeldedaten für das Adressbuch eingegeben werden müssen. Hier können wir auch einstellen, in welchem Interwall synchronisiert werden soll und welche Benachrichtigungen wir erhalten wollen. (Rechtsklick auf das Adressbuch -> _Eigenschaften_)
 
-![sogo_connect_tb7](https://www.elastic2ls.com/wp-content/uploads/2015/07/sogo_connect_tb7-300x167.png)
+![sogo_connect_tb7](../../img/sogo_connect_tb7-300x167.png)
 
 ### 2\. Kalender
 
 Um den Kalender zu integrieren sind folgende Schritte notwendig. Als erstes müssen wir die Url herausfinden. Diese finden wir im Webinterface von owncloud.
 
-![calendar_connect_tb3](https://www.elastic2ls.com/wp-content/uploads/2015/07/calendar_connect_tb3.png)
+![calendar_connect_tb3](../../img/calendar_connect_tb3.png)
 
-Dann öffnen wir in Thunderbird den Kalender -> Rechtsklick Neuer Kalender -> Im Netzwerk. Hier können wir die Url des Kalenders eingeben. ![calendar_connect_tb1](https://www.elastic2ls.com/wp-content/uploads/2015/07/calendar_connect_tb1-300x223.png)
+Dann öffnen wir in Thunderbird den Kalender -> Rechtsklick Neuer Kalender -> Im Netzwerk. Hier können wir die Url des Kalenders eingeben. ![calendar_connect_tb1](../../img/calendar_connect_tb1-300x223.png)
 
 Hier können wir die Url des Kalenders eingeben.
 
-![calendar_connect_tb2](https://www.elastic2ls.com/wp-content/uploads/2015/07/calendar_connect_tb2-300x219.png)
+![calendar_connect_tb2](../../img/calendar_connect_tb2-300x219.png)
 
 Wenn wir auf Eigenschaften des Kalenders gehen können wir noch z.B. einstellen wie oft syncronisiert werden soll.
 
-![calendar_connect_tb4](https://www.elastic2ls.com/wp-content/uploads/2015/07/calendar_connect_tb4-300x179.png)
+![calendar_connect_tb4](../../img/calendar_connect_tb4-300x179.png)
 
 ## Einrichten im Mobil Telefon Kontakte und Kalender
 

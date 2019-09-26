@@ -7,9 +7,9 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![Jenkinsfile Pipeline](https://s.elastic2ls.com/wp-content/uploads/2018/05/23160934/jenkins-300x182.png)
+![Jenkinsfile Pipeline](../../img/jenkins-300x182.png)
 
-Wenn man innnerhalb der Jenkinspipeline ein anderes Repository auschecken muss, abseits von dem in welchem die Konfiguration (Jenkinsfile u.a.) gespeichert ist, geht das mit folgendem Snippet. [![](https://s.elastic2ls.com/wp-content/uploads/2018/07/16104247/credentials-1024x938.png)](https://s.elastic2ls.com/wp-content/uploads/2018/07/16104247/credentials.png)
+Wenn man innnerhalb der Jenkinspipeline ein anderes Repository auschecken muss, abseits von dem in welchem die Konfiguration (Jenkinsfile u.a.) gespeichert ist, geht das mit folgendem Snippet. ![Jenkinsfile Pipeline](../../img/credentials-1024x938.png)
 
 ```
          stage('Checkout') {
@@ -21,7 +21,3 @@ Wenn man innnerhalb der Jenkinspipeline ein anderes Repository auschecken muss, 
             }
         }
 ```
-
-[Quelle]
-
-[https://stackoverflow.com/questions/39451345/using-credentials-from-jenkins-store-in-a-jenkinsfile](https://stackoverflow.com/questions/39451345/using-credentials-from-jenkins-store-in-a-jenkinsfile)

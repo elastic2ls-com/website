@@ -8,7 +8,7 @@ categories: [LinuxInside]
 # {{ page.title }}
 
 
-![Kommentare entfernen](https://s.elastic2ls.com/wp-content/uploads/2018/02/27205950/grep-e1563102229105.gif)
+![Kommentare entfernen](../../img/grep.gif)
 
 Viele Konfigurationsdatein in Linux Systemen dienen auch gleichzeitig der Dokumentation, was durchaus zum einarbeiten in eine neune Syntax sehr hilfreich sein kann. Da man aber spätestens wenn die gewünschten/gebrauchten Parameter bekannt sind und man zuweilen die Orientierung verlieren kann in grossen Konfigurationsdateien, kann
 

@@ -7,7 +7,7 @@ categories: [Howtos]
 ---
 # {{ page.title }}
 
-![apache-logo](../../img/apache-logo-300x300.png) 
+![apache-logo](../../img/apache-logo-300x300.png)
 
 Wenn man z.B. im Zuge einer Webseitenrestrukturierung die alten Url's weiterleiten muss und man nicht alle einzeln per ProxyPass und ProxyPassReverse eintragen will geht das am einfachsten und schnellsten geht es wenn man alle Url's per Wildcard durch den Proxy weiterleitet.
 

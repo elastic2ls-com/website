@@ -9,7 +9,7 @@ categories: [Howtos]
 
 Hier eine kurze Anleitung wie man Ruby 2.3.1 auf CentOS installiert.
 
-![Ruby 2.3.1](https://www.elastic2ls.com/wp-content/uploads/2016/07/Ruby_Logo.png)
+![Ruby 2.3.1](../../img/Ruby_Logo.png)
 
 
 ### Step 1:

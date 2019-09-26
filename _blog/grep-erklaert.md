@@ -10,7 +10,7 @@ categories: [LinuxInside]
 "Global search for a regular expression and print out matched lines" - kurz **grep** ist das gebräuchlichste Kommando, um in Dateien nach bestimmten Mustern zu suchen. Die Grep-Familie umfasst die drei Kommandos egrep, grep und fgrep. Das erste "Extended Grep" (erweitertes grep) versteht "ein paar mehr" der Regulären Ausdrücke als "grep". "fgrep" (Fixed Grep) hingegen unterstützt nur eine eingeschränkte Teilmenge, womit sich die Suche vor allem in größen Dateien erheblich beschleunigen lässt.
 
 
- ![grep](https://s.elastic2ls.com/wp-content/uploads/2018/02/27205950/grep-e1563102229105.gif)
+ ![grep](../../img/grep.gif)
 
  Grep arbeitet bei der Suche wesentlich effizienter als das in einem Editor geschehen würde. Per Voreinstellung schreibt das Kommando alle Zeilen der Eingabe, die das gesuchte Muster enthalten, auf die Standardausgabe. Dabei kann die Eingabe beliebig viele Dateien, als auch die Standardeingabe betreffen. Zudem liefern die Kommandos der Grep-Familie einen Rückgabewert an das Betriebssystem, was sie für die Verwendung in Shellprogrammen bevorzugt.
 

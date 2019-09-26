@@ -8,7 +8,7 @@ categories: [DevOps]
 # {{ page.title }}
 {::options parse_block_html="true" /}
 
-![puppet-hiera](https://s.elastic2ls.com/wp-content/uploads/2018/02/27212001/puppetlogo-300x105.png)
+![puppet-hiera](../../img/puppetlogo-300x105.png)
 
 Wir beschreiben hier an einem einfachen Beispiel wie puppet-hiera funktioniert.
 
