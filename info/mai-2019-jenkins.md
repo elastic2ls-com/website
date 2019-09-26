@@ -40,6 +40,6 @@ buchung@coworkingbonn.com
 <div class="offer_map">
 
 <div class="col-md-24">
-<iframe scrolling="no" marginheight="0" marginwidth="0" src="../info/osm_digital_hub_bonn.html?lat=50.71741,lon=7.15315,info=,zoom=15" width="100%" height="350" frameborder="0">
+<iframe scrolling="no" marginheight="0" marginwidth="0" src="../osm_digital_hub_bonn.html?lat=50.71741,lon=7.15315,info=,zoom=15" width="100%" height="350" frameborder="0">
 </iframe>
 </div>

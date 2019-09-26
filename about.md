@@ -59,7 +59,7 @@ _05/2015 - 12/2015_
 
 **IT Consultant**
 
-[ORBIT Gesellschaft für Applikations- und Informationssysteme mbH](https://www.orbit.de)
+[ORBIT GmbH](https://www.orbit.de)
 </div>
 
 <div class="workdescription">
@@ -67,7 +67,7 @@ _11/2013 - 04/2015_
 
 **Manager Global IT Infrastructure**
 
-[Talend](https://www.talend.com)
+[Talend SA](https://www.talend.com)
 </div>
 
 <div class="workdescription">
@@ -75,7 +75,7 @@ _07/2009 - 11/2013_
 
 **Head IT Infrastructure**
 
-[Talend](https://www.talend.com)
+[Talend SA](https://www.talend.com)
 </div>
 
 

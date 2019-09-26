@@ -15,19 +15,25 @@ ___
 
 <div class="item active">
 ![Docker Hands-on Workshops](/img/icons8-docker-50.png)
-#### Docker Hands-on Workshops. Build, Ship and Run any App, Anywhere
+#### Docker Hands-on Workshops. Build, Ship and Run any App, Anywhere.
 [Los gehts.](training/#devops-docker-camp){: .btn .btn-primary}
 </div>
 
 <div class="item">
-![Get your technical team to become superheros in DevOps practises](/img/icons8-batman-alt-50.png)
+![Lassen Sie Ihr technisches Team zu DevOps Superhelden werden.](/img/icons8-batman-alt-50.png)
 #### Lassen Sie Ihr technisches Team zu DevOps Superhelden werden.
 [Los gehts.](training/#devops-foundation-camp){: .btn .btn-primary}
 </div>
 
 <div class="item">
-![We are the CI/CD experts, help you building your pipelines and tooling infrastructure](/img/icons8-jenkins-50.png)
+![Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.](/img/icons8-jenkins-50.png)
 #### Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.
+[Los gehts.](consulting/#continuous-integration----delivery){: .btn .btn-primary}
+</div>
+
+<div class="item">
+![Wir unterstützen Sie auf Ihrem Weg in die Cloud.](/img/icons8-newtonsoft-50.png)
+#### Wir unterstützen Sie auf Ihrem Weg in die Cloud.
 [Los gehts.](consulting/#continuous-integration----delivery){: .btn .btn-primary}
 </div>
 
@@ -42,6 +48,7 @@ ___
   <li data-target="#carousel-top" data-slide-to="1"></li>
   <li data-target="#carousel-top" data-slide-to="2"></li>
   <li data-target="#carousel-top" data-slide-to="3"></li>
+  <li data-target="#carousel-top" data-slide-to="4"></li>
 </ol>
 
 </div>

@@ -99,7 +99,7 @@ ___
 
 ![Docker Hands-on Workshops](/img/Docker_Logo-500x250.jpg)
 
-[Special Early Bird Preise](../mai-2019-docker){: .btn .btn-primary}
+[Special Early Bird Preise](../info/mai-2019-docker){: .btn .btn-primary}
 </div>
 ___
 
@@ -213,7 +213,7 @@ ___
 
 ![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.png)
 
-[Special Early Bird Preise](../mai-2019-jenkins){: .btn .btn-primary}
+[Special Early Bird Preise](../info/mai-2019-jenkins){: .btn .btn-primary}
 </div>
 
 ___
@@ -301,7 +301,7 @@ ___
 
 ![DevOps Foundation Workshop](/img/DevOps_logo.jpg)
 
-[Special Early Bird Preise](../mai-2019-devops){: .btn .btn-primary}
+[Special Early Bird Preise](../info/mai-2019-devops){: .btn .btn-primary}
 </div>
 
 ___

@@ -45,6 +45,6 @@ info.bonn@maritim.de
 <div class="offer_map">
 
 <div class="col-md-24">
-<iframe scrolling="no" marginheight="0" marginwidth="0" src="../info/osm_hotel_maritim.html?lat=50.70476,lon=7.13490,info=,zoom=15" width="100%" height="350" frameborder="0">
+<iframe scrolling="no" marginheight="0" marginwidth="0" src="../osm_hotel_maritim.html?lat=50.70476,lon=7.13490,info=,zoom=15" width="100%" height="350" frameborder="0">
 </iframe>
 </div>
