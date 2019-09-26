@@ -1,5 +1,4 @@
-
-const CACHE = "pwabuilder-offline";
+const CACHE = "elastic2ls-pwa-2";
 
 const offlineFallbackPage = "index.html";
 
@@ -9,13 +8,28 @@ self.addEventListener("install", function (event) {
 
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
+      return cache.addAll([
+       '/',
+       '/about/index.html',
+       '/consulting/index.html',
+       '/devops/index.html',
+       '/impressum/index.html',
+       '/training/index.html',
+       '/blog/index.html',
+       '/blog/devops/index.html',
+       '/blog/dns/index.html',
+       '/blog/howtos/index.html',
+       '/blog/linuxdesktop/index.html',
+       '/blog/linuxinside/index.html',
+       '/blog/sicherheit/index.html',
+     ]);
       console.log("Cached offline page during install");
 
       if (offlineFallbackPage === "ToDo-replace-this-name.html") {
         return cache.add(new Response("Update the value of the offlineFallbackPage constant in the serviceworker."));
       }
 
-      return cache.add(offlineFallbackPage);
+      return cache.add(addAll);
     })
   );
 });
