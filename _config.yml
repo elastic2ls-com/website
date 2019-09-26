@@ -6,9 +6,12 @@ title: demo.elastic2ls.com
 # Short description of your site
 description: Wir helfen Ihnen bei der Einführung von DevOps und Ihren Cloud Migration. Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment. Wir bieten Trainings zu den Themen DevOps, Cloud, Linux und vieles mehr.
 
-# --- Local development options ---
-# If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
-# *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
+#pwa settings
+name: "elastic[too]ls.com"
+short_name: "elastic2ls"
+orientation: "any"
+lang: "German"
+color: ""#18BC9C"
 
 # url is the the website domain URL without a trailing slash
 url: "https://demo.elastic2ls.com"
