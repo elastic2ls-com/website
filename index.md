@@ -6,12 +6,13 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 ---
 {::options parse_block_html="true" /}
 
+![background](../img/clouds_bg2.jpg){: .bg-img}
 <!--- SLIDER -->
 <div class="slider">
 <div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
 <div class="carousel-inner">
 
-___
+<!-- ___ -->
 
 <div class="item active">
 ![Docker Hands-on Workshops](/img/icons8-docker-50.png)
@@ -53,7 +54,7 @@ ___
 
 </div>
 
-___
+<!-- ___ -->
 
 </div>
 </div>      
