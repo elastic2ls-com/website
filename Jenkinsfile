@@ -5,13 +5,14 @@ pipeline {
     }
     stages {
       stage('Checkout') {
-         steps {
-           checkout([
-           $class: 'GitSCM', branches: [[name: '*/master']],
-           userRemoteConfigs: [[url: 'https://github.com/elastic2ls-awiechert/docker-jekyll.git']]
-           ])
+            steps {
+              script {
+                cleanWs()
+                checkout scm
+                gitCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
+              }
+            }
           }
-       }
         stage('Test') {
             steps {
                 sh 'curl localhost:4000'
