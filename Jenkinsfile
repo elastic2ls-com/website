@@ -16,7 +16,7 @@ pipeline {
       stage('Docker build & run') {
         steps {
           sh '''
-            DOCKERRUNNING=$(docker ps |grep elastic2ls-jekyll)
+            // DOCKERRUNNING=$(docker ps |grep elastic2ls-jekyll)
             // if [ -z $DOCKERRUNNING ]; then
             //   echo "Container previusly stopped as expected during build."
             // else
