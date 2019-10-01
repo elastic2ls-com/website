@@ -17,7 +17,7 @@ pipeline {
         steps {
           sh '''
             DOCKERRUNNING=$(docker ps |grep elastic2ls-jekyll)
-            if [ -n $DOCKERRUNNING ]; then
+            if [ -z $DOCKERRUNNING ]; then
               echo "Container stopped as expected"
             else
               docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll
