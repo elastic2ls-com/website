@@ -41,8 +41,9 @@ pipeline {
                 {
                     sh("git push http://$username:$password@https://github.com/elastic2ls-awiechert/elastic2ls_static_file")
                 }
+          }
         }
-      }
+      }  
       stage('Docker destroy') {
         steps {
           sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
