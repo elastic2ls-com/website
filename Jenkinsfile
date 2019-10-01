@@ -18,9 +18,10 @@ pipeline {
           sh '''
             DOCKERRUNNING=$(docker ps |grep elastic2ls-jekyll)
             if [ -z $DOCKERRUNNING ]; then
-              echo "Container stopped as expected"
+              echo "Container previusly stopped as expected during build."
             else
               docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll
+              echo "Container was running before. We stopped it."
             fi
 
           '''
