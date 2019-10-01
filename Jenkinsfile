@@ -24,7 +24,7 @@ pipeline {
       }
       stage('Test') {
         steps {
-          sh 'curl localhost:4000'
+          sh 'sleep 15 && curl localhost:4000'
         }
       }
       stage('Docker destroy') {
