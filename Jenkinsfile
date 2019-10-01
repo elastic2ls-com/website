@@ -16,6 +16,15 @@ pipeline {
       stage('Docker build & run') {
         steps {
           sh '''
+            DOCKERRUNNING=$(docker ps |grep elastic2ls-jekyll)
+            if [ -n $DOCKERRUNNING ]; then
+              echo "Container stopped as expected"
+            else
+              docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll
+            fi
+
+          '''
+          sh '''
             docker build -t elastic2ls-jekyll "$PWD"
             docker run -d -p 4000:4000 --name elastic2ls-jekyll elastic2ls-jekyll
             docker logs elastic2ls-jekyll
