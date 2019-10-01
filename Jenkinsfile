@@ -24,7 +24,7 @@ pipeline {
       }
       stage('Test') {
         steps {
-          sh 'sleep 15 && curl localhost:4000 |grep -iF "Copyright 2019 elastic2ls"'
+          sh 'sleep 15 && curl localhost:4000 |grep -iF "Copyright 2019 elastic2ls" /dev/null'
         }
       }
       stage('Docker destroy') {
