@@ -5,8 +5,7 @@ ENV JEKYLL_ENV=production
 COPY --chown=jekyll:jekyll Gemfile .
 COPY --chown=jekyll:jekyll Gemfile.lock .
 
-RUN chown -R jekyll:jekyll /srv/jekyll
-RUN ls -la /srv/jekyll
+RUN useradd jenkins -G jekyll
 RUN bundle install --quiet --clean
 RUN jekyll build
 

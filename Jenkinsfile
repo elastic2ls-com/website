@@ -27,7 +27,7 @@ pipeline {
           '''
           sh '''
             docker build -t elastic2ls-jekyll "$PWD"
-            docker run -d -p 4000:4000 --name elastic2ls-jekyll -v "$PWD":/srv/jekyll -u $(id -u):$(id -g) elastic2ls-jekyll
+            docker run -d -p 4000:4000 --name elastic2ls-jekyll -v "$PWD":/srv/jekyll elastic2ls-jekyll
             docker logs elastic2ls-jekyll
           '''
         }
