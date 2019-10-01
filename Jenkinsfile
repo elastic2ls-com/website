@@ -17,12 +17,12 @@ pipeline {
         steps {
           sh '''
             DOCKERRUNNING=$(docker ps |grep elastic2ls-jekyll)
-            if [ -z $DOCKERRUNNING ]; then
-              echo "Container previusly stopped as expected during build."
-            else
-              docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll
-              echo "Container was running before. We stopped it."
-            fi
+            // if [ -z $DOCKERRUNNING ]; then
+            //   echo "Container previusly stopped as expected during build."
+            // else
+            //   docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll
+            //   echo "Container was running before. We stopped it."
+            // fi
             mkdir _site
             docker build -t elastic2ls-jekyll "$PWD"
             docker run -d -p 4000:4000 --name elastic2ls-jekyll -v "$PWD":/srv/jekyll elastic2ls-jekyll
@@ -43,7 +43,7 @@ pipeline {
                 }
           }
         }
-      }  
+      }
       stage('Docker destroy') {
         steps {
           sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
