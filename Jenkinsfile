@@ -23,9 +23,18 @@ pipeline {
           '''
         }
       }
-      stage('Test') {
+      stage('Push static files') {
         steps {
-          sh 'sleep 15 && curl -s http://localhost:4000 |grep -iF "Copyright 2019 elastic2ls" '
+          withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
+                    sh '''
+                    current_time=$(date "+%Y.%m.%d-%H.%M.%S")
+                    cd _site/
+                    git init
+                    git add .
+                    git commit -m "push static files + $current_time"
+                    '''
+                    sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
+          }
         }
       }
       stage('Docker destroy') {
