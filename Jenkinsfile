@@ -28,6 +28,7 @@ pipeline {
           withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
                     sh '''
                     current_time=$(date "+%Y.%m.%d-%H.%M.%S")
+                    sudo chmod -R 777 _site/
                     cd _site/
                     git init
                     git add .
