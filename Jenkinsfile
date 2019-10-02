@@ -28,8 +28,8 @@ pipeline {
           withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
                     sh '''
                     current_time=$(date "+%Y.%m.%d-%H.%M.%S")
-                    sudo chmod -R 777 _site/
-                    cd _site/
+                    sudo chmod -R 777 ${WORKSPACE}/_site/
+                    cd ${WORKSPACE}/_site/
                     git init
                     git add .
                     git commit -m "push static files + $current_time"
