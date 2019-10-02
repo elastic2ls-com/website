@@ -28,11 +28,11 @@ pipeline {
           withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
                     sh '''
                     current_time=$(date "+%Y.%m.%d-%H.%M.%S")
-                    sudo chmod -R 777 _site/
-                    cd _site/
+                    sudo chmod -R 777 ${WORKSPACE}/_site/
+                    cd ${WORKSPACE}/_site/
                     git init
-                    git add .
-                    git commit -m "push static files + $current_time"
+                    git add ${WORKSPACE}/_site/*
+                    git commit -m "push_static_files_$current_time"
                     '''
                     sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
           }
