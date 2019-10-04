@@ -1,0 +1,18 @@
+# project
+.vagrant
+CHANGELOG.md
+CNAME
+Dockerfile
+LICENSE
+README.md
+Vagrantfile
+Jenkinsfile
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.dockerignore
+.git
+.gitattributes
+.gitignore

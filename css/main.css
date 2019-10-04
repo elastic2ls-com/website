@@ -2,13 +2,12 @@
 layout: null
 ---
 
-@import url("pygment_highlights.css");
-@import url("elastic2ls.com.css");
+/* @import url("pygment_highlights.css"); */
 
 /* --- General --- */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Noticia Text', 'Times New Roman', serif;
   font-size: 18px;
   color: #404040;
   position: relative;
@@ -266,7 +265,7 @@ img {
 }
 
 /* --- Footer --- */
-/* 
+/*
 footer {
   padding: 30px 0;
   border-top: 1px #EAEAEA solid;

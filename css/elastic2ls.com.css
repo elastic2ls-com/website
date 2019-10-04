@@ -1,19 +1,18 @@
+.articles
+  margin-top: 35px;
+  border: black;
+  border-style: solid;
+}
+
 /*slider setting*/
 .carousel {
- /*margin: 30px auto 60px;
- margin-top: 20px;
- padding: 0 30px;*/
  width:100%;
  min-height: 150px !important;
- /*background: #F8FBEF;*/
- /* background-image: url("../img/sw_tattooin.jpg");
- background-size: 1200px 250px;
- opacity: 0.5; */
 }
 .carousel .item{
  /*padding-left: 220px;*/
  overflow: hidden;
- margin-top: 20px;
+ margin-top: 60px;
 }
 /* .carousel a:link{
     color:#FFFFFF;
@@ -54,6 +53,7 @@
 .carousel h4{
   margin-left: 50px;
   font-family: monospace;
+  color: #000
 }
 /*slider setting*/
 
@@ -92,45 +92,92 @@
 } */
 
 @media screen and (min-width: 1200px){
-    .blog{
+    .bg-img {
+      height: 110%;
+      left: 0;
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+    .container {
+      width: 1370px;
+    }
+    .forofor {
+      min-width: 400px;
+    }
+
+    .workdescription {
+      padding-bottom: 15px;
+      line-height: 0.9;
+      }
+    .carousel-inner {
         min-height: 350px;
+      }
+    .blog{
+        min-height: 180px;
       }
     .flexible{
         min-height: 150px;
       }
-    .grid-content {
-      min-height: 430px
-      !important;
+    .related::before {
+        display: block;
+        width: 100%;
+        height: .25rem;
+        background-color: #838485;
+        margin-bottom: 1rem;
+        content: "";
+      }
+    .related::after {
+        display: block;
+        width: 100%;
+        height: .25rem;
+        background-color: #838485;
+        margin-bottom: 1rem;
+        content: "";
+      }
+    }
+    .grid-content-docker {
+      min-height: 570px !important
+      /* padding-left: 85px; */
+    }
+    .grid-content-jenkins {
+      min-height: 350px !important
+      /* padding-left: 85px; */
+    }
+    .grid-content-devops {
+      min-height: 280px !important
+      /* padding-left: 85px; */
     }
     .grid-content2 {
-      min-height: 180px
+      min-height: 650px !important
+      !important;
+      padding-bottom: 15px;
+    }
+    .grid-content-about {
+      min-height: 750px;
       !important;
       padding-bottom: 15px;
     }
     .menu{
         padding-right: 15px;
         padding-top: 20px;
+        padding-bottom: 20px;
       }
+
+    .navbar-inverse .navbar-nav > a:hover{
+      color: #A4A4A4;
+      }
+
     .logo img{
       max-width: 54px;
       max-height: 54px;
-      margin-left: 15px;
-      margin-top: 15px;
+      margin-left: 25px;
+      margin-top: 25px;
+      border-radius: 10%;
       }
-    .h1, h1 {
-      font-size: 24px;
-      color: #5D67B9;
-      font-family: monospace;
-      }
-    .h3, h3 {
-      font-size: 22px;
-      font-family: monospace;
-      }
-    .h4, h4 {
-      font-size: 18px;
-      font-family: monospace;
-      }
-
       /*header menu setting*/
       .dropdown-menu .sub-menu{
         left: 100%;
@@ -138,16 +185,37 @@
         top: 0;
         visibility: hidden;
         margin-top: -1px;
+        font-size: large;
       }
-      .dropdown-menu li:hover .sub-menu{
+      /* .dropdown-menu li:hover .sub-menu{
         visibility: visible;
-      }
-      .dropdown:hover .dropdown-menu{
+      } */
+      /* .dropdown:hover .dropdown-menu{
         display: block;
-      }
+      } */
+      /*PROBLEMKIND*/
+
       .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
         color: #fff;
         background-color: #5a5a5a;
+      }
+      .navbar-inverse .navbar-nav > a {
+        color: #fff;
+        font-size: x-large;
+        padding-right: 15px;
+        }
+
+      .navbar-inverse .navbar-nav > a:hover{
+        color: #A4A4A4;
+        }
+
+
+      .dropdown-menu > a {
+        font-size: large;
+      }
+      .navbar-inverse .navbar-nav .open > a {
+        color: white;
+        font-weight: 800;
       }
       .myNavbar {
         margin-top: -30px;
@@ -208,7 +276,7 @@
           /* min-height: 580px
           !important; */
           padding-bottom: 15px;
-          padding-top: 380px;
+          /* padding-top: 380px; */
         }
         .grid-content-cloud-migration {
           /* min-height: 880px */
@@ -221,7 +289,7 @@
           /* min-height: 880px */
           !important;
           padding-bottom: 15px;
-          padding-top: 1150px;
+          /* padding-top: 1150px; */
         }
         .grid-content-devops-workshop {
           /* min-height: 880px */
@@ -238,23 +306,18 @@
           max-height: 54px;
           margin-left: 15px;
           margin-top: 15px;
+          border-radius: 10%;
         }
-        .h1, h1 {
-          font-size: 24px;
-          color: #5D67B9;
-          font-family: monospace;
-          }
-        .h3, h3 {
-          font-size: 22px;
-          font-family: monospace;
-          }
-        .h4, h4 {
-          font-size: 18px;
-          font-family: monospace;
-          }
         .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
           color: #fff;
           background-color: #5a5a5a;
+          }
+        .navbar-inverse .navbar-nav > li > a {
+          color: #fff;
+          font-weight: 800;
+          }
+        .dropdown-menu > li > a {
+          font-size: large;
         }
         /* .myNavbar {
           margin-top: -30px;
@@ -418,29 +481,40 @@
 
 
 @media (max-width: 767px) {
+      .bg-img {
+        height: 150%;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+      }
+      .workdescription {
+        padding-bottom: 15px;
+        line-height: 0.9;
+      }
+      .blog{
+        min-height: 150px;
+      }
       .menu {
         padding-right: 35px;
-        margin-top: -20px;
+        padding-top: 10px;
+        padding-bottom: unset;
+        display: block;
       }
       .logo img{
         max-width: 44px;
         max-height: 44px;
         /* margin-left: -30px; */
         margin-top: 15px;
+        border-radius: 10%;
       }
-      .h1, h1 {
-        font-size: 22px;
-        color: #5D67B9;
-        font-family: monospace;
-        }
-      .h3, h3 {
-        font-size: 20px;
-        font-family: monospace;
-        }
-      .h4, h4 {
-        font-size: 18px;
-        font-family: monospace;
-        }
+      .bigimg {
+        height: 150px;
+        width: auto;
+      }
       .brand{
         font-size: 14px;
         font-family: monospace;
@@ -458,10 +532,14 @@
       .navbar-header-sm-device {
         padding-top: 28px;
       }
-      .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+      .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open {
         color: #fff;
         background-color: #5a5a5a;
         border-style: none;
+      }
+      .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+        font-weight: 800;
       }
       .navbar-toggle{
         margin-right: 0px;
@@ -505,10 +583,28 @@
         font-weight: bold;
         -webkit-font-smoothing: antialiased;
       }
-      }
       .other-content img{
         max-width: 63px;
         max-height: 34px;
+      }
+      .related::before {
+          display: block;
+          width: 100%;
+          height: .25rem;
+          background-color: #838485;
+          margin-bottom: 1rem;
+          content: "";
+        }
+      .related::after {
+          display: block;
+          width: 100%;
+          height: .25rem;
+          background-color: #838485;
+          margin-bottom: 1rem;
+          content: "";
+        }
+      .container {
+        padding-left: 25px;
       }
     }
 /*header setting*/
@@ -539,24 +635,26 @@
   padding-bottom: 15px;
 }
 .boxes{
-  padding-bottom: 35px;
-  font-size: 18px;
-  max-width: 380px;
+  /* padding-bottom: 35px; */
+  font-size: 20px;
+  /* max-width: 450px; */
   /* height: 280px; */
+  padding-top: 15px;
 
-}
-.boxes h4, .boxes2 h4{
-  color: #5D67B9;
-  font-family: monospace;
 }
 .boxes span
 {
     display: block;
 }
 
+.boxes a
+{
+    color: #000;
+}
+
 .boxes2{
-  padding-top: 35px;
-  font-size: 18px;
+  /* padding-top: 35px;
+  font-size: 18px; */
 
 }
 /*about page*/
@@ -565,6 +663,7 @@
 {
     min-height: 150px;
     max-width: unset;
+    padding-top: 55px;
 }
 .about img
 {
@@ -573,7 +672,7 @@
 .titles
 {
   /* border: 1px solid; */
-  font-size: 14px;
+  font-size: 16px;
   font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
   padding-top: 5px;
   color: #5D67B9;
@@ -613,7 +712,7 @@
   background-color: #D8D8D8;
   height: 44px;
   width: 44px;
-  border-radius: 50%;
+  border-radius: 10%;
   text-align: center;
   vertical-align: middle;
   font-size: 150%;
@@ -623,6 +722,17 @@
   padding: 5px;
   /* top: -45px;
   left: 72px; */
+}
+
+.circle4 {
+    background-color: #D8D8D8;
+    border-radius: 10%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 150%;
+    color: #fff;
+    display: inline-block;
+    position: relative;
 }
 /*about page*/
 
@@ -713,9 +823,9 @@ body {
   .cloudops-transformation-liste{
     margin-right: 20px;
   }
-  ul{
+  /* ul{
     list-style-type: none;
-  }
+  } */
 
   /* a:link {
     text-decoration: none;
@@ -755,11 +865,15 @@ body {
   body {
     font-family: 'Noticia Text';
     letter-spacing: -0.02em;
-    font-size: 18px;
+    font-size: 20px;
   }
   .h1, h1 {
-    font-size: 24px;
+    font-size: 32px;
     color: #5D67B9;
+    font-family: monospace;
+    }
+  .h2, h2 {
+    font-size: 28px;
     font-family: monospace;
     }
   .h3, h3 {
@@ -767,6 +881,12 @@ body {
     font-family: monospace;
     }
   .h4, h4 {
-    font-size: 18px;
+    font-size: 20px;
     font-family: monospace;
+    color: #5D67B9;
+    }
+
+  .th, th, .td, td {
+    padding: 10px;
+    border: 1px solid black;
     }

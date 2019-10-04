@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6.0, viewport-fit=cover">
 
   <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
@@ -11,10 +11,10 @@
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
-  {% if page.tags %}
-  <meta name="keywords" content="{{ page.tags }}"/>
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}"/>
   {% endif %}
-
+  <link rel="manifest" href="./manifest.json">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}" />
 
   {% include gtag.html %}
@@ -29,15 +29,15 @@
 
   {% if layout.common-css %}
     {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}" />
+      <link rel="stylesheet" href="{{ css | relative_url }}" async />
     {% endfor %}
   {% endif %}
 
-  {% if layout.common-googlefonts %}
+  <!-- {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" async />
     {% endfor %}
-  {% endif %}
+  {% endif %} -->
 
   {% if page.ext-css %}
     {% for css in page.ext-css %}
@@ -51,11 +51,11 @@
     {% endfor %}
   {% endif %}
 
-  {% if page.googlefonts %}
+  <!-- {% if page.googlefonts %}
     {% for font in page.googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" async />
     {% endfor %}
-  {% endif %}
+  {% endif %} -->
 
     <!-- Facebook OpenGraph tags -->
   {% if site.fb_app_id %}
@@ -80,10 +80,11 @@
 
 
   <meta property="og:type" content="website" />
-
   {% if page.id %}
-  <meta property="og:url" content="{{ page.url | absolute_url }}" />
-  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    {% if jekyll.environment == "production" %}
+      <meta property="og:url" content="{{ page.url | absolute_url }}" />
+      <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    {% endif %}
   {% else %}
   <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}" />
   <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}" />
@@ -123,13 +124,34 @@
   <meta name="twitter:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
 
-  {% if site.matomo %}
-  {% include matomo.html %}
-  {% endif %}
-
-  {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <!-- Staticman -->
-  <link rel="stylesheet" href="{{ "/css/staticman.css" | relative_url }}" />
-  {% endif %}
-
+  <!-- favicon settings-->
+  <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href=""./icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./icon/android-icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="./icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicon settings-->
+  <!-- splash screen apple-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="./icon/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+  <link href="./icon/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+  <link href="./icon/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+  <link href="./icon/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+  <link href="./icon/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+  <link href="./icon/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
+  <link href="./icon/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
+  <!-- splash screen apple-->
 </head>

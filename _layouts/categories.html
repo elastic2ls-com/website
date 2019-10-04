@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+{% include header.html type="page" %}
+
+<div class="container" role="main">
+
+  <div class="row">
+
+
+      <article role="main" class="blog-post">
+        {{ content }}
+      </article>
+    {% include category-posts.html %}
+    </div>
+  </div>
+</div>
