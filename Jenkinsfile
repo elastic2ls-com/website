@@ -9,15 +9,8 @@ pipeline {
           script {
             cleanWs()
             checkout scm
-            // gitCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
+            gitCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
           }
-        }
-      }
-      stage('Docker destroy') {
-        steps {
-          sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll; || true'
-          sh 'docker images |grep elastic2ls-jekyll'
-          sh 'docker rmi elastic2ls-jekyll; || true'
         }
       }
       stage('Docker build & run') {
@@ -30,20 +23,28 @@ pipeline {
           '''
         }
       }
-      stage('Push static files') {
+      // stage('Push static files') {
+      //   steps {
+      //     withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
+      //               sh '''
+      //               current_time=$(date "+%Y.%m.%d-%H.%M.%S")
+      //               sudo chmod -R 777 ${WORKSPACE}/_site/
+      //               cd ${WORKSPACE}/_site/
+      //               git init
+      //               git add ${WORKSPACE}/_site/*
+      //               git commit -m "push_static_files_$current_time"
+      //               '''
+      //               sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
+      //     }
+      //   }
+      // }
+      stage('Docker destroy') {
         steps {
-          withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
-                    sh '''
-                    current_time=$(date "+%Y.%m.%d-%H.%M.%S")
-                    sudo chmod -R 777 ${WORKSPACE}/_site/
-                    cd ${WORKSPACE}/_site/
-                    git init
-                    git add ${WORKSPACE}/_site/*
-                    git commit -m "push_static_files_$current_time"
-                    '''
-                    sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
-          }
+          sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll; || true'
+          sh 'docker images |grep elastic2ls-jekyll'
+          sh 'docker rmi elastic2ls-jekyll; || true'
         }
       }
+
     }
 }
