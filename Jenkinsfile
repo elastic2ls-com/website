@@ -15,9 +15,9 @@ pipeline {
       }
       stage('Docker destroy') {
         steps {
-          sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll |exit 0'
+          sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll; || true'
           sh 'docker images |grep elastic2ls-jekyll'
-          sh 'docker rmi elastic2ls-jekyll'
+          sh 'docker rmi elastic2ls-jekyll; || true'
         }
       }
       stage('Docker build & run') {
