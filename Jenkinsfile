@@ -13,6 +13,11 @@ pipeline {
           }
         }
       }
+      stage('Docker destroy') {
+        steps {
+          sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll' ||true
+        }
+      }
       stage('Docker build & run') {
         steps {
           sh '''
@@ -36,11 +41,6 @@ pipeline {
                     '''
                     sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
           }
-        }
-      }
-      stage('Docker destroy') {
-        steps {
-          sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
         }
       }
     }
