@@ -16,6 +16,7 @@ pipeline {
       stage('Docker destroy') {
         steps {
           sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
+        }
       }
       stage('Docker build & run') {
         steps {
