@@ -9,7 +9,7 @@ pipeline {
           script {
             cleanWs()
             checkout scm
-            gitCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
+            // gitCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
           }
         }
       }
