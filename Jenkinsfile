@@ -45,9 +45,9 @@ pipeline {
              sh 'sleep 20'
              sh 'mkdir ${WORKSPACE}/staticfiles'
              sh 'rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/'
-             sh 'cd ${WORKSPACE}/staticfiles/'
+             sh 'cd ${WORKSPACE}/statifiles/'
              sh 'git init'
-             sh 'git add .'
+             sh 'git add --all statifiles/'
              sh 'git commit -m "push_static_files_"'
              sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master"
            }
