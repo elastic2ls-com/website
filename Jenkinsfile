@@ -41,7 +41,7 @@ pipeline {
 
       stage('Push static files') {
          steps {
-           mkdir(dir:"staticfiles")
+           sh 'mkdir ${WORKSPACE}/staticfiles'
            sh 'rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/'
            sh 'ls -la staticfiles/'
          }
