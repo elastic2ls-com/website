@@ -43,13 +43,15 @@ pipeline {
       stage('Push static files') {
          steps {
            withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
-             sh 'sleep 20'
+             sh 'current_time=$(date "+%Y.%m.%d-%H.%M.%S")'
+             sh 'sleep 15'
              sh 'mkdir ${WORKSPACE}/staticfiles'
              sh 'rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/'
              sh 'cd ${WORKSPACE}/staticfiles/'
              sh 'git init'
              sh 'git add .'
-             sh 'git commit -m "push_static_files_"'
+             sh 'git commit -m "push_static_files_$current_time"'
+             //only once for an empty repository
              // sh 'git remote add origin https://github.com/elastic2ls-awiechert/elastic2ls_static_file.git'
              sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
            }
