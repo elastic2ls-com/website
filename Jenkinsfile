@@ -50,8 +50,8 @@ pipeline {
              sh 'git init'
              sh 'git add .'
              sh 'git commit -m "push_static_files_"'
-             sh 'git remote add origin https://github.com/elastic2ls-awiechert/elastic2ls_static_file.git'
-             sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master"
+             // sh 'git remote add origin https://github.com/elastic2ls-awiechert/elastic2ls_static_file.git'
+             sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
            }
          }
        }
