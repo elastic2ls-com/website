@@ -41,15 +41,16 @@ pipeline {
 
       stage('Push static files') {
          steps {
-           sh 'sleep 20'
-           sh 'mkdir ${WORKSPACE}/staticfiles'
-           sh 'rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/'
-           sh 'cd ${WORKSPACE}/staticfiles/'
-           sh 'git init'
-           sh 'git add .'
-           sh 'git commit -m "push_static_files_"'
-           sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master"
-
+           withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
+             sh 'sleep 20'
+             sh 'mkdir ${WORKSPACE}/staticfiles'
+             sh 'rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/'
+             sh 'cd ${WORKSPACE}/staticfiles/'
+             sh 'git init'
+             sh 'git add .'
+             sh 'git commit -m "push_static_files_"'
+             sh "git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master"
+           }
          }
        }
 
