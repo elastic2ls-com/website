@@ -50,6 +50,7 @@ pipeline {
                // mkdir ${WORKSPACE}/staticfiles
                // rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/
                // cd ${WORKSPACE}/staticfiles/
+               sudo chmod -R 777 ${WORKSPACE}/_site/
                cd ${WORKSPACE}/_site/
                git init
                git add .
