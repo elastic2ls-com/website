@@ -47,15 +47,16 @@ pipeline {
                rm -rf ${WORKSPACE}/.git/
                current_time=$(date "+%Y.%m.%d-%H.%M.%S")
                sleep 15
-               mkdir ${WORKSPACE}/staticfiles
-               rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/
-               cd ${WORKSPACE}/staticfiles/
+               // mkdir ${WORKSPACE}/staticfiles
+               // rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/
+               // cd ${WORKSPACE}/staticfiles/
+               cd ${WORKSPACE}/_site/
                git init
                git add .
                git commit -m "push_static_files_$current_time"
                git remote add origin https://github.com/elastic2ls-awiechert/elastic2ls_static_file.git
             '''
-            sh "cd ${WORKSPACE}/staticfiles/ && git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
+            sh "cd ${WORKSPACE}/_site/ && git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
            }
          }
        }
