@@ -41,19 +41,20 @@ pipeline {
 
       stage('Push static files') {
          steps {
+           sh 'sleep 20'
            sh 'mkdir ${WORKSPACE}/staticfiles'
            sh 'rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/'
            sh 'ls -la staticfiles/'
          }
        }
 
-      stage('Docker destroy') {
-        steps {
-          sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
-          sh 'docker images |grep elastic2ls-jekyll'
-          sh 'docker rmi elastic2ls-jekyll'
-        }
-      }
+      // stage('Docker destroy') {
+      //   steps {
+      //     sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
+      //     sh 'docker images |grep elastic2ls-jekyll'
+      //     sh 'docker rmi elastic2ls-jekyll'
+      //   }
+      // }
 
     }
 }
