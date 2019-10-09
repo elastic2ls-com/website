@@ -38,6 +38,15 @@ pipeline {
       //     }
       //   }
       // }
+
+      stage('Push static files') {
+         steps {
+           mkdir(dir:"staticfiles")
+           sh 'rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/'
+           sh 'ls -la staticfiles/'
+         }
+       }
+
       stage('Docker destroy') {
         steps {
           sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
