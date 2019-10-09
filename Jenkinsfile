@@ -47,9 +47,6 @@ pipeline {
                rm -rf ${WORKSPACE}/.git/
                current_time=$(date "+%Y.%m.%d-%H.%M.%S")
                sleep 15
-               // mkdir ${WORKSPACE}/staticfiles
-               // rsync -avrzulP ${WORKSPACE}/_site/ staticfiles/
-               // cd ${WORKSPACE}/staticfiles/
                sudo chmod -R 777 ${WORKSPACE}/_site/
                cd ${WORKSPACE}/_site/
                git init
