@@ -9,6 +9,7 @@
  width:100%;
  min-height: 150px !important;
 }
+
 .carousel .item{
  /*padding-left: 220px;*/
  overflow: hidden;
@@ -19,9 +20,9 @@
     text-decoration:none
 } */
 
-.carousel img{
+/* .carousel img{
  margin-left: 40px;
-}
+} */
 
 .carousel-inner h2{
   font-family: Montserrat;
@@ -92,6 +93,16 @@
 } */
 
 @media screen and (min-width: 1200px){
+    .sl-img {
+      height: 100%;
+      left: 0;
+      min-height: 100%;
+      min-width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      opacity: 0.3
+    }
     .bg-img {
       height: 110%;
       left: 0;
@@ -481,6 +492,15 @@
 
 
 @media (max-width: 767px) {
+      .sl-img {
+        height: 100%;
+        left: -10px;
+        max-width: 100%;
+        position: absolute;
+        top: -10px;
+        z-index: -1;
+        opacity: 0.3
+      }
       .bg-img {
         height: 150%;
         left: 0;
