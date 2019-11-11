@@ -8,10 +8,14 @@ keywords: [Impressum und Haftungshinweis elastic2ls.com]
 ## Impressum und Haftungshinweis
 
 Alexander Wiechert
+
 Römerstrasse 334
+
 53117 Bonn
-Tel: 0228/xxx
-E-Mail: [info@elastic2ls.com](mailto:info@elastic2ls.com?subject=feedback)
+
+Tel: 0228/3361761
+
+E-Mail: [info@elastic2ls.com](mailto:info@elastic2ls.com?subject=Impressum)
 
 ## Haftungsausschluss
 

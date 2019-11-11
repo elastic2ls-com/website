@@ -528,7 +528,7 @@
       }
       .workdescription {
         padding-bottom: 15px;
-        line-height: 0.9;
+        line-height: 1;
       }
       .blog{
         min-height: 150px;
@@ -613,7 +613,7 @@
       }
       .carousel-inner a{
         float: right;
-        /* margin-right: 80px; */
+        margin-right: 80px;
         font-size: 14px;
         font-weight: bold;
         -webkit-font-smoothing: antialiased;
