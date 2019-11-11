@@ -5,97 +5,30 @@ subtitle: Übersicht Trainings
 keywords: [Übersicht Trainings DevOps Jenkins Docker]
 ---
 {::options parse_block_html="true" /}
+<!-- ![background](../img/clouds_bg2.jpg){: .bg-img} -->
+<!--- SLIDER -->
+<div class="slider">
+<div id="carousel" class="carousel">
+![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
+<div class="carousel-inner">
+<div class="item active">
+# DevOps-Training
+</div>
+</div>
+</div>
+</div>
+<!--- SLIDER -->
+___
 <div class="grid-content">
-
-<div class="offer_head">
-
-# DevOps-Trainingsangebote
-
 Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten und neue Fähigkeiten in die Tat umzusetzen. Dies erhöht die Flexibilität ihrer Arbeitsabläufe und motivert ihre Teams. Schlussendlich investieren Sie hiermit in die Zukunft Ihres Unternehmens. Hier finden Sie ein aktuelle Übersicht über die von uns angeboteten Trainings.
-
-</div>
-
-<div class="offer_head">
-
-### Folgende Trainings bieten wir aktuell an
-
-</div>
-
-<div class="col-sm-8 col-md-4">
-
-<div class="boxes flexible">
-
-#### [DevOps Docker](#devops-docker-camp)
-
-[![Docker Hands-on Workshops](/img/icons8-docker-50.png)](#devops-docker-camp)
-</div>
-
-</div>
-
-<div class="col-sm-8 col-md-4">
-
-<div class="boxes flexible">
-
-#### [CI/CD mit Jenkins](#devops-jenkins-camp)
-
-[![We are the CI/CD experts, help you building your pipelines and tooling infrastructure.](/img/icons8-jenkins-50.png)](#devops-jenkins-camp)
-</div>
-
-</div>
-
-<div class="col-sm-8 col-md-4">
-
-<div class="boxes flexible">
-
-#### [DevOps Foundation](#devops-foundation-camp)
-
-[![Get your technical team to become superheros in DevOps practises.](/img/icons8-batman-alt-50.png)](#devops-foundation-camp)
-</div>
-
-</div>
-
-<div class="col-sm-8 col-md-4">
-
-<div class="boxes flexible">
-
-#### [Architecting on AWS](#){: .feature_toogle}
-
-[![Docker Hands-on Workshops](/img/icons8-amazon-s3-50.png)](#){: .feature_toogle}
-</div>
-
-</div>
-
-<div class="col-sm-8 col-md-4">
-
-<div class="boxes flexible">
-
-#### [LPI Certification 1](#){: .feature_toogle}
-
-[![We are the CI/CD experts, help you building your pipelines and tooling infrastructure.](/img/icons8-linux-50.png)](#){: .feature_toogle}
-</div>
-
-</div>
-
-<div class="col-sm-8 col-md-4">
-
-<div class="boxes flexible">
-
-#### [LPI Certification 2](#){: .feature_toogle}
-
-[![Get your technical team to become superheros in DevOps practises.](/img/icons8-linux-server-50.png)](#){: .feature_toogle}
-</div>
-
-</div>
-
 
 <!-- Docker Training -->
 <div class="slider">
-___
 
 <div id="carousel" class="carousel">
 
 <div class="carousel-inner">
-# DevOps Docker Camp
+# DevOps Docker Training
 
 ![Docker Hands-on Workshops](/img/Docker_Logo-500x250.jpg)
 
@@ -204,12 +137,11 @@ Laptop mit installiertem ssh oder Putty. Ein installiertes Git wird empfohlen.
 
 <!-- Jenkins Training -->
 <div class="slider">
-___
 
 <div id="carousel" class="carousel">
 
 <div class="carousel-inner">
-# DevOps Jenkins Camp
+# DevOps Jenkins Training
 
 ![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.png)
 
@@ -288,86 +220,6 @@ Der Schwerpunkt liegt in der Installation und Verwendungvon Jenkins auf Linux. D
 **2\. und 3\. Tag:** Trainingszeiten von **9:00 – 17:00 Uhr** (Lunch von 12:30 – 13:30 Uhr)
 </div>
 <!-- Jenkins Training -->
-
-<!-- DevOps Training -->
-<div class="slider">
-
-___
-
-<div id="carousel" class="carousel">
-
-<div class="carousel-inner">
-# DevOps Foundation Camp
-
-![DevOps Foundation Workshop](/img/DevOps_logo.jpg)
-
-[Special Early Bird Preise](../info/mai-2019-devops){: .btn .btn-primary}
-</div>
-
-___
-
-</div>
-
-</div>
-
-## Programm
-
-<div class="grid-content-devops">
-
-<div class="col-sm-8 col-md-4">
-
-<div class="boxes flexible">
-
-### Tag 1: Einführung in DevOps
-
-*   Einführung in DevOps
-*   Ziele
-*   Vokabular
-*   Nutzen für das Unternehmen
-*   Konzept und Praktiken
-*   Beziehung zu Agile
-*   Lean und ITSM
-
-</div>
-
-</div>
-
-<div class="col-sm-8 col-md-4">
-
-<div class="boxes flexible">
-
-### Tag 2: Konzepte DevOps
-
-*   Automation und verbesserte Workflows
-*   Einsatz von DevOps im Unternehmen
-*   Kritische Erfolgsfaktoren und Key Performance Indicators
-*   Kommunikation und Zusammenarbeit
-
-</div>
-
-</div>
-
-</div>
-
-<div class="grid-content-training">
-
-### Anforderungen
-
-DevOps ist eine Methodik, die mit schnelleren Entwicklungszyklen eine engere Zusammenarbeit zwischen der Entwicklungsabteilung und dem Betrieb ermöglicht. So können Qualität und Auslieferungszeit einer Software deutlich verbessert werden. Eine ganzheitliche und gemeinsame Ergebnisverantwortung in IT-Organisationen, die auf Stabilität und kontinuierliche Verfügbarkeit ausgerichtet sind, ist der Kern der DevOps-Vorgehensweise.
-
-Nur wenige Unternehmen in Europa sind Partner des DevOps Institutes und können so die offiziellen DevOps-Foliensätze zur Verfügung stellen. elastic2ls.com gehört zu den ausgewählten Partnern und bietet Ihnen damit eine Schulung mit hoch aktuellen Inhalten.
-
-In unserer Schulung DevOps Foundation lernen die Teilnehmenden, wie mit DevOps die Bruchstellen zwischen Anwendungsentwicklung und IT-Betrieb dauerhaft überwunden werden können. Sie erfahren, wie die beiden Bereiche zusammenrücken, indem die neue Organisation die Software schneller und fehlerfreier erstellen und zur Verfügung stellen kann.
-
-### Organisatorische Informationen
-
-#### Zeitlicher Ablauf:
-
-**1\. Tag:** Check-In ab 8:30 Uhr, Trainingszeiten: **9:30 – 17:30 Uhr** (Lunch von 13:00 – 14:00 Uhr), Get-together mit Getränken und Snacks ab 17:30 Uhr
-
-**2\. und 3\. Tag:** Trainingszeiten von **9:00 – 17:00 Uhr** (Lunch von 12:30 – 13:30 Uhr)
-</div>
-<!-- DevOps Training -->
 
 
 <!-- grid-content-close -->

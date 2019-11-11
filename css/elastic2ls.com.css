@@ -13,7 +13,7 @@
 .carousel .item{
  /*padding-left: 220px;*/
  overflow: hidden;
- margin-top: 60px;
+ /* margin-top: 60px; */
 }
 /* .carousel a:link{
     color:#FFFFFF;
@@ -23,6 +23,10 @@
 /* .carousel img{
  margin-left: 40px;
 } */
+
+.carousel .icons{
+  margin-left: 40px;
+}
 
 .carousel-inner h2{
   font-family: Montserrat;
@@ -50,12 +54,22 @@
 .carousel-indicators {
     bottom: -10px;
 }
-
-.carousel h4{
-  margin-left: 50px;
+.carousel h1{
+  margin-left: 15px;
   font-family: monospace;
-  color: #000
+  color: #5D67B9;
 }
+.carousel h4{
+  margin-left: 15px;
+  font-family: monospace;
+  color: #5D67B9;
+}
+.carousel p, .carousel h2{
+  margin-left: 80px;
+}
+/* .carousel .icons{
+  margin-left: -40px;
+} */
 /*slider setting*/
 
 /*header setting*/
@@ -168,7 +182,7 @@
       padding-bottom: 15px;
     }
     .grid-content-about {
-      min-height: 750px;
+      min-height: 380px;
       !important;
       padding-bottom: 15px;
     }
@@ -494,8 +508,9 @@
 @media (max-width: 767px) {
       .sl-img {
         height: 100%;
-        left: -10px;
+        left: -5px;
         max-width: 100%;
+        width: 100%;
         position: absolute;
         top: -10px;
         z-index: -1;
