@@ -10,7 +10,7 @@ permalink: /blog/:title.html
 <!--- SLIDER -->
 <div class="slider">
 <div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
-![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
+![background](../img/Jenkins_background_header_1.jpg){: .sl-img .hidden-xs}
 <div class="carousel-inner">
 <div class="item active">
 ![Java Keystore erklärts](../img/java.png)

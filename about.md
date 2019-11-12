@@ -12,7 +12,7 @@ keywords: [About elastic2ls.com Vorstellung Team]
 ![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
 <div class="carousel-inner">
 <div class="item active">
-# Continuous Integration/ - Delivery
+# It's hammer time.
 </div>
 </div>
 </div>
@@ -35,6 +35,7 @@ Founder
 
 <p class="circle3"><a href="https://www.xing.com/profile/Alexander_Wiechert/cv" target="_blank" class="fa fa-xing"></a></p>
 <p class="circle3"><a href="https://www.linkedin.com/in/alexander-wiechert/" target="_blank" class="fa fa-linkedin"></a></p>
+<p class="circle3"><a href="https://github.com/elastic2ls-awiechert" target="_blank" class="fa fa-github"></a></p>
 <p class="circle3"><a href="mailto:info@elastic2ls.com?subject=feedback" target="_blank" class="fa fa-envelope-open-o"></a></p>
 
 
@@ -98,7 +99,7 @@ _09/2008 - 06/2009_
 <div class="workdescription">
 _11/2019 - 11/2019_
 
-**Scrum Master**
+**Scrum Master/ Scrum Product Owner**
 
 [scrum-institute.org](https://www.scrum-institute.org/)
 </div>
