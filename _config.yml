@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: demo.elastic2ls.com
+title: www.elastic2ls.com
 
 # Short description of your site
 description: Wir helfen Ihnen bei der Einführung von DevOps und Ihren Cloud Migration. Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment. Wir bieten Trainings zu den Themen DevOps, Cloud, Linux und vieles mehr.
@@ -14,7 +14,7 @@ lang: "German"
 color: ""#18BC9C"
 
 # url is the the website domain URL without a trailing slash
-url: "https://demo.elastic2ls.com"
+url: "https://www.elastic2ls.com"
 
 # baseurl should be an empty string
 baseurl: ""
@@ -95,18 +95,18 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+#url-pretty: "MyWebsite.com"
 
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "UA-85377423-1"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+#google_analytics: "UA-85377423-1"
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "GTM-P7RZL44"
 
 # --- Misc --- #
 

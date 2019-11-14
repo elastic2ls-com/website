@@ -28,7 +28,19 @@ ___
 
 <div class="offer_payment">![](/img/visa.png)![](/img/mastercard.png)![](/img/amex.png)
 </div>
+### Organisatorische Informationen
 
+#### Zeitlicher Ablauf:
+
+**1\. Tag:** Check-In ab 8:30 Uhr, Trainingszeiten: **9:30 – 17:30 Uhr** (Lunch von 13:00 – 14:00 Uhr), Get-together mit Getränken und Snacks ab 17:30 Uhr
+
+**2\. und 3\. Tag:** Trainingszeiten von **9:00 – 17:00 Uhr** (Lunch von 12:30 – 13:30 Uhr)
+
+#### Bitte mitbringen:
+
+Laptop mit installiertem ssh oder Putty. Ein installiertes Git wird empfohlen.
+
+### Veranstaltungsort
 <div class="offer_location">
 Digital Hub Bonn Rheinwerkallee 6  
 53227 Bonn / Oberkassel
