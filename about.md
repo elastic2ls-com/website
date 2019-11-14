@@ -45,7 +45,7 @@ Founder
 
 <div class="grid-content">
 
-<div class="col-sm-10 col-md-5">
+<div class="col-sm-8 col-md-4">
 #### Work experience
 <div class="boxes flexible about">
 <div class="workdescription">
@@ -93,7 +93,7 @@ _09/2008 - 06/2009_
 </div>
 
 
-<div class="col-sm-10 col-md-5">
+<div class="col-sm-8 col-md-4">
 #### Education
 <div class="boxes flexible about">
 <div class="workdescription">
@@ -136,14 +136,24 @@ _05/2012 - 05/2012_
 [lpi.org/](https://www.lpi.org/)
 </div>
 
-
 </div>
 </div>
 
+<div class="col-sm-8 col-md-4">
+#### Wir unterstützen
+<div class="boxes flexible about">
+
+<div class="workdescription">
+![froscon](/img/froscon.png){: height="77px" }
+</div>
+
+<div class="workdescription">
+![fsfe](/img/fsfe.png){: height="77px" }
+</div>
 
 
-
-
+</div>
+</div>
 
 
 </div>
