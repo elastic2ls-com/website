@@ -101,6 +101,10 @@ body {
       z-index: -1;
       opacity: 0.3
     }
+    .sl-img-container-start {
+      height: 468px;
+      min-height: 100%;
+    }
     .sl-img-container {
       height: 468px;
       margin-bottom: 15px;
@@ -395,9 +399,9 @@ body {
             margin-bottom: 1rem;
             content: "";
           }
-        .container {
+        /* .container p{
           padding-left: 25px;
-        }
+        } */
 }
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
   /*ipad portrait*/
