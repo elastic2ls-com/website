@@ -106,7 +106,7 @@ ___
 
 {% assign maxRelated = site.blog | sample:5 %}
 {% for post in maxRelated %}
-<div class="articles" style="padding: 15px;">
+<div class="blog-articles">
 <h2 class="post-title">{{ post.title }}</h2>
 
 {% if post.subtitle %}
