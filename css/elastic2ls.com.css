@@ -270,9 +270,14 @@ body {
           z-index: -1;
           opacity: 0.3;
         }
+        .sl-img-container-start {
+          /* height: 154px; */
+          min-height: 100%;
+        }
         .sl-img-container {
           height: 154px;
           min-height: 100%;
+          width: auto;
         }
         .workdescription {
           padding-bottom: 15px;

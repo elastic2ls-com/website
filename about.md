@@ -23,7 +23,7 @@ keywords: [About elastic2ls.com Vorstellung Team]
 <!-- SLIDER BG IMAGE -->
 </div>
 <!--- SLIDER -->
-___
+
 <div class="grid-content-about">
 Wir sind ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir Cloud-Plattformen und DevOps Pipelines erfolgreich einführen.
 <div class="col-sm-8 col-md-4">

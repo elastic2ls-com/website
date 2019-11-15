@@ -9,10 +9,10 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <!--- SLIDER -->
 <div class="slider">
 <!-- SLIDER BG IMAGE -->
-<div class="sl-img-container">
+<div class="sl-img-container-start">
 
 <div id="carousel" class="carousel">
-![background](../img/(../img/clouds_bg2.jpg)){: .sl-img .sl-img-container}
+![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
 
 <div class="carousel-inner">
 <div class="item active">
@@ -41,7 +41,7 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <!-- SLIDER BG IMAGE -->
 </div>
 <!--- SLIDER -->
-___
+
 <!--- BOXES  -->
 <div class="grid-content">
 

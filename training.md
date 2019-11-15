@@ -24,7 +24,7 @@ keywords: [Übersicht Trainings DevOps Jenkins Docker]
 <!-- SLIDER BG IMAGE -->
 </div>
 <!--- SLIDER -->
-___
+
 <div class="grid-content">
 Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten und neue Fähigkeiten in die Tat umzusetzen. Dies erhöht die Flexibilität ihrer Arbeitsabläufe und motivert ihre Teams. Schlussendlich investieren Sie hiermit in die Zukunft Ihres Unternehmens. Hier finden Sie ein aktuelle Übersicht über die von uns angeboteten Trainings.
 

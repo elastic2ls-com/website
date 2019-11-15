@@ -26,7 +26,7 @@ keywords: [Cloud-Migration Workshops Übersicht Migration]
 <!-- SLIDER BG IMAGE -->
 </div>
 <!--- SLIDER -->
-___
+
 <div class="grid-content">
 
 <div class="col-sm-24 col-md-12">
@@ -62,7 +62,7 @@ Anstatt auf einer unflexiblen Infrastruktur zu bleiben, erleichtert das Migriere
 
 <!-- CICD -->
 <div class="slider">
-___
+
 <div id="carousel" class="carousel">
 <div class="carousel-inner">
 ![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
