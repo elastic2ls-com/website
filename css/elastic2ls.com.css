@@ -30,11 +30,6 @@ body {
   color: #5D67B9;
   }
 
-.th, th, .td, td {
-  padding: 10px;
-  border: 1px solid black;
-  }
-
 .blog-articles
   padding: 15px;
 }
@@ -44,23 +39,18 @@ body {
  width:100%;
  min-height: 150px !important;
 }
-
 .carousel .item{
  overflow: hidden;
 }
-
 .carousel .icons{
   margin-left: 40px;
 }
-
 .carousel-inner h2{
   font-family: Montserrat;
 }
-
 .slider h2{
   font-family: Montserrat;
 }
-
 .carousel h1{
   margin-left: 15px;
   font-family: monospace;
@@ -95,7 +85,6 @@ body {
   margin-bottom: 0
   !important;
 }
-
 .navbar-inverse {
   border-style: none;
 }
@@ -117,7 +106,6 @@ body {
     .forofor {
       min-width: 400px;
     }
-
     .workdescription {
       padding-bottom: 15px;
       line-height: 0.9;
@@ -173,11 +161,9 @@ body {
         padding-top: 20px;
         padding-bottom: 20px;
       }
-
     .navbar-inverse .navbar-nav > a:hover{
       color: #A4A4A4;
       }
-
     .logo img{
       max-width: 54px;
       max-height: 54px;
@@ -241,14 +227,13 @@ body {
         font-weight: bold;
 
       }
-
-      .carousel-inner a{
-        float: right;
-        margin-right: 120px;
-        font-family: Segoe UI, Tahoma, Geneva, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        -webkit-font-smoothing: antialiased;
+    .carousel-inner a{
+      float: right;
+      margin-right: 120px;
+      font-family: Segoe UI, Tahoma, Geneva, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      -webkit-font-smoothing: antialiased;
     }
     .brand{
       font-size: 20px;
@@ -277,7 +262,7 @@ body {
         position: absolute;
         top: -10px;
         z-index: -1;
-        opacity: 0.3
+        opacity: 0.3;
       }
       .workdescription {
         padding-bottom: 15px;
@@ -414,46 +399,36 @@ body {
   padding-top: 15px;
 
 }
-.boxes span
-{
+.boxes span{
     display: block;
 }
-.boxes a
-{
+.boxes a{
     color: #000;
 }
 /*content setting*/
 
 
 /*about page*/
-.about
-{
+.about{
     min-height: 150px;
     max-width: unset;
 }
-
-.titles
-{
+.titles{
   font-size: 16px;
-  font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+  font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
   padding-top: 5px;
   color: #5D67B9;
   text-align: inherit;
-
 }
-.titles-name
-{
+.titles-name{
   font-size: 18px;
-  font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+  font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
   padding-top: 5px;
   color: #5D67B9;
 }
-
-.titles-form
-{
+.titles-form{
   text-align: center;
 }
-
 .circle3 {
   background-color: #D8D8D8;
   height: 44px;
@@ -469,7 +444,6 @@ body {
   /* top: -45px;
   left: 72px; */
 }
-
 .circle4 {
     background-color: #D8D8D8;
     border-radius: 10%;
@@ -515,7 +489,9 @@ body {
     margin-right: 20px;
   }
 
-  .start_page_links a { color: inherit; }
+  .start_page_links a{
+    color: inherit;
+  }
   a:hover {
     color: inherit;
     text-decoration: none;
