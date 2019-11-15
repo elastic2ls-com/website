@@ -8,6 +8,8 @@ body {
   font-family: 'Noticia Text';
   letter-spacing: -0.02em;
   font-size: 20px;
+  padding-bottom: 100px;
+
 }
 .h1, h1 {
   font-size: 32px;
@@ -33,10 +35,8 @@ body {
   border: 1px solid black;
   }
 
-.articles
-  margin-top: 35px;
-  border: black;
-  border-style: solid;
+.blog-articles
+  padding: 15px;
 }
 
 /*slider setting*/
@@ -128,16 +128,6 @@ body {
       top: 0;
       z-index: -1;
       opacity: 0.3
-    }
-    .bg-img {
-      height: 110%;
-      left: 0;
-      min-height: 100%;
-      min-width: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      z-index: -1;
     }
     .container {
       width: 1370px;
@@ -296,8 +286,7 @@ body {
 @media (max-width: 1199px) {
       }
 
-
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
       .sl-img {
         height: 120%;
         left: -5px;
@@ -526,9 +515,6 @@ body {
 .partner-content img {
   max-width: 100px;
   max-height: 75px;
-}
-body {
-    padding-bottom: 100px; /* This should be equal to the height of your header */
 }
 
 @font-face {
