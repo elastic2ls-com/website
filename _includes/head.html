@@ -1,8 +1,8 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6.0, viewport-fit=cover">
-
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6.0, viewport-fit=cover"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
@@ -19,7 +19,7 @@
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-  <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin> 
+  <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
   {% include gtag.html %}
   {% include gtm_head.html %}
   {% include google_analytics.html %}
