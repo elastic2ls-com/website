@@ -225,10 +225,6 @@ body {
         font-weight: bold;
 
       }
-
-    .carousel-inner {
-      min-height: 350px;
-    }
     .carousel-inner a{
       float: right;
       margin-right: 120px;
@@ -258,19 +254,6 @@ body {
     }
 }
 @media screen and (max-width: 1199px) {
-}
-@media screen and (min-width: 770px) and (max-width: 1024px) {
-  //Put your CSS here for 768px to 1024px width devices(covers all iPad portrait width //
-    .sl-img {
-      height: 120%;
-      left: -5px;
-      max-width: 100%;
-      width: 100%;
-      position: absolute;
-      top: -10px;
-      z-index: -1;
-      opacity: 0.3;
-    }
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
         .sl-img {
@@ -397,7 +380,19 @@ body {
           padding-left: 25px;
         }
 }
-
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+  //Put your CSS here for 768px to 1024px width devices(covers all iPad portrait width //
+    .sl-img {
+      height: 120%;
+      left: -5px;
+      max-width: 100%;
+      width: 100%;
+      position: absolute;
+      top: -10px;
+      z-index: -1;
+      opacity: 0.3;
+    }
+}
 
 /*header setting*/
 
