@@ -103,6 +103,7 @@ body {
     }
     .sl-img-container {
       height: 468px;
+      margin-bottom: 15px;
     }
     .container {
       width: 1370px;
@@ -277,7 +278,8 @@ body {
         .sl-img-container {
           height: 154px;
           min-height: 100%;
-          width: auto;
+          width: 100%;
+          margin-bottom: 15px;
         }
         .workdescription {
           padding-bottom: 15px;
@@ -409,6 +411,16 @@ body {
     z-index: -1;
     opacity: 0.3;
   }
+  .sl-img-container-start {
+    /* height: 154px; */
+    min-height: 100%;
+  }
+  .sl-img-container {
+      height: 254px;
+      min-height: 100%;
+      width: 100%;
+      margin-bottom: 15px;
+  }
   .carousel-inner a{
     float: right;
     margin-right: 120px;
@@ -430,6 +442,16 @@ body {
     top: -10px;
     z-index: -1;
     opacity: 0.3;
+  }
+  .sl-img-container-start {
+    /* height: 154px; */
+    min-height: 100%;
+  }
+  .sl-img-container {
+      height: 254px;
+      min-height: 100%;
+      width: 100%;
+      margin-bottom: 15px;
   }
   .carousel-inner a{
     float: right;
