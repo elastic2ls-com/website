@@ -12,7 +12,7 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <div class="sl-img-container">
 
 <div id="carousel" class="carousel">
-![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
+![background](../img/(../img/clouds_bg2.jpg)){: .sl-img .sl-img-container}
 
 <div class="carousel-inner">
 <div class="item active">
@@ -33,11 +33,6 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 [Los gehts.](training){: .btn .btn-primary .training}
 </div>
 
-<ol class="carousel-indicators hidden-xs">
-  <li data-target="#carousel-top" data-slide-to="0" class="active"></li>
-  <li data-target="#carousel-top" data-slide-to="1"></li>
-  <li data-target="#carousel-top" data-slide-to="2"></li>
-</ol>
 
 </div>
 </div>
