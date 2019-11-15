@@ -356,6 +356,9 @@ body {
           font-weight: bold;
           margin-top: 20px;
         }
+        .carousel-inner img{
+          max-width: 100%
+        }
         .other-content img{
           max-width: 63px;
           max-height: 34px;
