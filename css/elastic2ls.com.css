@@ -61,24 +61,6 @@ body {
   font-family: Montserrat;
 }
 
-.carousel-control-prev{
-  float: left;
-  margin-top: -60px;
-  color: #BDBDBD;
-}
-.carousel-control-next{
-  float: right;
-  margin-top: -60px;
-  color: #BDBDBD;
-}
-
-.carousel-indicators li {
-  border: 1px solid #555;
-  margin-bottom: 0px;
-}
-.carousel-indicators {
-    bottom: -10px;
-}
 .carousel h1{
   margin-left: 15px;
   font-family: monospace;
