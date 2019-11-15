@@ -5,17 +5,23 @@ subtitle: Übersicht Trainings
 keywords: [Übersicht Trainings DevOps Jenkins Docker]
 ---
 {::options parse_block_html="true" /}
-<!-- ![background](../img/clouds_bg2.jpg){: .bg-img} -->
 <!--- SLIDER -->
 <div class="slider">
+<!-- SLIDER BG IMAGE -->
+<div class="sl-img-container">
+
 <div id="carousel" class="carousel">
-![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
+![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
+
 <div class="carousel-inner">
 <div class="item active">
 # DevOps-Training
 </div>
 </div>
 </div>
+
+</div>
+<!-- SLIDER BG IMAGE -->
 </div>
 <!--- SLIDER -->
 ___

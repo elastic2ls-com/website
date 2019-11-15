@@ -5,17 +5,22 @@ subtitle: About us elastic2ls.com
 keywords: [About elastic2ls.com Vorstellung Team]
 ---
 {::options parse_block_html="true" /}
-<!-- ![background](../img/clouds_bg2.jpg){: .bg-img} -->
 <!--- SLIDER -->
 <div class="slider">
+<!-- SLIDER BG IMAGE -->
+<div class="sl-img-container">
+
 <div id="carousel" class="carousel">
-![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
+![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
+
 <div class="carousel-inner">
 <div class="item active">
 # It's hammer time.
 </div>
 </div>
 </div>
+</div>
+<!-- SLIDER BG IMAGE -->
 </div>
 <!--- SLIDER -->
 ___
