@@ -240,7 +240,8 @@ body {
       margin-left: 35px;
       font-family: monospace;
       color: #5D67B9;
-    }    
+    }
+
     .brand{
       font-size: 20px;
       font-family: monospace;
@@ -357,7 +358,8 @@ body {
         margin-right: 80px;
         font-size: 14px;
         font-weight: bold;
-        -webkit-font-smoothing: antialiased;
+        margin-top: 20px;
+        margin-right: 20px;
       }
       .other-content img{
         max-width: 63px;
