@@ -9,7 +9,7 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <!--- SLIDER -->
 <div class="slider">
 <div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
-![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
+![background](../img/Jenkins_background_header_2.jpg){: .sl-img}
 <div class="carousel-inner">
 <div class="item active">
 # Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.
