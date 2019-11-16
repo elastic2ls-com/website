@@ -407,7 +407,7 @@ body {
   /*ipad portrait*/
   .sl-img {
     height: 105%;
-    left: -5px;
+    left: -10px;
     max-width: 100%;
     width: 100%;
     position: absolute;
@@ -439,7 +439,7 @@ body {
   /*ipad landscape*/
   .sl-img {
     height: 105%;
-    left: -5px;
+    left: -30px;
     max-width: 100%;
     width: 100%;
     position: absolute;
@@ -454,7 +454,7 @@ body {
   .sl-img-container {
       height: 254px;
       min-height: 100%;
-      width: 100%;
+      width: 110%;
       margin-bottom: 15px;
   }
   .carousel-inner a{
