@@ -248,6 +248,7 @@ body {
       font-weight: bold;
       margin-bottom: 10px;
     }
+
     .carousel-inner a{
       float: right;
       margin-right: 120px;
@@ -279,7 +280,7 @@ body {
 }
 @media screen and (max-width: 1199px) {
 }
-@media screen and (min-width: 200px) and (max-width: 767px) {
+@media screen and (min-width: 200px) and (max-width: 767px) and (orientation:portrait) {
         .sl-img {
           height: 105%;
           left: -5px;
@@ -382,6 +383,22 @@ body {
           margin-left: 10px;
           margin-top: -5px;
         }
+
+        .training-inner{
+          height: 324px;
+          }
+        .training-inner img{
+          max-width: 100%
+          }
+        .training-inner a{
+          float: right;
+          margin-right: 120px;
+          font-family: Segoe UI, Tahoma, Geneva, sans-serif;
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
         .carousel-inner a{
           float: right;
           margin-right: 80px;
@@ -414,9 +431,164 @@ body {
             margin-bottom: 1rem;
             content: "";
           }
-        /* .container p{
-          padding-left: 25px;
-        } */
+        .container p{
+          padding-left: 10px;
+        }
+}
+@media screen and (min-width: 200px) and (max-width: 767px) and (orientation:landscape) {
+        .sl-img {
+          height: 105%;
+          left: -5px;
+          max-width: 100%;
+          width: 100%;
+          position: absolute;
+          top: -10px;
+          z-index: -1;
+          opacity: 0.3;
+        }
+        .sl-img-container-start {
+          /* height: 154px; */
+          min-height: 100%;
+        }
+        .sl-img-container {
+          height: 154px;
+          min-height: 100%;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .workdescription {
+          padding-bottom: 15px;
+          line-height: 1;
+          font-size: 16px;
+        }
+        .blog{
+          min-height: 150px;
+        }
+        .menu {
+          padding-right: 35px;
+          padding-top: 10px;
+          padding-bottom: unset;
+          display: block;
+        }
+        .logo img{
+          max-width: 44px;
+          max-height: 44px;
+          /* margin-left: -30px; */
+          margin-top: 15px;
+          border-radius: 10%;
+        }
+        .brand{
+          font-size: 14px;
+          font-family: monospace;
+          padding-top: 20px;
+          margin-left: -30px;
+          color: #9d9d9d;
+          margin-left: 15px;
+        }
+        .brand h1{
+          color: #9d9d9d;
+        }
+        .brand a{
+          color: #bcc1c1;
+        }
+        .navbar-header-sm-device {
+          padding-top: 28px;
+        }
+        .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open {
+          color: #fff;
+          background-color: #5a5a5a;
+          border-style: none;
+        }
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+          color: white;
+          font-weight: 800;
+        }
+        .navbar-toggle{
+          margin-right: 0px;
+
+        }
+        .navbar-collapse{
+          border-style: none;
+          border-top: none;
+          box-shadow: none;
+        }
+        .telephone > a, .telephone > a:hover, .telephone > a:focus, .telephone > a:link, .telephone {
+          margin-right: 15px;
+          margin-top: 15px;
+          float: right;
+          color: white;
+          font-family: Segoe UI, Tahoma, Geneva, sans-serif;
+          font-size: 12px;
+          letter-spacing: 0,2em;
+          -webkit-font-smoothing: antialiased;
+          font-weight: bold;
+        }
+        .mail > a, .mail > a:hover, .mail > a:focus, .mail > a:link, .mail {
+          margin-right: 250px;
+          margin-top: 15px;
+          float: right;
+          color: white;
+          font-family: Segoe UI, Tahoma, Geneva, sans-serif;
+          font-size: 16px;
+          letter-spacing: 0,2em;
+          font-weight: bold;
+        }
+        .contact {
+          float: left;
+          margin-left: 10px;
+          margin-top: -5px;
+        }
+
+        .training-inner{
+          height: 254px;
+          }
+        .training-inner img{
+          max-width: 100%
+          }
+        .training-inner a{
+          float: right;
+          margin-right: 120px;
+          font-family: Segoe UI, Tahoma, Geneva, sans-serif;
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .carousel-inner a{
+          float: right;
+          margin-right: 80px;
+          font-family: Segoe UI, Tahoma, Geneva, sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .carousel-inner img{
+          max-width: 100%
+        }
+        .other-content img{
+          max-width: 63px;
+          max-height: 34px;
+        }
+        .related::before {
+            display: block;
+            width: 100%;
+            height: .25rem;
+            background-color: #838485;
+            margin-bottom: 1rem;
+            content: "";
+          }
+        .related::after {
+            display: block;
+            width: 100%;
+            height: .25rem;
+            background-color: #838485;
+            margin-bottom: 1rem;
+            content: "";
+          }
+        .container p{
+          padding-left: 10px;
+        }
 }
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
   /*ipad portrait*/
