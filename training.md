@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Training
-subtitle: Übersicht Trainings
+subtitle: Übersicht DevOps Trainingsangebote von elastic2ls.com. Aktuell Docker und Jenkins. Lpi und DevOps Institute folgen demnächst. 
 keywords: [Übersicht Trainings DevOps Jenkins Docker]
 ---
 {::options parse_block_html="true" /}
@@ -34,21 +34,21 @@ Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten un
 <div id="carousel" class="carousel"> -->
 
 <div class="training-inner">
-# Docker Training
+## Docker Training
 ![Docker Hands-on Workshops](/img/Docker_Logo-500x250.jpg)
 [Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Docker Training){: .btn .btn-primary .details_training_docker}
 </div>
 ___
 
 
-## Programm
+### Programm
 
 <div class="grid-content-docker">
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
 
-### Tag 1: Docker Grundlagen
+#### Tag 1: Docker Grundlagen
 
 *   Container-Technologie
 *   Sonstige Virtualisierungen
@@ -71,7 +71,7 @@ ___
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
 
-### Tag 2: Applikationen
+#### Tag 2: Applikationen
 
 *   Bau eigener Images
 *   Statefull Container
@@ -88,7 +88,7 @@ ___
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
 
-### Tag 3: Docker im Cluster
+#### Tag 3: Docker im Cluster
 
 *   Docker Swarm Mode
 *   Aufbau eines Cluster
@@ -116,7 +116,7 @@ Der Schwerpunkt liegt im klassischen Aufbau von Docker auf Linux. Die Verwendung
 
 <!-- Jenkins Training -->
 <div class="training-inner">
-# Jenkins Training
+## Jenkins Training
 ![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.png)
 [Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Jenkins Training){: .btn .btn-primary .details_training_jenkins}
 </div>
@@ -125,13 +125,13 @@ ___
 
 <div class="grid-content-jenkins">
 
-## Programm
+### Programm
 
 <div class="col-sm-8 col-md-4">
 
 <div class="boxes flexible">
 
-### Tag 1: Jenkins Grundlagen
+#### Tag 1: Jenkins Grundlagen
 
 *   Ein Überblick über Jenkins und desen Verwendung
 *   Einrichten eines Build Jobs
@@ -147,7 +147,7 @@ ___
 
 <div class="boxes flexible">
 
-### Tag 2: Tests und Reporting
+#### Tag 2: Tests und Reporting
 
 *   Implementierung automatisierter Tests
 *   Verwendung von Metriken zur Qualitätsicherung
@@ -163,7 +163,7 @@ ___
 
 <div class="boxes flexible">
 
-### Tag 3: Abschlussprojektes
+#### Tag 3: Abschlussprojektes
 
 *   Durchführung des Projekts
 *   Präsentation des Ergebnisses

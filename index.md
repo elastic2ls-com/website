@@ -11,7 +11,7 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <!-- SLIDER BG IMAGE -->
 <div class="sl-img-container-start">
 
-<div id="carousel" class="carousel">
+<div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
 ![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
 
 <div class="carousel-inner">

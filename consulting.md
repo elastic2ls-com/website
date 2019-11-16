@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cloud-Migration Workshops
-subtitle: Cloud-Migration Workshops Übersicht
+subtitle: Cloud-Migration, Continuous Integration & Continuous Delivery Übersicht und Beschreibung.
 keywords: [Cloud-Migration Workshops Übersicht Migration]
 ---
 {::options parse_block_html="true" /}
