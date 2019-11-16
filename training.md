@@ -29,22 +29,17 @@ keywords: [Übersicht Trainings DevOps Jenkins Docker]
 Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten und neue Fähigkeiten in die Tat umzusetzen. Dies erhöht die Flexibilität ihrer Arbeitsabläufe und motivert ihre Teams. Schlussendlich investieren Sie hiermit in die Zukunft Ihres Unternehmens. Hier finden Sie ein aktuelle Übersicht über die von uns angeboteten Trainings.
 
 <!-- Docker Training -->
-<div class="slider">
+<!-- <div class="slider">
 
-<div id="carousel" class="carousel">
+<div id="carousel" class="carousel"> -->
 
-<div class="carousel-inner">
+<div class="training-inner">
 # Docker Training
-
 ![Docker Hands-on Workshops](/img/Docker_Logo-500x250.jpg)
-
 [Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Docker Training){: .btn .btn-primary .details_training_docker}
 </div>
 ___
 
-</div>
-
-</div>
 
 ## Programm
 
@@ -120,23 +115,13 @@ Der Schwerpunkt liegt im klassischen Aufbau von Docker auf Linux. Die Verwendung
 <!-- Docker Training -->
 
 <!-- Jenkins Training -->
-<div class="slider">
-
-<div id="carousel" class="carousel">
-
-<div class="carousel-inner">
+<div class="training-inner">
 # Jenkins Training
-
 ![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.png)
-
 [Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Jenkins Training){: .btn .btn-primary .details_training_jenkins}
 </div>
-
 ___
 
-</div>
-
-</div>
 
 <div class="grid-content-jenkins">
 
