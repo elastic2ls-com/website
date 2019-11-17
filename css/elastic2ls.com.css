@@ -607,7 +607,7 @@ body {
     min-height: 100%;
   }
   .sl-img-container {
-      height: 254px;
+      /* height: 254px; */
       min-height: 100%;
       width: 100%;
       margin-bottom: 15px;
@@ -618,7 +618,7 @@ body {
     font-family: Segoe UI, Tahoma, Geneva, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 90px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   .grid-content-docker {
@@ -639,6 +639,9 @@ body {
     min-height: 380px;
     !important;
     padding-bottom: 15px;
+  }
+  .grid-content-categories {
+    min-height: 850px !important
   }
 }
 @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {

@@ -21,7 +21,7 @@ permalink: /blog/:title.html
 [Artikel lesen](java-keytool-keystore-befehle){: .btn .btn-primary}
 </div>
 
-<div class="item">![Docker Apache.](../img/DockerLogo-300x150.png)
+<div class="item">![Docker Apache.](../img/DockerLogo.png)
 
 #### Docker nutzen mit Apache Teil2
 
@@ -94,8 +94,6 @@ permalink: /blog/:title.html
 
 </div>
 </div>
-
-___
 
 </div>
 
