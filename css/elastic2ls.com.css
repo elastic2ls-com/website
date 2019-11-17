@@ -235,7 +235,7 @@ body {
       }
 
     .training-inner{
-      height: height: 100%;
+      height: 100%;
       }
     .training-inner img{
       max-width: 100%
@@ -621,6 +621,25 @@ body {
     margin-top: 90px;
     margin-bottom: 10px;
   }
+  .grid-content-docker {
+    min-height: 1090px !important
+  }
+  .grid-content-jenkins {
+    min-height: 600px !important
+  }
+  .grid-content-devops {
+    min-height: 280px !important
+  }
+  .grid-content2 {
+    min-height: 650px !important
+    !important;
+    padding-bottom: 15px;
+  }
+  .grid-content-about {
+    min-height: 380px;
+    !important;
+    padding-bottom: 15px;
+  }
 }
 @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
   /*ipad landscape*/
@@ -652,6 +671,25 @@ body {
     font-weight: bold;
     margin-top: 90px;
     margin-bottom: 10px;
+  }
+  .grid-content-docker {
+    min-height: 510px !important
+  }
+  .grid-content-jenkins {
+    min-height: 370px !important
+  }
+  .grid-content-devops {
+    min-height: 280px !important
+  }
+  .grid-content2 {
+    min-height: 650px !important
+    !important;
+    padding-bottom: 15px;
+  }
+  .grid-content-about {
+    min-height: 380px;
+    !important;
+    padding-bottom: 15px;
   }
 }
 
