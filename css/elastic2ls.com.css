@@ -658,7 +658,7 @@ body {
     min-height: 100%;
   }
   .sl-img-container {
-      height: 254px;
+      height: 394px;
       min-height: 100%;
       width: 110%;
       margin-bottom: 15px;
@@ -669,7 +669,7 @@ body {
     font-family: Segoe UI, Tahoma, Geneva, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 90px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   .grid-content-docker {
@@ -683,14 +683,20 @@ body {
   }
   .grid-content2 {
     min-height: 650px !important
-    !important;
     padding-bottom: 15px;
   }
   .grid-content-about {
-    min-height: 380px;
-    !important;
+    min-height: 380px !important;
     padding-bottom: 15px;
   }
+  .grid-content-categories {
+    min-height: 440px !important;
+  }
+  .boxes {
+    font-size: 20px;
+    padding-top: 15px;
+    height: 160px;
+}
 }
 
 /*header setting*/

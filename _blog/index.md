@@ -6,11 +6,12 @@ keywords: [blog]
 permalink: /blog/:title.html
 ---
 {::options parse_block_html="true" /}
-<!-- ![background](../img/clouds_bg2.jpg){: .bg-img} -->
 <!--- SLIDER -->
 <div class="slider">
+<!-- SLIDER BG IMAGE -->
+<div class="sl-img-container">
 <div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
-![background](../img/Jenkins_background_header_1.jpg){: .sl-img .hidden-xs}
+![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
 <div class="carousel-inner">
 <div class="item active">
 ![Java Keystore erklärts](../img/java.png)
@@ -44,11 +45,11 @@ permalink: /blog/:title.html
 </div>
 </div>
 </div>
-
+<!-- SLIDER BG IMAGE -->
+</div>
 <!--- SLIDER -->
-___
 
-<div class="grid-content">
+<div class="grid-content-categories">
 # Kategorien
 
 <div class="col-sm-8 col-md-4">
