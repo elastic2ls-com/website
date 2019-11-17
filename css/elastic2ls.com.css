@@ -594,7 +594,7 @@ body {
   /*ipad portrait*/
   .sl-img {
     height: 105%;
-    left: -10px;
+    /* left: -10px; */
     max-width: 100%;
     width: 100%;
     position: absolute;
