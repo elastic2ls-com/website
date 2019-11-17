@@ -603,11 +603,17 @@ body {
     opacity: 0.3;
   }
   .sl-img-container-start {
-    /* height: 154px; */
+    height: 254px;
     min-height: 100%;
   }
+  .sl-img-container-blog {
+      height: 274px;
+      min-height: 100%;
+      width: 100%;
+      margin-bottom: 15px;
+  }
   .sl-img-container {
-      /* height: 254px; */
+      height: 254px;
       min-height: 100%;
       width: 100%;
       margin-bottom: 15px;
@@ -658,6 +664,12 @@ body {
   }
   .sl-img-container-start {
       height: 394px;
+      min-height: 100%;
+      width: 100%;
+      margin-bottom: 15px;
+  }
+  .sl-img-container-blog {
+      height: 374px;
       min-height: 100%;
       width: 100%;
       margin-bottom: 15px;
