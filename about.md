@@ -38,11 +38,10 @@ Wir sind ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open 
 
 Founder
 
-<p class="circle3"><a href="https://www.xing.com/profile/Alexander_Wiechert/cv" target="_blank" class="fa fa-xing"></a></p>
-<p class="circle3"><a href="https://www.linkedin.com/in/alexander-wiechert/" target="_blank" class="fa fa-linkedin"></a></p>
-<p class="circle3"><a href="https://github.com/elastic2ls-awiechert" target="_blank" class="fa fa-github"></a></p>
+<p class="circle3"><a href="https://www.xing.com/profile/Alexander_Wiechert/cv" rel="noreferrer target="_blank" class="fa fa-xing"></a></p>
+<p class="circle3"><a href="https://www.linkedin.com/in/alexander-wiechert/" rel="noreferrer target="_blank" class="fa fa-linkedin"></a></p>
+<p class="circle3"><a href="https://github.com/elastic2ls-awiechert" rel="noreferrer target="_blank" class="fa fa-github"></a></p>
 <p class="circle3"><a href="mailto:info@elastic2ls.com?subject=feedback" target="_blank" class="fa fa-envelope-open-o"></a></p>
-
 
 </div>
 </div>
