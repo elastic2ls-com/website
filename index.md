@@ -184,9 +184,9 @@ Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten un
 # Über uns
 ___
 <p class="description">
-Wir sind ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir Cloud-Plattformen und DevOps Pipelines erfolgreich einführen.</p>
+Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir Cloud-Plattformen und DevOps Pipelines erfolgreich einführen.</p>
 <p class="description">
-Dadurch kann mit kleineren aber kontinuierlich Releases die Qualit der Funktionen, welche Ihre Kunden nutzen enorm verbessert werden. Steigern Sie die Verlässlichkeit der Funktionen, welche Ihre Kunden nutzen, durch die Verwendung von Build Pipelines in Ihrem Entwicklungs- und Testprozessen. Durch kurze Releaszyklen rollen Sie nur kleinere Änderungen oder Neuerungen von Funktionen aus, welche einfacher zu testen sind. Durch eine hohe Testabdeckung garantieren Sie Verlässlichkeit Ihrer Produkte.</p>
+Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption und dem Betrieb von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
 #### Nachvollziehbare Änderungen
