@@ -5,11 +5,14 @@ subtitle: About us elastic2ls.com
 keywords: [About elastic2ls.com Vorstellung Team]
 ---
 {::options parse_block_html="true" /}
-<!-- ![background](../img/clouds_bg2.jpg){: .bg-img} -->
 <!--- SLIDER -->
 <div class="slider">
+<!-- SLIDER BG IMAGE -->
+<div class="sl-img-container">
+
 <div id="carousel" class="carousel">
-![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
+![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
+
 <div class="carousel-inner">
 <div class="item active">
 # It's hammer time.
@@ -17,8 +20,10 @@ keywords: [About elastic2ls.com Vorstellung Team]
 </div>
 </div>
 </div>
+<!-- SLIDER BG IMAGE -->
+</div>
 <!--- SLIDER -->
-___
+
 <div class="grid-content-about">
 Wir sind ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir Cloud-Plattformen und DevOps Pipelines erfolgreich einführen.
 <div class="col-sm-8 col-md-4">
@@ -33,11 +38,10 @@ Wir sind ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open 
 
 Founder
 
-<p class="circle3"><a href="https://www.xing.com/profile/Alexander_Wiechert/cv" target="_blank" class="fa fa-xing"></a></p>
-<p class="circle3"><a href="https://www.linkedin.com/in/alexander-wiechert/" target="_blank" class="fa fa-linkedin"></a></p>
-<p class="circle3"><a href="https://github.com/elastic2ls-awiechert" target="_blank" class="fa fa-github"></a></p>
+<p class="circle3"><a href="https://www.xing.com/profile/Alexander_Wiechert/cv" rel="noreferrer target="_blank" class="fa fa-xing"></a></p>
+<p class="circle3"><a href="https://www.linkedin.com/in/alexander-wiechert/" rel="noreferrer target="_blank" class="fa fa-linkedin"></a></p>
+<p class="circle3"><a href="https://github.com/elastic2ls-awiechert" rel="noreferrer target="_blank" class="fa fa-github"></a></p>
 <p class="circle3"><a href="mailto:info@elastic2ls.com?subject=feedback" target="_blank" class="fa fa-envelope-open-o"></a></p>
-
 
 </div>
 </div>

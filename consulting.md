@@ -1,15 +1,18 @@
 ---
 layout: page
 title: Cloud-Migration Workshops
-subtitle: Cloud-Migration Workshops Übersicht
+subtitle: Cloud-Migration, Continuous Integration & Continuous Delivery Übersicht und Beschreibung.
 keywords: [Cloud-Migration Workshops Übersicht Migration]
 ---
 {::options parse_block_html="true" /}
-<!-- ![background](../img/clouds_bg2.jpg){: .bg-img} -->
 <!--- SLIDER -->
 <div class="slider">
+<!-- SLIDER BG IMAGE -->
+<div class="sl-img-container">
+
 <div id="carousel" class="carousel">
-![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
+![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
+
 <div class="carousel-inner">
 <div class="item active">
 # Cloud-Migration
@@ -18,9 +21,12 @@ keywords: [Cloud-Migration Workshops Übersicht Migration]
 </div>
 </div>
 </div>
+
+</div>
+<!-- SLIDER BG IMAGE -->
 </div>
 <!--- SLIDER -->
-___
+
 <div class="grid-content">
 
 <div class="col-sm-24 col-md-12">
@@ -56,7 +62,7 @@ Anstatt auf einer unflexiblen Infrastruktur zu bleiben, erleichtert das Migriere
 
 <!-- CICD -->
 <div class="slider">
-___
+
 <div id="carousel" class="carousel">
 <div class="carousel-inner">
 ![background](../img/Jenkins_background_header_1.jpg){: .sl-img}
