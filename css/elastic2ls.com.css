@@ -91,6 +91,9 @@ body {
 
 
 @media screen and (min-width: 1200px){
+    .slider{
+      padding-bottom: 30px;
+    }
     .sl-img {
       height: 105%;
       left: 0;
@@ -154,13 +157,14 @@ body {
     }
     .grid-content2 {
       min-height: 650px !important
-      !important;
       padding-bottom: 15px;
     }
     .grid-content-about {
-      min-height: 380px;
-      !important;
-      padding-bottom: 15px;
+      min-height: 380px !important;
+      padding-bottom: 30px;
+    }
+    .grid-content-portfolio {
+      padding-bottom: 30px;
     }
     .menu{
         padding-right: 15px;
