@@ -43,12 +43,21 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 </div>
 <!--- SLIDER -->
 
+<!--- GRID -->
+<div class="grid">
+
 <!-- TECH EXPERTS-->
 <div class="grid-content-techexperts hidden-xs">
 
 <div class="col-sm-2 col-md-1">
 <div class="boxes flexible">
 ![AWS Cloudplattform](/img/icons8-amazon-web-services-48.png)
+</div>
+</div>
+
+<div class="col-sm-2 col-md-1">
+<div class="boxes flexible">
+![AWS Cloudplattform](/img/lambda-logo-48.png)
 </div>
 </div>
 
@@ -72,7 +81,25 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 
 <div class="col-sm-2 col-md-1">
 <div class="boxes flexible">
+![Kubernetes](/img/kubernetes-logo-48.png)
+</div>
+</div>
+
+<div class="col-sm-2 col-md-1">
+<div class="boxes flexible">
+![Kubernetes](/img/helm-logo-48.png)
+</div>
+</div>
+
+<div class="col-sm-2 col-md-1">
+<div class="boxes flexible">
 ![Ansible](/img/Ansible-48.png)
+</div>
+</div>
+
+<div class="col-sm-2 col-md-1">
+<div class="boxes flexible">
+![Puppet](/img/puppet-labs-48.png)
 </div>
 </div>
 
@@ -88,16 +115,16 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 </div>
 </div>
 
-<div class="col-sm-4 col-md-2">
+<div class="col-sm-2 col-md-1">
 <div class="boxes flexible">
-![Puppet](/img/puppet-labs-48.png)
+![Kubernetes](/img/prometheus-logo-48.png)
 </div>
 </div>
 
+
+
 </div>
 <!-- TECH EXPERTS-->
-<!--- GRID -->
-<div class="grid">
 
 <!--- GRID CONTENT PORTFOLIO  -->
 <div class="grid-content-portfolio">
@@ -105,7 +132,7 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 ___
 
 <div class="col-sm-12 col-md-6">
-<div class="boxes flexible">
+<div class="boxes flexible portfoliobox">
 #### [Cloud Migration]
 ![Engineering Consulting Services](/img/icons8-zur-cloud-hochladen-48.png)
 
@@ -116,7 +143,7 @@ Elastic2ls arbeitet mit Ihnen zusammen, um die beste Migrationsstrategie für Ih
 </div>
 
 <div class="col-sm-12 col-md-6">
-<div class="boxes flexible">
+<div class="boxes flexible portfoliobox">
 #### [Jenkins CI/CD]
 ![Jenkins CI/CD](/img/icons8-jenkins-48.png)
 
@@ -127,7 +154,7 @@ Er lässt sich schnell installieren, ist einfach zu konfigurieren und dank seine
 </div>
 
 <div class="col-sm-12 col-md-6">
-<div class="boxes flexible">
+<div class="boxes flexible portfoliobox">
 #### [Elastic Stack]
 ![Elastic Stack](/img/icons8-eigenschaft-suchen-48.png)
 
@@ -140,7 +167,7 @@ Wir unterstützen Sie gerne bei der Planung, Umsetzung und dem Betrieb von Elast
 </div>
 
 <div class="col-sm-12 col-md-6">
-<div class="boxes flexible">
+<div class="boxes flexible portfoliobox">
 #### [AWS Cloudplattform]
 ![AWS Cloudplattform](/img/icons8-amazon-web-services-48.png)
 
@@ -188,21 +215,21 @@ Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf
 <p class="description">
 Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption und dem Betrieb von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
 <div class="col-sm-8 col-md-4">
-<div class="boxes flexible">
+<div class="boxes flexible aboutbox">
 #### Nachvollziehbare Änderungen
 Senken und stabilisieren Sie die Kosten Ihrer Entwicklung, durch die Einführung ein Continuous Integration und Delivery Strategie. Dadurch kann mit kleineren aber kontinuierlich Releases die Qualit der Funktionen, welche Ihre Kunden nutzen enorm verbessert werden. Die Build Pipelines von Jenkins lassen sich automatisieren und erleichtern Ihnen sich auf das wesentliche zu konzentrieren.
 </div>
 </div>
 
 <div class="col-sm-8 col-md-4">
-<div class="boxes flexible">
+<div class="boxes flexible aboutbox">
 #### Erhöhen Sie die Verlässlichkeit
 Steigern Sie die Verlässlichkeit der Funktionen, welche Ihre Kunden nutzen, durch die Verwendung von Build Pipelines in Ihrem Entwicklungs- und Testprozessen. Durch kurze Releaszyklen rollen Sie nur kleinere Änderungen oder Neuerungen von Funktionen aus, welche einfacher zu testen sind. Durch eine hohe Testabdeckung garantieren Sie Verlässlichkeit Ihrer Produkte.
 </div>
 </div>
 
 <div class="col-sm-8 col-md-4">
-<div class="boxes flexible">
+<div class="boxes flexible aboutbox">
 #### Automatisieren Sie Releases
 Anstatt auf einer unflexiblen Releasestrategie zu bleiben, erleichtert die Verwendung von Build Pipelines, kleinere Änderungen oder Neuerungen von Funktionen schnell und verlässlich in zu Ihren Kunden zu bringen. All dies vollautomatisch oder mit minimalen Interventionen. Eliminieren Sie Fehler im Prozess durch automatische Tests.
 </div>
