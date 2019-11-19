@@ -49,6 +49,9 @@ permalink: /blog/:title.html
 </div>
 <!--- SLIDER -->
 
+<!--- GRID -->
+<div class="grid">
+
 <div class="grid-content-categories">
 # Kategorien
 
@@ -135,3 +138,6 @@ permalink: /blog/:title.html
 </div>
 
 </div>
+
+</div>
+<!--- GRID -->
