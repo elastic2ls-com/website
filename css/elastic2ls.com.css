@@ -118,10 +118,12 @@
     .sl-img-container-start {
       height: 468px;
       min-height: 100%;
+      max-width: 100%;
     }
     .sl-img-container {
       height: 468px;
       margin-bottom: 15px;
+      max-width: 100%;
     }
     .forofor {
       min-width: 400px;
