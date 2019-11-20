@@ -7,6 +7,6 @@ COPY --chown=jekyll:jekyll Gemfile.lock .
 COPY --chown=jekyll:jekyll _site .
 
 RUN bundle install --quiet --clean
-RUN jekyll build
+RUN JEKYLL_ENV=production jekyll build
 
 CMD ["jekyll", "serve"]

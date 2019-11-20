@@ -197,8 +197,8 @@ jekyll-minifier:
   compress_js_templates: false      # Default: false
   preserve_patterns:                # Default: (empty)
   uglifier_args:                    # Default: (empty)
-  uglifier_args:
-    harmony: true
+  # uglifier_args:
+  #   harmony: true
 
 collections:
   blog:
