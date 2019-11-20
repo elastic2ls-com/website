@@ -136,7 +136,7 @@ ___
 #### [Cloud Migration]
 ![Engineering Consulting Services](/img/icons8-zur-cloud-hochladen-48.png)
 
-Eine gute Planung kann die Cloud-Einführung erleichtern und den Weg zum zukünftigen Erfolg ebnen. Ein Wechsel in die Cloud kann Ihnen dabei helfen, neue Geschäftsvorteile zu erzielen. Dies bedeutet jedoch nicht, dass Sie Ihre gesamte IT-Umgebung austauschen müssen, um dorthin zu gelangen.
+Eine gute Planung kann die Cloud-Einführung erleichtern und den Weg zum zukünftigen Erfolg ebnen. Ein Wechsel in die Cloud kann Ihnen dabei helfen, neue Geschäftsvorteile zu erzielen.
 
 Elastic2ls arbeitet mit Ihnen zusammen, um die beste Migrationsstrategie für Ihr Unternehmen zu definieren.
 </div>
@@ -147,9 +147,9 @@ Elastic2ls arbeitet mit Ihnen zusammen, um die beste Migrationsstrategie für Ih
 #### [Jenkins CI/CD]
 ![Jenkins CI/CD](/img/icons8-jenkins-48.png)
 
-Jenkins ist ein Open Source Continuous Integration Server. Er kann Ihnen genau diese immer wiederkehrenden Arbeiten abnehmen. Jenkins ist eine Webapplikation sowie Administration, und die Auswertung der Projekte erfolgt vollständig über den Browser.
+Jenkins ist ein Open Source Automatisierungsserver, der es Entwicklern auf der ganzen Welt ermöglicht, ihre Software zuverlässig zu erstellen, zu testen und einzusetzen.
 
-Er lässt sich schnell installieren, ist einfach zu konfigurieren und dank seiner Plug-in-Architektur sehr flexibel an eigene Bedürfnisse anpassbar.
+Er ist einfach zu konfigurieren und dank seiner Plug-in-Architektur sehr flexibel an eigene Bedürfnisse anpassbar.
 </div>
 </div>
 
@@ -171,7 +171,7 @@ Wir unterstützen Sie gerne bei der Planung, Umsetzung und dem Betrieb von Elast
 #### [AWS Cloudplattform]
 ![AWS Cloudplattform](/img/icons8-amazon-web-services-48.png)
 
-AWS – Amazon Web Services – ist der größte Anbieter von Cloudinfrastruktur weltweit. Darüber hinaus bietet AWS den Kunden zahlreiche Services, die den Bereich Infrastrukturservices sinnvoll erweitern.
+Amazon Web Services – ist der größte Anbieter von Cloudinfrastruktur weltweit. AWS bietet den Kunden zahlreiche Services, die den Bereich Infrastrukturservices sinnvoll erweitern.
 
 Als AWS Consulting Partner unterstützen wir Sie bei der Planung, Umsetzung und dem Betrieb von Services auf AWS.
 </div>
@@ -211,13 +211,13 @@ Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten un
 # Über uns
 ___
 <p class="description">
-Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir Cloud-Plattformen und DevOps Pipelines erfolgreich einführen.</p>
+Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
 <p class="description">
-Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption und dem Betrieb von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
+Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible aboutbox">
 #### Nachvollziehbare Änderungen
-Senken und stabilisieren Sie die Kosten Ihrer Entwicklung, durch die Einführung ein Continuous Integration und Delivery Strategie. Dadurch kann mit kleineren aber kontinuierlich Releases die Qualit der Funktionen, welche Ihre Kunden nutzen enorm verbessert werden. Die Build Pipelines von Jenkins lassen sich automatisieren und erleichtern Ihnen sich auf das wesentliche zu konzentrieren.
+Senken und stabilisieren Sie die Kosten Ihrer Entwicklung, durch die Einführung ein Continuous Integration / Delivery Strategie. Dadurch kann mit kleineren aber kontinuierlich Releases die Qualit der Funktionen, welche Ihre Kunden nutzen, enorm verbessert werden. Die Build Pipelines von Jenkins lassen sich automatisieren, dadurch können Ihre Entwicklern sich auf das Wesentliche konzentrieren.
 </div>
 </div>
 
