@@ -194,11 +194,11 @@
     }
     .grid-content-contact {
     }
-    .portfoliobox {
-      min-height: 370px;
-    }
     .aboutbox {
-      min-height: 420px;
+      min-height: 320px;
+    }
+    .portfoliobox {
+      min-height: 300px;
     }
     .contact{
       padding-left: 15px;
@@ -815,10 +815,10 @@
     height: 160px;
   }
   .aboutbox {
-    min-height: 420px;
+    min-height: 320px;
   }
   .portfoliobox {
-    min-height: 370px;
+    min-height: 300px;
   }
 }
 
