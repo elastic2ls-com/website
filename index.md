@@ -214,26 +214,6 @@ ___
 Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
 <p class="description">
 Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
-<div class="col-sm-8 col-md-4">
-<div class="boxes flexible aboutbox">
-#### Nachvollziehbare Änderungen
-Senken und stabilisieren Sie die Kosten Ihrer Entwicklung, durch die Einführung ein Continuous Integration / Delivery Strategie. Dadurch kann mit kleineren aber kontinuierlich Releases die Qualit der Funktionen, welche Ihre Kunden nutzen, enorm verbessert werden. Die Build Pipelines von Jenkins lassen sich automatisieren, dadurch können Ihre Entwicklern sich auf das Wesentliche konzentrieren.
-</div>
-</div>
-
-<div class="col-sm-8 col-md-4">
-<div class="boxes flexible aboutbox">
-#### Erhöhen Sie die Verlässlichkeit
-Steigern Sie die Verlässlichkeit der Funktionen, welche Ihre Kunden nutzen, durch die Verwendung von Build Pipelines in Ihrem Entwicklungs- und Testprozessen. Durch kurze Releaszyklen rollen Sie nur kleinere Änderungen oder Neuerungen von Funktionen aus, welche einfacher zu testen sind. Durch eine hohe Testabdeckung garantieren Sie Verlässlichkeit Ihrer Produkte.
-</div>
-</div>
-
-<div class="col-sm-8 col-md-4">
-<div class="boxes flexible aboutbox">
-#### Automatisieren Sie Releases
-Anstatt auf einer unflexiblen Releasestrategie zu bleiben, erleichtert die Verwendung von Build Pipelines, kleinere Änderungen oder Neuerungen von Funktionen schnell und verlässlich in zu Ihren Kunden zu bringen. All dies vollautomatisch oder mit minimalen Interventionen. Eliminieren Sie Fehler im Prozess durch automatische Tests.
-</div>
-</div>
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible about">
