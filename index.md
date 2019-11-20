@@ -47,7 +47,7 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <div class="grid">
 
 <!-- TECH EXPERTS-->
-<div class="grid-content-techexperts hidden-xs">
+<div class="grid-content-techexperts hidden-xs feature_toogle">
 
 <div class="col-sm-2 col-md-1">
 <div class="boxes flexible">

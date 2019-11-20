@@ -102,7 +102,7 @@
 @media screen and (min-width: 1200px){
     .slider{
       padding-bottom: 30px;
-      min-height: 60vh;
+      min-height: 80vh;
     }
     .sl-img {
       height: 468px;
@@ -187,7 +187,7 @@
       padding-left: 15px;
     }
     .grid-content-about {
-      min-height: 870px !important;
+      min-height: 500px !important
     }
     .grid-content-news {
       min-height: 390px !important;
@@ -314,6 +314,10 @@
 @media screen and (max-width: 1199px) {
 }
 @media screen and (min-width: 200px) and (max-width: 767px) and (orientation:portrait) {
+  .slider{
+    padding-bottom: 30px;
+    min-height: 80vh;
+  }
         .sl-img {
           height: 105%;
           left: -5px;
@@ -479,6 +483,10 @@
           }
 }
 @media screen and (min-width: 200px) and (max-width: 767px) and (orientation:landscape) {
+  .slider{
+    padding-bottom: 30px;
+    min-height: 80vh;
+  }
         .sl-img {
           height: 105%;
           left: -5px;
@@ -640,11 +648,11 @@
           padding-left: 10px;
         }
 }
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+@media all and (device-height: 1024px) and (device-width: 768px) and (orientation:portrait) {
   /*ipad portrait*/
   .slider{
     padding-bottom: 30px;
-    min-height: 60vh;
+    min-height: 80vh;
   }
   .sl-img {
     height: 105%;
@@ -709,7 +717,7 @@
       min-height: 790px !important;
   }
   .grid-content-about {
-    min-height: 1580px !important
+    min-height: 770px !important
   }
   .grid-content-news {
       min-height: 950px !important;
@@ -727,6 +735,10 @@
 }
 @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
   /*ipad landscape*/
+  .slider{
+    padding-bottom: 30px;
+    min-height: 80vh;
+  }  
   .sl-img {
     height: 105%;
     /* left: -30px; */
@@ -794,7 +806,7 @@
     padding-left: 15px;
   }
   .grid-content-about {
-    min-height: 1020px !important;
+    min-height: 570px !important
   }
   .grid-content-news {
       min-height: 420px !important;
