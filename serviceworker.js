@@ -10,11 +10,11 @@ self.addEventListener("install", function (event) {
     caches.open(CACHE).then(function (cache) {
       return cache.addAll([
        '/',
-       '/about/index.html',
-       '/consulting/index.html',
-       '/devops/index.html',
+       // '/about/index.html',
+       // '/consulting/index.html',
+       // '/devops/index.html',
+       // '/training/index.html',
        '/impressum/index.html',
-       '/training/index.html',
        '/blog/index.html',
        '/blog/devops/index.html',
        '/blog/dns/index.html',

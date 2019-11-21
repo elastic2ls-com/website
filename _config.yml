@@ -95,9 +95,15 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-minifier
+  # - jekyll-assets
 
 sass:
-    style: :compressed
+  style: compressed
+
+# assets:
+#   compress:
+#     css: true
+#     js: true
 
 jekyll-minifier:
   preserve_php: true                # Default: false
@@ -129,9 +135,3 @@ jekyll-minifier:
 collections:
   blog:
     output: true
-
-# defaults:
-#   - scope:
-#       path: "blog"
-#     values:
-#       blog: "true"
