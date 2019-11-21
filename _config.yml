@@ -6,6 +6,19 @@ title: www.elastic2ls.com
 # Short description of your site
 description: Wir helfen Ihnen bei der Einführung von DevOps und Ihren Cloud Migration. Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment. Wir bieten Trainings zu den Themen DevOps, Cloud, Linux und vieles mehr.
 
+# url is the the website domain URL without a trailing slash
+url: "https://www.elastic2ls.com"
+
+# website logo
+title-img: "/img/Logo_box-1-150x150.png"
+
+# website author
+author:
+  name: Alexander Wiechert
+
+# baseurl should be an empty string
+baseurl: ""
+
 #pwa settings
 name: "elastic[too]ls.com"
 short_name: "elastic2ls"
@@ -13,92 +26,7 @@ orientation: "any"
 lang: "German"
 color: ""#18BC9C"
 
-# url is the the website domain URL without a trailing slash
-url: "https://www.elastic2ls.com"
-
-# baseurl should be an empty string
-baseurl: ""
-
-# --- Navigation bar options --- #
-
-# List of links in the navigation bar
-navbar-links:
-  About: "about"
-  Resources:
-    - Author's home: "https://www.elastic2ls.com"
-    - Github: "https://github.com/elastic2ls-awiechert/elastic2ls_website"
-
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-#qavatar: "/img/Logo_box-1-150x150.png"
-
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-title-img: "/img/Logo_box-1-150x150.png"
-
-# --- Background colour/image options --- #
-
-# Personalize the colors in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
-page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#F5F5F5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-
-# Alternatively, the navbar, footer, and page background can be set to use background images
-# instead of colour
-
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
-
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else can be removed
-author:
-  name: Alexander Wiechert
-
-# Select your active Social Network Links.
-# Uncomment the links you want to show in the footer and add your information to each link.
-# You can reorder the items to define the link order.
-# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-social-network-links:
-  rss: true
-  email: "someone@example.com"
-  facebook: yourname
-  github: yourname
-  twitter: yourname
-#  reddit: yourname
-#  linkedin:
-#  xing: yourname
-#  stackoverflow: "yourname"
-#  snapchat: yourname
-#  instagram: yourname
-#  youtube: user/yourname
-#  spotify: yourname
-#  telephone: +
-#  steam: yourname
-#  twitch: yourname
-#  yelp: yourname
-
-# Select which share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-#url-pretty: "MyWebsite.com"
-
 # --- Web Statistics Section --- #
-
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
 gtag: "UA-85377423-1"
 
@@ -109,8 +37,6 @@ gtag: "UA-85377423-1"
 gtm: "GTM-P7RZL44"
 
 # --- Misc --- #
-
-
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
