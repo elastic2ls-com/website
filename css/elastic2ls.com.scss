@@ -111,8 +111,8 @@
       height: auto;
       width: auto;
       left: 0;
-      max-height: 100%;
-      max-width: 100%;
+      min-height: 100%;
+      min-width: 100%;
       position: absolute;
       top: -10px;
       z-index: -1;
@@ -322,8 +322,8 @@
           height: auto;
           width: auto;
           left: -5px;
-          max-width: 100%;
-          max-height: 100%;
+          min-width: 100%;
+          min-height: 100%;
           position: absolute;
           top: -10px;
           z-index: -1;
@@ -491,7 +491,8 @@
         .sl-img {
           height: 105%;
           left: -5px;
-          max-width: 100%;
+          min-width: 100%;
+          min-height: 100%;
           width: 100%;
           position: absolute;
           top: -10px;
@@ -658,7 +659,8 @@
   .sl-img {
     height: 105%;
     /* left: -10px; */
-    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     width: 100%;
     position: absolute;
     top: -10px;
@@ -743,7 +745,8 @@
   .sl-img {
     height: 105%;
     /* left: -30px; */
-    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     width: 100%;
     position: absolute;
     top: -10px;
