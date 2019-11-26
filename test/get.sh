@@ -6,7 +6,7 @@ getsrc=$(grep RewriteRule redirects| awk {'print $2'}|cut -d / -f1,2,3 |cut -d ^
 #redirect target
 gettrg=$(grep RewriteRule redirects| awk {'print $3'}|cut -d / -f4,5 )
 
-for redirects in $getsrc
+for redirects in $gettrg
         do
                 echo $redirects
                 curl -Is localhost:4000/$redirects
