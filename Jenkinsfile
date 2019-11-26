@@ -32,7 +32,7 @@ pipeline {
         steps {
           sh '''
             mkdir _site
-            docker build -t elastic2ls-jekyll "$PWD"
+            docker build -t elastic2ls-jekyll:website_$BUILD_NUMBER "$PWD"
             docker run -d -p 4000:4000 --name elastic2ls-jekyll -v "$PWD":/srv/jekyll elastic2ls-jekyll
             docker logs elastic2ls-jekyll
           '''
@@ -42,7 +42,7 @@ pipeline {
           parallel {
               stage('Smoke Tests') {
                 steps {
-                  sh 'nc -zv 127.0.0.1 80'
+                  sh 'nc -zv 127.0.0.1 4000'
                   sh 'curl -L -s localhost |grep -iF "Copyright 2019 elastic2ls"'
                 }
               }
