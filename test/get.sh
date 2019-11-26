@@ -9,5 +9,5 @@ gettrg=$(grep RewriteRule redirects| awk {'print $3'}|cut -d / -f4,5 )
 for redirects in $getsrc
         do
                 echo $redirects
-                curl -Is www.elastic2ls.com/$redirects
+                curl -Is localhost:4000/$redirects
         done
