@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{SERVER_NAME} =demo-origin.elastic2ls.com
-  RewriteRule ^aendern-der-default-collation-mysql/$ https://%{SERVER_NAME}/blog/aendern-der-default-collation-mysql/ [L,R=301]
+  RewriteRule ^aendern-der-default-collation-mysql22/$ https://%{SERVER_NAME}/blog/aendern-der-default-collation-mysql/ [L,R=301]
   RewriteRule ^apache-entfernen-x-powered-by-header/$ https://%{SERVER_NAME}/blog/apache-entfernen-x-powered-by-header/ [L,R=301]
   RewriteRule ^apache-errordocument/$ https://%{SERVER_NAME}/blog/apache-errordocument/ [L,R=301]
   RewriteRule ^apache-reverse-proxy-wildcard/$ https://%{SERVER_NAME}/blog/apache-reverse-proxy-wildcard/ [L,R=301]
