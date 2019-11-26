@@ -33,7 +33,7 @@ pipeline {
           sh '''
             mkdir _site
             docker build -t elastic2ls-jekyll:website_$BUILD_NUMBER "$PWD"
-            docker run -d -p 4000:4000 --name elastic2ls-jekyll -v "$PWD":/srv/jekyll elastic2ls-jekyll
+            docker run -d -p 4000:4000 --name elastic2ls-jekyll:website_$BUILD_NUMBER -v "$PWD":/srv/jekyll elastic2ls-jekyll:website_$BUILD_NUMBER
             docker logs elastic2ls-jekyll
           '''
         }
