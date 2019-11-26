@@ -13,6 +13,19 @@ pipeline {
           }
         }
       }
+      stage('Config adjustment') {
+        steps {
+          script {
+            if ("${STAGE}" == "approval" ){
+              sh 'sed -i "s/www.elastic2ls.com/www-appr.elastic2ls.com/g" _config.yml'
+              sh 'sed -i "/gtag/d" _config.yml'
+              sh 'sed -i "/gtm/d" _config.yml'
+            } else if ("${STAGE}" == "production"){
+              sh 'sed -i "s/www.elastic2ls.com/www.elastic2ls.com/g" _config.yml'
+            }
+          }
+        }
+      }
       stage('Docker build & run') {
         steps {
           sh '''
