@@ -57,7 +57,7 @@ pipeline {
       stage('Docker destroy') {
         steps {
           sh 'docker stop elastic2ls-jekyll-static-files && docker rm elastic2ls-jekyll-static-files'
-          sh 'docker images |elastic2ls-jekyll-static-files'
+          sh 'docker images |grep elastic2ls-jekyll-static-files'
           sh 'docker rmi elastic2ls-jekyll-static-files'
         }
       }
