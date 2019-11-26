@@ -38,30 +38,31 @@ pipeline {
           '''
         }
       }
-      stage('Tests') {
-          parallel {
-              stage('Smoke Tests') {
-                steps {
-                  sh 'nc -zv 127.0.0.1 4000'
-                  sh 'curl -L -s localhost:4000 |grep -iF "Copyright 2019 elastic2ls"'
-                }
-              }
-              stage('Rewrite Tests') {
-                steps {
-                  catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                    script {
-                      REDIRECTS = sh (script: 'cd test/ && chmod +x get.sh && ./get.sh |grep 404 -B1|grep -v 404', returnStdout: true).trim()
-                      FOUROFOUR = sh (script: 'cd test/ && chmod +x get.sh && ./get.sh |grep 404', returnStdout: true).trim()
-                      if ("${FOUROFOUR}" == "HTTP/1.1 404 Not Found" ){
-                        echo "${REDIRECTS}"
-                        error('Found 404 redirect.')
-                      }
-                    }
-                  }
-                }
-              }
+
+
+        stage('Smoke Tests') {
+          steps {
+            sh 'nc -zv 127.0.0.1 4000'
+            sh 'curl -L -s localhost:4000 |grep -iF "Copyright 2019 elastic2ls"'
           }
-      }
+        }
+        stage('Rewrite Tests') {
+          steps {
+            catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+              script {
+                REDIRECTS = sh (script: 'cd test/ && chmod +x get.sh && ./get.sh |grep 404 -B1|grep -v 404', returnStdout: true).trim()
+                FOUROFOUR = sh (script: 'cd test/ && chmod +x get.sh && ./get.sh |grep 404', returnStdout: true).trim()
+                if ("${FOUROFOUR}" == "HTTP/1.1 404 Not Found" ){
+                  echo "${REDIRECTS}"
+                  error('Found 404 redirect.')
+                }
+              }
+            }
+          }
+        }
+
+
+
       stage('Docker destroy') {
         steps {
           sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
