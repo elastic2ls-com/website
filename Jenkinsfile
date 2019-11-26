@@ -22,13 +22,11 @@ pipeline {
         steps {
           script {
             if ("${STAGE}" == "approval" ){
-              sh 'sed -i `s/url: "https://www.elastic2ls.com"/url: "https://www-appr.elastic2ls.com"/g` _config.yml'
-              sh 'sed -i `s/title: www.elastic2ls.com/title: www-appr.elastic2ls.com/g` _config.yml'
-              sh 'sed -i `/gtag/d` _config.yml'
-              sh 'sed -i `/gtm/d` _config.yml'
+              sh 'sed -i "s/www.elastic2ls.com/www-appr.elastic2ls.com/g" _config.yml'
+              sh 'sed -i "/gtag/d" _config.yml'
+              sh 'sed -i "/gtm/d" _config.yml'
             } else if ("${STAGE}" == "production"){
-              sh 'sed -i `s/url: "https://www.elastic2ls.com"/url: "https://www.elastic2ls.com"/g` _config.yml'
-              sh 'sed -i `s/title: www.elastic2ls.com/title: www.elastic2ls.com/g` _config.yml'
+              sh 'sed -i "s/www.elastic2ls.com/www.elastic2ls.com/g" _config.yml'
             }
           }
         }
