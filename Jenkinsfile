@@ -1,3 +1,5 @@
+properties([parameters([choice(choices: ['approval', 'production'], description: 'Choose stage to prepare build for.', name: 'STAGE')])])
+
 pipeline {
     agent any
     options {
