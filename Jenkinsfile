@@ -1,5 +1,10 @@
+properties([parameters([choice(choices: ['approval', 'production'], description: 'Choose stage to prepare build for.', name: 'STAGE')])])
 pipeline {
     agent any
+    environment {
+        def current_time = sh(script: "echo `date +%Y.%m.%d-%H.%M.%S)`", returnStdout: true).trim()
+        param = "push_static_files_$current_time"
+    }
     options {
         skipDefaultCheckout(true)
     }
@@ -10,6 +15,21 @@ pipeline {
             cleanWs()
             checkout scm
             gitCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
+          }
+        }
+      }
+      stage('Config adjustment') {
+        steps {
+          script {
+            if ("${STAGE}" == "approval" ){
+              sh 'sed -i `s/url: "https://www.elastic2ls.com"/url: "https://www-appr.elastic2ls.com"/g` _config.yml'
+              sh 'sed -i `s/title: www.elastic2ls.com/title: www-appr.elastic2ls.com/g` _config.yml'
+              sh 'sed -i `/gtag/d` _config.yml'
+              sh 'sed -i `/gtm/d` _config.yml'
+            } else if ("${STAGE}" == "production"){
+              sh 'sed -i `s/url: "https://www.elastic2ls.com"/url: "https://www.elastic2ls.com"/g` _config.yml'
+              sh 'sed -i `s/title: www.elastic2ls.com/title: www.elastic2ls.com/g` _config.yml'
+            }
           }
         }
       }
@@ -28,13 +48,12 @@ pipeline {
            withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
              sh '''
                rm -rf ${WORKSPACE}/.git/
-               current_time=$(date "+%Y.%m.%d-%H.%M.%S")
                sleep 15
                sudo chmod -R 777 ${WORKSPACE}/_site/
                cd ${WORKSPACE}/_site/
                git init
                git add .
-               git commit -m "push_static_files_$current_time"
+               git commit -m "push_static_files_$param"
                git remote add origin https://github.com/elastic2ls-awiechert/elastic2ls_static_file.git
             '''
             sh "cd ${WORKSPACE}/_site/ && git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
@@ -49,4 +68,9 @@ pipeline {
         }
       }
     }
+    post {
+           always {
+             echo "${param}"
+           }
+         }
 }
