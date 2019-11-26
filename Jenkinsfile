@@ -43,7 +43,7 @@ pipeline {
         stage('Smoke Tests') {
           steps {
             sh 'nc -zv 127.0.0.1 4000'
-            sh 'curl -L -s localhost:4000 |grep -iF "Copyright 2019 elastic2ls"'
+            //sh 'curl -L -s localhost:4000 |grep -iF "Copyright 2019 elastic2ls"'
           }
         }
         stage('Rewrite Tests') {
