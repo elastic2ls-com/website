@@ -17,7 +17,7 @@ pipeline {
         steps {
           sh '''
             mkdir _site
-            docker build -t elastic2ls-jekyll "$PWD"
+            docker build -t elastic2ls-jekyll-static-files "$PWD"
             docker run -d -p 4000:4000 --name elastic2ls-jekyll-static-files -v "$PWD":/srv/jekyll elastic2ls-jekyll
             docker logs elastic2ls-jekyll-static-files
           '''
@@ -43,9 +43,9 @@ pipeline {
        }
       stage('Docker destroy') {
         steps {
-          sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
-          sh 'docker images |grep elastic2ls-jekyll'
-          sh 'docker rmi elastic2ls-jekyll'
+          sh 'docker stop elastic2ls-jekyll-static-files && docker rm elastic2ls-jekyll-static-files'
+          sh 'docker images |elastic2ls-jekyll-static-files'
+          sh 'docker rmi elastic2ls-jekyll-static-files'
         }
       }
     }
