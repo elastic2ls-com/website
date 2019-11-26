@@ -1,10 +1,7 @@
+// used for Job elastic2ls_website
 properties([parameters([choice(choices: ['approval', 'production'], description: 'Choose stage to prepare build for.', name: 'STAGE')])])
 pipeline {
     agent any
-    environment {
-        def current_time = sh(script: "echo `date +%Y.%m.%d-%H.%M.%S)`", returnStdout: true).trim()
-        param = "push_static_files_$current_time"
-    }
     options {
         skipDefaultCheckout(true)
     }
@@ -41,23 +38,47 @@ pipeline {
           '''
         }
       }
-      stage('Push static files') {
-         steps {
-           withCredentials([usernamePassword(credentialsId: 'GITHUB', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
-             sh '''
-               rm -rf ${WORKSPACE}/.git/
-               sleep 15
-               sudo chmod -R 777 ${WORKSPACE}/_site/
-               cd ${WORKSPACE}/_site/
-               git init
-               git add .
-               git commit -m "push_static_files_$param"
-               git remote add origin https://github.com/elastic2ls-awiechert/elastic2ls_static_file.git
-            '''
-            sh "cd ${WORKSPACE}/_site/ && git push https://${USERNAME}:${PASSWORD}@github.com/elastic2ls-awiechert/elastic2ls_static_file HEAD:refs/heads/master --force"
-           }
-         }
-       }
+      stage('Tests') {
+          parallel {
+              stage('Smoke Tests') {
+                steps {
+                  sh 'nc -zv 127.0.0.1 80'
+                  sh 'curl -L -s localhost |grep -iF "Copyright 2019 elastic2ls"'
+                }
+              }
+              stage('Security Tests') {
+                steps {
+                  catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    script {
+                      HEADER = sh (script: 'curl -L -s -I localhost |grep -iF "Server: Apache"', returnStdout: true).trim()
+                      if ("${HEADER}" == "Server: Apache/2.4.41 (Unix)" ){
+                        echo "Found NON prod apache header, remove Server Signature - ${HEADER}"
+                        sh 'exit 1'
+                      }
+                      else  if ("${HEADER}" == "Server: Apache" ) {
+                        echo "Found prod apache header, everything is fine - ${HEADER}"
+                        sh 'exit 0'
+                      }
+                    }
+                  }
+                }
+              }
+              stage('Rewrite Tests') {
+                steps {
+                  catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    script {
+                      REDIRECTS = sh (script: 'cd test/ && chmod +x get.sh && ./get.sh |grep 404 -B1|grep -v 404', returnStdout: true).trim()
+                      FOUROFOUR = sh (script: 'cd test/ && chmod +x get.sh && ./get.sh |grep 404', returnStdout: true).trim()
+                      if ("${FOUROFOUR}" == "HTTP/1.1 404 Not Found" ){
+                        echo "${REDIRECTS}"
+                        error('Found 404 redirect.')
+                      }
+                    }
+                  }
+                }
+              }
+          }
+      }
       stage('Docker destroy') {
         steps {
           sh 'docker stop elastic2ls-jekyll && docker rm elastic2ls-jekyll'
@@ -66,9 +87,4 @@ pipeline {
         }
       }
     }
-    post {
-           always {
-             echo "${param}"
-           }
-         }
 }
