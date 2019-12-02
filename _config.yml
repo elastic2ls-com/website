@@ -95,7 +95,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-minifier
-  # - jekyll-assets
+  - jekyll-compress-images
 
 sass:
   style: compressed
@@ -129,8 +129,11 @@ jekyll-minifier:
   compress_js_templates: false      # Default: false
   preserve_patterns:                # Default: (empty)
   uglifier_args:                    # Default: (empty)
-  # uglifier_args:
-  #   harmony: true
+  uglifier_args:
+     harmony: true
+
+compress_images:
+  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
 
 collections:
   blog:

@@ -4,6 +4,7 @@ var host = "https://" +window.location.hostname;
 var consulting = "/#portfolio";
 var training = "/#trainings";
 var about = "/#ber-uns";
+var bloggerei = "/img/bgpublicon.jpg"
 
 var blog = "/blog/";
 var impressum = "/impressum/";
@@ -16,5 +17,7 @@ window.onload = function() {
   document.getElementById('about').href = (host,about);
   document.getElementById('blog').href = (host,blog);
   document.getElementById('impressum').href = (host,impressum);
+  document.getElementById('bloggerei').src = (host,bloggerei);
+
 
 }
