@@ -17,13 +17,11 @@ Römerstrasse 334
 
 53117 Bonn
 
+
 ## Kontakt
-Tel: 0228/3361761
+Tel: 0160/2665355
 
 E-Mail: [info@elastic2ls.com](mailto:info@elastic2ls.com?subject=Impressum)
-
-## Umsatzsteuer-Identifikationsnummer
-
 
 
 ## Haftungsausschluss

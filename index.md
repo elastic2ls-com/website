@@ -171,8 +171,11 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### Docker nutzen mit Apache Teil2
-[![Docker Apache.](../img/DockerLogo.png)](/blog/docker-apache-2)
+
+
+
+#### Terraform Tutorial Teil 1
+[![Terraform](../img/terrraform.png)](/blog/terraform-tutorial-1)
 </div>
 </div>
 

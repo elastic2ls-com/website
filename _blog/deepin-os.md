@@ -74,4 +74,4 @@ Das Sytem wirkt auf den ersten Blick sehr aufgeräumt und intuitiv. Anfänger so
 Deepin OS Linux genügt dem Anspruch ein Linux für den Desktop zu sein, in dem sich auch Anfänger schnell zurecht finden. Als versierter Linux Benutzer finde ich es schade, dass es bei der Installation keine Auswahl für die Einstellung der Partitionierung gibt, insbesondere konnte ich es nicht parellel zu anderen Systemen installieren. Hier wird wohl noch ein zweiter Test nötig sein um diese Einstellungen zu finden. Hier ist der Link zum
 
 
-[Download](httpss://www.lidux.de/deepin-download/183-deepin-15-2)
+[Download](https://www.lidux.de/deepin-download/183-deepin-15-2)

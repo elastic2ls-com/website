@@ -21,11 +21,11 @@ permalink: /blog/:title.html
 [Artikel lesen](java-keytool-keystore-befehle){: .btn .btn-primary}
 </div>
 
-<div class="item">![Docker Apache.](../img/DockerLogo.png)
+<div class="item">![Terraform](../img/terrraform.png)
 
-#### Docker nutzen mit Apache Teil2
+#### Terraform Tutorial Teil 1
 
-[Artikel lesen](docker-apache-2){: .btn .btn-primary}
+[Artikel lesen](terraform-tutorial-1){: .btn .btn-primary}
 </div>
 
 <div class="item">![Auditd.](../img/linux2.png)

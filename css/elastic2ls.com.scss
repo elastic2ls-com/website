@@ -352,6 +352,7 @@
           padding-top: 10px;
           padding-bottom: unset;
           display: block;
+          color: #fff;
         }
         .logo img{
           max-width: 44px;
@@ -484,10 +485,10 @@
           }
 }
 @media screen and (min-width: 200px) and (max-width: 767px) and (orientation:landscape) {
-  .slider{
-    padding-bottom: 30px;
-    min-height: 80vh;
-  }
+        .slider{
+          padding-bottom: 30px;
+          min-height: 80vh;
+        }
         .sl-img {
           height: 105%;
           left: -5px;
@@ -522,6 +523,7 @@
           padding-top: 10px;
           padding-bottom: unset;
           display: block;
+          color: #fff;
         }
         .logo img{
           max-width: 44px;

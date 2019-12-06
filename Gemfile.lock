@@ -280,6 +280,7 @@ DEPENDENCIES
   github-pages (= 197)
   jekyll-compress-images
   jekyll-minifier
+  rouge
 
 BUNDLED WITH
    1.17.3
