@@ -22,7 +22,7 @@ In diesem Beitrag stellen wir die Grundlagen vor, wie wir Terraform zur Definiti
 
 Die offizielle Terraform [Getting Started-Dokumentation](https://www.terraform.io/intro/getting-started/install.html) leistet gute Arbeit bei der Einführung der einzelnen Elemente von Terraform (d.h. Ressourcen, Eingangsvariablen, Ausgangsvariablen usw.), daher werden wir uns in diesem Tutorial darauf konzentrieren, wie man diese Elemente zusammenfügt, um ein halbwegs realistisches Beispiel zu erstellen. Insbesondere werden wir mehrere Server auf AWS in einem Cluster bereitstellen und einen Load Balancer einsetzen, um die Last auf diesen Cluster zu verteilen. Die Infrastruktur, die Sie in diesem Beispiel erstellen werden, ist ein grundlegender Ausgangspunkt für den Betrieb skalierbarer, hochverfügbarer Webservices und Microservices.
 
-> Hinweis: Beispielcode für die Beispiele findet ihr unter: [https://github.com/elastic2ls-com/terraform-tutorial](https://github.com/elastic2ls-com/terraform-tutorial).
+> Hinweis: Den Code für die Beispiele findet ihr unter: [https://github.com/elastic2ls-com/terraform-tutorial](https://github.com/elastic2ls-com/terraform-tutorial).
 
 
 ## Vorbereitungen AWS Account
@@ -61,7 +61,7 @@ export AWS_SECRET_ACCESS_KEY=(your secret access key)
 
 ## Konfiguration eines einzelnen Servers
 
-Terraform-Code wird in einer Sprache namens HCL in Dateien mit der Erweiterung.tf geschrieben. Es ist eine deklarative Sprache, daher ist es Ihr Ziel, die gewünschte Infrastruktur zu beschreiben, und Terraform kümmert sich darum, wie man diese erstellt.
+Terraform-Code wird in einer Sprache namens HCL in Dateien mit der Erweiterung .tf geschrieben. Es ist eine deklarative Sprache, daher ist es Ihr Ziel, die gewünschte Infrastruktur zu beschreiben, und Terraform kümmert sich darum, wie man diese erstellt.
 
 Der erste Schritt zur Verwendung von Terraform ist in der Regel die Konfiguration des/der provider(s), den wir verwenden möchten. Erstelle eine Datei namens main.tf und füge den folgenden Code ein:
 
@@ -135,7 +135,7 @@ Refreshing Terraform state in-memory prior to plan...(...)+ aws_instance.example
 Plan: 1 to add, 0 to change, 0 to destroy.
 ```    
 
-Mit dem Befehl `terraform plan wir können wir sehen, was Terraform tun wird. Dies ist eine großartige Möglichkeit, Ihre Änderungen zu überprüfen. Die Ausgabe des Planbefehls ähnelt der Ausgabe des diff-Befehls: Ressourcen mit einem Pluszeichen (+) werden erstellt, Ressourcen mit einem Minuszeichen (-) werden gelöscht, und Ressourcen mit einem Tildezeichen (~) werden vor Ort geändert. In der obigen Ausgabe sehen wir, dass Terraform plant, eine einzige EC2-Instanz zu erstellen.
+Mit dem Befehl `terraform plan` wir können wir sehen, was Terraform tun wird. Dies ist eine großartige Möglichkeit, Ihre Änderungen zu überprüfen. Die Ausgabe des Planbefehls ähnelt der Ausgabe des diff-Befehls: Ressourcen mit einem Pluszeichen (+) werden erstellt, Ressourcen mit einem Minuszeichen (-) werden gelöscht, und Ressourcen mit einem Tildezeichen (~) werden vor Ort geändert. In der obigen Ausgabe sehen wir, dass Terraform plant, eine einzige EC2-Instanz zu erstellen.
 
 Um die Instanz tatsächlich zu erstellen, führen Sie den Befehl terraform apply aus:
 
@@ -168,7 +168,7 @@ Do you want to perform these actions?
   Enter a value:
 ```    
 
-Geben Sie "yes" ein und drücken Sie die Eingabetaste, um die EC2-Instanz zu installieren:
+Wir geben "yes" ein und drücken Sie die Eingabetaste, um die EC2-Instanz zu installieren:
 
 ```
 Do you want to perform these actions?
@@ -269,16 +269,9 @@ resource "aws_security_group" "instance" {
       protocol    = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
   }
-  egress {
-    from_port       = 0
-    to_port         = 0
-    protocol        = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-}
 ```
 
-Dieser Part erstellt eine neue Ressource namens aws_security_group (alle Ressourcen für den AWS Provider beginnen mit aws_) und gibt an, dass diese Gruppe eingehende TCP-Anfragen auf Port 80 aus dem CIDR-Block 0.0.0.0.0.0/0 und eingehenden Verkehr erlaubt. Der `egress` Teil erlaubt ausgehenden Verkehr aus der Instanz heraus. Das benötigen wir um die Sourcen aus den Ubuntu Paketquellen zu laden und den Apache Webserver zu installieren.
+Dieser Part erstellt eine neue Ressource namens aws_security_group (alle Ressourcen für den AWS Provider beginnen mit aws_) und gibt an, dass diese Gruppe eingehende TCP-Anfragen auf Port 80 aus dem CIDR-Block 0.0.0.0.0.0/0 und eingehenden Verkehr erlaubt.
 
 Das einfache Erstellen einer Sicherheitsgruppe reicht nicht aus; Sie müssen der EC2-Instanz auch sagen, dass sie diese tatsächlich verwenden soll, indem Sie die Expression ID der Sicherheitsgruppe in das Argument vpc_security_group_ids der aws_instance-Ressource übergeben.
 

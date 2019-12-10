@@ -40,6 +40,16 @@
     margin-left: 25px;
     margin-right: 25px;
   }
+  blockquote {
+      padding: 10px 20px;
+      margin: 0 0 20px;
+      font-size: 24px;
+      border-left: 5px solid #993737;
+      background-color: #e8d858;
+      // background-image: url(../img/icon_hinweis.png);
+      // background-repeat: no-repeat;
+  }
+
 /*save values without need in ddifferent screen sizes*/
 
 .blog-articles {
@@ -139,6 +149,11 @@
     .blog{
         min-height: 180px;
       }
+    .blog-width {
+      width: 1170px;
+      margin-right: auto;
+      margin-left: auto;
+    }
     .flexible{
         min-height: 150px;
         max-width: 550px;
@@ -287,7 +302,7 @@
       font-family: Segoe UI, Tahoma, Geneva, sans-serif;
       font-size: 20px;
       font-weight: bold;
-      margin-top: 170px;
+      // margin-top: 170px;
       margin-bottom: 10px;
     }
     .carousel h4{

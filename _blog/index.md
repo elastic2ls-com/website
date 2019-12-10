@@ -21,7 +21,7 @@ permalink: /blog/:title.html
 [Artikel lesen](java-keytool-keystore-befehle){: .btn .btn-primary}
 </div>
 
-<div class="item">![Terraform](../img/terrraform.png)
+<div class="item">![Terraform](../img/terraform.png)
 
 #### Terraform Tutorial Teil 1
 

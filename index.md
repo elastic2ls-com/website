@@ -175,14 +175,14 @@ ___
 
 
 #### Terraform Tutorial Teil 1
-[![Terraform](../img/terrraform.png)](/blog/terraform-tutorial-1)
+[![Terraform](../img/terraform.png)](/blog/terraform-tutorial-1)
 </div>
 </div>
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### Certbot-auto Zertifikate automatisch erneuern
-[![Certbot-auto.](../img/letsencrypt-card.png)](/blog/certbot-auto-zertifikat-automatisch-erneuern)
+#### Jenkins trigger Job mit Parameter
+[![Certbot-auto.](../img/jenkins-300x182.png)](/blog/jenkins-trigger-another-job-with-parameters/)
 </div>
 </div>
 

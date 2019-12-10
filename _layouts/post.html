@@ -5,13 +5,14 @@ layout: base
 {% include header.html type="post" %}
 <div class="container">
     <div class="row">
-
-      <div class="grid">
-        <article role="main" class="blog-post">
-          {{ content }}
-        </article>
-        {% include related.html %}
-      </div>  
+      <div class="blog-width">
+        <div class="grid">
+          <article role="main" class="blog-post">
+            {{ content }}
+          </article>
+          {% include related.html %}
+        </div>
+      </div>
     </div>
   </div>
 </div>
