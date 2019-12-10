@@ -10,13 +10,13 @@
   body {
     font-family: 'Noticia Text';
     letter-spacing: -0.02em;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 100px;
 
   }
   .h1, h1 {
     font-size: 32px;
-    color: #5D67B9;
+    color: #ffc902;
     font-family: monospace;
   }
   .h2, h2 {
@@ -58,8 +58,9 @@
 
 /*slider setting*/
 .carousel {
- width:100%;
- min-height: 150px !important;
+      width:100%;
+      min-height: 150px !important;
+      padding-right: 30px;
 }
 .carousel .item{
  overflow: hidden;
@@ -146,6 +147,9 @@
       line-height: 1.1;
       font-size: 16px;
       }
+    .workdescription p, .workdescription a{
+      color: #6a717f;
+    }
     .blog{
         min-height: 180px;
       }
@@ -187,15 +191,14 @@
       min-height: 650px !important;
       padding-bottom: 15px;
     }
-    .grid-content-portfolio, .grid-content-training, .grid-content-portfolio, .grid-content-about, .grid-content-news, .grid-content-contact, .grid-content-techexperts {
+    .grid-content-portfolio, .grid-content-training, .grid-content-portfolio, .grid-content-about, .grid-content-news, .grid-content-contact, .grid-content-techexperts, .grid-content-approach {
       padding-bottom: 60px;
     }
-    .grid-content-techexperts {
-      min-height: 130px !important;
-      padding-left: 85px;
+    .grid-content-approach {
+      min-height: 360px !important;
     }
     .grid-content-portfolio {
-      min-height: 760px !important;
+      min-height: 680px !important;
     }
     .grid-content-training {
       min-height: 740px !important;
@@ -204,7 +207,7 @@
       padding-left: 15px;
     }
     .grid-content-about {
-      min-height: 500px !important;
+      min-height: 420px !important;
     }
     .grid-content-news {
       min-height: 390px !important;
@@ -843,7 +846,7 @@
     min-height: 440px !important;
   }
   .boxes {
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 15px;
     height: 160px;
   }
@@ -873,7 +876,7 @@
 
 /*content setting*/
 .boxes{
-  font-size: 20px;
+  font-size: 18x;
   padding-top: 15px;
 
 }

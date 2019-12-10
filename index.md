@@ -9,47 +9,46 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 
 <!--- SLIDER -->
 <div class="slider">
-<!-- SLIDER BG IMAGE -->
-<div class="sl-img-container-start">
 
-<div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
-![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
+<div id="carousel-top" class="carousel">
 
 <div class="carousel-inner">
 <div class="item active">
 #### Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.
-<!-- ![Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.](/img/icons8-jenkins-50.png){: .icons } -->
-[Los gehts.](#jenkins-cicd){: .btn .btn-primary .consulting_ci_cd}
 </div>
-
-<div class="item">
-#### Wir unterstützen Sie auf Ihrem Weg in die Cloud.
-<!-- ![Wir unterstützen Sie auf Ihrem Weg in die Cloud.](/img/icons8-newtonsoft-50.png){: .icons } -->
-[Los gehts.](#cloud-migration){: .btn .btn-primary .consulting_cloud_migration}
-</div>
-
-<div class="item">
-#### Nutze das Wissen und entfessle die Macht. Besuche unsere Trainings.
-<!-- ![Nutze das Wissen und entfessle die Macht. Besuche unsere Trainings.](/img/icons8-lichtschwert-50.png){: .icons } -->
-[Los gehts.](#trainings){: .btn .btn-primary .training}
-</div>
-
 
 </div>
 </div>
 
-</div>
-<!-- SLIDER BG IMAGE -->
 </div>
 <!--- SLIDER -->
 
 <!--- GRID -->
 <div class="grid">
 
+<!--- GRID CONTENT APPROACH  -->
+<div class="grid-content-approach">
+___
+# Unser Ansatz
+
+<div class="col-sm-12 col-md-6">
+## Andere Zeiten, andere Regeln
+</div>
+<div class="col-sm-12 col-md-6">
+Elastic2ls ist ein Startup Unternehmen aus Bonn. Unsere Stärke liegt im Bereich der Konzeptionierung und Architektur der benötigen Lösungenen, dabei unterstützen wir die agilen Development-Teams unserer Kunden.
+
+Wir unterstützen Sie mit unserer Expertise bei der Cloud-Tranformationen und DevOps. Darüber hinaus bieten wir Euch Trainings und Workshops.
+
+Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Wir helfen Ihnen beim Aufbau von Umgebungen für Continuous Integration / Continuous Deployment für ihr tägliches Geschäft.
+</div>
+
+</div>
+<!--- GRID CONTENT PORTFOLIO  -->
+
 <!--- GRID CONTENT PORTFOLIO  -->
 <div class="grid-content-portfolio">
-# Portfolio
 ___
+# Portfolio
 
 <div class="col-sm-12 col-md-6">
 <div class="boxes flexible portfoliobox">
@@ -102,8 +101,8 @@ Als AWS Consulting Partner unterstützen wir Sie bei der Planung, Umsetzung und 
 
 <!-- GRID CONTENT Training-->
 <div class="grid-content-training">
-# Trainings
 ___
+# Trainings
 
 Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten und neue Fähigkeiten in die Tat umzusetzen. Dies erhöht die Flexibilität ihrer Arbeitsabläufe und motivert ihre Teams. Schlussendlich investieren Sie hiermit in die Zukunft Ihres Unternehmens. Hier finden Sie ein aktuelle Übersicht über die von uns angeboteten Trainings.
 
@@ -128,12 +127,11 @@ Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten un
 
 <!-- GRID CONTENT ABOUT -->
 <div class="grid-content-about">
-# Über uns
 ___
+# Über uns
+
 <p class="description">
-Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
-<p class="description">
-Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
+Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Cloud-Plattformen, DevOps und Open Source,  konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible about">
@@ -160,8 +158,9 @@ Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedac
 
 <!-- GRID CONTENT NEWS-->
 <div class="grid-content-news">
-# News
 ___
+# News
+
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
 #### Java Keystore erklärt
@@ -191,20 +190,33 @@ ___
 
 <!-- GRID CONTENT KONTAKT-->
 <div class="grid-content-contact">
-# Kontakt
 ___
-<div class="boxes flexible contact">
 <div class="workdescription">
-**Elastic2ls.com**<br>
+## Elastic2ls.com
 
+<div class="col-sm-12 col-md-6">
+<div class="contact">
+### Adresse
 Römerstrasse 334<br>
 53117 Bonn<br>
 
-<a href="tel:02283361761" class="fa fa-phone"> +49 228 3361761</a><br>
-<a href="mailto:info@elastic2ls.com?subject=Kontakt" class="fa fa-envelope-open-o"> info@elastic2ls.com</a>
+### Kontakt
+<a href="mailto:info@elastic2ls.com?subject=Kontakt"> info@elastic2ls.com</a>
 
 </div>
 </div>
+
+<div class="col-sm-12 col-md-6">
+<div class="contact">
+### Legal
+<a id="impressum" href="#">Impressum</a>
+
+
+</div>
+</div>
+
+</div>
+
 
 </div>
 <!-- GRID CONTENT KONTAKT-->

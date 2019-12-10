@@ -19,9 +19,9 @@ Römerstrasse 334
 
 
 ## Kontakt
-Tel: 0160/2665355
+<a href="tel:01602665355">(+49) 160 - 2665355</a>
 
-E-Mail: [info@elastic2ls.com](mailto:info@elastic2ls.com?subject=Impressum)
+[info@elastic2ls.com](mailto:info@elastic2ls.com?subject=Impressum)
 
 
 ## Haftungsausschluss
