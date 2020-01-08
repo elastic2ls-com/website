@@ -21,10 +21,22 @@ Um SSH auf der Buffalo-Link-Station-Duo zu installieren müsst ihr zuerst euch d
 Dann öffnen wir ein Terminal und tippen der Reihe nach unten genannte Befehle ab.
 
 ```
-alex@storage:~ java -jar acp_commander.jar -t NAS_IP -ip NAS_IP -pw Youradminpassword -c "(echo newrootpass;echo newrootpass)|passwd"
+alex@rechner:~ java -jar acp_commander.jar -t NAS_IP -ip NAS_IP -pw Youradminpassword -c "(echo newrootpass;echo newrootpass)|passwd"
 ```
+
 ```
-alex@storage:~ java -jar acp_commander.jar -t NAS_IP -ip NAS_IP -pw Youradminpassword -c "echo 'UsePAM no' >> /etc/sshd_config" java -jar acp_commander.jar -t NAS_IP -ip NAS_IP -pw Youradminpassword -c "sed -i 's/PermitRootLogin no/PermitRootLogin yes/g' /etc/sshd_config" java -jar acp_commander.jar -t NAS_IP -ip NAS_IP -pw Youradminpassword -c "/usr/local/sbin/sshd"
+alex@rechner:~ java -jar acp_commander.jar -t NAS_IP -ip NAS_IP -pw Youradminpassword -c "sed -i 's/UsePAM yes/UsePAM no' /etc/sshd_config"
+```
+
+```
+alex@rechner:~java -jar acp_commander.jar -t NAS_IP -ip NAS_IP -pw Youradminpassword -c "sed -i 's/PermitRootLogin no/PermitRootLogin yes/g' /etc/sshd_config"
+
+```
+alex@rechner:~java -jar acp_commander.jar -q -t 10.16.0.60 -ip 10.16.0.60 -pw cXpC8h4 -c "/etc/init.d/sshd.sh stop"
+```
+
+```
+alex@rechner:~java -jar acp_commander.jar -q -t 10.16.0.60 -ip 10.16.0.60 -pw cXpC8h4 -c "/etc/init.d/sshd.sh start"
 ```
 
 ACHTUNG der letzer Befehl lautet auf der LS-WXL statt
@@ -33,7 +45,7 @@ ACHTUNG der letzer Befehl lautet auf der LS-WXL statt
 
 `/usr/local/bin/sshd`
 
-Zum Schluss füge ich aus Sicherheitsgründen noch meinen SSH key hinzu.
+Zum Schluss füge ich aus Sicherheitsgründen  und Bequemlichkeit noch meinen SSH key hinzu.
 
 **Für Root**
 ```
@@ -60,8 +72,6 @@ cd /tmp
 wget http://ipkg.nslu2-linux.org/feeds/optware/cs05q3armel/cross/stable/lspro-bootstrap_1.2-7_arm.xsh
 sh ./lspro-bootstrap_1.2-7_arm.xsh
 ```
-
-`HINWEIS: Wenn diese Seite verschwindet, können Sie sich das Archiv/ Verzeichnis in diesem Repository ansehen.`
 
 ## Installation NFS
 

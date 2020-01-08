@@ -43,7 +43,27 @@ Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden
 </div>
 
 </div>
-<!--- GRID CONTENT PORTFOLIO  -->
+<!--- GRID CONTENT APPROACH  -->
+
+<!-- SLIDER BG IMAGE -->
+<div class="sl-img-container">
+![background](../img/Jenkins_background_header_2.jpg){: .sl-img}
+</div>
+
+<!--- GRID CONTENT SOLUTIONS  -->
+<div class="grid-content-solutions">
+<div class="col-sm-12 col-md-6">
+### "Wo fange ich mit meiner DevOps-Adoption an?"
+### "Wie starte ich mit der Migration in die Cloud?"
+</div>
+
+<div class="col-sm-12 col-md-6">
+Zwei zentrale Fragen, bei denen wir Sie unterstützen können.
+![cloud](../img/cloud-migration.png)
+</div>
+
+</div>
+<!--- GRID CONTENT SOLUTIONS  -->
 
 <!--- GRID CONTENT PORTFOLIO  -->
 <div class="grid-content-portfolio">
@@ -90,7 +110,7 @@ Wir unterstützen Sie gerne bei der Planung, Umsetzung und dem Betrieb von Elast
 #### [AWS Cloudplattform]
 ![AWS Cloudplattform](/img/icons8-amazon-web-services-48.png)
 
-Amazon Web Services – ist der größte Anbieter von Cloudinfrastruktur weltweit. AWS bietet den Kunden zahlreiche Services, die den Bereich Infrastrukturservices sinnvoll erweitern.
+AWS ist der größte Anbieter von Cloudinfrastruktur weltweit und bietet den Kunden zahlreiche Services, die den Bereich Infrastrukturservices sinnvoll erweitern.
 
 Als AWS Consulting Partner unterstützen wir Sie bei der Planung, Umsetzung und dem Betrieb von Services auf AWS.
 </div>
