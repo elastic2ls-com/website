@@ -10,10 +10,8 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <!--- SLIDER -->
 <div class="slider">
 <!-- SLIDER BG IMAGE -->
-<div class="sl-img-container-start">
 <div class="carousel">
 #### Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.
-</div>
 </div>
 
 
@@ -22,6 +20,38 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 
 <!--- GRID -->
 <div class="grid">
+
+<!--- - GRID CONTENT APPROACH    -->
+<div class="grid-content-approach">
+<hr>
+## Unser Ansatz
+<div class="col-sm-12 col-md-6">
+### Andere Zeiten, andere Regeln
+</div>
+<div class="col-sm-12 col-md-6">
+Elastic2ls ist ein Startup Unternehmen aus Bonn. Unsere Stärke liegt im Bereich der Konzeptionierung und Architektur der benötigen Lösungenen, dabei unterstützen wir die agilen Development-Teams unserer Kunden.
+
+Wir unterstützen Sie mit unserer Expertise bei der Cloud-Tranformationen und DevOps. Darüber hinaus bieten wir Euch Trainings und Workshops.
+
+Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Wir helfen Ihnen beim Aufbau von Umgebungen für Continuous Integration / Continuous Deployment für ihr tägliches Geschäft.
+</div>
+</div>
+<!--- - GRID CONTENT APPROACH    -->
+
+<!-- - GRID CONTENT SOLUTIONS  -->
+<hr>
+<div class="col-sm-12 col-md-6">
+### “Wo fange ich mit meiner DevOps-Adoption an?”
+
+### “Wie starte ich mit der Migration in die Cloud?”
+</div>
+<div class="col-sm-12 col-md-6">
+Zwei zentrale Fragen, bei denen wir Sie unterstützen können.
+
+![Cloud Migration](/img/cloud-migration.png)
+
+</div>
+<!-- - GRID CONTENT SOLUTIONS  -->
 
 <!--- GRID CONTENT PORTFOLIO  -->
 <div class="grid-content-portfolio">
