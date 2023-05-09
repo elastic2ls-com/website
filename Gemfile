@@ -1,11 +1,8 @@
 source 'https://rubygems.org'
 
-gem "github-pages", '197', group: :jekyll_plugins
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+gem "jekyll"
 gem "jekyll-minifier"
-gem "jekyll-compress-images"
+gem 'jekyll-feed'
+gem 'jekyll-readme-index'
 gem "rouge"
-
-
-# enable tzinfo-data for local build
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-# gem 'jekyll-paginate'
