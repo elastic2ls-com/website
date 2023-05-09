@@ -20,8 +20,9 @@
     font-family: Poppins,sans-serif;
   }
   .h2, h2 {
-    font-size: 28px;
-    font-family: monospace;
+    font-size:32px;
+    color:#ffc902;
+    font-family:Poppins,sans-serif
   }
   .h3, h3 {
     font-size: 22px;
@@ -33,9 +34,7 @@
     font-family: monospace;
   }
 
-  .container {
-    width: 100%;
-  }
+
   .grid {
     margin-left: 25px;
     margin-right: 25px;
@@ -80,9 +79,10 @@
   color: #5D67B9;
 }
 .carousel h4{
-  margin-left: 15px;
-  font-family: monospace;
-  color: #5D67B9;
+    color: #5D67B9;
+    font-family: monospace;
+    font-size: 48px;
+
 }
 /* .carousel p, .carousel h2{
   margin-left: 80px;
@@ -205,9 +205,7 @@
     .grid-content-training {
       min-height: 740px !important;
     }
-    .grid-content-training p, .grid-content-training h2,  .grid-content-training img, .description{
-      padding-left: 15px;
-    }
+
     .grid-content-about {
       min-height: 420px !important;
     }
