@@ -9,16 +9,13 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 
 <!--- SLIDER -->
 <div class="slider">
-
-<div id="carousel-top" class="carousel">
-
-<div class="carousel-inner">
-<div class="item active">
+<!-- SLIDER BG IMAGE -->
+<div class="sl-img-container-start">
+<div class="carousel">
 #### Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.
 </div>
+</div>
 
-</div>
-</div>
 
 </div>
 <!--- SLIDER -->
@@ -26,49 +23,10 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <!--- GRID -->
 <div class="grid">
 
-<!--- GRID CONTENT APPROACH  -->
-<div class="grid-content-approach">
-___
-# Unser Ansatz
-
-<div class="col-sm-12 col-md-6">
-## Andere Zeiten, andere Regeln
-</div>
-<div class="col-sm-12 col-md-6">
-Elastic2ls ist ein Startup Unternehmen aus Bonn. Unsere Stärke liegt im Bereich der Konzeptionierung und Architektur der benötigen Lösungenen, dabei unterstützen wir die agilen Development-Teams unserer Kunden.
-
-Wir unterstützen Sie mit unserer Expertise bei der Cloud-Tranformationen und DevOps. Darüber hinaus bieten wir Euch Trainings und Workshops.
-
-Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Wir helfen Ihnen beim Aufbau von Umgebungen für Continuous Integration / Continuous Deployment für ihr tägliches Geschäft.
-</div>
-
-</div>
-<!--- GRID CONTENT APPROACH  -->
-
-<!-- SLIDER BG IMAGE -->
-<div class="sl-img-container">
-![background](../img/Jenkins_background_header_2.jpg){: .sl-img}
-</div>
-
-<!--- GRID CONTENT SOLUTIONS  -->
-<div class="grid-content-solutions">
-<div class="col-sm-12 col-md-6">
-### "Wo fange ich mit meiner DevOps-Adoption an?"
-### "Wie starte ich mit der Migration in die Cloud?"
-</div>
-
-<div class="col-sm-12 col-md-6">
-Zwei zentrale Fragen, bei denen wir Sie unterstützen können.
-![cloud](../img/cloud-migration.png)
-</div>
-
-</div>
-<!--- GRID CONTENT SOLUTIONS  -->
-
 <!--- GRID CONTENT PORTFOLIO  -->
 <div class="grid-content-portfolio">
+## Portfolio
 ___
-# Portfolio
 
 <div class="col-sm-12 col-md-6">
 <div class="boxes flexible portfoliobox">
@@ -110,7 +68,7 @@ Wir unterstützen Sie gerne bei der Planung, Umsetzung und dem Betrieb von Elast
 #### [AWS Cloudplattform]
 ![AWS Cloudplattform](/img/icons8-amazon-web-services-48.png)
 
-AWS ist der größte Anbieter von Cloudinfrastruktur weltweit und bietet den Kunden zahlreiche Services, die den Bereich Infrastrukturservices sinnvoll erweitern.
+Amazon Web Services – ist der größte Anbieter von Cloudinfrastruktur weltweit. AWS bietet den Kunden zahlreiche Services, die den Bereich Infrastrukturservices sinnvoll erweitern.
 
 Als AWS Consulting Partner unterstützen wir Sie bei der Planung, Umsetzung und dem Betrieb von Services auf AWS.
 </div>
@@ -121,14 +79,14 @@ Als AWS Consulting Partner unterstützen wir Sie bei der Planung, Umsetzung und 
 
 <!-- GRID CONTENT Training-->
 <div class="grid-content-training">
+## Trainings
 ___
-# Trainings
 
 Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten und neue Fähigkeiten in die Tat umzusetzen. Dies erhöht die Flexibilität ihrer Arbeitsabläufe und motivert ihre Teams. Schlussendlich investieren Sie hiermit in die Zukunft Ihres Unternehmens. Hier finden Sie ein aktuelle Übersicht über die von uns angeboteten Trainings.
 
 <!-- Docker Training -->
 <div class="training-inner">
-## Docker Training
+#### Docker Training
 ![Docker Hands-on Workshops](/img/Docker_Logo-500x250.jpg)
 [Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Docker Training){: .btn .btn-primary .details_training_docker}
 </div>
@@ -136,7 +94,7 @@ Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten un
 
 <!-- Jenkins Training -->
 <div class="training-inner">
-## Jenkins Training
+#### Jenkins Training
 ![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.png)
 [Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Jenkins Training){: .btn .btn-primary .details_training_jenkins}
 </div>
@@ -147,40 +105,25 @@ Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten un
 
 <!-- GRID CONTENT ABOUT -->
 <div class="grid-content-about">
+## Über uns
 ___
-# Über uns
+
+
 
 <p class="description">
-Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Cloud-Plattformen, DevOps und Open Source,  konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
+Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
+<p class="description">
+Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
 
-<div class="col-sm-8 col-md-4">
-<div class="boxes flexible about">
-![Alexander Wiechert, CEO](../img/ceo.jpg){: .circle4}
-</div>
-</div>
 
-<div class="col-sm-8 col-md-4">
-<div class="boxes flexible about">
-#### Alexander Wiechert
-
-##### Founder
-
-<p class="circle3"><a href="https://www.xing.com/profile/Alexander_Wiechert/cv" rel="noreferrer" target="_blank" class="fa fa-xing"></a></p>
-<p class="circle3"><a href="https://www.linkedin.com/in/alexander-wiechert/" rel="noreferrer" target="_blank" class="fa fa-linkedin"></a></p>
-<p class="circle3"><a href="https://github.com/elastic2ls-awiechert" rel="noreferrer" target="_blank" class="fa fa-github"></a></p>
-<p class="circle3"><a href="mailto:info@elastic2ls.com?subject=feedback" target="_blank" class="fa fa-envelope-open-o"></a></p>
-
-</div>
-</div>
 
 </div>
 <!-- GRID CONTENT ABOUT -->
 
 <!-- GRID CONTENT NEWS-->
 <div class="grid-content-news">
+## News
 ___
-# News
-
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
 #### Java Keystore erklärt
@@ -210,36 +153,36 @@ ___
 
 <!-- GRID CONTENT KONTAKT-->
 <div class="grid-content-contact">
-___
-<div class="workdescription">
 ## Elastic2ls.com
+___
 
-<div class="col-sm-12 col-md-6">
+<div class="workdescription">
+
+<div class="col-sm-8 col-md-4">
 <div class="contact">
 ### Adresse
 Römerstrasse 334<br>
 53117 Bonn<br>
+</div>
+</div>
 
+<div class="col-sm-8 col-md-4">
+<div class="contact">
 ### Kontakt
 <a href="mailto:info@elastic2ls.com?subject=Kontakt"> info@elastic2ls.com</a>
-
+<br>
 </div>
 </div>
 
-<div class="col-sm-12 col-md-6">
+<div class="col-sm-8 col-md-4">
 <div class="contact">
 ### Legal
-<a id="impressum" href="#">Impressum</a>
-
-
+<a id="impressum" href="/impressum/">Impressum</a>
 </div>
 </div>
-
-</div>
-
 
 </div>
 <!-- GRID CONTENT KONTAKT-->
 
-</div>
+
 <!--- GRID -->
