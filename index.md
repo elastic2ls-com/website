@@ -48,7 +48,7 @@ Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden
 <div class="col-sm-12 col-md-6">
 Zwei zentrale Fragen, bei denen wir Sie unterstützen können.
 
-![Cloud Migration](/img/cloud-migration.png)
+![Cloud Migration](/img/cloud-migration.webp)
 
 </div>
 <!-- - GRID CONTENT SOLUTIONS  -->
@@ -61,7 +61,7 @@ ___
 <div class="col-sm-12 col-md-6">
 <div class="boxes flexible portfoliobox">
 #### [Cloud Migration]
-![Engineering Consulting Services](/img/icons8-zur-cloud-hochladen-48.png)
+![Engineering Consulting Services](/img/icons8-zur-cloud-hochladen-48.webp)
 
 Eine gute Planung kann die Cloud-Einführung erleichtern und den Weg zum zukünftigen Erfolg ebnen. Ein Wechsel in die Cloud kann Ihnen dabei helfen, neue Geschäftsvorteile zu erzielen.
 
@@ -72,7 +72,7 @@ Elastic2ls arbeitet mit Ihnen zusammen, um die beste Migrationsstrategie für Ih
 <div class="col-sm-12 col-md-6">
 <div class="boxes flexible portfoliobox">
 #### [Jenkins CI/CD]
-![Jenkins CI/CD](/img/icons8-jenkins-48.png)
+![Jenkins CI/CD](/img/icons8-jenkins-48.webp)
 
 Jenkins ist ein Open Source Automatisierungsserver, der es Entwicklern auf der ganzen Welt ermöglicht, ihre Software zuverlässig zu erstellen, zu testen und einzusetzen.
 
@@ -83,7 +83,7 @@ Er ist einfach zu konfigurieren und dank seiner Plug-in-Architektur sehr flexibe
 <div class="col-sm-12 col-md-6">
 <div class="boxes flexible portfoliobox">
 #### [Elastic Stack]
-![Elastic Stack](/img/icons8-eigenschaft-suchen-48.png)
+![Elastic Stack](/img/icons8-eigenschaft-suchen-48.webp)
 
 Elasticsearch ist eine Suchmaschine auf Basis von Lucene. Diese ermöglicht das schnelle Durchsuchen großer Datenmengen, in einer verteilten Umgebung.
 
@@ -96,7 +96,7 @@ Wir unterstützen Sie gerne bei der Planung, Umsetzung und dem Betrieb von Elast
 <div class="col-sm-12 col-md-6">
 <div class="boxes flexible portfoliobox">
 #### [AWS Cloudplattform]
-![AWS Cloudplattform](/img/icons8-amazon-web-services-48.png)
+![AWS Cloudplattform](/img/icons8-amazon-web-services-48.webp)
 
 Amazon Web Services – ist der größte Anbieter von Cloudinfrastruktur weltweit. AWS bietet den Kunden zahlreiche Services, die den Bereich Infrastrukturservices sinnvoll erweitern.
 
@@ -117,7 +117,7 @@ Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten un
 <!-- Docker Training -->
 <div class="training-inner">
 #### Docker Training
-![Docker Hands-on Workshops](/img/Docker_Logo-500x250.jpg)
+![Docker Hands-on Workshops](/img/Docker_Logo-500x250.webp)
 [Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Docker Training){: .btn .btn-primary .details_training_docker}
 </div>
 <!-- Docker Training -->
@@ -125,7 +125,7 @@ Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten un
 <!-- Jenkins Training -->
 <div class="training-inner">
 #### Jenkins Training
-![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.png)
+![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.webp)
 [Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Jenkins Training){: .btn .btn-primary .details_training_jenkins}
 </div>
 <!-- Jenkins Training -->
@@ -157,7 +157,7 @@ ___
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
 #### Java Keystore erklärt
-[![Java Keystore erklärts](../img/java.png)](/blog/java-keytool-keystore-befehle)
+[![Java Keystore erklärts](../img/java.webp)](/blog/java-keytool-keystore-befehle)
 </div>
 </div>
 
@@ -167,14 +167,14 @@ ___
 
 
 #### Terraform Tutorial Teil 1
-[![Terraform](../img/terraform.png)](/blog/terraform-tutorial-1)
+[![Terraform](../img/terraform.webp)](/blog/terraform-tutorial-1)
 </div>
 </div>
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
 #### Jenkins trigger Job mit Parameter
-[![Certbot-auto.](../img/jenkins-300x182.png)](/blog/jenkins-trigger-another-job-with-parameters/)
+[![Certbot-auto.](../img/jenkins-300x182.webp)](/blog/jenkins-trigger-another-job-with-parameters/)
 </div>
 </div>
 

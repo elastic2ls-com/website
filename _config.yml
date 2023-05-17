@@ -10,7 +10,7 @@ description: Wir helfen Ihnen bei der Einführung von DevOps und Ihren Cloud Mig
 url: "https://www.elastic2ls.com"
 
 # website logo
-title-img: "/img/Logo_box-1-150x150.png"
+title-img: "/img/Logo_box-1-150x150.webp"
 
 # website author
 author:
@@ -153,7 +153,7 @@ sass:
 #     harmony: true
 #
 #compress_images:
-#  images_path: "img/**/*.{gif,png,jpg,jpeg,svg}"
+#  images_path: "img/**/*.{gif.webp,jpg,jpeg,svg}"
 
 collections:
   blog:

@@ -5,4 +5,4 @@ categories: [LinuxDesktop]
 ---
 ## Everything related to Linux Desktops
 
-![devops](../../img/linuxdesktop.png)
+![devops](../../img/linuxdesktop.webp)

@@ -8,7 +8,7 @@ categories: [DevOps]
 # {{ page.title }}
 {::options parse_block_html="true" /}
 
-![puppet-hiera](../../img/puppetlogo-300x105.png)
+![puppet-hiera](../../img/puppetlogo-300x105.webp)
 
 Wir beschreiben hier an einem einfachen Beispiel wie puppet-hiera funktioniert.
 

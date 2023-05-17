@@ -44,8 +44,8 @@ Da es aber unsinnig wäre diese Kommandos nacheinander auszuführen und die Date
 
 ```grep -Ev```
 
-![Kommentare entfernen](https://s.elastic2ls.com/wp-content/uploads/2018/02/27212612/grep_kommentare_entfernen1.png)
+![Kommentare entfernen](https://s.elastic2ls.com/wp-content/uploads/2018/02/27212612/grep_kommentare_entfernen1.webp)
 
 Und so sieht das dann bereinigt aus.
 
-![Kommentare entfernen](https://s.elastic2ls.com/wp-content/uploads/2018/02/27212634/grep_kommentare_entfernen2.png)
+![Kommentare entfernen](https://s.elastic2ls.com/wp-content/uploads/2018/02/27212634/grep_kommentare_entfernen2.webp)

@@ -8,7 +8,7 @@ categories: [Howtos]
 # {{ page.title }}
 
 
-![OpenSSL](../../img/openssl-300x81.jpg)
+![OpenSSL](../../img/openssl-300x81.webp)
 
 
 ## OpenSSL-Zertifikat CSR erzeugen/anzeigen (Certificate Signing Request)

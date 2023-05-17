@@ -103,7 +103,7 @@ curl -XGET 'https://localhost:9200/'
 curl -XGET 'https://localhost:9200/_cluster/health?pretty=true'
 ```
 
-![Graylog2](../../img/Test_Elasticsearch.png)
+![Graylog2](../../img/Test_Elasticsearch.webp)
 
 ## 4\. Installation des Graylog2 Server
 
@@ -204,8 +204,8 @@ sudo service graylog2 restart
 
 Dazu geben wir im Browser der Wahl ein: https://Server-Adresse:9000. Der Login erfolgt mittels "admin" und dem konfigurietem **root_password_sha2** Passwort in der server.conf.
 
-![Graylog2](../../img/Install-Graylog2_login_screen-768x410.png)
+![Graylog2](../../img/Install-Graylog2_login_screen-768x410.webp)
 
-![Graylog2](../../img/Install-Graylog2-Search-Page-768x410.png)
+![Graylog2](../../img/Install-Graylog2-Search-Page-768x410.webp)
 
 Das wars! In der zweiten Runde gehts ans Konfigurieren von Graylog um diverse Dienste nach Graylog schreiben zu lassen. Sowie die benötigten Extraktoren um die Nachrichten in Felder zu zerlegen. Im dritten Teil zeigen wir euch wir man Dashboards baut und Streams nutzt um Alerts festzulegen.

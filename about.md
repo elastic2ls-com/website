@@ -11,7 +11,7 @@ keywords: [About elastic2ls.com Vorstellung Team]
 <div class="sl-img-container">
 
 <div id="carousel" class="carousel">
-![background](../img/Jenkins_background_header_2.jpg){: .sl-img .sl-img-container}
+![background](../img/Jenkins_background_header_2.webp){: .sl-img .sl-img-container}
 
 <div class="carousel-inner">
 <div class="item active">
@@ -28,7 +28,7 @@ keywords: [About elastic2ls.com Vorstellung Team]
 Wir sind ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir Cloud-Plattformen und DevOps Pipelines erfolgreich einführen.
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible about">
-![Alexander Wiechert, CEO](../img/ceo.jpg){: .circle4}
+![Alexander Wiechert, CEO](../img/ceo.webp){: .circle4}
 </div>
 </div>
 
@@ -148,11 +148,11 @@ _05/2012 - 05/2012_
 <div class="boxes flexible about">
 
 <div class="workdescription">
-![froscon](/img/froscon.png){: height="77px" }
+![froscon](/img/froscon.webp){: height="77px" }
 </div>
 
 <div class="workdescription">
-![fsfe](/img/fsfe.png){: height="77px" }
+![fsfe](/img/fsfe.webp){: height="77px" }
 </div>
 
 

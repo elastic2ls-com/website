@@ -16,7 +16,7 @@ Java Keystore ist ein Schlüssel- und Zertifikatsverwaltungsprogramm. Es ermögl
 
 ### Java Keytool Befehle zum Erstellen und Importieren
 
-[![Java-Keystore](../../img/keystore-300x219.jpg)
+[![Java-Keystore](../../img/keystore-300x219.webp)
 
 Mit diesen Befehlen können Sie eine neue Java Keytool Keystore-Datei erstellen, eine CSR erstellen und Zertifikate importieren. Alle Stamm- oder Zwischenzertifikate müssen importiert werden, bevor das primäre Zertifikat für Ihre Domäne importiert wird. Erstellen Sie einen Java-Keystore und ein Schlüsselpaar
 

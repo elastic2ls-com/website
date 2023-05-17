@@ -16,7 +16,7 @@ Vagrant ist ein hervoragendes Tool für Entwickler aber auch generell für IT Te
 
 [VirtualBox Download](httpss://www.virtualbox.org/wiki/Downloads)
 
-![vagrant box](../../img/virtualbox.jpg)
+![vagrant box](../../img/virtualbox.webp)
 
 ### 2\. Downloade ein CentOS iso image
 
@@ -139,7 +139,7 @@ alex@host$ vagrant box add centos7 centos7.box
 
 **!!! ACHTUNG** Der Name der hinter **--base**; sollte identisch sein mit dem Namen der VM in Virtual Box.
 
-![centos_base_box_export](../../img/centos_base_box_export.jpg)
+![centos_base_box_export](../../img/centos_base_box_export.webp)
 
 Du solltest jetzt die neu erstellte Vagrant Base-Box in der Liste der Boxen in vagrant finden.
 

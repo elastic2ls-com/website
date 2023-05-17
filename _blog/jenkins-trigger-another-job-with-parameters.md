@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![Jenkinsfile Pipeline](../../img/jenkins-300x182.png)
+![Jenkinsfile Pipeline](../../img/jenkins-300x182.webp)
 
 Nehmen wir an ich möchte einen Jenkinsjob haben, der einen zweiten Job triggert. Dies ist recht einfach möglich mittels der Post Aktion einer Stage. Natürlich müssen beide Jobs zuerst engelegt werden.
 
@@ -51,8 +51,8 @@ pipeline {
 ### Ergebnis
 In der Jenkinsoberfläche sind beide Jobs nun erfolgreich gelaufen. Und man sieht im Consolen Output, dass Job2 von Job1 gestartet wurde. ***Started by upstream project "job1" build number 41***
 
-![Jenkinsjob1console](../../img/Jenkins-job1_console.png)
-![Jenkinsjob2console](../../img/Jenkins-job2_console.png)
+![Jenkinsjob1console](../../img/Jenkins-job1_console.webp)
+![Jenkinsjob2console](../../img/Jenkins-job2_console.webp)
 
 Wie man sieht lief Job1 und hat erfolgreich Job2 gestartet. In meinem Projekt war mir das aber nicht genug, sondern ich benötige einen Parameter aus dem ersten Job. Das war in diesem Fall der Name und Tag eines Dockerimages, welches aus dem Namen **elastic2ls_apache** und dem Tag **$BUILD_NUMBER** besteht. Der Tag ist die Jenkinsvariable der Buildnummer.
 
@@ -99,5 +99,5 @@ pipeline {
 ### Ergebnis
 Wie man sieht wurde der Parameter erfolgreich übergeben. ***elastic2ls_apache:43***
 
-![Jenkins-job1__parameter_console](../../img/Jenkins-job1__parameter_console.png)
-![Jenkins-job2__parameter_console](../../img/Jenkins-job2__parameter_console.png)
+![Jenkins-job1__parameter_console](../../img/Jenkins-job1__parameter_console.webp)
+![Jenkins-job2__parameter_console](../../img/Jenkins-job2__parameter_console.webp)

@@ -9,11 +9,11 @@ categories: [Sicherheit]
 
 Wenn man Watchguard-VPN mit Mac OS nutzen will steht einem wie für Windows ein Watchguard zu Verfügung.
 
-![Watchguard-VPN](../../img/WGsslclient-300x218.jpg)
+![Watchguard-VPN](../../img/WGsslclient-300x218.webp)
 
 Wer aber mit mehreren Backends, also Firewalls, arbeiten möchte braucht einen anderen Client. Hier empfielt sich Tunnelblick.
 
-![Watchguard-VPN](../../img/tunnelblick-vpn-client-300x200.jpg)          
+![Watchguard-VPN](../../img/tunnelblick-vpn-client-300x200.webp)          
 
 ### Client Paket von der Firewall herunterladen
 

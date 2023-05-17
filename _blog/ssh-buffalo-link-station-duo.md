@@ -9,7 +9,7 @@ categories: [Howtos]
 
 Um SSH auf der Buffalo-Link-Station-Duo zu installieren müsst ihr zuerst euch den ACP commander herunter laden. Mit acp_commander.jar könnt ihr beliebige Befehle auf dem NAS ausführen als root. Ihr benötigt nur die IP-Adresse des NAS und das Passwort für den Admin-Benutzer.
 
-![Buffalo-Link-Station-Duo](../../img/linkstationduo.jpg)
+![Buffalo-Link-Station-Duo](../../img/linkstationduo.webp)
 
 ## Download acp_commander
 

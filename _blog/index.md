@@ -13,28 +13,28 @@ permalink: /blog/:title.html
 <div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
 <div class="carousel-inner">
 <div class="item active">
-![Java Keystore erklärts](../img/java.png)
+![Java Keystore erklärts](../img/java.webp)
 
 #### Java Keystore erklärt
 
 [Artikel lesen](java-keytool-keystore-befehle){: .btn .btn-primary}
 </div>
 
-<div class="item">![Terraform](../img/terraform.png)
+<div class="item">![Terraform](../img/terraform.webp)
 
 #### Terraform Tutorial Teil 1
 
 [Artikel lesen](terraform-tutorial-1){: .btn .btn-primary}
 </div>
 
-<div class="item">![Auditd.](../img/linux2.png)
+<div class="item">![Auditd.](../img/linux2.webp)
 
 #### Auditd daemon Linux
 
 [Artikel lesen](auditd-daemon){: .btn .btn-primary}
 </div>
 
-<div class="item">![Certbot-auto.](../img/letsencrypt-card.png)
+<div class="item">![Certbot-auto.](../img/letsencrypt-card.webp)
 
 #### Certbot-auto Zertifikate automatisch erneuern
 
@@ -57,42 +57,42 @@ permalink: /blog/:title.html
 <div class="col-sm-8 col-md-4">
 <div class="boxes blog">
 
-[![howtos](../img/howto_small.png)](howtos)
+[![howtos](../img/howto_small.webp)](howtos)
 </div>
 </div>
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes blog">
 
-[![Sicherheit](../img/security_linux4.png)](sicherheit)
+[![Sicherheit](../img/security_linux4.webp)](sicherheit)
 </div>
 </div>
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes blog">
 
-[![devops](../img/devops-300x152.png)](devops)
+[![devops](../img/devops-300x152.webp)](devops)
 </div>
 </div>
 
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes blog">
-[![linuxinside](../img/linuxinside.png)](linuxinside)
+[![linuxinside](../img/linuxinside.webp)](linuxinside)
 
 </div>
 </div>
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes blog">
-[![linuxdesktop](../img/linuxdesktop.png)](linuxdesktop)
+[![linuxdesktop](../img/linuxdesktop.webp)](linuxdesktop)
 
 </div>
 </div>
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes blog">
-[![dns](../img/bind9.png)](dns)
+[![dns](../img/bind9.webp)](dns)
 
 </div>
 </div>
