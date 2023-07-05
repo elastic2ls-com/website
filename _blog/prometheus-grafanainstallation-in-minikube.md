@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![Prometheus](../../img/DockerLogo-300x150.png)
+![Prometheus](../../img/Prometheus-logo-300x300.webp)
 
 
 ## Einführung

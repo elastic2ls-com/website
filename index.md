@@ -154,6 +154,15 @@ Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedac
 <div class="grid-content-news">
 ## News
 ___
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes flexible">
+#### Prometheus und Grafana Installation in Minikube
+[![Prometheus und Grafana Installation in Minikube](../img/Prometheus-logo-118x118.webp)](/blog/prometheus-grafanainstallation-in-minikube/)
+</div>
+</div>
+
+
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
 #### Java Keystore erklärt
@@ -168,13 +177,6 @@ ___
 
 #### Terraform Tutorial Teil 1
 [![Terraform](../img/terraform.webp)](/blog/terraform-tutorial-1)
-</div>
-</div>
-
-<div class="col-sm-8 col-md-4">
-<div class="boxes flexible">
-#### Jenkins trigger Job mit Parameter
-[![Certbot-auto.](../img/jenkins-300x182.webp)](/blog/jenkins-trigger-another-job-with-parameters/)
 </div>
 </div>
 
