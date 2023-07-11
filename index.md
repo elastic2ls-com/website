@@ -165,7 +165,7 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### Java Keystore erklärt
+#### Helm Chart erklärt
 [![Helm Chart erklärt](../img/HELM-logox130.webp)](/blog/helm-chart-erklärt/)
 </div>
 </div>
