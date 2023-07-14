@@ -176,7 +176,7 @@ ___
 
 
 #### Terraform Tutorial Teil 1
-[![Terraform](../img/terraform.webp)](/blog/terraform-tutorial-1)
+[![Docker](../img/DockerLogo-300x150.webp)](/blog/docker-image-groesse-reduzieren)
 </div>
 </div>
 
