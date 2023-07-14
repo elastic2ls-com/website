@@ -13,7 +13,7 @@ Wenn Sie dies lesen, ist es wahrscheinlich, dass Sie sehr große Docker-Containe
 Ein Container, der mehrere Gigabyte groß ist, verlangsamt die Bereitstellung, erhöht die Bandbreiten- und Speicherkosten 
 und verschlingt wertvolle Zeit der Entwickler.
 
-![docker image reduzieren](../../docker_reduzieren_image.webp)
+![docker image reduzieren](../../img/docker_reduzieren_image.webp)
 
 Hier ist, wie Sie Docker Images schlanker machen:
 
