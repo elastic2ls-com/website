@@ -175,7 +175,7 @@ ___
 
 
 
-#### Terraform Tutorial Teil 1
+#### Docker Image Größe reduzieren
 [![Docker](../img/DockerLogo-300x150.webp)](/blog/docker-image-groesse-reduzieren)
 </div>
 </div>

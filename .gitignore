@@ -9,3 +9,8 @@ Thumbs.db
 ehthumbs.db
 Gemfile.lock
 .idea
+
+#img
+**.png
+**.jpeg
+**jpg

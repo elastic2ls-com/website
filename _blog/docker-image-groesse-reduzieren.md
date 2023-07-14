@@ -7,12 +7,13 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![docker](../../img/DockerLogo-300x150.png)
+![docker](../../img/DockerLogo-300x150.webp)
 
 Wenn Sie dies lesen, ist es wahrscheinlich, dass Sie sehr große Docker-Container in der Produktion einsetzen.
 Ein Container, der mehrere Gigabyte groß ist, verlangsamt die Bereitstellung, erhöht die Bandbreiten- und Speicherkosten 
 und verschlingt wertvolle Zeit der Entwickler.
 
+![docker image reduzieren](../../docker_reduzieren_image.webp)
 
 Hier ist, wie Sie Docker Images schlanker machen:
 
