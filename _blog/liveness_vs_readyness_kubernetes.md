@@ -31,7 +31,7 @@ Wenn der Anwendungsstart immer noch zu langsam für die konfigurierten Proben is
 
 ## Spring Boot
 
-![Spring Boot](../../img/spring_boot.webp)
+![Spring Boot](../../img/spring-boot-logo-png-4-transparent-150x150.webp)
 
 Wenn wir mit Spring Boot 2.3.2 arbeiten, können wir die neuen Eigenschaften verwenden, um Liveness- und Readiness-Prüfungen zu ermöglichen:
 
@@ -103,7 +103,7 @@ Nach der Unterbrechung des Liveness-Status gibt derselbe Endpunkt eine 503 Servi
 
 ## Kubernetes
 
-![Kubernetes](../../img/kubernetes_logo.webp)
+![Kubernetes](../../img/k8s.webp)
 
 Das Kubelet verwendet **Liveness Probes**, um zu wissen, wann ein Container neu gestartet werden muss. 
 Liveness Probes können zum Beispiel einen Deadlock erkennen, bei dem eine Anwendung zwar läuft, aber nicht vorankommt. 
