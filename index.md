@@ -172,16 +172,44 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-
-
-
 #### Docker Image Größe reduzieren
-[![Docker](../img/DockerLogo-300x150.webp)](/blog/docker-image-groesse-reduzieren)
+[![Docker](../img/DockerLogo-300x150.webp)](/blog/docker-image-groesse-reduzieren/)
 </div>
 </div>
+
 
 </div>
 <!-- GRID CONTENT NEWS-->
+
+<!-- GRID CONTENT NEWS2-->
+<div class="grid-content-news">
+
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes flexible">
+#### liveness  & readyness Kubernetes
+[![liveness_vs_readyness_kubernetes](../img/k8s.webp)](/blog/liveness_vs_readyness_kubernetes/)
+</div>
+</div>
+
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes flexible">
+#### Terraform Tutorial Teil 1
+[![terraform-tutorial-1](../img/terraform.webp)](/blog/terraform-tutorial-1/)
+</div>
+</div>
+
+<div class="col-sm-8 col-md-4">
+<div class="boxes flexible">
+#### Terraform Tutorial Teil 2
+[![terraform-tutorial-2](../img/terraform.webp)](/blog/terraform-tutorial-2/)
+</div>
+</div>
+
+
+</div>
+<!-- GRID CONTENT NEWS2-->
 
 <!-- GRID CONTENT KONTAKT-->
 <div class="grid-content-contact">
