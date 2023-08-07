@@ -6,3 +6,4 @@ gem "jekyll-minifier"
 gem 'jekyll-feed'
 gem 'jekyll-readme-index'
 gem "rouge"
+gem "kramdown"

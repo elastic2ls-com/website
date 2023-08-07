@@ -53,30 +53,11 @@ date_format: "%B %-d, %Y"
 # Output options (more information on Jekyll's site)
 timezone: "Europe/Berlin"
 markdown: kramdown
-highlighter: rouge
 permalink: /:year-:month-:day-:title/
 #paginate: 5
 
 kramdown:
   syntax_highlighter: rouge
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-  syntax_highlighter_opts:
-    default_lang: text
-    css_class: 'highlight'
-    # span:
-    #   line_numbers: true
-    #   start_line: 1
-    # block:
-    #   line_numbers: true
-    #   start_line: 1
-
-    # block:
-    #   # line_numbers: true
-    #   # start_line: 1
-    #   # default_lang: html
-    #   # css_class   : 'syntax'
 
 
 # Default YAML values (more information on Jekyll's site)

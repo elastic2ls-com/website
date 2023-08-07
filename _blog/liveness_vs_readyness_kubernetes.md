@@ -35,7 +35,7 @@ Wenn der Anwendungsstart immer noch zu langsam für die konfigurierten Proben is
 
 Wenn wir mit Spring Boot 2.3.2 arbeiten, können wir die neuen Eigenschaften verwenden, um Liveness- und Readiness-Prüfungen zu ermöglichen:
 
-```
+```python
 management.endpoint.health.probes.enabled=true
 management.health.livenessState.enabled=true
 management.health.readinessState.enabled=true
