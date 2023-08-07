@@ -2,7 +2,7 @@
 layout: post
 title: Liveness vs. Readiness probes in Kubernetes und Spring Boot
 subtitle: Was ist eigentlich der Unterschied zwischen den Liveness und Readiness Probes und wie konfiguriert man diese in Kubernetes bzw. Spring Boot. 
-keywords: [Liveness vs. Readiness Kubernetes Spring Bott]
+keywords: [Liveness vs. Readiness Kubernetes Spring Boot]
 categories: [DevOps]
 ---
 
