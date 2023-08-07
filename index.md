@@ -202,8 +202,8 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### Terraform Tutorial Teil 2
-[![terraform-tutorial-2](../img/terraform.webp)](/blog/terraform-tutorial-2/)
+#### Scheduling in Kubernetes
+[![scheduling_in_kubernetes](../img/k8s.webp)](/blog/scheduling_in_kubernetes/)
 </div>
 </div>
 
