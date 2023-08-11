@@ -1,7 +1,7 @@
 ---
 layout: categories
 title: DevOps
-categories: [DevOps]
+categories: [ DevOps ]
 ---
 ## Everything related to DevOps
 

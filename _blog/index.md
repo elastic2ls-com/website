@@ -12,33 +12,32 @@ permalink: /blog/:title.html
 <div class="sl-img-container-blog">
 <div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
 <div class="carousel-inner">
-<div class="item active">
-![Java Keystore erklärts](../img/java.webp)
+<div class="item active">![Helm](../img/HELM-logox130.webp)
 
-#### Java Keystore erklärt
+#### Helm vs Kustomize
 
-[Artikel lesen](java-keytool-keystore-befehle){: .btn .btn-primary}
+[Artikel lesen](helm-vs-kustomize){: .btn .btn-primary}
 </div>
 
-<div class="item">![Terraform](../img/terraform.webp)
+<div class="item">![terraform](../img/terraform.webp)
 
 #### Terraform Tutorial Teil 1
 
 [Artikel lesen](terraform-tutorial-1){: .btn .btn-primary}
 </div>
 
-<div class="item">![Auditd.](../img/linux2.webp)
+<div class="item">![kubernetes.](../img/kubernetes_logo.webp)
 
-#### Auditd daemon Linux
+#### Liveness vs. Readyness Kubernetes
 
-[Artikel lesen](auditd-daemon){: .btn .btn-primary}
+[Artikel lesen](liveness_vs_readyness_kubernetes){: .btn .btn-primary}
 </div>
 
-<div class="item">![Certbot-auto.](../img/letsencrypt-card.webp)
+<div class="item">![helm-chart-erklärt.](../img/HELM-logox130.webp)
 
-#### Certbot-auto Zertifikate automatisch erneuern
+#### Helm Chart erklärt
 
-[Artikel lesen](certbot-auto-zertifikat-automatisch-erneuern){: .btn .btn-primary}
+[Artikel lesen](helm-chart-erklärt){: .btn .btn-primary}
 </div>
 
 </div>
