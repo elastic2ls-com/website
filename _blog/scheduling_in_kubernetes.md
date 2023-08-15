@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Liveness vs. Readiness probes in Kubernetes und Spring Boot
+title: Scheduling in kubernetes
 subtitle: Was ist eigentlich der Unterschied zwischen den verschiedenen Methoden zu entscheiden, wo, welche Ressourcen innerhalb des Clusters ausgeführt werden sollen?
 keywords: [Scheduling in kubernetes]
 categories: [DevOps]

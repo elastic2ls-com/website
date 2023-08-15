@@ -6,7 +6,7 @@ keywords: [Helm Kustomize]
 categories: [DevOps]
 ---
 
-![helm_vs_kustomize](../../img/helm_vs_kustomize.webp)
+![helm_vs_kustomize](../../img/helm_vs_kustomize2.webp)
 
 # Helm vs. Kustomize - ein Vergleich
 
