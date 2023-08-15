@@ -6,7 +6,7 @@ keywords: [Liveness vs. Readiness Kubernetes Spring Boot]
 categories: [DevOps]
 ---
 
-#Liveness vs. Readiness probes in Kubernetes und Spring Boot
+# Liveness vs. Readiness probes in Kubernetes und Spring Boot
 
 Ab Spring Boot 2.3 wird der Verfügbarkeitsstatus der Anwendung (einschließlich Liveness und Readiness) unterstützt
 und kann als Kubernetes Probe mit Actuator verfügbar gemacht werden.
