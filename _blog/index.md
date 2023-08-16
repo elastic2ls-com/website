@@ -19,14 +19,14 @@ permalink: /blog/:title.html
 [Artikel lesen](helm-vs-kustomize){: .btn .btn-primary}
 </div>
 
-<div class="item">![terraform](../img/terraform.webp)
+<div class="item">![opentf.](../img/opentf.webp)
 
 #### OpenTF Manifest
 
 [Artikel lesen](opentf-manifest){: .btn .btn-primary}
 </div>
 
-<div class="item">![opentf.](../img/opentf.webp)
+<div class="item">![kubernetes.](../img/kubernetes_logo.webp)
 
 #### Liveness vs. Readyness Kubernetes
 

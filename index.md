@@ -195,8 +195,8 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### Terraform Tutorial Teil 1
-[![terraform-tutorial-1](../img/terraform.webp)](/blog/terraform-tutorial-1/)
+#### openTF Manifest
+[![opentf-manifest](../img/opentf.webp)](/blog/opentf-manifest/)
 </div>
 </div>
 
