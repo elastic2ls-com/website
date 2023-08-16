@@ -12,31 +12,25 @@ permalink: /blog/:title.html
 <div class="sl-img-container-blog">
 <div id="carousel-top" class="carousel" data-interval="5000" data-ride="carousel">
 <div class="carousel-inner">
+
+
 <div class="item active">![Helm](../img/HELM-logox130.webp)
-
 #### Helm vs Kustomize
-
 [Artikel lesen](helm-vs-kustomize){: .btn .btn-primary}
 </div>
 
 <div class="item">![opentf.](../img/opentf.webp)
-
 #### OpenTF Manifest
-
 [Artikel lesen](opentf-manifest){: .btn .btn-primary}
 </div>
 
 <div class="item">![kubernetes.](../img/kubernetes_logo.webp)
-
 #### Liveness vs. Readyness Kubernetes
-
 [Artikel lesen](liveness_vs_readyness_kubernetes){: .btn .btn-primary}
 </div>
 
 <div class="item">![helm-chart-erklärt.](../img/HELM-logox130.webp)
-
 #### Helm Chart erklärt
-
 [Artikel lesen](helm-chart-erklärt){: .btn .btn-primary}
 </div>
 
