@@ -5,6 +5,7 @@ subtitle: Was ist eigentlich der Unterschied zwischen den verschiedenen Methoden
 keywords: [Scheduling in kubernetes]
 categories: [DevOps]
 ---
+# {{ page.title }}
 
 ![Kubernetes](../../img/k8s.webp)
 

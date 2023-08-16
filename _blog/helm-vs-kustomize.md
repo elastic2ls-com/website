@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Helm vs. Kustomize
+title: Helm vs. Kustomize - ein Vergleich
 subtitle: was sind Vor- und Nachteile von Helm bzw. Kustomize?
 keywords: [Helm Kustomize]
 categories: [DevOps]
 ---
 
+# {{ page.title }}
+
 ![helm_vs_kustomize](../../img/helm_vs_kustomize2.webp)
-
-# Helm vs. Kustomize - ein Vergleich
-
 
 Kubernetes bietet von Haus aus die wichtigsten Tools, die für die Verwaltung von Anwendungen benötigt werden. Während die Anwendung von YAML-Manifesten in Kubernetes grundsätzlich ein einfacher Prozess ist, 
 gerät die Entwicklung in einer Microserviceumgebung schnell außer Kontrolle, da eine Vielzahl von Deployments zur Entwicklung eines kompletten Systems erforderlich sind.
