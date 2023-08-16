@@ -21,12 +21,12 @@ permalink: /blog/:title.html
 
 <div class="item">![terraform](../img/terraform.webp)
 
-#### Terraform Tutorial Teil 1
+#### OpenTF Manifest
 
-[Artikel lesen](terraform-tutorial-1){: .btn .btn-primary}
+[Artikel lesen](opentf-manifest){: .btn .btn-primary}
 </div>
 
-<div class="item">![kubernetes.](../img/kubernetes_logo.webp)
+<div class="item">![opentf.](../img/opentf.webp)
 
 #### Liveness vs. Readyness Kubernetes
 
