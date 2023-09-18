@@ -340,7 +340,7 @@ kubectl apply -f argo-manifest.yaml                                             
 application.argoproj.io/gitops-tutorial created
 ```
 
-![gitops-tutorial-argocd-installed](../../iimg/argocd-installed.webp)
+![gitops-tutorial-argocd-installed](../../img/argocd-installed.webp)
 
 
 > **_ACHTUNG!_** Wenn die Applikation nicht im Frontend auftaucht muss
@@ -351,7 +351,7 @@ application.argoproj.io/gitops-tutorial created
 ## 3.Testen
 Nun können wir testen, ob unsere App erfolgreich in den Cluster deployt wurde. 
 
-![gitops-tutorial-argocd-deployment-überblick](../../iimg/argocd-deployment-überblick.webp)
+![gitops-tutorial-argocd-deployment-überblick](../../img/argocd-deployment-überblick.webp)
 
 Hier können wir die verschiedenen Komponenten sehen, die in den Kubernetes Cluster deployt wurden. 
 1. das Deployment selber
@@ -359,10 +359,10 @@ Hier können wir die verschiedenen Komponenten sehen, die in den Kubernetes Clus
 3. das Replika Set
 4. die Container
 
-![gitops-tutorial-argocd-getapp-url](../../iimg/argocd-getapp-url.webp)
+![gitops-tutorial-argocd-getapp-url](../../img/argocd-getapp-url.webp)
 Unter dem Service finden wir auch den Hostnamen, der auf den AWS Loadbalancer zeigt.
 
-![gitops-tutorial-final-app](../../iimg/final-app.webp)
+![gitops-tutorial-final-app](../../img/final-app.webp)
 
 > Und Trommelwirbel ...
 >
