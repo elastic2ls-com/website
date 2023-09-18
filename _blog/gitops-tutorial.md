@@ -371,4 +371,12 @@ Unter dem Service finden wir auch den Hostnamen, der auf den AWS Loadbalancer ze
 >hier ist unsere App. 
 
 
+## Resourcen
+Hier findet ihr die Ressourcen in Github, um selber zu testen oder euch inspirieren zu lassen. Viel Spass und lasst einen Stern da oder folgt mir.
+
+[https://github.com/AlexanderWiechert/gitops-tutorial-terraform](https://github.com/AlexanderWiechert/gitops-tutorial-terraform)
+
+[https://github.com/AlexanderWiechert/gitops-tutorial-app/](https://github.com/AlexanderWiechert/gitops-tutorial-app/)
+
+[https://github.com/AlexanderWiechert/gitops-tutorial-kubernetes/](https://github.com/AlexanderWiechert/gitops-tutorial-kubernetes/)
 
