@@ -172,8 +172,8 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### Docker Image Größe reduzieren
-[![Docker](../img/DockerLogo-300x150.webp)](/blog/docker-image-groesse-reduzieren/)
+#### GitOps Tutorial
+[![Docker](../img/argocd-300x300.png)](/blog/gitops-tutorial/)
 </div>
 </div>
 

@@ -50,7 +50,7 @@ Da der Installer einfach nicht ein deutsches Tastaturlayout verwenden wollte mus
 <div style="min-height: 360px">
  Zur Partitionierung verwendet EvolveOs Gparted. Das ist für den erfahrenen Nutzer intuitiv bedienbar aber nicht für Umsteiger.
 
- ![EvolveOS__installer_3](../../img/EvolveOS__installer_3.webp){:height="50%" width="50%" .col-sm-8 .col-md-4} ![EvolveOS__installer_4](../../img/EvolveOS__installer_4.png){:height="50%" width="50%" .col-sm-8 .col-md-4} ![EvolveOS__installer_5](../../img/EvolveOS__installer_5.png){:height="50%" width="50%" .col-sm-8 .col-md-4}
+ ![EvolveOS__installer_3](../../img/EvolveOS__installer_3.webp){:height="50%" width="50%" .col-sm-8 .col-md-4} ![EvolveOS__installer_4](../../img/EvolveOS__installer_4.webp){:height="50%" width="50%" .col-sm-8 .col-md-4} ![EvolveOS__installer_5](../../img/EvolveOS__installer_5.webp){:height="50%" width="50%" .col-sm-8 .col-md-4}
 </div>
 
  EvolveOS im Beta Stadium hat noch einige Ungereimtheiten und Macken die man aber bei einer Beta verschmerzen kann. Leider finde ich das es trotz der Übersichtlichkeit, Design nicht für Anfänger und Umsteiger geignet. Ebenso gibt es dafür nicht wie bei den anderen Distributionen Foren und Ähnliches gibt wo man sich Hilfe erhoffen könnte.
