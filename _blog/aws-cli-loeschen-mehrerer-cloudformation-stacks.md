@@ -7,7 +7,7 @@ categories: [Howtos]
 ---
 # {{ page.title }}
 
-Wenn man zu Testzwecken mal viele Stacks erstellt hat und diese nicht mehr benötigt ist es sehr lästig diese über die Webconsole zu löschen. ![stackoverview_1](../../img/stackoverview_1.png)
+Wenn man zu Testzwecken mal viele Stacks erstellt hat und diese nicht mehr benötigt ist es sehr lästig diese über die Webconsole zu löschen. ![stackoverview_1](../../img/stackoverview_1.webp)
 
 Dies geht super einfach mit der AWS cli und ein bischen Kenntniss der Bash. Zuerst lassen wir uns die Stacks, die den Status CREATE_COMPLETE und UPDATE_COMPLETE haben, ausgeben als json.
 
@@ -38,4 +38,4 @@ bash-4.2$aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE UP
 -bash-4.2$while read stack; do aws cloudformation delete-stack --stack-name $stack; done
 ```
 
-![](../../img/stackoverview_2.png)
+![](../../img/stackoverview_2.webp)

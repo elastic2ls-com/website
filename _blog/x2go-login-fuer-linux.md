@@ -162,11 +162,11 @@ In X2Go müssen wir nun die Verbindungseinstellungen anpassen.
 
 Wir erlauben den Vollzuggriff.
 
-![x2go](../../img/x2go_RS_004-550x300-300x164.png)
+![x2go](../../img/x2go_RS_004-550x300-300x164.webp)
 
 Und jetzt haben wir vollen Zugriff auf den Desktop.
 
-![x2go](../../img/x2go_RS_005-550x300-300x164.png)
+![x2go](../../img/x2go_RS_005-550x300-300x164.webp)
 
 ## Zusammenfassung
 

@@ -9,7 +9,7 @@ categories: [LinuxDesktop]
 
 Heute stelle ich euch ein weiteres schickes Linux für den Desktop vor LuninuX OS (früher Sn0wl1nuX). Der Name ist etwas gewöhnungsbedürftig aber dafür erhält man ein richtig schickes Betriebssystem.
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-10.17.16-1024x822.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-10.17.16-1024x822.webp)
 
 ### Technische Details
 
@@ -23,37 +23,37 @@ Die Installation basiert ebenfalls auf dem typischen Ubuntu Installer und ist se
 
 Wählen Sie einfach aus, ob Sie das gesamte Laufwerk verwenden oder zusammen mit einem vorhandenen Betriebssystem installieren möchten, und wählen Sie dann Ihren Standort und den Benutzernamen und das Passwort, das Sie für die Anmeldung bei Luninux verwenden möchten.
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-09.37.40-300x241.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-09.37.40-300x241.webp)
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-09.41.00-300x241.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-09.41.00-300x241.webp)
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-09.41.26-300x241.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-09.41.26-300x241.webp)
 
 ### Verwendung
 
 Nach der Installation kann man einen ersten Eindruck des sehr aufgeräumt wirkenden Desktops erhalten. Oben befindet sich typisch Gnome Standard-Gnome-Taskleiste unten das schicke Dock.
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-09.57.42-300x240.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-09.57.42-300x240.webp)
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-10.22.34-300x242.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-10.22.34-300x242.webp)
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-11.05.29-300x241.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-11.05.29-300x241.webp)
 
 Die Taskleiste an der Oberseite hat zwei Menüs auf der linken Seite und auf der rechten Seite. Rechts gibt es eine Reihe von Icons, darunter ein Akku-Symbol, Wireless-Netzwerk-Symbol, Audio-Symbol, eine Uhr und ein Symbol, das ein Menü anzeigt, um das System heruntergefahren. Die Menüs auf der linken Seite machen es sehr einfach zu navigieren mit Zugriff auf das Dateisystem und Anwendungen. Das Dock am unteren Rand des Bildschirms macht es noch einfacher, die am häufigsten verwendeten Anwendungen durch einfaches Klicken auf die Symbole, die sie darstellen starten. Wenn Sie den moderneren Gnome 3-Shell-Desktop bevorzugen, können Sie diesen als Ihren Standard-Desktop festlegen, indem Sie sich abmelden und die Desktop-Umgebung für Ihren Benutzer ändern.
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.07.45-300x241.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.07.45-300x241.webp)
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.07.27-300x242.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.07.27-300x242.webp)
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.07.12-300x241.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.07.12-300x241.webp)
 
 LunixuX OS kommt mit einer Menge vorinstallierter Programme. Über die Systemeinstellungen kann man recht einfach einstellen, welches Program als Standardprogramm verwendet werden soll. Zusätzlich kommt das Betriebsystem bereits mit einer integrierten Backuplösung an Bord daher, welche neben dem der Sicherung auf lokale Medien wie USB Stick oder auf ein Windows Share sowie per SSH auch noch die Sicherung auf einen Cloud Speicher wie Amazon S3 oder die Google Cloud unterstützt.
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.13.59-300x242.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.13.59-300x242.webp)
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.14.42-300x240.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.14.42-300x240.webp)
 
-![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.19.34-300x241.png)
+![LunixuX OS](../../img/Bildschirmfoto-2017-02-16-um-12.19.34-300x241.webp)
 
 ### Fazit
 

@@ -8,7 +8,7 @@ categories: [DevOps]
 # {{ page.title }}
 
 
-![Vagrant-](../../img/Vagrant-logo.png)
+![Vagrant-](../../img/Vagrant-logo.webp)
 
 Beim startet der Vagrant Box wurde der Shared Folder nicht gemountet mit der Fehlermeldung
 

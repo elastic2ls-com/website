@@ -7,7 +7,7 @@ categories: [LinuxInside]
 ---
 # {{ page.title }}
 
-![systemd](../../img/systemd-logo-300x80.png)
+![systemd](../../img/systemd-logo-300x80.webp)
 
 Da Systemd SysVinit ablösst, wird es Zeit das neue Systemd kennen zu lernen. Systemd ist schneller, da es weniger Skripte verwendet und Aufgaben parallel ausführt. Die Konfiguration ist unter /etc/systemd zu finden.
 

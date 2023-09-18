@@ -45,7 +45,7 @@ Jetzt wo wir ein Verständniss für die Grundkomponenten des Load-Balancings hab
 
 Eine einfache Webanwendung ohne Load-Balancing könnte folgendermaßen aussehen:
 
-![haproxy](../../img/haproxy1.png)
+![haproxy](../../img/haproxy1.webp)
 
 In diesem Beispiel verbindet sich der Benuter direkt mit eurer Web Anwednung ohne ein Load-Balancing Lösung. Wenn der Webserver nicht erreichbar ist wird der Benutzer ihn natürlich nicht erreichen könne. Ebenso kann es passieren, dass wenn viele Benutzer simultan auf den Server zugreifen wollen, dieser langsam reagiert oder gar nicht erreichbar ist
 
@@ -53,7 +53,7 @@ In diesem Beispiel verbindet sich der Benuter direkt mit eurer Web Anwednung ohn
 
 Der einfachste Weg die Anfragen im Netzwerk gleichmässig zu verteilen ist es Layer 4 [(Transport layer)](https://www.fachadmin.de/index.php/OSI-Modell_in_der_Netzwerktechnik) Load-Balancing zu betreiben. Wenn man auf diesem Weg das Load-Balancing betreibt wird die Anfrage basierend auf IP Adresse und Port weitergeleitet an die in der Backend Sektion genannten Server. Hier ist ein Diagram eines einfachen Layer 4 Load-Balancings:
 
-[![haproxy](../../img/haproxy2.png)
+[![haproxy](../../img/haproxy2.webp)
 
 Die Anfrage des Benutzers wird vom Load-Balancer an die Backendserver, welche in _web-backend_ definiert sind, gesendet.
 
@@ -61,7 +61,7 @@ Die Anfrage des Benutzers wird vom Load-Balancer an die Backendserver, welche in
 
 Eine andere etwas komplexere Art des Load-Balancings ist es ein Layer 7 [(application layer)](https://www.fachadmin.de/index.php/OSI-Modell_in_der_Netzwerktechnik) Load-Balancing zu betreiben. Layer 7 Load-Balancing erlaubt es Anfragen des Benutzers basierend auf dem Content an die Backendserver weiterzuleiten. Dies Methode erlaubt es mehrere Webserver unter der selben Domäne sowie mit identischem Port zu betreiben. Hier ist ein Diagramm eines einfachen Layer 7 Load-Balancings:
 
-[![haproxy](../../img//haproxy3.png)
+[![haproxy](../../img//haproxy3.webp)
 
 In diesem Beispiel wird die Anfrage des Benutzers nach _deinedomain.com/blog_ zum _blog_ Backend weitergeleiten die die Blog Anwendung bereitstellen. Alle anderen Anfragen werden zu dem Backen, welches unter _web-backend_ definiert ist weitergeleitet.ample. Ein Auszug aus einer Frontend Konfiguration: `frontend https bind *:80 mode https acl url_blog path_beg /blog use_backend blog-backend if url_blog default_backend web-backend ` Hier wird ein Frontend namens _https_ konfiguriert, welches die Anfragen nach dem Pfad _/blog_ auf Port 80 verarbeitet.
 

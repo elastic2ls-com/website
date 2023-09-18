@@ -5,4 +5,4 @@ categories: [ DevOps ]
 ---
 ## Everything related to DevOps
 
-![devops](../../img/devops-300x152.png)
+![devops](../../img/devops-300x152.webp)

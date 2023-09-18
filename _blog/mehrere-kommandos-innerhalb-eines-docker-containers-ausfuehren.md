@@ -8,7 +8,7 @@ categories: [DevOps]
 # {{ page.title }}
 
 
-![docker](../../img/DockerLogo-300x150.png)
+![docker](../../img/DockerLogo-300x150.webp)
 
 
 Dazu übergibt man an den Docker Container mit dem Parameter

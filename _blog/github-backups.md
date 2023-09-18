@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![Github](../../img/github-logo.png)
+![Github](../../img/github-logo.webp)
 
 Um schnell Github Backups für alle Repositories einer Organisation anzulegen kann das folgende Script sehr nützlich sein. Es liest per curl über die Github Api die Namen aller Repos aus. Am Ende des Scripts prüft es noch auf Backups die älter als 7 Tage sind und löscht diese.
 

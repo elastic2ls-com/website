@@ -7,7 +7,7 @@ categories: [Howtos]
 ---
 # {{ page.title }}
 
-![docker](../../img/DockerLogo-300x150.png)
+![docker](../../img/DockerLogo-300x150.webp)
 
 Apache mit Docker zu nutzten ist relativ einfach. Unten sind die nötigen Schritte skiziert wie wir uns ein Basis Image herunterladen können, dann den Apachen installieren und daraus ein neues Image für die weitere Verwendung speicher können.
 

@@ -11,7 +11,7 @@ categories: [DevOps]
 
 Wenn man innnerhalb der deklarativen Jenkinspipeline eine Stage als fehlerhaft markieren will/soll, da z.B. ein Test fehlschlägt, man aber deswegen nicht den ganzen Job abbrechen lassen will, geht das wie folgt.
 
- ![Jenkinsfile Pipeline](../../img/Jenkins_mark_stage_as_failed.png)
+ ![Jenkinsfile Pipeline](../../img/Jenkins_mark_stage_as_failed.webp)
 
 ```
 pipeline {

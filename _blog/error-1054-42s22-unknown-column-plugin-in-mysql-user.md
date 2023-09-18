@@ -7,7 +7,7 @@ categories: [Howtos]
 ---
 # {{ page.title }}
 
-![MySQL](../../img/MySQL_logo_small.png)
+![MySQL](../../img/MySQL_logo_small.webp)
 
 
 Nach dem Update von MySQL auf die 5.6 Version kann es u.U. dazu kommen das man auf folgenden Fehler ERROR 1054 stösst.

@@ -140,7 +140,7 @@ Examples:
 
 
 ## lighthouse Reports
-![lighthouse report](../../img/lighthouse_report-1024x881.png){: style="max-width: 100%;"} 
+![lighthouse report](../../img/lighthouse_report-1024x881.webp){: style="max-width: 100%;"} 
 
 
 ## Docs

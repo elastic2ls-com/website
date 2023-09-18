@@ -244,11 +244,11 @@ clb_dns_name = terraform-elastic2ls-elb-1749382638.eu-central-1.elb.amazonaws.co
 
 In der AWS Console sieht das so aus:
 
-![terraform-tutorial-aws-6](../../img/terraform-tutorial-aws-6.png){: width="800px" }
+![terraform-tutorial-aws-6](../../img/terraform-tutorial-aws-6.webp){: width="800px" }
 
-![terraform-tutorial-aws-7](../../img/terraform-tutorial-aws-7.png){: width="800px" }
+![terraform-tutorial-aws-7](../../img/terraform-tutorial-aws-7.webp){: width="800px" }
 
-![terraform-tutorial-aws-8](../../img/terraform-tutorial-aws-8.png){: width="800px" }
+![terraform-tutorial-aws-8](../../img/terraform-tutorial-aws-8.webp){: width="800px" }
 
 Wenn der Status der Instanzen in der Übersicht des ELBs auf InService stehen, können wir per `curl`testen.
 

@@ -7,9 +7,9 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![Jenkinsfile Pipeline](../../img/jenkins-300x182.png)
+![Jenkinsfile Pipeline](../../img/jenkins-300x182.webp)
 
-Wenn man innnerhalb der Jenkinspipeline ein anderes Repository auschecken muss, abseits von dem in welchem die Konfiguration (Jenkinsfile u.a.) gespeichert ist, geht das mit folgendem Snippet. ![Jenkinsfile Pipeline](../../img/credentials-1024x938.png)
+Wenn man innnerhalb der Jenkinspipeline ein anderes Repository auschecken muss, abseits von dem in welchem die Konfiguration (Jenkinsfile u.a.) gespeichert ist, geht das mit folgendem Snippet. ![Jenkinsfile Pipeline](../../img/credentials-1024x938.webp)
 
 ```
          stage('Checkout') {

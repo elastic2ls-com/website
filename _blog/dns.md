@@ -5,4 +5,4 @@ categories: [dns]
 ---
 ## Everything related to DNS
 
-![dns](../../img/bind9.png)
+![dns](../../img/bind9.webp)

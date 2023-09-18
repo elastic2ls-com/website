@@ -7,7 +7,7 @@ categories: [LinuxInside]
 ---
 # {{ page.title }}
 
-![init_d](../../img/init_d.png)
+![init_d](../../img/init_d.webp)
 
 
 Hier eine kurze Anleitung wie ihr ein eigenes Init-Script erstellen könnt.          

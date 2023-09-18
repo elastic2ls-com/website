@@ -7,7 +7,7 @@ categories: [Howtos]
 ---
 # {{ page.title }}
 
-![apache-logo](../../img/apache-logo-300x300.png) 
+![apache-logo](../../img/apache-logo-300x300.webp) 
 
 Es folgt eine bespielhafte Erklärung wie man im Apache-VirtualDocumentRoot nutzt. Ziel ist es die Verwendung dynamischer zu gestallten. Ebenso werden wir Active Directory als Backend für die Benutzerauthentifizierung verweden.
 

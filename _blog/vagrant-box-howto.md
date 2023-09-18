@@ -6,7 +6,7 @@ keywords: [Jenkins Deklarative Pipline checkoutscm Jenkinsfile webinterface]
 categories: [DevOps]
 ---
 # {{ page.title }}
-## [![vagrant box](../../img/Vagrant-logo.png)
+## [![vagrant box](../../img/Vagrant-logo.webp)
 
 ## Vagrant Box Howto
 
@@ -22,7 +22,7 @@ Vagrant ist ein hervoragendes Tool für Entwickler aber auch generell für IT Te
 
 [CentOS iso image Download](https://wiki.centos.org/Download)
 
-![vagrant box](../../img/centos-300x158.png)
+![vagrant box](../../img/centos-300x158.webp)
 
 ### 3\. neue VM in VirtualBox
 
@@ -59,7 +59,7 @@ you@host$ VBoxManage modifyvm "vagrant-centos7" --natpf1 "guestssh,tcp,,2222,,22
 
 b. Stoppe die VM und setze das Portforwarding in der Gui von VirtualBox.
 
-![vagrant box](../../img/VBOx-Portforwaring-550x293-300x160.png)
+![vagrant box](../../img/VBOx-Portforwaring-550x293-300x160.webp)
 
 ###  7\. Test SSH:
 

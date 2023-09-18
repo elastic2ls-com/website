@@ -9,7 +9,7 @@ categories: [Howtos]
 
 Ein kurze Übersicht wie man PHP auf die Version PHP-5.6 updated auf CentOS.
 
-![PHP-5.6](../../img/php.png)
+![PHP-5.6](../../img/php.webp)
 
 
 Zuerst schauen wir welche PHP Pakete aktuell installiert sind.
@@ -49,4 +49,4 @@ Copyright (c) 1997-2016 The PHP Group
 Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 ```
 
-![PHP-5.6](../../img/PHP-5.6-update-1024x741.png)]
+![PHP-5.6](../../img/PHP-5.6-update-1024x741.webp)]

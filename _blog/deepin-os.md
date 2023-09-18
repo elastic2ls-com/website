@@ -15,12 +15,12 @@ Die Installation ist recht einfach gehalten mit einem schön designten Installer
 
 <div class="col-sm-12 col-md-6">
   <div class="boxes flexible">
-    <img src="../../img/deepin1-150x150.png">
+    <img src="../../img/deepin1-150x150.webp">
   </div>
 </div>
 <div class="col-sm-12 col-md-6">
   <div class="boxes flexible">
-    <img src="../../img/deepin2-150x150.png">
+    <img src="../../img/deepin2-150x150.webp">
   </div>    
 </div>
 
@@ -32,12 +32,12 @@ Hier sieht man den Login Screen, sowie den Desktop nach der ersten Anmeldung an 
 
 <div class="col-sm-12 col-md-6">
   <div class="boxes flexible">
-    <img src="../../img/deepin3.png" width="180" height="150">
+    <img src="../../img/deepin3.webp" width="180" height="150">
   </div>    
 </div>
 <div class="col-sm-12 col-md-6">
   <div class="boxes flexible">
-    <img src="../../img/deepin4.png" width="180" height="150">
+    <img src="../../img/deepin4.webp" width="180" height="150">
   </div>    
 </div>
 
@@ -49,23 +49,23 @@ Das Sytem wirkt auf den ersten Blick sehr aufgeräumt und intuitiv. Anfänger so
 
 <div class="col-sm-12 col-md-6">
   <div class="boxes flexible">
-    <img src="../../img/deepin7.png" width="180" height="150">
+    <img src="../../img/deepin7.webp" width="180" height="150">
   </div>    
 </div>
 <div class="col-sm-12 col-md-6">
   <div class="boxes flexible">
-    <img src="../../img/deepin5.png" width="180" height="150">
+    <img src="../../img/deepin5.webp" width="180" height="150">
   </div>    
 </div>
 
 <div class="col-sm-12 col-md-6">
   <div class="boxes flexible">
-    <img src="../../img/deepin6.png" width="180" height="150">
+    <img src="../../img/deepin6.webp" width="180" height="150">
   </div>    
 </div>
 <div class="col-sm-12 col-md-6">
   <div class="boxes flexible">
-    <img src="../../img/deepin8.png" width="180" height="150">
+    <img src="../../img/deepin8.webp" width="180" height="150">
   </div>    
 </div>
 

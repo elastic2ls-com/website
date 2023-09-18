@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![docker](../../img/DockerLogo-300x150.png)
+![docker](../../img/DockerLogo-300x150.webp)
 
 Aus Seosicht ist es wichtig, dass Redirects die man eingebaut hat, auch auf die gewünschte Seite leiten und nicht in einem 404 Statuscode enden. Dazu können wir die Redirects testen mit docker.
 

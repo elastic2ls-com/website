@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![docker](../../img/DockerLogo-300x150.png)
+![docker](../../img/DockerLogo-300x150.webp)
 
 Bevor wir mit Docker auf Ubuntu loslegen können oder sollten wir uns ein passendes Docker-Base-Image erzeugen. Dazu müssen wir das Paket ```debootstrap``` auf Ubuntu zuerst installieren. Natürlich gibt es bereits sehr viele fertige Images auf dockerhub aber, wenn man alles unter Kontrolle behalten will, bietet es sich an sein eigenes Basis Image zu erstellen.
 
@@ -36,7 +36,7 @@ alex@vm# sudo debootstrap --variant=minbase --arch=amd64 trusty ./trusty https:/
 Wenn man es will kann man direkt auch zusätzliche Pakete mit installieren lassen, wenn man die Option ```--include``` mit angibt.
 
 
-[![Docker-Base-Image](https://s.elastic2ls.com/wp-content/uploads/2018/02/27205227/deboot-strap-300x199.png)](https://s.elastic2ls.com/wp-content/uploads/2018/02/27205227/deboot-strap.png)
+[![Docker-Base-Image](https://s.elastic2ls.com/wp-content/uploads/2018/02/27205227/deboot-strap-300x199.webp)](https://s.elastic2ls.com/wp-content/uploads/2018/02/27205227/deboot-strap.webp)
 
 
 ## Erstellen des Docker-Base-Image

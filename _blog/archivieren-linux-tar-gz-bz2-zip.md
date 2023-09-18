@@ -7,7 +7,7 @@ categories: [LinuxInside]
 ---
 # {{ page.title }}
 
-Unten findet ihr eine kurze Übersicht zum Thema Archivieren und Archivformate (.tar .gz .bz2 .zip) und wie man diese unter Linux benutzt. ![tar](../../img/tar.png)
+Unten findet ihr eine kurze Übersicht zum Thema Archivieren und Archivformate (.tar .gz .bz2 .zip) und wie man diese unter Linux benutzt. ![tar](../../img/tar.webp)
 
 ## tar
 

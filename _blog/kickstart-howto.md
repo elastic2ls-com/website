@@ -9,7 +9,7 @@ categories: [Howtos]
 
 Kickstart wird dazu benutzt um Server automatisiert zu provisionieren. Man kann z.B. Benutzer anlegen, die Festplatten zu partitionieren und formatieren, Software installieren,die Netztwerkschnittstellen einrichten und einiges mehr.
 
-![kickstart-overview1](../../img/kickstart-overview1.png)
+![kickstart-overview1](../../img/kickstart-overview1.webp)
 
 ## Serverseitige Konfiguration
 
@@ -27,7 +27,7 @@ Das war es schon. Wir werden die Kickstart Datei in den DocumentRoot Ordner des 
 
 Hier gibt es unter anderem für erste Tests eine Gui Werkzeug welches uns helfen kann eine Kickstart Datei zu erstellen. Es heisst system-config-kickstart
 
-![ksconfig-basic](../../img/ksconfig-basic.png)
+![ksconfig-basic](../../img/ksconfig-basic.webp)
 
 ## Optionen in der Kickstart Cfg Datei
 

@@ -29,17 +29,17 @@ Die offizielle Terraform [Getting Started-Dokumentation](https://www.terraform.i
 
 Wenn man sich zum ersten Mal für AWS registriert, melden man sich zunächst als [root-Benutzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) an. Dieses Benutzerkonto hat Zugriffsberechtigungen für alles, daher empfiehlt es sich aus Sicherheitssicht, es nur für die Erstellung anderer Benutzerkonten mit eingeschränkteren Berechtigungen zu verwenden ([siehe IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)). Um ein eingeschränkteres Benutzerkonto zu erstellen, gehen wir zur [Identitäts- und Zugriffsverwaltung (IAM)](https://console.aws.amazon.com/iam/home?region=eu-central-1-1#home) Konsole, klicken auf "Benutzer" und dann auf die blaue Schaltfläche "Neue Benutzer erstellen". Wir geben einen Namen für den Benutzer ein und stellen sicher, dass "Generieren Sie einen Zugriffsschlüssel für jeden Benutzer" aktiviert ist:
 
-![terraform-tutorial-aws-1](../../img/terraform-tutorial-aws-1.png){: width="800px" }
+![terraform-tutorial-aws-1](../../img/terraform-tutorial-aws-1.webp){: width="800px" }
 
 Wir klicken auf die Schaltfläche "Erstellen", um die Sicherheitsinformationen für diesen Benutzer anzuzeigen, die aus der Zugriffsschlüssel-ID und einem geheimen Zugriffsschlüssel bestehen. Du MUSST diese sofort speichern, da sie nie wieder angezeigt werden. Wir empfehlen, sie an einem sicheren Ort aufzubewahren (z.B. in einem Passwortmanager wie Keychain oder 1Password), damit wir sie später in diesem Tutorial verwenden können.
 
-![terraform-tutorial-aws-2](../../img/terraform-tutorial-aws-2.png){: width="800px" }
+![terraform-tutorial-aws-2](../../img/terraform-tutorial-aws-2.webp){: width="800px" }
 
 Standardmäßig hat ein neuer IAM-Benutzer keine Berechtigung, etwas im AWS-Konto zu tun. Um Terraform für die Beispiele in dieser Blog-Postserie verwenden zu können, fügen wir folgende Berechtigung hinzu
 
 * `AmazonEC2FullAccess`
 
-![terraform-tutorial-aws-3](../../img/terraform-tutorial-aws-3.png){: width="800px" }
+![terraform-tutorial-aws-3](../../img/terraform-tutorial-aws-3.webp){: width="800px" }
 
 
 ## Installation Terraform
@@ -190,7 +190,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Wir haben gerade einen Server mit Terraform bereitgestellt! Um dies zu überprüfen, können wir uns sich bei der EC2-Konsole anmelden:
 
-![terraform-tutorial-aws-4](../../img/terraform-tutorial-aws-4.png){: width="800px" }
+![terraform-tutorial-aws-4](../../img/terraform-tutorial-aws-4.webp){: width="800px" }
 
 Es funktioniert, aber es ist nicht das beste Beispiel. Zum einen hat die Instanz keinen Namen. Um einen hinzuzufügen, können Sie der EC2-Instanz ein Tag hinzufügen:
 
@@ -370,7 +370,7 @@ Plan: 2 to add, 0 to change, 1 to destroy.
 
 In der Ausgabe bedeutet "forces replacement" bei dem Part User_data, dass die EC2 Instanz ersetzt wird. So wie das Ganze aktuell konfiguriert ist würde jeder Benutzer des Webserver eine Downtime sehen.
 
-![terraform-tutorial-aws-5](../../img/terraform-tutorial-aws-5.png){: width="800px" }
+![terraform-tutorial-aws-5](../../img/terraform-tutorial-aws-5.webp){: width="800px" }
 
 Im Beschreibungsfenster am unteren Bildschirmrand sehen Sie auch die öffentliche IP-Adresse dieser EC2-Instanz. Geben wir der Instanz ein oder zwei Minuten Zeit, um zu booten und testen dann mit curl den Webserver.
 

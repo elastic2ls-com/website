@@ -7,7 +7,7 @@ categories: [Howtos]
 ---
 # {{ page.title }}
 
-![apache-logo](../../img/apache-logo-300x300.png)         
+![apache-logo](../../img/apache-logo-300x300.webp)         
 
 Wichtig um Apache ErrorDocument zu verwenden ist, dass die Angabe relativ zur DocumentRoot ist. D.h in unserem Fall wollen wir für die deutsche Sprachversion unserer Seite ein eigenes Fehlerdokument ausgeben. Konkret:
 

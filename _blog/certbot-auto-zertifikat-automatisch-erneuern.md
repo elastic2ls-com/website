@@ -7,7 +7,7 @@ categories: [Sicherheit]
 ---
 # {{ page.title }}
 
-![Letsencrypt](../../img/letsencrypt-card.png)
+![Letsencrypt](../../img/letsencrypt-card.webp)
 
 Autoupdate Letsencrypt Script: Die Zertifikatserneuerung gestalltet sich als recht einfach, wenn die Webserverconfiguration angepasst wurde um das Zertifikatssetup zu integrieren.
 

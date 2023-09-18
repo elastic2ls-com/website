@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![Jenkins Pipeline](../../img/jenkins-300x182.png)
+![Jenkins Pipeline](../../img/jenkins-300x182.webp)
 
 Beim benutzen der Deklarativen Pipline im Jenkins wird vor der Stage in er man das SCM auscheckt in den Workspace, im Jenkinswebinterface per default **Declarative: Checkout SCM** angezeigt.
 
@@ -22,7 +22,7 @@ Beim benutzen der Deklarativen Pipline im Jenkins wird vor der Stage in er man d
 ```
 Wenn man aber eine Stage mit dem Namen Checkout angelegt hat erscheint erscheint der Schritt doppelt.
 
-![Jenkins Pipeline](../../img/Jenkins-checkout.png)
+![Jenkins Pipeline](../../img/Jenkins-checkout.webp)
 
 Das kann man im Jenkinsfile recht einfach verhindern mittels **skipDefaultCheckout**.
 
@@ -31,4 +31,4 @@ Das kann man im Jenkinsfile recht einfach verhindern mittels **skipDefaultChecko
         skipDefaultCheckout(true)
     }
 ```
-Nun erscheint der Schritt im Jenkinswebinterface nicht mehr. ![Jenkins Pipeline](../../img/Jenkins-checkout2.png)
+Nun erscheint der Schritt im Jenkinswebinterface nicht mehr. ![Jenkins Pipeline](../../img/Jenkins-checkout2.webp)

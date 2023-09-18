@@ -13,21 +13,21 @@ Herunterladen könnt ihr euch das ISO auf der [Sourceforge Seite des Projektes](
 
 ## Hier ein paar Bilder vom Livemodus
 
-![OzonOS_8](../../img/OzonOS_8.png)
+![OzonOS_8](../../img/OzonOS_8.webp)
 
-![OzonOS_9](../../img/OzonOS_9.png)
+![OzonOS_9](../../img/OzonOS_9.webp)
 
-![OzonOS_5](../../img/OzonOS_5.png)  
+![OzonOS_5](../../img/OzonOS_5.webp)  
 
 ## Hier vom Installationsdialog  
 
-![OzonOS_1](../../img/OzonOS_1.png)
+![OzonOS_1](../../img/OzonOS_1.webp)
 
-![OzonOS_4](../../img/OzonOS_4.png)
+![OzonOS_4](../../img/OzonOS_4.webp)
 
-![OzonOS_3](../../img/OzonOS_3.png)
+![OzonOS_3](../../img/OzonOS_3.webp)
 
-![OzonOS_2](../../img/OzonOS_2.png)   
+![OzonOS_2](../../img/OzonOS_2.webp)   
 
 ## Fazit
 

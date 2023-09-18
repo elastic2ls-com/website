@@ -7,7 +7,7 @@ categories: [Howtos]
 ---
 # {{ page.title }}
 
-![docker](../../img/DockerLogo-300x150.png)
+![docker](../../img/DockerLogo-300x150.webp)
 
 
 Wir wollen hier mit **docker** einen Apache Webserver erstellen und konfigurieren. Dazu erstellen wir uns im Home Verzeichniss folgenden Struktur und anschliessend erstellen wir uns das Dockerfile.

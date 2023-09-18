@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![Jenkins Zeit einstellen](../../img/jenkins-300x182.png)
+![Jenkins Zeit einstellen](../../img/jenkins-300x182.webp)
 
 Falls die Builds im Jenkins die falsche Zeit anzeigen, kann man recht einfach die Jenkins Zeit einstellen. Man kann erzwingen, eine bestimmte Zeitzone für die Formatierung von Zeitstempeln zu verwenden. Es muss dazu lediglich die Servlet-Engine mit der folgenden Java-Systemeigenschaft gestarten werden
 

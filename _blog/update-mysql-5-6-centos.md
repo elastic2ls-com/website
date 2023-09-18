@@ -7,7 +7,7 @@ categories: [Howtos]
 ---
 # {{ page.title }}
 
-![MySQL](../../img/MySQL_logo_small.png)
+![MySQL](../../img/MySQL_logo_small.webp)
 
 ### Installieren des MySQL Community Repositories
 

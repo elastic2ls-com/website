@@ -5,4 +5,4 @@ categories: [LinuxInside]
 ---
 ## Everything related to Linux Insides
 
-![devops](../../img/linuxinside.png)
+![devops](../../img/linuxinside.webp)
