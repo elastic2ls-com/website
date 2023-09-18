@@ -6,7 +6,9 @@ keywords: [git gitops argocd circleCI AWS EKS]
 categories: [DevOps]
 ---
 
-# Gitops-Tutorial
+# Gitops Tutorial
+
+![ArgoCd](../../img/argocd-200x200.png)
 
 Ich möchte euch hier in einem kompakten Tutorial einmal die Möglichkeiten aufzeigen, wie man den GitOps Ansatz mit ArgoCD umsetzen kann. Dazu werden wir folgende 
 Plattformen und Services sowie Tools einsetzen,
