@@ -1,3 +1,11 @@
+---
+layout: post
+title: Gitops Tutorial mit ArgoCD
+subtitle: Ich möchte euch hier in einem kompakten Tutorial einmal die Möglichkeiten aufzeigen, wie man den GitOps Ansatz mit ArgoCD umsetzen kann.
+keywords: [git gitops argocd circleCI AWS EKS]
+categories: [DevOps]
+---
+
 # Gitops-Tutorial
 
 Ich möchte euch hier in einem kompakten Tutorial einmal die Möglichkeiten aufzeigen, wie man den GitOps Ansatz mit ArgoCD umsetzen kann. Dazu werden wir folgende 

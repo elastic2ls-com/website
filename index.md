@@ -172,8 +172,8 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### GitOps Tutorial
-[![Docker](../img/argocd-300x300.png)](/blog/gitops-tutorial/)
+#### GitOps Tutorial mit ArgoCD
+[![Docker](../img/argocd-200x200.png)](/blog/gitops-tutorial/)
 </div>
 </div>
 
