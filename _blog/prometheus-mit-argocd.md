@@ -7,10 +7,12 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
+![](../../mg/argocd-200x200.png)
+
 In diesem Blogbeitrag richten wir Argo CD auf einem Kubernetes-Cluster ein. Wir installieren ArgoCD mit Helm, erstellen eine Anwendung zur Verwendung des App-of-Apps Ansatzes, 
 richten Argo CD so ein, dass es sich selbst aktualisieren kann, und installieren Prometheus über Argo CD als Beispiel.
 
-![prometheus-argocd](../img/1-argo-app-details.png)
+![prometheus-argocd](../../img/1-argo-app-details.png)
 
 ## 1. Was ist Argo CD?
 Argo CD ist ein GitOps Tool zur automatischen Synchronisierung des Clusters mit dem gewünschten Status, der in einem Git-Repository definiert ist. 
@@ -132,7 +134,7 @@ $ kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" 
 
 So sieht ArgoCD nach dem ersen Login aus.
 
-![argo-new-install](../img/2-argo-new-install.png)
+![argo-new-install](../../img/2-argo-new-install.png)
 
 Man könnte jetzt ArgoCD über diese Oberfläche einrichten und Apps hinzufügen, aber wir wollen das Codeseitig lösen,
 daher beschreiben wir diese in den Applikations Manifesten in Yaml und pushen sie in unser Git Repository.
@@ -206,7 +208,7 @@ $ helm template apps/ | kubectl apply -f -
 
 In der Weboberfläche kann man nun unsere Root-Applikation sehen.
 
-![argo-root-app-created](../img/3-argo-root-app-created.png)
+![argo-root-app-created](../../img/3-argo-root-app-created.png)
 
 ## 5. Argo CD sich selbst verwalten lassen
 
@@ -255,7 +257,7 @@ $ git push
 In der Weboberfläche sollten wir nun ArgoCD als Applikation sehen. Falls die Anwendung nicht sofort angezeigt wird, klicken Sie auf die Schaltfläche "Aktualisieren" in der Stammanwendung. 
 Standardmäßig wird alle 3 Minuten nach Änderungen im Git-Repository gesucht.
 
-![argo-app-created.](../img/4-argo-app-created.png)
+![argo-app-created.](../../img/4-argo-app-created.png)
 
 Sobald die ArgoCD Anwendung synchronisiert ist, kann sie sich selbst verwalten und wir können die zuvor manuell installierte Installation löschen. 
 Der folgende Befehl löscht Argo CD nicht aus dem Cluster, sondern lässt Helm nur wissen, dass es Argo CD nicht mehr verwaltet:
@@ -315,7 +317,7 @@ $ git push
 
 Nun sollte in der Weboberfläche Prometheus auftauchen.
 
-![prometheus](../img/5-prometheus.png)
+![prometheus](../../img/5-prometheus.png)
 
 ## 7. Prometheus wieder deinstallieren
 
