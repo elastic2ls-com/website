@@ -195,8 +195,8 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### openTF Manifest
-[![opentf-manifest](../img/opentf.webp)](/blog/opentf-manifest/)
+#### ArgoCD Gitops mit Prometheis
+[![ArgoCD](../img/argocd-200x200.webp)](/blog/prometheus-mit-argocd/)
 </div>
 </div>
 
