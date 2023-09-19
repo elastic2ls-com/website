@@ -57,7 +57,7 @@ aber zum Testen sind die Konfigurationen ausreichend.
 *[~/]$ git clone https://github.com/AlexanderWiechert/gitops-tutorial-terraform.git
 *[~/]$ cd gitops-tutorial-terraform
 *[main][~/gitops-tutorial-terraform]$
-*[main][~/gitops-tutorial-terraform]$ tree -L 2                                                                                                                                                                                                                                        rbenv:system 
+*[main][~/gitops-tutorial-terraform]$ tree -L 2
 .
 ├── backend.tfvars
 ├── main.tf
@@ -151,10 +151,10 @@ Added new context arn:aws:eks:eu-central-1:accountnumber:cluster/gitops-tutorial
 Da wir nun die passende Konfiguration heruntergeladen haben können wir den Zugriff testen.
 
 ```bash
-*[main][~/gitops-tutorial-terraform]$ kubectl get pods                                                                                              rbenv:system 
+*[main][~/gitops-tutorial-terraform]$ kubectl get pods
 No resources found in default namespace.
 
-*[main][~/gitops-tutorial-terraform]$ kubectl get pods -n=kube-system                                                                               rbenv:system 
+*[main][~/gitops-tutorial-terraform]$ kubectl get pods -n=kube-system
 NAME                       READY   STATUS    RESTARTS   AGE
 aws-node-6sk4q             1/1     Running   0          72m
 aws-node-fndgl             1/1     Running   0          72m
@@ -163,7 +163,7 @@ coredns-7bc655f56f-pnsvh   1/1     Running   0          78m
 kube-proxy-7z9p9           1/1     Running   0          72m
 kube-proxy-wcxhc           1/1     Running   0          72m
 
-*[main][~/gitops-tutorial-terraform]$ kubectl get nodes                                                                                             rbenv:system 
+*[main][~/gitops-tutorial-terraform]$ kubectl get nodes
 NAME                                          STATUS   ROLES    AGE   VERSION
 ip-10-0-3-206.eu-central-1.compute.internal   Ready    <none>   72m   v1.27.4-eks-8ccc7ba
 ip-10-0-4-26.eu-central-1.compute.internal    Ready    <none>   72m   v1.27.4-eks-8ccc7ba
