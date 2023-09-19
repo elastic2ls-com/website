@@ -32,7 +32,7 @@ Da ich das Tutorial auf meinem Mac umsetze installiere ich Terraform wie folgt:
 #### Installation Terraform
 ```bash
 [~]$brew install hashicorp/tap/terraform
-[~]$terraform -version                                                                                                                                                                               rbenv:system
+[~]$terraform -version                                                                                                                                                                               
 Terraform v1.5.7
 on darwin_arm64
 ```
@@ -41,9 +41,9 @@ on darwin_arm64
 ```bash
 [~]$ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 [~]$ sudo installer -pkg AWSCLIV2.pkg -target /
-[~]$ which aws                                                                                                                                                                                        rbenv:system
+[~]$ which aws                                                                                                                                                                                        
 /usr/local/bin/aws
-[~]$ aws --version                                                                                                                                                                                    rbenv:system
+[~]$ aws --version                                                                                                                                                                                    
 aws-cli/2.13.19 Python/3.11.5 Darwin/21.5.0 exe/x86_64 prompt/off
 ```
 
@@ -164,6 +164,7 @@ kube-proxy-7z9p9           1/1     Running   0          72m
 kube-proxy-wcxhc           1/1     Running   0          72m
 
 *[main][~/gitops-tutorial-terraform]$ kubectl get nodes
+
 NAME                                          STATUS   ROLES    AGE   VERSION
 ip-10-0-3-206.eu-central-1.compute.internal   Ready    <none>   72m   v1.27.4-eks-8ccc7ba
 ip-10-0-4-26.eu-central-1.compute.internal    Ready    <none>   72m   v1.27.4-eks-8ccc7ba
@@ -282,7 +283,7 @@ Dazu erstellen wir uns einen separaten Namespace und installieren das ArgoCD Man
 ```
 Nun können wir prüfen, ob die ArgoCD Resourcen erstellt wurden.
 ```bash 
-*[main][~/gitops-tutorial-kubernetes]$ kubectl get pods -n argocd                                                                                                                  rbenv:system
+*[main][~/gitops-tutorial-kubernetes]$ kubectl get pods -n argocd                                                                                                                  
 NAME                                                READY   STATUS    RESTARTS        AGE
 argocd-application-controller-0                     1/1     Running   0               2d21h
 argocd-applicationset-controller-787bfd9669-grnw2   1/1     Running   0               2d21h
@@ -321,15 +322,14 @@ type: Opaque
 
 Wie wir sehen, ist diese Base64 encoded. Um an das Passwort zu kommen decoden wir es uns.
 ```bash 
-*[main][~/gitops-tutorial-kubernetes]$ echo U0NEVkhIRTlaaVN0SEFXcg== | base64 --decode                                                               rbenv:system
+*[main][~/gitops-tutorial-kubernetes]$ echo U0NEVkhIRTlaaVN0SEFXcg== | base64 --decode
 SCDVHHE9ZiStHAWr
 ```
 
 Wir müssen nun noch ein Portforwarding ausführen, damit wir uns einlogen können.
 ```bash 
 *[main][~/gitops-tutorial-kubernetes]$ 
-kubectl port-forward svc/argocd-server 8080:443 -n argocd                                                                                                                                                                                       rbenv:system
-
+kubectl port-forward svc/argocd-server 8080:443 -n argocd                                                                                                                                                                                       
 Forwarding from 127.0.0.1:8080 -> 8080
 Forwarding from [::1]:8080 -> 8080
 ```
@@ -338,7 +338,7 @@ Forwarding from [::1]:8080 -> 8080
 
 ### Applikation installieren
 ```bash
-kubectl apply -f argo-manifest.yaml                                                                                                         rbenv:system
+kubectl apply -f argo-manifest.yaml                                                                                                        
 application.argoproj.io/gitops-tutorial created
 ```
 
