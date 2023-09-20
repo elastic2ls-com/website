@@ -65,8 +65,6 @@ argo-cd:
   dex:
     enabled: false
   server:
-    extraArgs:
-      - --insecure
     config:
       repositories: |
         - type: helm
@@ -81,9 +79,7 @@ Einen Überblick über die verfügbaren Optionen finden Sie in der [values.yaml]
 Für dieses Tutorial überschreiben wir die folgenden Werte:
 
 * Wir deaktivieren die dex Komponente, die für die Integration mit externen Authentifizierungsanbietern verwendet wird.
-* Wir starten den Server mit dem Parameter --insecure, um die Web-Benutzeroberfläche über http bereitzustellen (Im Tutorial ausschliesslich, dass wir einen lokalen k8s-Server ohne TLS-Setup verwenden)
 * Wir fügen das ArgoCD Helm-Repository zur Repository Liste hinzu.
-Das Passwort für den Admin-Benutzer lautet argocd.
 
 Bevor wir das Chart installieren, müssen wir eine Chart.lock Datei generieren.
 
