@@ -305,8 +305,11 @@ Im Vergleich zu unserem zuvor erstellten ArgoCD Manifest gibt es folgende Unters
 * Wir überschreiben die Standardwerte des Diagramms, um das _Pushgateway zu deaktivieren_.
 
 > Hinweis! Um den Fehler "The CustomResourceDefinition "prometheuses.monitoring.coreos.com" is invalid: metadata.annotations: Too long: must have at most 262144 bytes" zu umgehen waren einige Anpassungen notwendig.
-> helm.skipCrds = true 
+> 
+> helm.skipCrds = true +
+> 
 > helm.values = |-
+> 
 > syncPolicy.syncOptions = - Replace=true
 
 Um die Anwendung bereitzustellen, müssen wir nur noch das Manifest in unser Git-Repository pushen:
