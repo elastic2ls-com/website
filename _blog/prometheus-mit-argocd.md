@@ -179,7 +179,7 @@ spec:
   project: default
   source:
     path: apps/
-    repoURL: https://github.com/arthurk/argocd-example-install.git
+    repoURL: https://github.com/AlexanderWiechert/argocd-prometheus-example.git
     targetRevision: HEAD
   syncPolicy:
     automated:
@@ -234,7 +234,7 @@ spec:
   project: default
   source:
     path: charts/argo-cd
-    repoURL: https://github.com/arthurk/argocd-example-install.git
+    repoURL: https://github.com/AlexanderWiechert/argocd-prometheus-example.git
     targetRevision: HEAD
   syncPolicy:
     automated:
