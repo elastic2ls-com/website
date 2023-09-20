@@ -324,6 +324,8 @@ Nun sollte in der Weboberfläche Prometheus auftauchen.
 
 ![prometheus](../../img/5-prometheus.webp)
 
+![grafana](../../img/6-grafana.webp)
+
 ## 7. Kube-prometheus-stack wieder deinstallieren
 
 Um die Prometheus Applikation wieder zu deinstallieren, müssen wir lediglich die zuvor hinzugefügte kube-prometheus-stack.yaml Datei aus dem Git Repository 
