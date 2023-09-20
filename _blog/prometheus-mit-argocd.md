@@ -262,35 +262,36 @@ Der folgende Befehl löscht Argo CD nicht aus dem Cluster, sondern lässt Helm n
 $ kubectl delete secret -l owner=helm,name=argo-cd
 ```
 
-## 6. Prometheus installieren
+## 6. Kube-prometheus-stack installieren
 
-m zu demonstrieren, wie ein Helm-Diagramm mit Argo CD eingesetzt wird, fügen wir [Prometheus](https://prometheus.io/) zu unserem Cluster hinzu.
-Zuerst erstellen wir ein Anwendungsmanifest in apps/templates/prometheus.yaml, das das [Prometheus Community Chart ](https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus)verwendet.
+m zu demonstrieren, wie ein Helm-Diagramm mit Argo CD eingesetzt wird, fügen wir den Kube-prometheus-stack zu unserem Cluster hinzu.
+Zuerst erstellen wir ein Anwendungsmanifest in apps/templates/prometheus.yaml, das das [Prometheus Community Chart ](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)verwendet.
 
-`[apps/templates/prometheus.yaml](https://github.com/AlexanderWiechert/argocd-prometheus-example/blob/main/apps/templates/prometheus.yaml)`
+`[apps/templates/kube-prometheus-stack.yaml](https://github.com/AlexanderWiechert/argocd-prometheus-example/blob/main/apps/templates/kube-prometheus-stack.yaml)`
 
 ```yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometheus
+  name: kube-prometheus-stack
   namespace: default
   finalizers:
-  - resources-finalizer.argocd.argoproj.io
+    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: default
   project: default
   source:
-    chart: prometheus
-    helm:
-      values: |
-        pushgateway:
-          enabled: false
+    chart: kube-prometheus-stack
     repoURL: https://prometheus-community.github.io/helm-charts
-    targetRevision: 15.6.0
+    targetRevision: 44.3.0
+    helm:
+      skipCrds: true
+      values: |-
   syncPolicy:
+    syncOptions:
+      - Replace=true
     automated:
       prune: true
       selfHeal: true
@@ -303,11 +304,16 @@ Im Vergleich zu unserem zuvor erstellten ArgoCD Manifest gibt es folgende Unters
 * Die _repoURL_ wird auf das Helmchart-Repository der Prometheus-Community gesetzt.
 * Wir überschreiben die Standardwerte des Diagramms, um das _Pushgateway zu deaktivieren_.
 
+> Hinweis! Um den Fehler "The CustomResourceDefinition "prometheuses.monitoring.coreos.com" is invalid: metadata.annotations: Too long: must have at most 262144 bytes" zu umgehen waren einige Anpassungen notwendig.
+> helm.skipCrds = true 
+> helm.values = |-
+> syncPolicy.syncOptions = - Replace=true
+
 Um die Anwendung bereitzustellen, müssen wir nur noch das Manifest in unser Git-Repository pushen:
 
 ```bash
-$ git add apps/templates/prometheus.yaml
-$ git commit -m 'add prometheus'
+$ git add apps/templates/kube-prometheus-stack.yaml
+$ git commit -m 'add kube-prometheus-stack'
 $ git push
 ```
 
@@ -315,14 +321,14 @@ Nun sollte in der Weboberfläche Prometheus auftauchen.
 
 ![prometheus](../../img/5-prometheus.webp)
 
-## 7. Prometheus wieder deinstallieren
+## 7. Kube-prometheus-stack wieder deinstallieren
 
-Um die Prometheus Applikation wieder zu deinstallieren, müssen wir lediglich die zuvor hinzugefügte prometheus.yaml Datei aus dem Git Repository 
+Um die Prometheus Applikation wieder zu deinstallieren, müssen wir lediglich die zuvor hinzugefügte kube-prometheus-stack.yaml Datei aus dem Git Repository 
 löschen.
 
 ```bash
-$ git rm apps/templates/prometheus.yaml
-$ git commit -m 'remove prometheus'
+$ git rm apps/templates/kube-prometheus-stack.yaml
+$ git commit -m 'remove kube-prometheus-stack'
 $ git push
 ```
 
