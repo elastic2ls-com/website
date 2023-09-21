@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gitops Tutorial mit ArgoCD Teil 1
+title: Gitops Tutorial mit ArgoCD Teil 2
 subtitle: In diesem Tutorial will ich euch zeigen, wie man Prometheus mittels ArgoCD im Gitops Ansatz installieren und verwalten kann.
 keywords: [ArgoCD, Prometheus, Gitop, Helm, Kubernetes]
 categories: [DevOps]
