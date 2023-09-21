@@ -172,7 +172,7 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### GitOps Tutorial mit ArgoCD
+#### GitOps Tutorial mit ArgoCD Teil1
 [![ArgoCd](../img/argocd-200x200.png)](/blog/gitops-tutorial/)
 </div>
 </div>
@@ -195,8 +195,8 @@ ___
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes flexible">
-#### ArgoCD Gitops mit Prometheus
-[![ArgoCD](../img/argocd-200x200.png)](/blog/prometheus-mit-argocd/)
+#### GitOps Tutorial mit ArgoCD Teil2
+[![ArgoCD](../img/argocd-200x200.png)](/blog/gitops-tuorial-argocd-teil2/)
 </div>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ArgoCD Beispiel mit Prometheus
+title: Gitops Tutorial mit ArgoCD Teil 1
 subtitle: In diesem Tutorial will ich euch zeigen, wie man Prometheus mittels ArgoCD im Gitops Ansatz installieren und verwalten kann.
 keywords: [ArgoCD, Prometheus, Gitop, Helm, Kubernetes]
 categories: [DevOps]
@@ -9,19 +9,19 @@ categories: [DevOps]
 
 ![](../../mg/argocd-200x200.png)
 
-In diesem Blogbeitrag richten wir Argo CD auf einem Kubernetes-Cluster ein. Wir installieren ArgoCD mit Helm, erstellen eine Anwendung zur Verwendung des App-of-Apps Ansatzes, 
-richten Argo CD so ein, dass es sich selbst aktualisieren kann, und installieren Prometheus über Argo CD als Beispiel.
+In diesem Blogbeitrag richten wir ArgoCD auf einem Kubernetes-Cluster ein. Wir installieren ArgoCD mit Helm, erstellen eine Anwendung zur Verwendung des App-of-Apps Ansatzes, 
+richten ArgoCD so ein, dass es sich selbst aktualisieren kann, und installieren Prometheus über ArgoCD als Beispiel.
 
 ![prometheus-argocd](../../img/1-argo-app-details.webp)
 
 ## 1. Was ist Argo CD?
-Argo CD ist ein GitOps Tool zur automatischen Synchronisierung des Clusters mit dem gewünschten Status, der in einem Git-Repository definiert ist. 
-Jede Arbeitslast wird deklarativ über ein Ressourcenmanifest in einer YAML-Datei definiert. Argo CD prüft, ob der im Git-Repository definierte Status mit dem übereinstimmt, 
+ArgoCD ist ein GitOps Tool zur automatischen Synchronisierung des Clusters mit dem gewünschten Status, der in einem Git-Repository definiert ist. 
+Jede Arbeitslast wird deklarativ über ein Ressourcenmanifest in einer YAML-Datei definiert. ArgoCD prüft, ob der im Git-Repository definierte Status mit dem übereinstimmt, 
 was auf dem Cluster ausgeführt wird, und synchronisiert ihn, wenn Änderungen festgestellt wurden.
 
 Anstatt beispielsweise CLI-Befehle manuell auszuführen, um Kubernetes-Ressourcen mit `kubectl apply` oder zu aktualisieren `helm upgrade`, 
 würden wir eine YAML-Datei in unserem Git-Repository aktualisieren, die ein ApplicationManifest enthält. 
-Argo CD überprüft dieses Manifest regelmäßig auf Änderungen und synchronisiert die darin definierten Ressourcen automatisch mit denen, 
+ArgoCD überprüft dieses Manifest regelmäßig auf Änderungen und synchronisiert die darin definierten Ressourcen automatisch mit denen, 
 die in unserem Cluster ausgeführt werden.
 
 Eine Verbindung zum Cluster, entweder vom Laptop des Entwicklers oder von einem CI/CD-System, ist nicht mehr erforderlich, da Änderungen von einem Kubernetes-Operator, 
@@ -135,7 +135,7 @@ So sieht ArgoCD nach dem ersen Login aus.
 Man könnte jetzt ArgoCD über diese Oberfläche einrichten und Apps hinzufügen, aber wir wollen das Codeseitig lösen,
 daher beschreiben wir diese in den Applikations Manifesten in Yaml und pushen sie in unser Git Repository.
 
-Wenn wir nun beispielsweise [Prometheus](https://prometheus.io/) installieren wollten, würden wir ein passendes 
+Wenn wir nun beispielsweise eine Kube-prometheus-stackinstallieren wollten, würden wir ein passendes 
 Applikationsmanifest anlegen. Dort würden wir dann das zu verwendende Helm Chart hinterlegen, sowie die Werte, 
 welche wir anpassen wollen würden. Würden wir weiter so vorgehen, wie wir hier gestartet sind, müssten wir jede Applikation
 per `kubectl` manuell installieren. Das ist aber genau das, was wir nicht wollen.
@@ -161,7 +161,7 @@ name: root
 version: 1.0.0
 ```
 
-Wir erstellen nun das Manifest für unsere Stammanwendung in apps/templates/root.yaml. Dies ermöglicht uns, alle Aktualisierungen an der Stammanwendung selbst über Argo CD vorzunehmen.
+Wir erstellen nun das Manifest für unsere Stammanwendung in apps/templates/root.yaml. Dies ermöglicht uns, alle Aktualisierungen an der Stammanwendung selbst über ArgoCD vorzunehmen.
 
 `[apps/templates/root.yaml](https://github.com/AlexanderWiechert/argocd-prometheus-example/blob/main/apps/templates/root.yaml)`
 
@@ -190,7 +190,7 @@ spec:
 
 Die Applikation überwacht das Helm-Diagramm unter apps/ (unsere Root-Anwendung) und synchronisiert es, wenn Änderungen festgestellt wurden.
 
-> Hinweis: Argo CD wird nicht `helm install` verwenden, um Diagramme zu installieren. Es wird das Diagramm mit `helm template` rendern und dann die Ausgabe mit `kubectl` anwenden. Das bedeutet, dass wir helm list nicht auf einer lokalen Maschine ausführen können, um alle installierten Versionen zu erhalten.
+> Hinweis: ArgoCD wird nicht `helm install` verwenden, um Diagramme zu installieren. Es wird das Diagramm mit `helm template` rendern und dann die Ausgabe mit `kubectl` anwenden. Das bedeutet, dass wir helm list nicht auf einer lokalen Maschine ausführen können, um alle installierten Versionen zu erhalten.
 
 Um unsere Root-Anwendung bereitzustellen, müssen wir die Dateien in unser Git-Repository pushen und das Manifest anwenden:
 
@@ -206,12 +206,12 @@ In der Weboberfläche kann man nun unsere Root-Applikation sehen.
 
 ![argo-root-app-created](../../img/3-argo-root-app-created.webp)
 
-## 5. Argo CD sich selbst verwalten lassen
+## 5. ArgoCD sich selbst verwalten lassen
 
 Um das Ganze nun auf die Spitze zu treiben, können wir nun ArgoCD als Applikation sich selbst verwalten lassen. Bisher hatten wir ArgoCD mit Helm installiert. 
 Wenn wir nun Anpassungen an ArgoCd selbst vornehmen wollten, müssten wir Updates manuell durchführen.
 
-Um dies zu vermeiden, können wir eine Anwendungsressource für Argo CD erstellen und sie sich selbst verwalten lassen.
+Um dies zu vermeiden, können wir eine Anwendungsressource für ArgoCD erstellen und sie sich selbst verwalten lassen.
 Mit diesem Ansatz können alle Aktualisierungen an unserer Argo-CD-Bereitstellung durch die Änderung von Dateien in unserem Git-Repository vorgenommen werden, 
 anstatt manuelle Befehle auszuführen.
 
@@ -256,7 +256,7 @@ Standardmäßig wird alle 3 Minuten nach Änderungen im Git-Repository gesucht.
 ![argo-app-created.](../../img/4-argo-app-created.webp)
 
 Sobald die ArgoCD Anwendung synchronisiert ist, kann sie sich selbst verwalten und wir können die zuvor manuell installierte Installation löschen. 
-Der folgende Befehl löscht Argo CD nicht aus dem Cluster, sondern lässt Helm nur wissen, dass es Argo CD nicht mehr verwaltet:
+Der folgende Befehl löscht ArgoCD nicht aus dem Cluster, sondern lässt Helm nur wissen, dass es ArgoCD nicht mehr verwaltet:
 
 ```bash
 $ kubectl delete secret -l owner=helm,name=argo-cd
@@ -264,7 +264,7 @@ $ kubectl delete secret -l owner=helm,name=argo-cd
 
 ## 6. Kube-prometheus-stack installieren
 
-m zu demonstrieren, wie ein Helm-Diagramm mit Argo CD eingesetzt wird, fügen wir den Kube-prometheus-stack zu unserem Cluster hinzu.
+m zu demonstrieren, wie ein Helm-Diagramm mit ArgoCD eingesetzt wird, fügen wir den Kube-prometheus-stack zu unserem Cluster hinzu.
 Zuerst erstellen wir ein Anwendungsmanifest in apps/templates/prometheus.yaml, das das [Prometheus Community Chart ](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)verwendet.
 
 `[apps/templates/kube-prometheus-stack.yaml](https://github.com/AlexanderWiechert/argocd-prometheus-example/blob/main/apps/templates/kube-prometheus-stack.yaml)`
@@ -304,7 +304,7 @@ Im Vergleich zu unserem zuvor erstellten ArgoCD Manifest gibt es folgende Unters
 * Die _repoURL_ wird auf das Helmchart-Repository der Prometheus-Community gesetzt.
 * Wir überschreiben die Standardwerte des Diagramms, um das _Pushgateway zu deaktivieren_.
 
-> Hinweis! Um den Fehler "The CustomResourceDefinition "prometheuses.monitoring.coreos.com" is invalid: metadata.annotations: Too long: must have at most 262144 bytes" zu umgehen waren einige Anpassungen notwendig.
+> Hinweis! Um den Fehler ["The CustomResourceDefinition "prometheuses.monitoring.coreos.com" is invalid: metadata.annotations: Too long: must have at most 262144 bytes"](https://blog.ediri.io/kube-prometheus-stack-and-argocd-23-how-to-remove-a-workaround) zu umgehen waren einige Anpassungen notwendig.
 > 
 > helm.skipCrds = true +
 > 
@@ -342,8 +342,8 @@ Die Applikation wird beim nächsten Refresh vom Cluster entfernt werden.
 ## 8. Fazit
 
 
-In diesem Tutorial haben wir Argo CD mit Helm installiert und es so eingerichtet, dass es sich selbst verwalten kann. 
-Aktualisierungen von Argo CD können durch Modifikation des Manifests im Git-Repository durchgeführt werden und erfordern keinerlei manuelle Schritte.
+In diesem Tutorial haben wir ArgoCD mit Helm installiert und es so eingerichtet, dass es sich selbst verwalten kann. 
+Aktualisierungen von ArgoCD können durch Modifikation des Manifests im Git-Repository durchgeführt werden und erfordern keinerlei manuelle Schritte.
 
 Wir haben eine Root-Anwendung erstellt, die das [App-of-Apps Pattern](https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/#app-of-apps) verwendet, um unsere Anwendungen auf deklarative Weise zu verwalten.
 
