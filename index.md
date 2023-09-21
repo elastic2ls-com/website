@@ -70,24 +70,6 @@ Als AWS Consulting Partner unterstützen wir Sie bei der Planung, Umsetzung und 
 </div>
 <!--- GRID CONTENT PORTFOLIO  -->
 
-
-<!-- GRID CONTENT ABOUT -->
-<div class="grid-content-about">
-## Über uns
-___
-
-
-
-<p class="description">
-Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
-<p class="description">
-Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
-
-
-
-</div>
-<!-- GRID CONTENT ABOUT -->
-
 <!-- GRID CONTENT NEWS-->
 <div class="grid-content-news">
 ## News
@@ -148,6 +130,23 @@ ___
 
 </div>
 <!-- GRID CONTENT NEWS2-->
+
+<!-- GRID CONTENT ABOUT -->
+<div class="grid-content-about">
+## Über uns
+___
+
+
+
+<p class="description">
+Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
+<p class="description">
+Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
+
+
+
+</div>
+<!-- GRID CONTENT ABOUT -->
 
 <!-- GRID CONTENT KONTAKT-->
 <div class="grid-content-contact">
