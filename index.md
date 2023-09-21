@@ -38,20 +38,6 @@ Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden
 </div>
 <!--- - GRID CONTENT APPROACH    -->
 
-<!-- - GRID CONTENT SOLUTIONS  -->
-<hr>
-<div class="col-sm-12 col-md-6">
-### “Wo fange ich mit meiner DevOps-Adoption an?”
-
-### “Wie starte ich mit der Migration in die Cloud?”
-</div>
-<div class="col-sm-12 col-md-6">
-Zwei zentrale Fragen, bei denen wir Sie unterstützen können.
-
-![Cloud Migration](/img/cloud-migration.webp)
-
-</div>
-<!-- - GRID CONTENT SOLUTIONS  -->
 
 <!--- GRID CONTENT PORTFOLIO  -->
 <div class="grid-content-portfolio">
@@ -60,38 +46,15 @@ ___
 
 <div class="col-sm-12 col-md-6">
 <div class="boxes flexible portfoliobox">
-#### [Cloud Migration]
-![Engineering Consulting Services](/img/icons8-zur-cloud-hochladen-48.webp)
+#### [CI/CD]
+![CI/CD](/img/icons8-continuous-integration-48.webp)
 
-Eine gute Planung kann die Cloud-Einführung erleichtern und den Weg zum zukünftigen Erfolg ebnen. Ein Wechsel in die Cloud kann Ihnen dabei helfen, neue Geschäftsvorteile zu erzielen.
+Mit welchem Tool, Ansatz Sie auch immer Continuous Delivery / Continuous Integration umsetzen, wir können Sie mit unserer Expertise in diesem Bereich unterstützen.
 
-Elastic2ls arbeitet mit Ihnen zusammen, um die beste Migrationsstrategie für Ihr Unternehmen zu definieren.
+Durch langjährige Erfahrung in diesem Bereich können wir Ihre Entwickler unterstützen, damit sich diese auf das wesentliche konzentrieren können, gut Software zu programmieren.
 </div>
 </div>
 
-<div class="col-sm-12 col-md-6">
-<div class="boxes flexible portfoliobox">
-#### [Jenkins CI/CD]
-![Jenkins CI/CD](/img/icons8-jenkins-48.webp)
-
-Jenkins ist ein Open Source Automatisierungsserver, der es Entwicklern auf der ganzen Welt ermöglicht, ihre Software zuverlässig zu erstellen, zu testen und einzusetzen.
-
-Er ist einfach zu konfigurieren und dank seiner Plug-in-Architektur sehr flexibel an eigene Bedürfnisse anpassbar.
-</div>
-</div>
-
-<div class="col-sm-12 col-md-6">
-<div class="boxes flexible portfoliobox">
-#### [Elastic Stack]
-![Elastic Stack](/img/icons8-eigenschaft-suchen-48.webp)
-
-Elasticsearch ist eine Suchmaschine auf Basis von Lucene. Diese ermöglicht das schnelle Durchsuchen großer Datenmengen, in einer verteilten Umgebung.
-
-Wir unterstützen Sie gerne bei der Planung, Umsetzung und dem Betrieb von Elasticsearch.
-
-
-</div>
-</div>
 
 <div class="col-sm-12 col-md-6">
 <div class="boxes flexible portfoliobox">
@@ -107,31 +70,6 @@ Als AWS Consulting Partner unterstützen wir Sie bei der Planung, Umsetzung und 
 </div>
 <!--- GRID CONTENT PORTFOLIO  -->
 
-<!-- GRID CONTENT Training-->
-<div class="grid-content-training">
-## Trainings
-___
-
-Eine DevOps-Transformation wird Ihre Teams ermutigen, miteinander zu arbeiten und neue Fähigkeiten in die Tat umzusetzen. Dies erhöht die Flexibilität ihrer Arbeitsabläufe und motivert ihre Teams. Schlussendlich investieren Sie hiermit in die Zukunft Ihres Unternehmens. Hier finden Sie ein aktuelle Übersicht über die von uns angeboteten Trainings.
-
-<!-- Docker Training -->
-<div class="training-inner">
-#### Docker Training
-![Docker Hands-on Workshops](/img/Docker_Logo-500x250.webp)
-[Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Docker Training){: .btn .btn-primary .details_training_docker}
-</div>
-<!-- Docker Training -->
-
-<!-- Jenkins Training -->
-<div class="training-inner">
-#### Jenkins Training
-![Jenkins Hands-on Workshops](/img/Jenkins_Logo-500x250.webp)
-[Details anfragen](mailto:buchung@elastic2ls.com?subject=Anfrage Jenkins Training){: .btn .btn-primary .details_training_jenkins}
-</div>
-<!-- Jenkins Training -->
-
-</div>
-<!-- GRID CONTENT Training-->
 
 <!-- GRID CONTENT ABOUT -->
 <div class="grid-content-about">
