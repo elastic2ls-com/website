@@ -92,7 +92,7 @@ exclude:
   - Vagrantfile
 
 plugins:
-  - jekyll-minifier
+#  - jekyll-minifier
   - jekyll-feed
   - jekyll-readme-index
 

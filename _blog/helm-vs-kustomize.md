@@ -35,11 +35,12 @@ Eine Templatedatei hat die Struktur einer YAML-Datei, enthält aber zusätzlich 
 
 So sieht der Inhalt einer typischen deployment.yaml aus:
 
+{% raw %}
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.appname }}
+  name: {{ .Values.ArgoCD  }}
   labels:
     app: {{ .Values.appname }}
 spec:
@@ -58,6 +59,7 @@ spec:
         ports:
         - containerPort: {{ .Values.service.targetPort }}
 ```
+{% endraw %}
 
 Im obigen Beispiel sucht Helm in der Datei values.yaml nach den Werten der Testvariablen. 
 Die entsprechende values.yaml-Datei enthält die Variablendefinition:

@@ -111,7 +111,7 @@ cd nginx-chart
 ```
 
 ### Chart.yaml
-Als erstes passen wir die Cart.yaml Datei unseren Bedürfnissen an.
+Als erstes passen wir die Chart.yaml Datei unseren Bedürfnissen an.
 
 ```
 apiVersion: v2
@@ -178,10 +178,11 @@ spec:
 Was hier problematisch ist und dem Ansatz des Templatings widerspricht, sind die statischen Werte in der Datei. Eigentlich wollen wir ja eine Vorlage erstellen, die wir je nach Umgebung mit anderen Werten wieder verwenden wollen.
 Um einen Wert als Vorlage zu erstellen, müssen wir lediglich den Objektparameter in geschweifte Klammern einfügen, wie unten gezeigt. Es wird als Template-Direktive bezeichnet und die Syntax ist spezifisch für Go Templates.
 
+{% raw %}
 ```
 {{ .Object.Parameter }}
 ```
-
+{% endraw %}
 Lassen Sie uns zunächst verstehen, was ein Objekt ist. Im Folgenden sind die drei Objekte aufgeführt, die wir in diesem Beispiel verwenden werden.
 
 * Release: Every helm chart will be deployed with a release name. If you want to use the release name or access release-related dynamic values inside the template, you can use the release object.
@@ -198,14 +199,18 @@ Weitere Informationen zu unterstützten Objekten finden wir hier: [Helm Builtin 
 
 Zunächst müssen wir uns Gedanken machen, welche Werte wir dynamisch ändern könnten oder was wir als Template verwenden möchten. 
 
+{% raw %}
 * name: {{ .Release.Name }}-nginx : Wir müssen den Namen des Deployments anpassen, da Helm uns nicht erlaubt, Releases mit demselben Namen zu installieren. Wenn wir nun ein Release mit dem Namen frontend erstellen, 
   lautet der Namen des Deployments frontend-nginx. Auf diese Weise haben wir einen eindeutigen Namen.
 * container name : {{ .Chart.Name }}Als Containernamen verwenden wir das Chart-Objekt und den Namen des Charts aus chart.yaml.
 * replicas: {{ .Values.replicaCount }} Wir holen uns den Wert aus der Datei „values.yaml“.
 * image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}" Hier verwenden wir mehrere Vorlagenanweisungen in einer einzigen Zeile und greifen auf das Repository und die Tag-Informationen 
  in der values.yaml über den Key image: zu.
+{% endraw %}
 
-Hier ist unsere endgültige deployment.yaml Datei nach dem Anwenden des Templates. 
+Hier ist unsere endgültige deployment.yaml Datei nach dem Anwenden des Templates.
+
+{% raw %}
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -232,11 +237,13 @@ ports:
 containerPort: 80
 protocol: TCP
 ```
+{% endraw %}
 
 #### service.yaml
 
 Als Nächstes erstellen wir uns die service.yaml Datei mit folgenden Inhalt.
 
+{% raw %}
 ```
 apiVersion: v1
 kind: Service
@@ -251,6 +258,7 @@ ports:
 port: {{ .Values.service.port }}
 targetPort: {{ .Values.service.targetPort }}
 ```
+{% endraw %}
 
 Hier gibt es etwas Besonders. Wir verwenden hier eine Pipe ( | ). Diese wird verwendet, um den Standardwert des Protokolls als TCP festzulegen, falls dieser nicht explizit in der values.yaml mit einem anderen Wert 
 überschrieben wird.
@@ -259,6 +267,7 @@ Hier gibt es etwas Besonders. Wir verwenden hier eine Pipe ( | ). Diese wird ver
 Wir erstellen eine configmap.yaml Datei mit fügen folgendem Inhalt. Hier ersetzen wir die Standardseite index.html von Nginx durch eine benutzerdefinierte HTML-Seite. 
 Außerdem nutzen wir im Template den Wert aus der values.yaml um das Enviroment, in das deployt wurde anzuzeigen. 
 
+{% raw %}
 ```
 apiVersion: v1
 kind: ConfigMap
@@ -273,10 +282,12 @@ index.html: |
 <h1>Hi! I got deployed in {{ .Values.env.name }} Environment using Helm Chart </h1>
 </html
 ```
+{% endraw %}
 
 #### values.yaml
 Unsere angepasste values.yaml Datei enthält alle Werte, die in den Templates ersetzt werden müssen . Beispielsweise enthält die deployment.yaml Datei eine Anweisung, um u.a. den Namen des Container-Images und den Tag dynamisch zu ersetzen.
 
+{% raw %}
 ```
 replicaCount: 2
 
@@ -294,6 +305,7 @@ service:
 env:
  name: dev
 ```
+{% endraw %}
 
 Jetzt haben wir unser Nginx Helm-Chart fertig und die endgültige Struktur sieht wie folgt aus.
 
@@ -453,7 +465,7 @@ Um dies zu beheben, müssen wir den Helm-Befehl in dem Verzeichnis ausführen, i
 Im Folgenden sind einige der Best Practices aufgeführt, die bei der Entwicklung eines eigenen Charts befolgt werden sollten.
 
 * Dokumentiere dein Chart.
-* DieKubernetes-Manifestdateien sollten nach der Art des verwendeten Typs benannt werden. z.B. deployment.yaml, service.yaml
+* Die Kubernetes-Manifestdateien sollten nach der Art des verwendeten Typs benannt werden. z.B. deployment.yaml, service.yaml
 * Der Name des charts sollte ausschliesslich klein geschrieben sein. Enthält er mehr als ein Wort, sollten diese durch Bindestriche (-) getrennt werden.
 * In der Datei „values.yaml“ sollte die Keys ausschliesslich in Kleinbuchstaben angegeben werden.
 * String immer in Anführungszeichen einschliessen, auch wenn es theoretisch nicht notwendig ist.
