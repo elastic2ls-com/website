@@ -216,4 +216,4 @@ private-repo/foo	0.1.0        	1.16.0     	A Helm chart for Kubernetes
 
 Wie wir sehen können, wurde das Chart erfolgreich zur Registry hinzugefügt. Es kann nun wie jedes andere Chart verwendet werden, indem es beispielsweise mit dem Befehl `helm install private-repo/foo --version 0.1.0` installiert wird.
 
-Der Quellcode für alle Beispiele ist in diesem GitHub-Repo verfügbar .
+Der Quellcode für alle Beispiele ist in diesem [GitHub-Repo](https://github.com/AlexanderWiechert/private-gcs-helm) verfügbar.
