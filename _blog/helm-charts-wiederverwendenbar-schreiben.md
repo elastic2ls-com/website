@@ -2,7 +2,7 @@
 layout: post
 title: Schreiben wiederverwendbarer Helm-charts
 subtitle: Um ein Helm-Diagramm projektübergreifend mit unterschiedlichen Anforderungen verwenden zu können, muss es wiederverwendbar sein. 
-keywords: [Helm Chart weiderverwendbar]
+keywords: [Helm Chart wiederverwendbar]
 categories: [DevOps]
 ---
 # {{ page.title }}
