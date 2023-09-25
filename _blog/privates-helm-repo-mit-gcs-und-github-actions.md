@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Helm-Charts mit Helmfile verwalten
-subtitle: In diesem Beitrag werden wir schauen, wie man ein privates Helm-Diagramm-Repository auf Google Cloud Storage (GCS) eingerichtet und GitHub-Aktionen verwendet werden können, um Charts bei neuen Commits automatisch zu pushen.
+title: Privates Helm-Chart-Repository auf Google Cloud Storage
+subtitle: In diesem Beitrag werden wir schauen, wie man ein privates Helm-Chart-Repository auf Google Cloud Storage (GCS) eingerichtet und GitHub-Aktionen verwendet werden können, um Charts bei neuen Commits automatisch zu pushen.
 
-keywords: [Helm Chart Helmfile]
+keywords: [Helm Chart GCS private]
 categories: [DevOps]
 ---
 
@@ -11,7 +11,7 @@ categories: [DevOps]
 
 ![Helm](../../img/HELM-logox130.webp)
 
-In diesem Beitrag werden wir schauen, wie man ein privates Helm-Diagramm-Repository auf Google Cloud Storage (GCS) eingerichtet und GitHub-Aktionen verwendet werden können, um Charts bei neuen Commits automatisch zu pushen.
+In diesem Beitrag werden wir schauen, wie man ein privates Helm-Chart-Repository auf Google Cloud Storage (GCS) eingerichtet und GitHub-Aktionen verwendet werden können, um Charts bei neuen Commits automatisch zu pushen.
 
 ## Einrichten des GCS-Buckets
 Der erste Schritt besteht darin, einen GCS-Bucket zu erstellen, der als Storage für unsere Charts dient. Wir können dies über die CLI mit dem gcloud-sdk oder über die Web-Benutzeroberfläche tun. Wir werden die CLI für die folgenden Beispiele verwenden.
@@ -151,7 +151,7 @@ Vor dem commiten der Datei diese noch ausführbar machen mit: `chmod u+x scripts
 Im letzten Schritt unseres CI-Skripts müssen wir identifizieren, welche Charts sich geändert haben, und sie dann packen und in das Helm-Repository pushen. Wir tun dies, indem wir `git diff` auf der vorherigen Revision mit den folgenden Argumenten ausführen:
 
 * `--find-renames` Erkennen Sie, ob eine Datei umbenannt wurde
-* `--diff-filter=d` ignoriert gelöschte Dateien (wir können ein gelöschtes Diagramm nicht packen/pushen)
+* `--diff-filter=d` ignoriert gelöschte Dateien (wir können ein gelöschtes Chart nicht packen/pushen)
 * `--name-only` Gibt nur den Namen der geänderten Datei aus
 * `cut -d '/' -f 2 | uniq` Wir benötigen nur eindeutige Verzeichnisnamen von Dateien, die sich geändert haben
 
