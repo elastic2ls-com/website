@@ -7,10 +7,6 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-
-
-#Privates Helm-Chart-Repository auf Google Cloud Storage
-
 ![Helm](../../img/HELM-logox130.webp)
 
 In diesem Beitrag werden wir schauen, wie man ein privates Helm-Chart-Repository auf Google Cloud Storage (GCS) eingerichtet und GitHub-Aktionen verwendet werden können, um Charts bei neuen Commits automatisch zu pushen.
