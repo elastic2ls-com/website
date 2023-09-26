@@ -7,7 +7,7 @@ categories: [DevOps]
 ---
 # {{ page.title }}
 
-![](../../img/argocd-200x200.webp)
+![](../../img/argocd-200x200.png)
 
 In diesem Tutorial will ich euch zeigen, wie man Argo Workflow in einem lokalen Kubernetes Cluster installiert und ein paar Beispiel Workflows ausführen kann.
 Argo Workflows ist eine Workflow-Engine zum Erstellen, Verwalten und Orchestrieren paralleler Jobs in Kubernetes. Diese Workflows sind als Kubernetes CustomResourceDefinitions(CRDs) implementiert und 
