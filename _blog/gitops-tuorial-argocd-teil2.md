@@ -31,8 +31,34 @@ der im Cluster ausgeführt wird, aus dem Git-Repository abgerufen werden.
 Um diesem Tutorial folgen zu können, benötigen wir Folgendes.
 
 > kubectl
+> 
+> Docker/Rancher-Desktop
+> 
+> kind - um einen lokalen Cluster zu erstellen
+> 
 > Helm
+> 
 > ein öffentliches GitHub Repository
+
+
+#### Lokalen Cluster aufsetzen
+Als Erstes benötigen wir einen lokalen Kubernetes Cluster. Wir werden hier Kind nutzen.
+
+Auf dem Mac installieren wir Kind mit `brew`
+```bash
+brew install kind
+```
+
+Und erstellen eine Cluster. Wir nennen ihn `argo-workflows`.
+```bash
+kind create cluster --name argo-gitops-teil1
+```
+
+Um mit dem CLuster zu interagieren setzen wir den Context.
+
+```bash
+kubectl cluster-info --context kind-argo-gitops-teil1
+```
 
 ## 2. Erstellen eines Umbrella-Helm-Diagramms
 Wir verwenden Helm, um das ArgoCD Chart [argoproj/argo-helm](https://github.com/argoproj/argo-helm/tree/master/charts/argo-cd) zu installieren. 
@@ -111,6 +137,20 @@ Dazu installieren wir das Char manuell per Helm CLI
 $ helm install argo-cd charts/argo-cd/
 ```
 
+und warten, bis alles Pods gestartet wurden.
+```bash
+kubectl get pods --watch               rbenv:system
+NAME                                                       READY   STATUS    RESTARTS   AGE
+argo-cd-argocd-application-controller-0                    0/1     Running   0          8s
+argo-cd-argocd-applicationset-controller-7c79d6866-nfv2j   1/1     Running   0          8s
+argo-cd-argocd-notifications-controller-f87959dcb-4lrkb    1/1     Running   0          8s
+argo-cd-argocd-redis-7bc4c98894-vbch9                      1/1     Running   0          8s
+argo-cd-argocd-repo-server-77d5b68b5b-5bhdb                0/1     Running   0          8s
+argo-cd-argocd-server-696cbbcd7f-24q4q                     0/1     Running   0          8s
+argo-cd-argocd-repo-server-77d5b68b5b-5bhdb                1/1     Running   0          20s
+```
+
+
 ## 4. Login in die Web UI
 
 Da das ArgoCD Helm Chart per se keine Ingress definiert hat, müssen wir uns den Zugang per Port-Forwarding
@@ -128,7 +168,7 @@ Der default Benutzer is admin. Das Password ist automatisch generated und wir er
 $ kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
 
-So sieht ArgoCD nach dem ersen Login aus.
+So sieht ArgoCD nach dem ersten Login aus.
 
 ![argo-new-install](../../img/2-argo-new-install.webp)
 
