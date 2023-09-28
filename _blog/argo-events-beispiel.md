@@ -42,7 +42,7 @@ Eine Ereignisquelle veröffentlicht Ereignisse, und ein Sensor abonniert sie, um
 * Slack Notifications
 * HTTP Requests
 
-![](../../img/1-Argo-Events-Architecture.png)
+![Argo-Events-Architecture](../../img/1-Argo-Events-Architecture.webp)
 
 ## Voraussetzungen
 Für dieses Tutorial benötigen wir folgendes:
