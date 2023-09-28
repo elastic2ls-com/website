@@ -249,13 +249,16 @@ Das sieht dann so aus:
 ```bash
 kubectl get pods                                                                                                                                                                                 
 NAME                                         READY   STATUS             RESTARTS      AGE
-controller-manager-7d9ffb8f-6flq2            1/1     Running            0             20m
-eventbus-default-stan-0                      2/2     Running            0             19m
-eventbus-default-stan-1                      2/2     Running            0             19m
-eventbus-default-stan-2                      2/2     Running            0             19m
-webhook-eventsource-n9pkr-7cf79c874c-c2k5n   1/1     Running            0             16m
-webhook-sensor-b52j2-5c648f6cf5-bhgsb        1/1     Running            0             15m
-workload-tzmml                               0/1     Completed          0             30s
+argo-workflows-server-54cf69897f-hlklw                1/1     Running           0             87s
+argo-workflows-workflow-controller-7c86454b49-6h4hj   1/1     Running           0             87s
+controller-manager-7d9ffb8f-bb4bk                     1/1     Running           0             54m
+eventbus-default-stan-0                               2/2     Running           0             53m
+eventbus-default-stan-1                               2/2     Running           0             53m
+eventbus-default-stan-2                               2/2     Running           0             53m
+events-webhook-568c8c8989-pk86j                       1/1     Running           0             53m
+webhook-eventsource-n8r5p-7cf79c874c-sfkqj            1/1     Running           1 (52m ago)   52m
+webhook-l792s                                         0/2     PodInitializing   0             34s
+webhook-sensor-wcr5r-5c648f6cf5-9zdwj                 1/1     Running           0             42m
 ```
 
 Wenn Sie die POST-Anfrage ein zweites Mal senden, sollte ein zweiter Workload-Pod erstellt werden:
@@ -264,4 +267,104 @@ Wenn Sie die POST-Anfrage ein zweites Mal senden, sollte ein zweiter Workload-Po
 curl -d '{"message":"Das ist eine 2. Testnachricht an ARGO-Events!!"}' -H "Content-Type: application/json" -X POST http://localhost:12000/app
 ```
 
+Dann sehen wir, dass ein zweiter Pod gestartet wurde.
+
+```bash
+kubectl get pods
+NAME                                                  READY   STATUS      RESTARTS      AGE
+argo-workflows-server-54cf69897f-hlklw                1/1     Running     0             2m9s
+argo-workflows-workflow-controller-7c86454b49-6h4hj   1/1     Running     0             2m9s
+controller-manager-7d9ffb8f-bb4bk                     1/1     Running     0             54m
+eventbus-default-stan-0                               2/2     Running     0             54m
+eventbus-default-stan-1                               2/2     Running     0             53m
+eventbus-default-stan-2                               2/2     Running     0             53m
+events-webhook-568c8c8989-pk86j                       1/1     Running     0             54m
+webhook-eventsource-n8r5p-7cf79c874c-sfkqj            1/1     Running     1 (53m ago)   53m
+webhook-j4nqf                                         2/2     Running     0             5s
+webhook-l792s                                         0/2     Completed   0             76s
+webhook-sensor-wcr5r-5c648f6cf5-9zdwj                 1/1     Running     0             43m
+```
+
+Schauen wir uns das Log des Webhook-sensor Pods an sehen wir, dass die Nachricht erfolgreich verarbeitet wurde.
+
+```bash
+kubectl logs webhook-sensor-wcr5r-5c648f6cf5-9zdwj -f
+
+
+{"level":"info","ts":1695910634.9379156,"logger":"argo-events.sensor","caller":"standard-k8s/standard-k8s.go:158","msg":"creating the object...","sensorName":"webhook","triggerName":"webhook-workflow-trigger","triggerType":"Kubernetes"}
+{"level":"info","ts":1695910634.9457114,"logger":"argo-events.sensor","caller":"sensors/listener.go:417","msg":"Successfully processed trigger 'webhook-workflow-trigger'","sensorName":"webhook","triggerName":"webhook-workflow-trigger","triggerType":"Kubernetes","triggeredBy":["test-dep"],"triggeredByEvents":["35363738323061622d646539632d343962392d613530622d326336663466373030303131"]}
+```
+
+Und wir können im Log des Webhook Pods, also der Pod, der die Nachricht letztendlich verarbeitet hat folgendes sehen.
+
+```bash
+kubectl logs webhook-j4nqf
+ __________________________________
+/ {"message":"Das ist eine 2.      \
+\ Testnachricht an ARGO-Events!!"} /
+ ----------------------------------
+    \
+     \
+      \
+                    ##        .
+              ## ## ##       ==
+           ## ## ## ##      ===
+       /""""""""""""""""___/ ===
+  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~
+       \______ o          __/
+        \    \        __/
+          \____\______/
+time="2023-09-28T14:16:14.581Z" level=info msg="sub-process exited" argo=true error="<nil>"
+```
+
+oder per `kubectl describe pod webhook-...`
+
+```bash
+    Args:
+      {"message":"Das ist eine 2. Testnachricht an ARGO-Events!!"}
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Thu, 28 Sep 2023 16:17:18 +0200
+      Finished:     Thu, 28 Sep 2023 16:17:19 +0200
+    Ready:          False
+    Restart Count:  0
+    Environment:
+      ARGO_CONTAINER_NAME:                main
+      ARGO_TEMPLATE:                      {"name":"whalesay","inputs":{"parameters":[{"name":"message","value":"{\"message\":\"Das ist eine 2. Testnachricht an ARGO-Events!!\"}"}]},"outputs":{},"metadata":{},"container":{"name":"","image":"docker/whalesay:latest","command":["cowsay"],"args":["{\"message\":\"Das ist eine 2. Testnachricht an ARGO-Events!!\"}"],"resources":{}}}
+
+...
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  5m4s  default-scheduler  Successfully assigned argo-events/webhook-gwlnv to argo-events-control-plane
+  Normal  Pulled     5m3s  kubelet            Container image "quay.io/argoproj/argoexec:v3.4.11" already present on machine
+  Normal  Created    5m3s  kubelet            Created container init
+  Normal  Started    5m3s  kubelet            Started container init
+  Normal  Pulled     5m2s  kubelet            Container image "quay.io/argoproj/argoexec:v3.4.11" already present on machine
+  Normal  Created    5m2s  kubelet            Created container wait
+  Normal  Started    5m2s  kubelet            Started container wait
+  Normal  Pulling    5m2s  kubelet            Pulling image "docker/whalesay:latest"
+  Normal  Pulled     5m    kubelet            Successfully pulled image "docker/whalesay:latest" in 2.340005184s (2.340010879s including waiting)
+  Normal  Created    5m    kubelet            Created container main
+  Normal  Started    5m    kubelet            Started container main
+```
+
+
+Um eine Gesamtübersicht über die Aktionen, wie das erstellen der Pods zu sehen können wir den Befehl unten verwenden.
+
+```bash
+kubectl get events
+
+57m         Normal    ScalingReplicaSet       deployment/webhook-sensor-lnptv                            Scaled up replica set webhook-sensor-lnptv-5c648f6cf5 to 1
+47m         Normal    Scheduled               pod/webhook-sensor-wcr5r-5c648f6cf5-9zdwj                  Successfully assigned argo-events/webhook-sensor-wcr5r-5c648f6cf5-9zdwj to argo-events-control-plane
+47m         Normal    Pulling                 pod/webhook-sensor-wcr5r-5c648f6cf5-9zdwj                  Pulling image "quay.io/argoproj/argo-events:v1.7.6"
+47m         Normal    Pulled                  pod/webhook-sensor-wcr5r-5c648f6cf5-9zdwj                  Successfully pulled image "quay.io/argoproj/argo-events:v1.7.6" in 645.029569ms (645.035123ms including waiting)
+47m         Normal    Created                 pod/webhook-sensor-wcr5r-5c648f6cf5-9zdwj                  Created container main
+47m         Normal    Started                 pod/webhook-sensor-wcr5r-5c648f6cf5-9zdwj                  Started container main
+47m         Normal    SuccessfulCreate        replicaset/webhook-sensor-wcr5r-5c648f6cf5                 Created pod: webhook-sensor-wcr5r-5c648f6cf5-9zdwj
+47m         Normal    ScalingReplicaSet       deployment/webhook-sensor-wcr5r                            Scaled up replica set webhook-sensor-wcr5r-5c648f6cf5 to 1
+6m2s        Normal    LeaderElection          lease/workflow-controller                                  argo-workflows-workflow-controller-7c86454b49-6h4hj became leader
+```
 
