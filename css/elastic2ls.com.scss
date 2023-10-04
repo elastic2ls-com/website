@@ -27,11 +27,12 @@
   }
   .h2, h2 {
     font-size:26px;
-    color:#9d9d9d;
-    font-family:Poppins,sans-serif;
+    color:#000000;
+    font-family: monospace;
   }
   .h3, h3 {
     font-size: 22px;
+    color:#000000;
     font-family: monospace;
   }
   .h4, h4 {
@@ -470,6 +471,9 @@
         }
         .grid-content-approach {
           min-height: 430px !important;
+        }
+        .grid-content-approach h3{
+          color: #000000;
         }
         .grid-content-news img{
           max-width: 100%;

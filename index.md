@@ -23,13 +23,13 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 
 <!--- - GRID CONTENT APPROACH    -->
 <div class="grid-content-approach">
-<hr>
 ## Unser Ansatz
+---
 <div class="col-sm-12 col-md-6">
-### Andere Zeiten, andere Regeln
+### Wir automatisieren, was sich automatisieren lässt.
 </div>
 <div class="col-sm-12 col-md-6">
-Elastic2ls ist ein Consulting-Unternehmen aus Bonn. Wir bieten AWS Cloud-Beratung und DevOps-Expertise von Elastic2ls aus Bonn. Unsere Stärke liegt im Bereich der Konzeptionierung und Architektur der benötigen Lösungen, dabei unterstützen wir die agilen Development-Teams unserer Kunden.
+Elastic2ls ist ein Consulting-Unternehmen aus Bonn. Wir bieten AWS Cloud-Beratung und DevOps-Expertise. Unsere Stärke liegt im Bereich der Konzeptionierung und Architektur der benötigen Lösungen, dabei unterstützen wir die agilen Development-Teams unserer Kunden.
 
 Wir unterstützen Sie mit unserer Expertise bei der Cloud-Transformation und ihren DevOps Themen. Darüber hinaus bieten wir Trainings und Workshops.
 
@@ -38,10 +38,26 @@ Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden
 </div>
 <!--- - GRID CONTENT APPROACH    -->
 
+<!-- GRID CONTENT ABOUT -->
+<div class="grid-content-about">
+### Über uns
+___
+
+
+
+<p class="description">
+Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
+<p class="description">
+Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
+
+
+
+</div>
+<!-- GRID CONTENT ABOUT -->
 
 <!--- GRID CONTENT PORTFOLIO  -->
 <div class="grid-content-portfolio">
-## Portfolio
+### Portfolio
 ___
 
 <div class="col-sm-12 col-md-6">
@@ -130,23 +146,6 @@ ___
 
 </div>
 <!-- GRID CONTENT NEWS2-->
-
-<!-- GRID CONTENT ABOUT -->
-<div class="grid-content-about">
-## Über uns
-___
-
-
-
-<p class="description">
-Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
-<p class="description">
-Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
-
-
-
-</div>
-<!-- GRID CONTENT ABOUT -->
 
 <!-- GRID CONTENT KONTAKT-->
 <div class="grid-content-contact">
