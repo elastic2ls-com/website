@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AWS Cloud-Beratung und DevOps-Transformationen | Elastic2ls Bonn
+title: AWS Cloud-Beratung und DevOps-Expertiese | Elastic2ls Bonn
 subtitle: Elastic2ls ist ein Startup Unternehmen aus Bonn. Wir unterstützen Sie mit unserer Expertise bei der Cloud-Tranformationen und DevOps.
 keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 ---
