@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AWS Cloud-Beratung und DevOps-Expertiese | Elastic2ls Bonn
-subtitle: Elastic2ls ist ein Startup Unternehmen aus Bonn. Wir unterstützen Sie mit unserer Expertise bei der Cloud-Tranformationen und ihren DevOps Themen.
+subtitle: Elastic2ls ist ein Consulting-Unternehmen aus Bonn. Wir unterstützen Sie mit unserer Expertise bei der Cloud-Tranformationen und ihren DevOps Themen.
 keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 ---
 {::options parse_block_html="true" /}
@@ -11,7 +11,7 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <div class="slider">
 <!-- SLIDER BG IMAGE -->
 <div class="carousel">
-# Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.
+# Wir unterstützen Sie mit unserer Expertise bei der Cloud-Transformation und ihren DevOps Themen.
 </div>
 
 
@@ -29,11 +29,11 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 ### Andere Zeiten, andere Regeln
 </div>
 <div class="col-sm-12 col-md-6">
-AWS Cloud-Beratung und DevOps-Expertiese von Elastic2ls aus Bonn. Unsere Stärke liegt im Bereich der Konzeptionierung und Architektur der benötigen Lösungenen, dabei unterstützen wir die agilen Development-Teams unserer Kunden.
+Elastic2ls ist ein Consulting-Unternehmen aus Bonn. Wir bieten AWS Cloud-Beratung und DevOps-Expertise von Elastic2ls aus Bonn. Unsere Stärke liegt im Bereich der Konzeptionierung und Architektur der benötigen Lösungen, dabei unterstützen wir die agilen Development-Teams unserer Kunden.
 
-Wir unterstützen Sie mit unserer Expertise bei der Cloud-Tranformationen und DevOps. Darüber hinaus bieten wir Euch Trainings und Workshops.
+Wir unterstützen Sie mit unserer Expertise bei der Cloud-Transformation und ihren DevOps Themen. Darüber hinaus bieten wir Trainings und Workshops.
 
-Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Wir helfen Ihnen beim Aufbau von Umgebungen für Continuous Integration / Continuous Deployment für ihr tägliches Geschäft.
+Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Wir helfen beim Aufbau von Umgebungen für Continuous Integration / Continuous Deployment.
 </div>
 </div>
 <!--- - GRID CONTENT APPROACH    -->
