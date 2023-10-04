@@ -11,7 +11,7 @@ keywords: [Training Consulting DevOps CloudEnvironment Buildpipelines]
 <div class="slider">
 <!-- SLIDER BG IMAGE -->
 <div class="carousel">
-#### Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.
+# Wir entwerfen, bauen DevOps-Plattformen und Ihr Cloud Environment.
 </div>
 
 
