@@ -239,7 +239,7 @@ Die Datei `datei.txt` sollte nun im Ziel-Bucket sichtbar sein.
 
 ## **Fazit**
 
-Mit dieser Anleitung hast du erfolgreich eine Cross-Region Replikation zwischen zwei MinIO-Servern eingerichtet. Dies ermöglicht dir eine automatische Synchronisation deiner Daten und erhöht die Ausfallsicherheit deines Systems.
+Mit dieser Anleitung hast du erfolgreich eine Cross-Region Replikation zwischen zwei MinIO-Servern eingerichtet. Dies ermöglicht dir eine automatische Synchronisation deiner Daten und erhöht die Ausfallsicherheit deines Systems
 
 ---
 
