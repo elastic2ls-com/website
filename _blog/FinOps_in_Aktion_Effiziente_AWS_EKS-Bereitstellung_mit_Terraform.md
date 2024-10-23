@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bereitstellung eines AWS EKS Clusters mit Terraform
+title: FinOps in Aktion: Effiziente AWS EKS-Bereitstellung mit Terraform
 subtitle:  Ein Leitfaden mit FinOps-Kostenanalyse und Einrichtung von Connection Draining
 categories: [Howtos]
 ---
