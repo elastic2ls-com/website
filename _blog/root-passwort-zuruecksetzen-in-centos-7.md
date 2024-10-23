@@ -3,7 +3,7 @@ layout: post
 title: root-Passwort zurücksetzen in CentOS 7
 subtitle:  Wie setzt man das Root Passwort in einem CentOS 7 System zurücksetzt wenn man es vergessen hat. Es ist zwar ärgerlich aber auch kein grossen Aufwand.
 keywords: [CentOS root Passwort Recovery grub2]
-categories: [Sicherheit]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

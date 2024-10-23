@@ -3,7 +3,7 @@ layout: post
 title: Watchguard vpn client  Mac OS
 subtitle:  Wenn man Watchguard-VPN mit Mac OS nutzen will gibt es einen Client. Will man mit mehreren Backends arbeiten braucht es einen anderen Client. z.B. Tunnelblick.
 keywords: [Watchguard vpn client  Mac OS OpenVPN Tunnelblick]
-categories: [Sicherheit]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

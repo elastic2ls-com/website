@@ -3,7 +3,7 @@ layout: post
 title: x2go - sicherer Remote Login für Linux
 subtitle:  x2go - Machmal hilft es nicht per SSH auf einen Linux Sytem zu zugreifen. Einige Anwendungen benötigen eine grafische Oberfläche zur Konfiguration.
 keywords: [x2go sicherer Remote Login Linux grafische Oberfläche]
-categories: [Sicherheit]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

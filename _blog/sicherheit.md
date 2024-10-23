@@ -1,7 +1,7 @@
 ---
 layout: categories
 title: Sicherheit
-categories: [Sicherheit]
+categories: [Howtos]
 ---
 ## Everything related to Sicherheit
 

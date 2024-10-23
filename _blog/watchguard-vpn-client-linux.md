@@ -3,7 +3,7 @@ layout: post
 title: Watchguard vpn client Linux
 subtitle:  Um Watchguard-VPN mit Linux nutzen steht kein fertiges Paket wier unter Windows zur Verfügung. Da aber auf der Watchguard ein OpenVPN Server läuft können ...
 keywords: [Watchguard vpn client Linux OpenVPN]
-categories: [Sicherheit]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

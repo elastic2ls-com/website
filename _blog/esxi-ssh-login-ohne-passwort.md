@@ -3,7 +3,7 @@ layout: post
 title: ESXi - SSH Login ohne Passwort
 subtitle:  Der SSH Login in den ESXI ist eine sehr praktische Sache. Einziges Manko und duchaus nervig ist die ständige Abfrage des Passwortes beim Login. Auch aus Sicherheitssicht ist ein Login mittels eines SSH Keys von Vorteil. Um in den  Host per SSH zu gelangen und zwar ohne Passwort mittels SSH-Key ist folgendes nötig.
 keywords: [Passwortloser SSH Login ESXI Sicherheit /etc/ssh/keys-root/authorized_keys /sbin/auto-backup.sh]
-categories: [Sicherheit]
+categories: [Howtos]
 ---
 # {{ page.title }}
 

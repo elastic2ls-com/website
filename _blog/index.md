@@ -56,8 +56,8 @@ permalink: /blog/:title.html
 
 <div class="col-sm-8 col-md-4">
 <div class="boxes blog">
+[![linuxinside](../img/linuxinside.webp)](linuxinside)
 
-[![Sicherheit](../img/security_linux4.webp)](sicherheit)
 </div>
 </div>
 
@@ -69,26 +69,7 @@ permalink: /blog/:title.html
 </div>
 
 
-<div class="col-sm-8 col-md-4">
-<div class="boxes blog">
-[![linuxinside](../img/linuxinside.webp)](linuxinside)
 
-</div>
-</div>
-
-<div class="col-sm-8 col-md-4">
-<div class="boxes blog">
-[![linuxdesktop](../img/linuxdesktop.webp)](linuxdesktop)
-
-</div>
-</div>
-
-<div class="col-sm-8 col-md-4">
-<div class="boxes blog">
-[![dns](../img/bind9.webp)](dns)
-
-</div>
-</div>
 
 </div>
 
@@ -99,7 +80,7 @@ permalink: /blog/:title.html
 <div class="posts-list">
 
 {% assign maxRelated = site.blog | sample:5 %}
-{% for post in maxRelated %}
+{% for post in latestPosts %}
 <div class="blog-articles">
 <h2 class="post-title">{{ post.title }}</h2>
 
