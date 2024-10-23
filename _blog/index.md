@@ -78,15 +78,17 @@ permalink: /blog/:title.html
 # Posts
 
 <div class="posts-list">
+{% assign desired_categories = "Howtos,DevOps" | split: "," %}
+{% assign filteredPosts = site.posts | where_exp: "post", "post.categories | intersect: desired_categories | size > 0" %}
+{% assign randomPosts = filteredPosts | sample:10 %}
 
-{% assign latestPosts = site.blog | sample:10 %}
-{% for post in latestPosts %}
+{% for post in randomPosts %}
 <div class="blog-articles">
 <h2 class="post-title">{{ post.title }}</h2>
 
 {% if post.subtitle %}
 <p class="post-subtitle">
-	    {{ post.subtitle }}
+{{ post.subtitle }}
 </p>
 {% endif %}
 
@@ -95,13 +97,13 @@ permalink: /blog/:title.html
 {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
 {% assign excerpt_word_count = post.excerpt | number_of_words %}
 {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-<a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
+<a href="{{ post.url | relative_url }}" class="post-read-more">[Weiterlesen]</a>
 {% endif %}
 </div>
 {% if post.image %}
 <div class="post-image">
 <a href="{{ post.url | relative_url }}">
-<img src="{{ post.image | relative_url }}">
+  <img src="{{ post.image | relative_url }}">
 </a>
 </div>
 {% endif %}
@@ -109,6 +111,8 @@ permalink: /blog/:title.html
 </div>
 {% endfor %}
 </div>
+
+
 
 </div>
 
