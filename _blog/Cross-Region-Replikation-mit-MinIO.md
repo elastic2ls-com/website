@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cross-Region Replikation mit MinIO
-subtitle: Eine Schritt-für-Schritt-Anleitung
+title: "Cross-Region Replikation mit MinIO"
+subtitle: "Skalierbare Datensicherheit mit MinIO: So gelingt die Cross-Region Replikation"
 categories: [Howtos]
 ---
 # {{ page.title }}
