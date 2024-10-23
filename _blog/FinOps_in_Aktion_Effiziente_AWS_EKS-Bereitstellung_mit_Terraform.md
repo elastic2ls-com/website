@@ -8,7 +8,7 @@ categories: [Howtos]
 ## {{ page.subtitle }}
 
 
-![finops](../../img/AWS_EKS_mit_Terraform_und_FinOps-1170.webp-1170.webp)
+![finops](../../img/AWS_EKS_mit_Terraform_und_FinOps-1170.webp)
 
 
 ---
