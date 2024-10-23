@@ -3,7 +3,6 @@ layout: post
 title: Test Webseitenlinks mit WGET
 subtitle:  Defekte Webseitenlinks entstehen, wenn eine Seite verschoben oder gar gelöscht wird. Es ist der Job des Webmasters diese defekten als erster Links zu finden.
 keywords: [Test Webseitenlinks mit WGET]
-categories: [Howtos]
 ---
 # {{ page.title }}
 ## Einleitung

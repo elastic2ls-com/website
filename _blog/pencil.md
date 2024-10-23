@@ -3,7 +3,7 @@ layout: post
 title: Pencil Ein Open-Source GUI-Prototyping-Tool
 subtitle:  Da ich auf der Suche nach einen Opensource Tool war, das sich für Prototyping und Mockups eignet bin ich bei der Recherche auf Pencil gestoßen. Ein kurzer Überblick.
 keywords: [Pencil GUI-Prototyping-Tool Opensource Prototyping Mockups]
-categories: [Howtos]
+categories: [Old]
 ---
 # {{ page.title }}
 

@@ -3,7 +3,7 @@ layout: post
 title: Import von Worpress in Jekyll
 subtitle: Import von Worpress in Jekyll Troubleshooting - "jekyll LoadError cannot load such file -- mysql2" (Sequel::AdapterNotFound)"
 keywords: [jekyll LoadError: cannot load such file -- mysql2 (Sequel::AdapterNotFound)]
-categories: [Howtos]
+categories: [Old]
 ---
 # {{ page.title }}
 

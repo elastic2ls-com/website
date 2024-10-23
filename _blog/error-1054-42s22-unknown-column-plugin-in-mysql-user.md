@@ -3,7 +3,7 @@ layout: post
 title: ERROR 1054 (42S22) Unknown column 'plugin' in 'mysql.user'
 subtitle:  Nach dem Update von MySQL auf die 5.6 Version kann es u.U. dazu kommen das man auf folgenden Fehler ERROR 1054 stösst.
 keywords: [MySQL Update 5.6 ERROR 1054 Berechtigsschema 5.1 Version ALTER TABLE]
-categories: [Howtos]
+categories: [Old]
 ---
 # {{ page.title }}
 

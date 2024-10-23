@@ -3,7 +3,7 @@ layout: post
 title: Update MySQL 5.6 CentOS
 subtitle:  Installieren des MySQL 5.6 Community Repositories Als erstes müssen wir das offizielle MySQL 5.6 Community Repository installieren und zwar wie folgt.
 keywords: [Update MySQL 5.6 CentOS]
-categories: [Howtos]
+categories: [Old]
 ---
 # {{ page.title }}
 

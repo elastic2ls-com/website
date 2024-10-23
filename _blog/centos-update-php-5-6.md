@@ -3,7 +3,6 @@ layout: post
 title: Centos update PHP-5.6
 subtitle: Ein kurze detailierte Übersicht wie man PHP auf die Version PHP-5.6 updated in CentOS.
 keywords: [PHP-5.6 Linux CentOS update rpms.famillecollet.com enablerepo EPS Apache]
-categories: [Howtos]
 ---
 # {{ page.title }}
 
