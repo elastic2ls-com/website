@@ -5,7 +5,7 @@ subtitle: Eine Schritt-für-Schritt-Anleitung
 categories: [Howtos]
 ---
 # {{ page.title }}
-
+## {{ page.subtitle }}
 
 ![minio](../../img/minio-1170.webp)
 

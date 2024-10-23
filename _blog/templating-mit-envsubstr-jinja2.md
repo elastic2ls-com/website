@@ -5,8 +5,8 @@ subtitle: Nutzen Sie die Leistungsfähigkeit von envsubst und Jinja2.
 categories: [Howtos]
 ---
 # {{ page.title }}
-
-![minio](../../img/envsubst_jinja2-1170.webp)
+## {{ page.subtitle }}
+![envsubst_jinja2](../../img/envsubst_jinja2-1170.webp)
 
 ---
 
