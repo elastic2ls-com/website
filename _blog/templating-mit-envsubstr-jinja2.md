@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Templating mit envsubst und Jinja2
-subtitle: Nutzen Sie die Leistungsfähigkeit von envsubst und Jinja2.
+subtitle: "Effektives Templating in der Praxis: Wie envsubst und Jinja2 deine DevOps-Prozesse optimieren."
 categories: [Howtos]
 ---
 # {{ page.title }}
