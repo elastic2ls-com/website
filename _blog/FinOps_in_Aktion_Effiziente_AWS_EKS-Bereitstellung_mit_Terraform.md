@@ -1,6 +1,6 @@
 ---
 layout: post
-title: # Bereitstellung eines AWS EKS Clusters mit Terraform
+title: Bereitstellung eines AWS EKS Clusters mit Terraform
 subtitle:  Ein Leitfaden mit FinOps-Kostenanalyse und Einrichtung von Connection Draining
 categories: [Howtos]
 ---
@@ -8,7 +8,7 @@ categories: [Howtos]
 ## {{ page.subtitle }}
 
 
-![finops](../../img/AWS_EKS_mit_Terraform_und_FinOps.webp-1170.webp)
+![finops](../../img/AWS_EKS_mit_Terraform_und_FinOps-1170.webp-1170.webp)
 
 
 ---
