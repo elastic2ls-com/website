@@ -3,7 +3,7 @@ layout: post
 title: Docker nutzen mit Apache Teil 1
 subtitle:  Unten sind die nötigen Schritte skiziert wie wir uns ein Basis Image herunterladen können, dann den Apachen installieren und daraus ein neues Image für die weitere Verwendung speicher können.
 keywords: [docker Dockerfile Apache Basis-Images Container Image commit MAINTAINER exec persistent]
-categories: [Howtos]
+categories: [Old]
 ---
 # {{ page.title }}
 

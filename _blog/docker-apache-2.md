@@ -3,7 +3,7 @@ layout: post
 title: Docker nutzen mit Apache Teil2
 subtitle: Wir wollen hier mit docker einen Apache Webserver erstellen und konfigurieren. Dazu hier die kleine Anleitung. Dazu legen wir uns ein Dockerfile an, welches verwendet wird um den Container zu konfigurieren.
 keywords: [docker Dockerfile Apache docker-compose Container build MAINTAINER exec persistent Netzwerk]
-categories: [Howtos]
+categories: [Old]
 ---
 # {{ page.title }}
 
