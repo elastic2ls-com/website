@@ -6,9 +6,7 @@ categories: [Howtos]
 ---
 # {{ page.title }}
 
-# Templating mit **envsubst** und **Jinja2**
-
-![minio](../../img/envsubst_jinja2.webp)
+![minio](../../img/envsubst_jinja2-1170.webp)
 
 ---
 
