@@ -7,7 +7,7 @@ categories: [Howtos]
 # {{ page.title }}
 
 
-![minio](../../img/minio.webp)
+![minio](../../img/minio-1170.webp)
 
 ---
 
