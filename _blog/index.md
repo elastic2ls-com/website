@@ -79,7 +79,7 @@ permalink: /blog/:title.html
 
 <div class="posts-list">
 
-{% assign maxRelated = site.blog | sample:5 %}
+{% assign latestPosts = site.blog | sample:10 %}
 {% for post in latestPosts %}
 <div class="blog-articles">
 <h2 class="post-title">{{ post.title }}</h2>
