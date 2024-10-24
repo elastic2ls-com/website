@@ -79,9 +79,8 @@ permalink: /blog/:title.html
 
 <div class="posts-list">
 
-{% assign desired_categories = "DovOps,Howtos" | sample:5 % %}
-
-{% for post in desired_categories %}
+{% assign maxRelated = site.blog | sample:5 %}
+{% for post in maxRelated %}
 <div class="blog-articles">
 <h2 class="post-title">{{ post.title }}</h2>
 
