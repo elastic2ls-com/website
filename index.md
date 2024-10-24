@@ -44,12 +44,10 @@ Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden
 ___
 
 
-
 <p class="description">
 Elastic2ls ist ein Cloud-Beratungs- und Dienstleistungsunternehmen, das sich auf Open Source, Cloud-Plattformen und DevOps konzentriert. Wir unterstützen Unternehmen, indem wir DevOps Prozesse, Cloud-Plattformen und  Build Pipelines erfolgreich einführen.</p>
 <p class="description">
 Wir unterstützen unsere Kunden bereits im Vorfeld in der Konzeption von angedachten Lösungen und entwickeln diese stetig weiter. Dabei unterstützen wir die agilen Development-Teams unserer Kunden. Durch einen hohen Grad an Automatisierung wird die Qualität der zu erstellenden Softwareprodukte signifikant erhöht. Der Aufbau von Umgebungen für Continuous Integration / Continuous Deployment ist, neben der Konzeption von automatisch skalierenden Hochverfügbarkeitslösungen, unser tägliches Geschäft.</p>
-
 
 
 </div>
@@ -70,7 +68,6 @@ Mit welchem Tool, Ansatz Sie auch immer Continuous Delivery / Continuous Integra
 Durch langjährige Erfahrung in diesem Bereich können wir Ihre Entwickler unterstützen, damit sich diese auf das wesentliche konzentrieren können, gut Software zu programmieren.
 </div>
 </div>
-
 
 <div class="col-sm-12 col-md-6">
 <div class="boxes flexible portfoliobox">
@@ -113,7 +110,6 @@ ___
 </div>
 </div>
 
-
 </div>
 <!-- GRID CONTENT NEWS-->
 
@@ -142,7 +138,6 @@ ___
 [![scheduling_in_kubernetes](../img/k8s.webp)](/blog/scheduling_in_kubernetes/)
 </div>
 </div>
-
 
 </div>
 <!-- GRID CONTENT NEWS2-->
