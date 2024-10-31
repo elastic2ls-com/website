@@ -37,7 +37,6 @@
   }
   .h4, h4 {
     font-size: 20px;
-    color: #5D67B9;
     font-family: monospace;
   }
 
@@ -49,9 +48,10 @@
   blockquote {
       padding: 10px 20px;
       margin: 0 0 20px;
-      font-size: 24px;
-      border-left: 5px solid #993737;
-      background-color: #e8d858;
+      font-size: 20px;
+      font-style: oblique;
+      border-left: 3px solid #d6eec8;
+      background-color: #f9f9f9;
       // background-image: url(../img/icon_hinweis.webp);
       // background-repeat: no-repeat;
   }
@@ -321,6 +321,14 @@
     .brand a{
       color: #bcc1c1;
     }
+
+  .h2, h2 {
+    margin-top: 35px;
+  }
+  img {
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
 
 }
 @media screen and (min-width: 200px) and (max-width: 767px) and (orientation:portrait) {
