@@ -152,8 +152,8 @@ ___
 <div class="col-sm-8 col-md-4">
 <div class="contact">
 ### Adresse
-Römerstrasse 334<br>
-53117 Bonn<br>
+Dreifatigkeitsweg 8
+53489 Sinzig<br>
 </div>
 </div>
 
