@@ -21,7 +21,7 @@ UseCanonicalName Off
 LogFormat "%V %h %l %u %t \"%r\" %s %b" vcommon
 
  < VirtualHost *:80>
-        ServerAdmin admin@www.elastic2ls.com
+        ServerAdmin admin@elastic2ls.com
         ServerName elastic2ls.com
         ServerAlias *.elastic2ls.com
 
@@ -31,7 +31,7 @@ LogFormat "%V %h %l %u %t \"%r\" %s %b" vcommon
  < /VirtualHost>
 
  < VirtualHost *:443>
-        ServerAdmin admin@www.elastic2ls.com
+        ServerAdmin admin@elastic2ls.com
         ServerName elastic2ls.com
         ServerAlias *.elastic2ls.com
 

@@ -42,7 +42,7 @@ done
 Der Aufruf erfolgt so gefolgt von der Ausgabe:
 
 ```
-awiechert@server:~/ssl-check$ ./check_ssl.sh www.elastic2ls.com
+info@server:~/ssl-check$ ./check_ssl.sh www.elastic2ls.com
 SSL certificate for www.elastic2ls.com is valid until Sep 22 2018.
 OK: Certificate for www.elastic2ls.com valid for 74 days.
 ```

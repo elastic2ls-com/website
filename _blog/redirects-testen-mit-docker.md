@@ -17,7 +17,7 @@ Aus Seosicht ist es wichtig, dass Redirects die man eingebaut hat, auch auf die 
 
 ```
 FROM centos:centos6
-MAINTAINER Alex Wiechert awiechert@www.elastic2ls.com
+MAINTAINER Alex Wiechert info@elastic2ls.com
 RUN yum -y update; yum clean all RUN yum -y install epel-release; yum clean all RUN yum -y install supervisor curl net-tools mlocate vim less httpd mod_ssl mod_rewrite
 VOLUME /var/elastic2ls/deployment/htdocs
 VOLUME /var/elastic2ls/deployment/htdocs-api

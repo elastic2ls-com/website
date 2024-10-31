@@ -22,7 +22,7 @@ In der Dockerdatei geben wir folgendes an:
 
 ```
 FROM debian:latest
-MAINTAINER Alex Wiechert <awiechert@www.elastic2ls.com>
+MAINTAINER Alex Wiechert <info@elastic2ls.com>
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 RUN apt-get install --no-install-recommends -y supervisor curl net-tools mlocate nano vim less apache2
@@ -50,7 +50,7 @@ bash-4.2$docker build -t apache:v3 .
 Sending build context to Docker daemon  11.26kB
 Step 1/11 : FROM debian:latest
  ---> 874e27b628fd
-Step 2/11 : MAINTAINER Alex Wiechert <awiechert@www.elastic2ls.com>
+Step 2/11 : MAINTAINER Alex Wiechert <info@elastic2ls.com>
  ---> Using cache
  ---> 04147b292822
 Step 3/11 : ENV DEBIAN_FRONTEND noninteractive
