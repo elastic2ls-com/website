@@ -127,17 +127,27 @@ resource "aws_security_group" "vault_sg" {
   description = "Allow Vault traffic"
   vpc_id      = aws_vpc.main.id
 
+  # Regel für den SSH-Zugriff
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]  # Dies erlaubt SSH-Zugriff von überall; achten Sie auf die Sicherheit
+  }
+
+  # Regel für den Zugriff auf den Vault-Port (optional, wenn Vault über HTTP erreichbar ist)
   ingress {
     from_port   = 8200
     to_port     = 8200
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]  # Achtung: Öffnet Port 8200 für alle
+    cidr_blocks = ["0.0.0.0/0"]  # Auch hier sollten Sie die IPs einschränken, die Zugriff haben
   }
 
+  # Regel für den ausgehenden Zugriff (optional)
   egress {
     from_port   = 0
     to_port     = 0
-    protocol    = "-1"
+    protocol    = "-1"  # Erlaubt allen ausgehenden Verkehr
     cidr_blocks = ["0.0.0.0/0"]
   }
 
@@ -245,8 +255,6 @@ data "template_file" "user_data" {
   vars = {
     kms_key_id = aws_kms_key.vault_unseal_key.key_id
     region     = var.region
-    public_ip  = aws_instance.vault.public_ip
-    private_ip = aws_instance.vault.private_ip
   }
 }
 ```
@@ -256,9 +264,14 @@ data "template_file" "user_data" {
 ```bash
 #!/bin/bash
 sudo yum update -y
-sudo yum install -y wget unzip
+sudo yum install -y wget unzip jq
+
+# Vault installieren
 wget https://releases.hashicorp.com/vault/1.9.0/vault_1.9.0_linux_amd64.zip
 sudo unzip vault_1.9.0_linux_amd64.zip -d /usr/local/bin/
+sudo chmod +x /usr/local/bin/vault
+
+# Vault Benutzer und Verzeichnisse einrichten
 sudo mkdir /etc/vault
 sudo useradd --system --home /etc/vault --shell /bin/false vault
 sudo chown -R vault:vault /etc/vault
@@ -266,10 +279,12 @@ sudo mkdir -p /var/lib/vault/data
 sudo chown -R vault:vault /var/lib/vault/
 
 # Vault-Konfiguration mit Auto-Unseal
+
+cat << EOF > /etc/vault/config.hcl
 echo 'ui = true
 
 listener "tcp" {
-  address = "0.0.0.0:8200"
+  address     = "0.0.0.0:8200"
   tls_disable = 1
 }
 
@@ -281,16 +296,17 @@ seal "awskms" {
   region     = "${region}"
   kms_key_id = "${kms_key_id}"
 }
+EOF
 
-api_addr = "http://${public_ip}:8200"
-cluster_addr = "https://${private_ip}:8201"
-' | sudo tee /etc/vault/config.hcl
 
-sudo tee /etc/systemd/system/vault.service > /dev/null << SERVICE
+
+# Systemd Service für Vault erstellen
+cat <<EOF >/etc/systemd/system/vault.service
 [Unit]
 Description=Vault service
 Requires=network-online.target
 After=network-online.target
+
 [Service]
 User=vault
 Group=vault
@@ -299,13 +315,29 @@ ExecReload=/bin/kill --signal HUP \$MAINPID
 KillMode=process
 Restart=on-failure
 LimitNOFILE=65536
+
 [Install]
 WantedBy=multi-user.target
-SERVICE
+EOF
 
+# Vault starten
 sudo systemctl daemon-reload
 sudo systemctl start vault
 sudo systemctl enable vault
+
+# Warten, bis Vault startet
+sleep 30
+
+# Vault initialisieren
+vault operator init -format=json > /home/ec2-user/vault_init.json
+
+# Root Token sichern
+echo "Root Token: $(jq -r '.root_token' /home/ec2-user/vault_init.json)" >> /home/ec2-user/root_token.txt
+
+# SSH Public Key in authorized_keys hinzufügen
+echo "${ssh_pub_key}" | sudo tee /home/ec2-user/.ssh/authorized_keys > /dev/null
+sudo chmod 600 /home/ec2-user/.ssh/authorized_keys
+sudo chown ec2-user:ec2-user /home/ec2-user/.ssh/authorized_keys
 ```
 
 **Hinweis:** Die Variablen `${kms_key_id}`, `${region}`, `${public_ip}` und `${private_ip}` werden durch die Werte aus der Terraform-Konfiguration ersetzt.
@@ -332,28 +364,7 @@ resource "null_resource" "wait_for_vault" {
 }
 ```
 
-### **Schritt 12: Vault initialisieren**
 
-Da wir Auto-Unseal verwenden, ist eine manuelle Entsperrung nicht erforderlich. Wir müssen Vault jedoch initialisieren.
-
-```hcl
-resource "vault_initialization" "vault_init" {
-  depends_on = [null_resource.wait_for_vault]
-}
-```
-
-**Hinweis:** Das `vault_initialization` Resource wird verwendet, um Vault zu initialisieren und das Root Token zu erhalten.
-
-### **Schritt 13: Root Token speichern**
-
-Wir speichern das Root Token sicher in Terraform.
-
-```hcl
-output "vault_root_token" {
-  value     = vault_initialization.vault_init.root_token
-  sensitive = true
-}
-```
 
 ### **Schritt 14: UserPass Auth-Methode aktivieren und Benutzer erstellen**
 
