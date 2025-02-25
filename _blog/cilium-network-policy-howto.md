@@ -17,12 +17,6 @@ In der dynamischen Welt der Container-Orchestrierung bietet Kubernetes eine robu
 
 Cilium nutzt eBPF (extended Berkeley Packet Filter), um Netzwerkrichtlinien effizient und sicher durchzusetzen. Diese Technologie ermöglicht es, Sicherheitsrichtlinien auf einer granulareren Ebene zu implementieren und bietet gleichzeitig eine bessere Leistung und Skalierbarkeit. In diesem Artikel werden wir die Vorteile von Cilium gegenüber den Standard-Netzwerkrichtlinien von Kubernetes untersuchen und praktische Beispiele durchgehen, die zeigen, wie Cilium Ihre Kubernetes-Cluster absichern kann.
 
-## Einrichtung der Übungsumgebung
-
-Um die Vorteile von Cilium voll auszuschöpfen, empfehlen wir, eine praktische Übungsumgebung einzurichten. Hier sind zwei Ansätze, die Sie ausprobieren können:
-
-    Lokaler Kubernetes-Cluster: Starten Sie einen lokalen Kubernetes-Cluster mit Kind und installieren Sie Cilium.
-
 ### Lokaler Kubernetes-Cluster
 
 Für eine lokale Einrichtung installieren Sie Kind und verwenden die folgende Konfiguration, um einen lokalen Kubernetes-Cluster mit deaktiviertem Standard-CNI zu erstellen. Verwenden Sie dann die Cilium-CLI, um Cilium zu installieren.
@@ -90,7 +84,6 @@ Cilium führt zwei neue benutzerdefinierte Ressourcendefinitionen (CRDs) ein, um
     CiliumNetworkPolicy – namespaced
     CiliumClusterwideNetworkPolicy – clusterweit
 
-> Hinweis: Während CiliumClusterwideNetworkPolicy wahrscheinlich nicht in der Prüfung vorkommt, ist es gut, davon zu wissen.
 
 Die CiliumNetworkPolicy kann in drei Teile unterteilt werden: Endpoint-Selektor, Ingress- und Egress-Richtlinien.
 
@@ -194,7 +187,7 @@ spec:
 
 In dieser endpointbasierten Netzwerkrichtlinie sperren wir den Datenbank-Namespace, um nur eingehenden Datenverkehr von Backend-Pods im Web-Namespace zuzulassen.
 
-> # Kein Egress-Feld bedeutet, dass der gesamte ausgehende Datenverkehr aus dem Namespace zugelassen ist
+> Kein Egress-Feld bedeutet, dass der gesamte ausgehende Datenverkehr aus dem Namespace zugelassen ist
 
 ```yaml
 apiVersion: cilium.io/v2
