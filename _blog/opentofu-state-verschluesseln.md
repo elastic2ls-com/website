@@ -8,7 +8,7 @@ categories: [DevOps]
 ## {{ page.subtitle }}
 
 
-![grafana](../../img/opentofu-sicherheit.jpeg)
+![opentofu](../../img/opentofu-sicherheit.jpg)
 
 In der sich ständig weiterentwickelnden Landschaft von Infrastructure as Code (IaC) bleibt Sicherheit ein zentrales Anliegen. OpenTofu, ein Fork von Terraform, hat sich als robustes Werkzeug zur Verwaltung von Infrastruktur etabliert und bietet erweiterte Sicherheitsfunktionen zum Schutz sensibler Daten. Dieser Artikel beleuchtet die wichtigsten Aspekte der Sicherung von OpenTofu-Projekten und konzentriert sich auf Verschlüsselungsstrategien und bewährte Methoden, um Ihre Infrastruktur zu schützen.
 
