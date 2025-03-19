@@ -8,5 +8,4 @@ gem 'jekyll-readme-index'
 gem "rouge"
 gem "kramdown"
 gem 'jekyll-sitemap'
-
-# gem "minimal-mistakes-jekyll"
+gem 'jekyll-include-cache'
