@@ -9,4 +9,4 @@ gem "rouge"
 gem "kramdown"
 gem 'jekyll-sitemap'
 
-gem "minimal-mistakes-jekyll"
+# gem "minimal-mistakes-jekyll"
