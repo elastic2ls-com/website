@@ -1,5 +1,7 @@
 # --- General options --- #
 
+theme: minimal-mistakes-jekyll
+
 # Name of website
 title: AWS Cloud-Beratung und DevOps-Expertiese | Elastic2ls Bonn
 
@@ -96,6 +98,8 @@ plugins:
 #  - jekyll-minifier
   - jekyll-feed
   - jekyll-readme-index
+  - jekyll-include-cache
+  - jekyll-sitemap
 
 sass:
   style: compressed
