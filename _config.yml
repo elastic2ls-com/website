@@ -98,7 +98,7 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jekyll-include-cache
-  - jekyll-sitemap
+
 sass:
   style: compressed
 

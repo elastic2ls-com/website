@@ -7,5 +7,5 @@ gem 'jekyll-feed'
 gem 'jekyll-readme-index'
 gem "rouge"
 gem "kramdown"
-gem 'jekyll-sitemap'
+
 gem 'jekyll-include-cache'
