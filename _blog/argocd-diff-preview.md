@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "GitOps Previews mit Argo CD: Änderungen sehen, bevor sie deployt werden"
-subtitle:  "Ein Leitfaden mit FinOps-Kostenanalyse und Einrichtung von Connection Draining"
+title: "GitOps Previews mit Argo CD: Änderungen sehen,"
+subtitle:  "bevor sie deployt werden"
 categories: [DevOps]
 ---
 # {{ page.title }}
