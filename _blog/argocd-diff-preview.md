@@ -8,7 +8,7 @@ categories: [DevOps]
 ## {{ page.subtitle }}
 
 
-![argocd-diff](../../img/argocd-diff.png)
+![argocd-diff](../../img/argocd-diff-1170.png)
 
 In der Welt von GitOps und Kubernetes ist es entscheidend, Änderungen an Anwendungen präzise nachzuvollziehen, bevor sie in den Hauptzweig integriert und deployed werden. Genau hier setzt [`argocd-diff-preview`](https://github.com/dag-andersen/argocd-diff-preview) an – ein leichtgewichtiges Tool, das Pull Requests durch visuelle Diffs nachvollziehbar macht.
 
@@ -26,7 +26,7 @@ Klassische Git-Diffs reichen hier oft nicht aus – gerade bei Templates und Ove
 
 Das Tool rendert Argo-CD-konforme Manifeste für zwei Git-Branches (z. B. `main` vs. `feature/foo`) in einem lokalen Cluster – und zeigt die daraus resultierenden Unterschiede.
 
-![argocd-diff-preview](../../img/argocd-diff-ueberblick.png)
+![argocd-diff-preview](../../img/argocd-diff-flow-1170.png)
 
 ## CI/CD-Integration: Review direkt im Pull Request
 
@@ -50,7 +50,7 @@ Ein klarer Vorteil gegenüber Argo CD’s Web UI oder `argocd app diff`, die nur
 
 ## Beispiel-Diff
 
-![argocd-diff-preview](../../img/argocd-diff-preview.png)
+![argocd-diff-preview](../../img/argocd-diff-preview-1170.png)
 
 ## Konkretes Beispiel: Integration in GitHub Actions
 
